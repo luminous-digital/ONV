@@ -1,0 +1,26 @@
+a.pseudo-class-hover {
+  text-decoration: none;
+}
+
+.ui-link.pseudo-class-hover:before {
+  transition-timing-function: cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition-duration: .24s;
+  transform: scaleX(1);
+}
+
+.ui-form input.pseudo-class-focus,
+input.ui-input.pseudo-class-focus,
+input textarea.pseudo-class-focus,
+input select.pseudo-class-focus,
+.ui-form
+  textarea.pseudo-class-focus,
+textarea.ui-input.pseudo-class-focus,
+textarea textarea.pseudo-class-focus,
+textarea select.pseudo-class-focus,
+.ui-form
+  select.pseudo-class-focus,
+select.ui-input.pseudo-class-focus,
+select textarea.pseudo-class-focus,
+select select.pseudo-class-focus {
+  outline: none;
+}

@@ -62,7 +62,8 @@
     "svg4everybody": "^2.1.9",
     "webpack": "^4.29.0",
     "webpack-dev-middleware": "^3.5.1",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-hot-middleware": "^2.24.3",
+    "sc5-styleguide": "^2.2.0"
   },
   "pre-commit": [
     "lint",
