@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+// Header
+//
+// markup:
+// <ul class="c-accordion-list">
+//     <li class="c-accordion-list__item">
+//         <a href="#" class="c-link">
+//             Board Of Directors
+//         </a>
+//     </li>
+//     <li class="c-accordion-list__item">
+//         <a href="#" class="c-link">
+//             Board Structure And Committees
+//         </a>
+//     </li>
+//     <li class="c-accordion-list__item">
+//         <a href="#" class="c-link">
+//             Managing Our Risks
+//         </a>
+//     </li>
+// </ul>
+//
+// Styleguide 1
+.c-accordion-list {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
