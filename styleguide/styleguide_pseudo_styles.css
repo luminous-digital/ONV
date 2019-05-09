@@ -1,3 +1,11 @@
+.t-link.pseudo-class-hover .c-label:after {
+  background-color: #283A6A;
+}
+
+.t-body-link.pseudo-class-hover .c-label:after {
+  background-color: #283A6A;
+}
+
 a.pseudo-class-hover {
   text-decoration: none;
 }

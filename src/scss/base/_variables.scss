@@ -2,6 +2,8 @@
    Variables
    ========================================================================== */
 
+@import "https://fonts.googleapis.com/css?family=Lato:200,200i,400,400i,700,700i,900,900i&subset=latin-ext";
+
 /* Maps
 ========================================================================== */
 /*
@@ -13,53 +15,71 @@
     To use it, simply call: color(main).
 */
 $colors: (
-    main: #000,
+    main: #283A6A,
+    accent: #F79727,
+    lblue: #F3F5F9,
+    mapblue: #4A90E2,
+    dgrey: #444444,
     white: #fff,
-    accent: #d4213d,
-    blue: #09A6E4
+    lgrey: #A2A1A2,
+    mapgreen: #30B6B5,
 );
 
 $sizes: (
-    media: 400px,
     inner: (
-        desktop: 960px,
-        tablet: 760px,
-        mobile: 320px
+        desktop: 1040px, // 1400 - ...
+        tablet: 700px, // 768 - 1024
+        mobile: 320px // 0 - 767
     ),
     breakpoint: (
-        desktop: 1400px,
-        tablet: 1024px,
-        mobile: 767px
+        desktop: 1400px, // 1025 up
+        tablet: 1024px, // 768 up
+        mobile: 767px // 0 up
     )
 );
 
-// Set main font size to body (eg. 12px), then refer to it using rem, eg. secondary: 2rem -> 24px
 $font-sizes: (
-    main: 14px,
-    h1: 3rem,
-    h2: 2rem,
-    h3: 1.5rem,
-    small: 0.8rem,
-    quote: 9px
+    body: 18px,
+    body-m: 16px,
+    small: 14px,
+    small-m: 14px,
+    h1: 44px,
+    h1-m: 36px,
+    h2: 36px,
+    h2-m: 30px,
+    standfirst: 22px,
+    standfirst-m: 18px,
+    timeline: 36px,
+    big: 70px
 );
 
 $offsets: (
-    default: 16px,
-    large: 24px,
-    small: 8px
+    s: 5px,
+    main: 10px,
+    default: 35px,
+    l: 20px,
+    xl: 50px,
+    xxl: 100px
 );
 
 $fonts: (
-    main: #{'Arial', sans-serif}
-    // secondary: 'Helvetica'
+    main: #{'Lato', 'Arial', sans-serif}
 );
+
+$font-weight-black: 900;
+$font-weight-bold: 700;
+$font-weight-light: 200;
 
 $defaults: (
     border-radius: 4px,
-    line-height: 1.2
+    line-height: 1.55
 );
+
+$transition-default: all .2s linear;
 
 /* Standalone variables
 ========================================================================== */
 $white-space: 1em;
 $form-control-height: 2rem;
+
+$size-header-height-m: 60px;

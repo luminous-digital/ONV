@@ -1,5 +1,278 @@
 /* ==========================================================================
    Header
    ========================================================================== */
+// Header
+//
+//  markup:
+// <header class="l-header">
+//     <div class="l-inner">
+//         <div class="c-header">
+//             <div class="c-header__logo-wrapper">
+//                 <figure class="c-logo">
+//                     <img src="../assets/img/logo.png" alt="OCI" class="c-img" />
+//                 </figure>
+//             </div>
+//             <div class="c-menu-toggle">
+//                 <span class="c-menu-toggle__line">
+//                      -
+//                 </span>
+//             </div>
+//             <div class="c-search-toggle">
+//                 <span class="c-search-toggle__icon">
+//                      x
+//                 </span>
+//             </div>
+//             <div class="c-header-nav">
+//                 <ul class="c-header-nav-menu">
+//                     <li class="c-header-nav-menu__item">
+//                         <a href="#" class="c-link t-menu">
+//                             <span class="c-label">
+//                                 About
+//                             </span>
+//                         </a>
+//                     </li>
+//                     <li class="c-header-nav-menu__item">
+//                         <a href="#" class="c-link t-menu">
+//                             <span class="c-label">
+//                                 Operations
+//                             </span>
+//                         </a>
+//                         <ul class="c-sub-nav">
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Nitrogen
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Beaumont
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Iowa Fertilizer Company
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Natgasoline LLC
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Sorfert Algerie
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Nitrogen
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Egyptian Fertilizers Company
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Egypt Basic Industries Corporation
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         BioMCN
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                         </ul>
+//                     </li>
+//                     <li class="c-header-nav-menu__item">
+//                         <a href="#" class="c-link t-menu">
+//                             <span class="c-label">
+//                                 Sustainability
+//                             </span>
+//                         </a>
+//                         <ul class="c-sub-nav">
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Nitrogen
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Beaumont
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Iowa Fertilizer Company
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Natgasoline LLC
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Sorfert Algerie
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Nitrogen
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Egyptian Fertilizers Company
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Egypt Basic Industries Corporation
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         BioMCN
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                         </ul>
+//                     </li>
+//                     <li class="c-header-nav-menu__item">
+//                         <a href="#" class="c-link t-menu">
+//                             <span class="c-label">
+//                                 Investors
+//                             </span>
+//                         </a>
+//                         <ul class="c-sub-nav">
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Nitrogen
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Beaumont
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Iowa Fertilizer Company
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Natgasoline LLC
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Sorfert Algerie
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         OCI Nitrogen
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Egyptian Fertilizers Company
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         Egypt Basic Industries Corporation
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                             <li class="c-sub-nav__item">
+//                                 <a href="#" class="c-link t-menu-sub">
+//                                     <span class="c-label">
+//                                         BioMCN
+//                                     </span>
+//                                 </a>
+//                             </li>
+//                         </ul>
+//                     </li>
+//                     <li class="c-header-nav-menu__item">
+//                         <a href="#" class="c-link t-menu">
+//                             <span class="c-label">
+//                                 News
+//                             </span>
+//                         </a>
+//                     </li>
+//                     <li class="c-header-nav-menu__item">
+//                         <a href="#" class="c-link t-menu">
+//                             <span class="c-label">
+//                                 Contact
+//                             </span>
+//                         </a>
+//                     </li>
+//                 </ul>
+//                 <div class="c-header-nav__search">
+//                     <div class="c-header-search">
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//
+// Styleguide 1
 .l-header {
+    width: 100%;
+    height: $size-header-height-m;
 }

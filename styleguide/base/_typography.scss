@@ -2,13 +2,408 @@
    Typography
    ========================================================================== */
 
+/* Text styles
+========================================================================== */
+// Typography
+//
+//  markup:
+// <div class="l-section l-section--bg-alt">
+//     <div class="l-inner">
+//         <h1 class="t-h1">
+//             h1
+//         </h1>
+//         <h2 class="t-h2">
+//             h2
+//         </h2>
+//         <h3 class="t-h3">
+//             h3
+//         </h3>
+//         <h4 class="t-h4">
+//             h4
+//         </h4>
+//         <h5 class="t-h5">
+//             h5
+//         </h5>
+//         <p class="t-body">
+//             Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum placerat hendrerit. In pretium, nisi placerat feugiat tempus, ante ligula egestas sapien, eu malesuada velit dui non est. Phasellus vel erat elit. Sed tortor libero, dapibus eget facilisis vel, sodales a libero.
+//         </p>
+//         <p class="t-small">
+//             Paragraph small: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum placerat hendrerit. In pretium, nisi placerat feugiat tempus, ante ligula egestas sapien, eu malesuada velit dui non est. Phasellus vel erat elit. Sed tortor libero, dapibus eget facilisis vel, sodales a libero.
+//         </p>
+//         <p class="t-sec-divider">
+//             Section divider
+//         </p>
+//         <div class="a">
+//              <a class="t-link" href="#">
+//                  <span class="c-label">
+//                      Text link
+//                  </span>
+//              </a>
+//              <br>
+//              <a class="t-body-link" href="#">
+//                  <span class="c-label">
+//                      Body text link
+//                  </span>
+//              </a>
+//         </div>
+//         <p class="t-timeline-number">
+//             Timeline number
+//         </p>
+//         <p class="t-big-number">
+//             Big number
+//         </p>
+//         <p class="t-menu">
+//             Menu
+//         </p>
+//         <p class="t-menu-sub">
+//             Menu level 2
+//         </p>
+//     </div>
+// </div>
+//
+// Styleguide 0
+.t-h1 {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(white);
+    font-weight: $font-weight-black;
+
+    font-size: font-size(h1-m);
+    line-height: font-size(h1-m) * 1.2;
+
+    @include media('>tablet') {
+        font-size: font-size(h1);
+        line-height: font-size(h1) * 1.18;
+    }
+}
+
+.t-h2 {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+    font-weight: $font-weight-black;
+
+    font-size: font-size(h2-m);
+    line-height: font-size(h2-m) * 1.13;
+
+    @include media('>tablet') {
+        font-size: font-size(h2);
+        line-height: font-size(h2) * 1.22;
+    }
+}
+
+.t-h3 {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+    font-weight: $font-weight-bold;
+
+    font-size: font-size(body-m);
+    line-height: font-size(body-m) * 1.5;
+
+    @include media('>tablet') {
+        font-size: font-size(body);
+        line-height: font-size(body) * 1.9;
+    }
+}
+
+.t-h4 {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+    font-weight: $font-weight-bold;
+    text-align: center;
+
+    font-size: font-size(body-m);
+    line-height: font-size(body-m) * 1.5;
+
+    @include media('>tablet') {
+        font-size: font-size(body);
+        line-height: font-size(body) * 1.9;
+    }
+}
+
+.t-h5 {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+    font-weight: $font-weight-black;
+
+    font-size: font-size(body-m);
+    line-height: font-size(body-m) * 1.5;
+
+    @include media('>tablet') {
+        font-size: font-size(body);
+        line-height: font-size(body) * 1.9;
+    }
+}
+
+.t-body {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+
+    font-size: font-size(body-m);
+    line-height: font-size(body-m) * 1.5;
+
+    margin-bottom: offset(main) * 1.4;
+
+    a {
+        font-weight: $font-weight-bold;
+    }
+
+    @include media('>tablet') {
+        font-size: font-size(body);
+        line-height: font-size(body) * 1.9;
+    }
+}
+
+.t-small {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(dgrey);
+
+    margin-bottom: offset(main);
+
+    font-size: font-size(small-m);
+    line-height: font-size(small-m) * 1.4;
+
+    @include media('>tablet') {
+        font-size: font-size(small);
+        line-height: font-size(small) * 1.4;
+    }
+}
+
+.t-btn {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(dgrey);
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.5;
+
+    font-size: font-size(small-m);
+    line-height: font-size(small-m) * 1.11;
+
+    @include media('>tablet') {
+        font-size: font-size(small);
+        line-height: font-size(small) * 1.11;
+    }
+}
+
+.t-sec-divider {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+    letter-spacing: offset(main) / 2;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: font-size(body);
+    line-height: font-size(body) * 1.22;
+}
+
+.t-standfirst {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+    text-align: center;
+
+    font-size: font-size(standfirst-m);
+    line-height: font-size(standfirst-m) * 1.55;
+
+    @include media('>tablet') {
+        font-size: font-size(standfirst);
+        line-height: font-size(standfirst) * 1.45;
+    }
+}
+
+.t-link {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    margin-bottom: offset(main) * 1.4;
+
+    .c-label {
+        font-family: font(main);
+
+        color: color(main);
+        font-weight: $font-weight-bold;
+
+        font-size: font-size(small);
+        line-height: font-size(small);
+
+        &:after {
+            position: absolute;
+            content: '';
+
+            left: 0;
+            bottom: - offset(main) / 3;
+
+            width: 100%;
+            height: 1px;
+
+            background-color: color(accent);
+
+            transition: $transition-default;
+        }
+    }
+
+    &:hover {
+        .c-label {
+            &:after {
+                background-color: color(main);
+            }
+        }
+    }
+}
+
+.t-body-link {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    margin-bottom: offset(main) * 1.4;
+
+    .c-label {
+        font-family: font(main);
+
+        color: color(main);
+        font-weight: $font-weight-bold;
+
+        font-size: font-size(body-m);
+        line-height: font-size(body-m) * 1.5;
+
+        &:after {
+            position: absolute;
+            content: '';
+
+            left: 0;
+            bottom: - offset(main) / 3;
+
+            width: 100%;
+            height: 1px;
+
+            background-color: color(accent);
+
+            transition: $transition-default;
+        }
+
+        @include media('>tablet') {
+            font-size: font-size(body);
+            line-height: font-size(body) * 1.9;
+        }
+    }
+
+    &:hover {
+        .c-label {
+            &:after {
+                background-color: color(main);
+            }
+        }
+    }
+}
+
+.t-timeline-number {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+    font-weight: $font-weight-light;
+
+    color: color(main);
+
+    font-size: font-size(timeline);
+    line-height: font-size(timeline) * 1.22;
+}
+
+.t-big-number {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+    font-weight: $font-weight-light;
+    text-align: center;
+
+    color: color(main);
+
+    font-size: font-size(big);
+    line-height: font-size(big);
+}
+
+.t-menu {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+
+    font-size: font-size(small);
+    line-height: font-size(small) * 1.28;
+}
+
+.t-menu-sub {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+
+    color: color(main);
+
+    font-size: font-size(small);
+    line-height: font-size(small);
+}
+
+/* Text utils
+========================================================================== */
+.t-center {
+    text-align: center;
+}
+
+.t-white {
+    color: color(white);
+}
 
 /* Global texts
 ========================================================================== */
 html {
     @include font-smoothing(on);
 
-    font-size: font-size(main);
+    font-size: font-size(body);
+    font-family: font(main);
 }
 
 body {

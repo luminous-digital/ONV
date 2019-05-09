@@ -10,6 +10,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import "https://fonts.googleapis.com/css?family=Lato:200,200i,400,400i,700,700i,900,900i&subset=latin-ext";
 html {
   line-height: 1.15;
   /* 1 */
@@ -342,17 +343,245 @@ template {
 /* ==========================================================================
    Typography
    ========================================================================== */
+/* Text styles
+========================================================================== */
+.t-h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #fff;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 43.2px; }
+  @media (min-width: 1025px) {
+    .t-h1 {
+      font-size: 44px;
+      line-height: 51.92px; } }
+
+.t-h2 {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 33.9px; }
+  @media (min-width: 1025px) {
+    .t-h2 {
+      font-size: 36px;
+      line-height: 43.92px; } }
+
+.t-h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px; }
+  @media (min-width: 1025px) {
+    .t-h3 {
+      font-size: 18px;
+      line-height: 34.2px; } }
+
+.t-h4 {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px; }
+  @media (min-width: 1025px) {
+    .t-h4 {
+      font-size: 18px;
+      line-height: 34.2px; } }
+
+.t-h5 {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px; }
+  @media (min-width: 1025px) {
+    .t-h5 {
+      font-size: 18px;
+      line-height: 34.2px; } }
+
+.t-body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 14px; }
+  .t-body a {
+    font-weight: 700; }
+  @media (min-width: 1025px) {
+    .t-body {
+      font-size: 18px;
+      line-height: 34.2px; } }
+
+.t-small {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #444444;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 19.6px; }
+  @media (min-width: 1025px) {
+    .t-small {
+      font-size: 14px;
+      line-height: 19.6px; } }
+
+.t-btn {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #444444;
+  font-weight: 700;
+  letter-spacing: 0.5;
+  font-size: 14px;
+  line-height: 15.54px; }
+  @media (min-width: 1025px) {
+    .t-btn {
+      font-size: 14px;
+      line-height: 15.54px; } }
+
+.t-sec-divider {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21.96px; }
+
+.t-standfirst {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  text-align: center;
+  font-size: 18px;
+  line-height: 27.9px; }
+  @media (min-width: 1025px) {
+    .t-standfirst {
+      font-size: 22px;
+      line-height: 31.9px; } }
+
+.t-link {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 14px; }
+  .t-link .c-label {
+    font-family: Lato, Arial, sans-serif;
+    color: #283A6A;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px; }
+    .t-link .c-label:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -3.33333px;
+      width: 100%;
+      height: 1px;
+      background-color: #F79727;
+      transition: all 0.2s linear; }
+  .t-link:hover .c-label:after {
+    background-color: #283A6A; }
+
+.t-body-link {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 14px; }
+  .t-body-link .c-label {
+    font-family: Lato, Arial, sans-serif;
+    color: #283A6A;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px; }
+    .t-body-link .c-label:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -3.33333px;
+      width: 100%;
+      height: 1px;
+      background-color: #F79727;
+      transition: all 0.2s linear; }
+    @media (min-width: 1025px) {
+      .t-body-link .c-label {
+        font-size: 18px;
+        line-height: 34.2px; } }
+  .t-body-link:hover .c-label:after {
+    background-color: #283A6A; }
+
+.t-timeline-number {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 200;
+  color: #283A6A;
+  font-size: 36px;
+  line-height: 43.92px; }
+
+.t-big-number {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  color: #283A6A;
+  font-size: 70px;
+  line-height: 70px; }
+
+.t-menu {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-size: 14px;
+  line-height: 17.92px; }
+
+.t-menu-sub {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  font-size: 14px;
+  line-height: 14px; }
+
+/* Text utils
+========================================================================== */
+.t-center {
+  text-align: center; }
+
+.t-white {
+  color: #fff; }
+
 /* Global texts
 ========================================================================== */
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px; }
+  font-size: 18px;
+  font-family: Lato, Arial, sans-serif; }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #000;
-  line-height: 1.2; }
+  font-family: Lato, Arial, sans-serif;
+  color: #283A6A;
+  line-height: 1.55; }
 
 a {
   cursor: pointer;
@@ -367,7 +596,7 @@ User interface
 .ui-link {
   position: relative;
   overflow: hidden;
-  color: #d4213d; }
+  color: #F79727; }
   .ui-link:before {
     content: '';
     display: block;
@@ -386,28 +615,52 @@ User interface
     transform: scaleX(1); }
 
 .ui-bg--main {
-  background-color: #000; }
+  background-color: #283A6A; }
+
+.ui-bg--accent {
+  background-color: #F79727; }
+
+.ui-bg--lblue {
+  background-color: #F3F5F9; }
+
+.ui-bg--mapblue {
+  background-color: #4A90E2; }
+
+.ui-bg--dgrey {
+  background-color: #444444; }
 
 .ui-bg--white {
   background-color: #fff; }
 
-.ui-bg--accent {
-  background-color: #d4213d; }
+.ui-bg--lgrey {
+  background-color: #A2A1A2; }
 
-.ui-bg--blue {
-  background-color: #09A6E4; }
+.ui-bg--mapgreen {
+  background-color: #30B6B5; }
 
 .ui-color--main {
-  color: #000; }
+  color: #283A6A; }
+
+.ui-color--accent {
+  color: #F79727; }
+
+.ui-color--lblue {
+  color: #F3F5F9; }
+
+.ui-color--mapblue {
+  color: #4A90E2; }
+
+.ui-color--dgrey {
+  color: #444444; }
 
 .ui-color--white {
   color: #fff; }
 
-.ui-color--accent {
-  color: #d4213d; }
+.ui-color--lgrey {
+  color: #A2A1A2; }
 
-.ui-color--blue {
-  color: #09A6E4; }
+.ui-color--mapgreen {
+  color: #30B6B5; }
 
 .ui-icon {
   display: inline-flex;
@@ -428,7 +681,7 @@ User interface
 .ui-button {
   height: 1em;
   padding: 0.5em 1em;
-  background: #d4213d;
+  background: #F79727;
   color: #fff;
   border-radius: 4px; }
 
@@ -496,7 +749,7 @@ select select {
   select textarea:-webkit-autofill,
   select select,
   select select:-webkit-autofill {
-    border: solid 1px #000; }
+    border: solid 1px #283A6A; }
   .ui-form input:-webkit-autofill, input.ui-input:-webkit-autofill, input textarea:-webkit-autofill, input select:-webkit-autofill, .ui-form
   textarea:-webkit-autofill,
   textarea.ui-input:-webkit-autofill,
@@ -526,6 +779,10 @@ select select {
 /* ==========================================================================
    Header
    ========================================================================== */
+.l-header {
+  width: 100%;
+  height: 60px; }
+
 /* ==========================================================================
    Inner
    ========================================================================== */
@@ -533,7 +790,7 @@ select select {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   vertical-align: baseline; }
   @media (max-width: 1399px) {
@@ -550,23 +807,50 @@ select select {
 /* ==========================================================================
    Sections
    ========================================================================== */
+.l-section--bg-alt {
+  background-color: #F3F5F9; }
+
 /* Components
    ========================================================================== */
 /* ==========================================================================
 Forms
 ========================================================================== */
 /* ==========================================================================
-   Logos
-   ========================================================================== */
-.c-logo {
-  width: 100px;
-  height: 200px; }
-
-/* ==========================================================================
    Header
    ========================================================================== */
-.c-accordion-list {
-  width: 85%;
-  margin: 0 auto;
+.c-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between; }
+
+/* ==========================================================================
+Header nav
+========================================================================== */
+.c-header-nav {
   padding: 0;
-  list-style: none; }
+  margin: 0;
+  display: none; }
+  @media (min-width: 1025px) {
+    .c-header-nav {
+      display: flex; } }
+
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+.c-logo {
+  padding: 0;
+  margin: 0; }
+
+/* ==========================================================================
+Search toggle
+========================================================================== */
+.c-search-toggle {
+  padding: 0;
+  margin: 0;
+  display: none; }
+  @media (min-width: 1025px) {
+    .c-search-toggle {
+      display: flex; } }

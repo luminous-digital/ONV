@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.c-header {
+    width: 100%;
+    height: $size-header-height-m;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
