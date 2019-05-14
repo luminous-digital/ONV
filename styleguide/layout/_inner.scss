@@ -3,8 +3,8 @@
    ========================================================================== */
 @mixin inner () {
     @include media('<desktop') {
-        padding-right: $white-space;
-        padding-left: $white-space;
+        padding-right: offset(main) * 2.5;
+        padding-left: offset(main) * 2.5;
     }
 
     display: flex;
@@ -19,4 +19,8 @@
 
 .l-inner {
     @include inner;
+}
+
+.l-header .l-inner {
+    padding: 0;
 }

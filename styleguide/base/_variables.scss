@@ -22,7 +22,7 @@ $colors: (
     dgrey: #444444,
     white: #fff,
     lgrey: #A2A1A2,
-    mapgreen: #30B6B5,
+    mapgreen: #30B6B5
 );
 
 $sizes: (
@@ -43,6 +43,7 @@ $font-sizes: (
     body-m: 16px,
     small: 14px,
     small-m: 14px,
+    smaller: 12px,
     h1: 44px,
     h1-m: 36px,
     h2: 36px,
@@ -76,10 +77,37 @@ $defaults: (
 );
 
 $transition-default: all .2s linear;
+$transition-slow: all .4s linear;
 
 /* Standalone variables
 ========================================================================== */
 $white-space: 1em;
 $form-control-height: 2rem;
 
+$z-index-header: 100;
+
 $size-header-height-m: 60px;
+$size-header-height-d: 80px;
+
+$size-footer-height: 60px;
+
+$size-header-menu-item-height: 60px;
+
+$size-logo-width-m: 60px;
+$size-logo-width-d: 100px;
+
+$size-logo-narrow: 66px;
+
+$size-hamburger-width: 40px;
+$size-hamburger-line-height: 4px;
+
+$size-search-width: 21px;
+
+$size-mobile-menu-border-width: 2px;
+
+$size-mobile-menu-submenu-toggle-width: 25px;
+
+$size-social-icon-width: 27px;
+
+$size-search-container-height: 80px;
+$size-search-form-height: 40px;

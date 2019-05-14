@@ -6,20 +6,21 @@
 //  markup:
 // <header class="l-header">
 //     <div class="l-inner">
-//         <div class="c-header">
+//         <div class="c-header js-header is-active">
 //             <div class="c-header__logo-wrapper">
-//                 <figure class="c-logo">
-//                     <img src="../assets/img/logo.png" alt="OCI" class="c-img" />
-//                 </figure>
+//                 <a class="c-link" href="#">
+//                     <figure class="c-logo">
+//                         <img src="../static/img/logo.png" alt="OCI" class="c-img" />
+//                     </figure>
+//                 </a>
 //             </div>
-//             <div class="c-menu-toggle">
+//             <div class="c-menu-toggle js-menu-toggle">
 //                 <span class="c-menu-toggle__line">
-//                      -
 //                 </span>
 //             </div>
-//             <div class="c-search-toggle">
+//             <div class="c-search-toggle js-toggle-search">
 //                 <span class="c-search-toggle__icon">
-//                      x
+//                      <img src="../static/img/search.svg" alt="Search" class="c-img" />
 //                 </span>
 //             </div>
 //             <div class="c-header-nav">
@@ -31,7 +32,7 @@
 //                             </span>
 //                         </a>
 //                     </li>
-//                     <li class="c-header-nav-menu__item">
+//                     <li class="c-header-nav-menu__item has-children">
 //                         <a href="#" class="c-link t-menu">
 //                             <span class="c-label">
 //                                 Operations
@@ -103,7 +104,7 @@
 //                             </li>
 //                         </ul>
 //                     </li>
-//                     <li class="c-header-nav-menu__item">
+//                     <li class="c-header-nav-menu__item has-children">
 //                         <a href="#" class="c-link t-menu">
 //                             <span class="c-label">
 //                                 Sustainability
@@ -175,7 +176,7 @@
 //                             </li>
 //                         </ul>
 //                     </li>
-//                     <li class="c-header-nav-menu__item">
+//                     <li class="c-header-nav-menu__item has-children">
 //                         <a href="#" class="c-link t-menu">
 //                             <span class="c-label">
 //                                 Investors
@@ -262,9 +263,15 @@
 //                         </a>
 //                     </li>
 //                 </ul>
-//                 <div class="c-header-nav__search">
-//                     <div class="c-header-search">
-//                     </div>
+//                 <div class="c-header-nav__search ">
+//                      <div class="c-header-search js-search-container">
+//                              <form method="POST" action="" class="c-search-form t-body">
+//                                  <input placeholder="Search now" id="search" name="search" class="c-search-form__input">
+//                                  <button type="submit" class="c-search-form__submit">
+//                                      <img src="../static/img/search-orange.svg" alt="Search" class="c-img" />
+//                                  </button>
+//                              </form>
+//                      </div>
 //                 </div>
 //             </div>
 //         </div>
@@ -272,7 +279,10 @@
 // </div>
 //
 // Styleguide 1
+
 .l-header {
     width: 100%;
     height: $size-header-height-m;
+
+    z-index: $z-index-header;
 }

@@ -1,0 +1,38 @@
+/* ==========================================================================
+Sub nav
+========================================================================== */
+.c-sub-nav {
+    display: flex;
+    flex-direction: column;
+
+    max-height: 0;
+    overflow: hidden;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    transition: $transition-slow;
+
+    @include media('>tablet') {
+        display: none;
+    }
+}
+
+.c-header-nav-menu__item.is-active .c-sub-nav {
+    display: flex;
+    max-height: 150vh;
+
+    @include media('>tablet') {
+        display: none;
+    }
+}
+
+.c-sub-nav__item {
+    width: 100%;
+    height: $size-header-menu-item-height;
+
+    background-color: color(lblue);
+
+    border-bottom: $size-mobile-menu-border-width solid color(white);
+}

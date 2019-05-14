@@ -1,0 +1,10 @@
+
+body {
+    &.is-header-open {
+        overflow: hidden;
+
+        @include media('>=desktop') {
+            overflow: auto;
+        }
+    }
+}

@@ -32,3 +32,7 @@ select textarea.pseudo-class-focus,
 select select.pseudo-class-focus {
   outline: none;
 }
+
+.c-header-nav-menu__item.pseudo-class-first-child > .c-link {
+  border-top: 2px solid #F3F5F9;
+}

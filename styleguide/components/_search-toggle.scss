@@ -7,7 +7,35 @@ Search toggle
 
     display: none;
 
+    cursor: pointer;
+
     @include media('>tablet') {
         display: flex;
+        align-items: center;
+        justify-content: center;
+
+        order: 5;
+
+        width: $size-search-width + offset(main) * 4.5;
+        height: 100%;
+
+        padding: 0 offset(main) * 2;
+        margin-right: - offset(main);
     }
 }
+
+.c-search-toggle__icon {
+    width: $size-search-width;
+    height: $size-search-width;
+}
+
+.c-search-toggle__icon .o-icon-wrapper {
+    width: $size-search-width;
+    height: $size-search-width;
+}
+
+.c-search-toggle__icon .o-icon-wrapper .o-icon {
+    width: $size-search-width;
+    height: $size-search-width;
+}
+

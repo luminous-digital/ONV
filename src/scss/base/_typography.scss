@@ -375,6 +375,10 @@
     line-height: font-size(small) * 1.28;
 }
 
+.t-menu--small {
+    font-size: font-size(smaller);
+}
+
 .t-menu-sub {
     margin: 0;
     padding: 0;
