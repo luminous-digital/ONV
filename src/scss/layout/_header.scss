@@ -285,4 +285,8 @@
     height: $size-header-height-m;
 
     z-index: $z-index-header;
+
+    @include media('>tablet') {
+        height: $size-header-height-d;
+    }
 }

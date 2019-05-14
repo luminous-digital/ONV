@@ -60,7 +60,8 @@ $offsets: (
     default: 35px,
     l: 20px,
     xl: 50px,
-    xxl: 100px
+    xxl: 100px,
+    xxxl: 150px
 );
 
 $fonts: (
@@ -84,6 +85,8 @@ $transition-slow: all .4s linear;
 $white-space: 1em;
 $form-control-height: 2rem;
 
+$size-default-border: 2px;
+
 $z-index-header: 100;
 
 $size-header-height-m: 60px;
@@ -92,6 +95,7 @@ $size-header-height-d: 80px;
 $size-footer-height: 60px;
 
 $size-header-menu-item-height: 60px;
+$size-header-sub-menu-width-d: 320px;
 
 $size-logo-width-m: 60px;
 $size-logo-width-d: 100px;
