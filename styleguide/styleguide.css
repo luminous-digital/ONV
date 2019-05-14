@@ -806,6 +806,9 @@ body.is-header-open {
   width: 100%;
   height: 60px;
   z-index: 100; }
+  @media (min-width: 1025px) {
+    .l-header {
+      height: 80px; } }
 
 /* ==========================================================================
    Inner
@@ -836,6 +839,9 @@ body.is-header-open {
    ========================================================================== */
 .l-section--bg-alt {
   background-color: #F3F5F9; }
+
+.l-section--gutter-xxl {
+  padding: 100px 0; }
 
 /* Components
    ========================================================================== */
