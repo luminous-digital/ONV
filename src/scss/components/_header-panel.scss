@@ -1,29 +1,55 @@
 /* ==========================================================================
 Header panel full
 ========================================================================== */
-// Header
+// Header panel
 //
-//  markup:
+// markup:
 // <div class="l-section">
-//     <div class="c-header-panel-wrapper">
-//         <div class="l-inner">
-//             <div class="c-header-panel">
+//     <div class="c-header-panel-wrapper" style="background-image: url('../static/img/img-header-panel-1.jpg');">
+//         <div class="l-inner l-inner--90">
+//             <div class="c-header-panel t-center">
 //                 <h1 class="c-header-panel__title t-h1">
 //                     Global outlook, local focus
 //                 </h1>
-//                 <p class="c-header-panel__desc t-body t-white">
+//                 <p class="c-header-panel__desc t-body t-body--big t-white">
 //                     We are a global producer and distributor of natural gas-based fertilizers and industrial chemicals with excellent diversification across products and geographies.
 //                 </p>
-//                 <span class="c-header-panel__arrow">
-//                 </span>
+//                 <a class="c-header-panel__arrow-container" href="#latest-news">
+//                     <span class="c-header-panel__arrow">
+//                     </span>
+//                 </a>
 //                 <ul class="c-header-panel-tabs">
-//                     <li class="c-header-panel-tab">
-//                         <p class="c-header-panel-tab__title">Share price <span class="t-bold">&euro;25.95</span></p>
-//                         <p class="c-header-panel-tab__subtitle">12:23 – 20 Aug 2018</p>
+//                     <li class="c-header-panel-tab t-center">
+//                         <a href="#" class="c-link">
+//                             <div class="c-header-panel-tab__content">
+//                                 <p class="c-header-panel-tab__title t-body t-body--alt">Share price <span class="t-bold">&euro;25.95</span></p>
+//                                 <p class="c-header-panel-tab__subtitle t-smaller t-blue">12:23 – 20 Aug 2018</p>
+//                             </div>
+//                             <div class="c-header-panel-tab__hover">
+//                                 <p class="c-header-panel-tab__hover-text t-body t-body--alt t-white">
+//                                     View listing information
+//                                 </p>
+//                                 <span class="c-header-panel-tab__hover-icon">
+//                                     <img src="./static/img/icon-arrow.svg" alt="View listing information" />
+//                                 </span>
+//                             </div>
+//                         </a>
 //                     </li>
-//                     <li class="c-header-panel-tab">
-//                         <p class="c-header-panel-tab__title"><span class="t-bold">OCI</span> At a Glance</p>
-//                         <p class="c-header-panel-tab__subtitle">PDF 5.6 MB</p>
+//                     <li class="c-header-panel-tab c-header-panel-tab--alt t-center">
+//                         <a href="#" class="c-link">
+//                             <div class="c-header-panel-tab__content">
+//                                 <p class="c-header-panel-tab__title t-body t-body--alt"><span class="t-bold">OCI</span> At a Glance</p>
+//                                 <p class="c-header-panel-tab__subtitle t-smaller t-blue">PDF 5.6 MB</p>
+//                             </div>
+//                             <div class="c-header-panel-tab__hover">
+//                                 <p class="c-header-panel-tab__hover-text t-body t-body--alt t-white">
+//                                     Download
+//                                 </p>
+//                                 <span class="c-header-panel-tab__hover-icon">
+//                                     <img src="./static/img/icon-download.svg" alt="View listing information" />
+//                                 </span>
+//                             </div>
+//                         </a>
 //                     </li>
 //                 </ul>
 //             </div>
@@ -31,8 +57,40 @@ Header panel full
 //     </div>
 // </div>
 //
-// Styleguide 3.1
+// Styleguide 3
 
 .c-header-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
+    padding-top: offset(main) * 8.5;
+}
+
+.c-header-panel__title {
+}
+
+.c-header-panel__desc {
+    padding-bottom: offset(main) * 4.5;
+    margin-bottom: 0;
+}
+
+.c-header-panel__arrow-container {
+    display: block;
+    padding: offset(main);
+}
+
+.c-header-panel__arrow {
+    display: block;
+
+    width: $size-header-panel-arrow-width;
+    height: $size-header-panel-arrow-width;
+
+    border: {
+        bottom: $size-default-border solid color(accent);
+        right: $size-default-border solid color(accent);
+    }
+
+    transform: rotate(45deg);
 }

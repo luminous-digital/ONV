@@ -36,3 +36,24 @@ select select.pseudo-class-focus {
 .c-header-nav-menu__item.pseudo-class-first-child > .c-link {
   border-top: 2px solid #F3F5F9;
 }
+
+.c-header-panel-tab.pseudo-class-hover {
+  background-color: #F79727;
+}
+
+.c-header-panel-tab.pseudo-class-hover:before,
+.c-header-panel-tab.pseudo-class-hover:after {
+  background-color: #F79727;
+}
+
+.c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__title {
+  color: #fff;
+}
+
+.c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__subtitle {
+  color: #fff;
+}
+
+.c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__hover {
+  opacity: 1;
+}

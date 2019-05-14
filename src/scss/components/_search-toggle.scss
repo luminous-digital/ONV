@@ -9,7 +9,7 @@ Search toggle
 
     cursor: pointer;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         display: flex;
         align-items: center;
         justify-content: center;

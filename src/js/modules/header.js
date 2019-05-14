@@ -50,7 +50,6 @@ const Header = {
         const subNav = item.querySelector('.c-sub-nav')
         subNav.style.top = itemPosY
         subNav.style.left = itemPosX
-
         item.addEventListener('mouseenter', e => {
           e.stopPropagation()
           subNav.classList.add('is-active')
