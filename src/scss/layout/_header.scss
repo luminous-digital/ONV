@@ -286,7 +286,7 @@
 
     z-index: $z-index-header;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         height: $size-header-height-d;
     }
 }

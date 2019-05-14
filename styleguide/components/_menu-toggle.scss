@@ -15,7 +15,7 @@ Menu toggle
 
     cursor: pointer;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         display: none;
     }
 }

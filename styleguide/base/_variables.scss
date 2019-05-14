@@ -41,6 +41,7 @@ $sizes: (
 $font-sizes: (
     body: 18px,
     body-m: 16px,
+    body--big: 20px,
     small: 14px,
     small-m: 14px,
     smaller: 12px,
@@ -70,6 +71,7 @@ $fonts: (
 
 $font-weight-black: 900;
 $font-weight-bold: 700;
+$font-weight-regular: 400;
 $font-weight-light: 200;
 
 $defaults: (
@@ -86,6 +88,10 @@ $white-space: 1em;
 $form-control-height: 2rem;
 
 $size-default-border: 2px;
+$size-big-border: 3px;
+
+/* Header
+=========================== */
 
 $z-index-header: 100;
 
@@ -115,3 +121,15 @@ $size-social-icon-width: 27px;
 
 $size-search-container-height: 80px;
 $size-search-form-height: 40px;
+
+/* Header panel (hero)
+=========================== */
+
+$size-header-panel-height-m: 490px;
+$size-header-panel-height-t: 605px;
+
+$size-header-panel-arrow-width: 38px;
+
+$size-header-panel-tab-width: 235px;
+$size-header-panel-tab-height: 60px;
+

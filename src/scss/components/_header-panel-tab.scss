@@ -1,0 +1,175 @@
+/* ==========================================================================
+Header panel tab
+========================================================================== */
+// Header panel tab
+//
+// markup:
+// <li class="c-header-panel-tab t-center">
+//     <a href="#" class="c-link">
+//         <div class="c-header-panel-tab__content">
+//             <p class="c-header-panel-tab__title t-body t-body--alt">Share price <span class="t-bold">&euro;25.95</span></p>
+//             <p class="c-header-panel-tab__subtitle t-smaller t-blue">12:23 – 20 Aug 2018</p>
+//         </div>
+//         <div class="c-header-panel-tab__hover">
+//             <p class="c-header-panel-tab__hover-text t-body t-body--alt t-white">
+//                 View listing information
+//             </p>
+//             <span class="c-header-panel-tab__hover-icon">
+//                 <img src="./static/img/icon-arrow.svg" alt="View listing information" />
+//             </span>
+//         </div>
+//     </a>
+// </li>
+//
+// Styleguide 3.1
+
+.c-header-panel-tab {
+    list-style: none;
+
+    width: $size-header-panel-tab-width;
+    height: $size-header-panel-tab-height;
+
+    margin: 0 auto;
+
+    background-color: color(lblue);
+
+    position: relative;
+
+    @include media('>=tablet') {
+        margin: 0;
+    }
+}
+
+.c-header-panel-tab:nth-child(2) {
+    @include media('>=tablet') {
+        margin-left: offset(main) * 3;
+    }
+}
+
+.c-header-panel-tab:hover {
+    background-color: color(accent);
+}
+
+.c-header-panel-tab:before,
+.c-header-panel-tab:after {
+    content: '';
+    display: block;
+
+    width: offset(main) * 2;
+    height: $size-header-panel-tab-height;
+
+    position: absolute;
+    top: 0;
+
+    background-color: color(lblue);
+
+    transform: skewX(-12deg);
+}
+
+.c-header-panel-tab:hover:before,
+.c-header-panel-tab:hover:after {
+    background-color: color(accent);
+}
+
+.c-header-panel-tab:before {
+    left: - offset(main);
+}
+
+.c-header-panel-tab:after {
+    right: - offset(main);
+}
+
+.c-header-panel-tab:after {
+    border-right: $size-big-border solid color(accent);
+}
+
+.c-header-panel-tab:nth-child(2) {
+    display: none;
+
+    @include media('>=tablet') {
+        display: list-item;
+    }
+}
+
+.c-header-panel-tab > .c-link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-header-panel-tab__title {
+    margin: 0;
+}
+
+.c-header-panel-tab:hover .c-header-panel-tab__title {
+    color: color(white);
+}
+
+.c-header-panel-tab__subtitle {
+    margin: 0;
+}
+
+.c-header-panel-tab:hover .c-header-panel-tab__subtitle {
+    color: color(white);
+}
+
+.c-header-panel-tab__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 90%;
+    height: $size-header-panel-tab-height;
+
+    background-color: color(accent);
+
+    opacity: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-header-panel-tab:hover .c-header-panel-tab__hover {
+    opacity: 1;
+}
+
+.c-header-panel-tab__hover-text {
+    padding: 0;
+    margin: 0;
+    max-width: 50%;
+}
+
+// Header panel tab alternative
+//
+// markup:
+// <li class="c-header-panel-tab c-header-panel-tab--alt t-center">
+//     <a href="#" class="c-link">
+//         <div class="c-header-panel-tab__content">
+//             <p class="c-header-panel-tab__title t-body t-body--alt"><span class="t-bold">OCI</span> At a Glance</p>
+//             <p class="c-header-panel-tab__subtitle t-smaller t-blue">PDF 5.6 MB</p>
+//         </div>
+//         <div class="c-header-panel-tab__hover">
+//             <p class="c-header-panel-tab__hover-text t-body t-body--alt t-white">
+//                 Download
+//             </p>
+//             <span class="c-header-panel-tab__hover-icon">
+//                 <img src="./static/img/icon-download.svg" alt="View listing information" />
+//             </span>
+//         </div>
+//     </a>
+// </li>
+//
+// Styleguide 3.2
+
+.c-header-panel-tab--alt .c-header-panel-tab__hover {
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+}

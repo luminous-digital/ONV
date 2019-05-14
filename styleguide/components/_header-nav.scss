@@ -19,7 +19,7 @@ Header nav
 
     z-index: $z-index-header;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         flex-direction: row;
 
         order: 4;
@@ -36,7 +36,7 @@ Header nav
     width: 100%;
     max-height: 200vh;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         order: 4;
         width: auto;
     }

@@ -14,7 +14,7 @@ Sub nav
 
     transition: $transition-slow;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         position: fixed;
 
         transition: none;
@@ -28,7 +28,7 @@ Sub nav
     display: flex;
     max-height: 150vh;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         min-height: 100px;
     }
 }
@@ -41,7 +41,7 @@ Sub nav
 
     border-bottom: $size-mobile-menu-border-width solid color(white);
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         width: 100%;
         background-color: color(white);
         padding: 0 offset(default);
@@ -49,7 +49,7 @@ Sub nav
 }
 
 .c-sub-nav.is-active {
-    @include media('>tablet') {
+    @include media('>=tablet') {
         width: $size-header-sub-menu-width-d;
         min-height: 100%;
     }
@@ -57,14 +57,14 @@ Sub nav
 
 .c-sub-nav__item > .c-link > .c-label {
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         position: relative;
     }
 }
 
 .c-sub-nav__item > .c-link > .c-label:after {
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         content: '';
         display: block;
 
@@ -82,7 +82,7 @@ Sub nav
 
 .c-sub-nav__item:hover > .c-link > .c-label:after {
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         width: 100%;
     }
 }

@@ -1,0 +1,22 @@
+/* ==========================================================================
+Header panel tabs
+========================================================================== */
+// Header panel tabs
+//
+// markup:
+// <ul class="c-header-panel-tabs">
+//     <li class="c-header-panel-tab">
+//         <p class="c-header-panel-tab__title">Share price <span class="t-bold">&euro;25.95</span></p>
+//         <p class="c-header-panel-tab__subtitle">12:23 – 20 Aug 2018</p>
+//     </li>
+//     <li class="c-header-panel-tab">
+//         <p class="c-header-panel-tab__title"><span class="t-bold">OCI</span> At a Glance</p>
+//         <p class="c-header-panel-tab__subtitle">PDF 5.6 MB</p>
+//    </li>
+// </ul>
+//
+// Styleguide 3.1
+
+.c-header-panel-tabs {
+    width: 100%;
+}
