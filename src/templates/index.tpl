@@ -4,7 +4,7 @@ Homepage
 {% endblock %}
 {% block content %}
 
-<div class="l-section l-section--bg-alt l-section--gutter-xxl">
+<div class="l-section l-section--bg-alt u-gutter--xxl">
     <div class="l-inner">
         <h1 class="t-h1">
             h1
