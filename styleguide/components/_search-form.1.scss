@@ -1,0 +1,51 @@
+/* ==========================================================================
+Search form
+========================================================================== */
+.c-search-form {
+    width: 100%;
+    height: $size-search-form-height;
+
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+}
+
+.c-search-form__input {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 10px;
+
+    letter-spacing: 0.5px;
+    border: 0;
+    outline: none;
+}
+
+.c-search-form__submit {
+    width: $size-search-form-height;
+    height: $size-search-form-height;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+
+    padding: offset(s);
+
+    border: none;
+    background: none;
+}
+
+.is-search-active .c-search-form {
+    width: 95%;
+
+    @include media('>=desktop') {
+        width: 100%;
+    }
+}

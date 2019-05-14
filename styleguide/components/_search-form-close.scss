@@ -1,0 +1,22 @@
+/* ==========================================================================
+Search form close
+========================================================================== */
+
+.c-search-form-close {
+    display: none;
+}
+
+.is-search-active .c-search-form-close {
+    display: block;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: offset(main) * 2.5;
+    right: offset(main) * 2;
+
+    width: offset(main) * 3;
+    height: offset(main) * 3;
+
+    padding: offset(main) * 0.65;
+}

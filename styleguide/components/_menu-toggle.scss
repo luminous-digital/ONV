@@ -1,0 +1,66 @@
+/* ==========================================================================
+Menu toggle
+========================================================================== */
+.c-menu-toggle {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    width: $size-hamburger-width + (offset(main) * 5);
+    height: auto;
+
+    padding: 0 offset(main) * 2.5;
+
+    cursor: pointer;
+
+    @include media('>tablet') {
+        display: none;
+    }
+}
+
+.c-menu-toggle__line {
+    position: relative;
+
+    width: 100%;
+    height: $size-hamburger-line-height;
+
+    background-color: color(main);
+
+    transition: $transition-slow;
+
+    &:before,
+    &:after {
+        position: absolute;
+
+        content: '';
+        display: block;
+
+        width: 100%;
+        height: $size-hamburger-line-height;
+
+        background-color: color(main);
+
+        transition: $transition-default;
+    }
+    &:before {
+        top: - offset(main);
+    }
+    &:after {
+        top: offset(main);
+    }
+}
+
+.c-header.is-active .c-menu-toggle__line {
+    transform: rotate(45deg);
+
+    &:before {
+        opacity: 0;
+    }
+    &:after {
+        transform: rotate(-90deg);
+        top: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,24 @@
+/* ==========================================================================
+Social icon
+========================================================================== */
+// Social icon
+//
+//  markup:
+// <figure class="c-social-icon">
+//     <img src="../assets/img/linkedin.png" alt="OCI LinkedIn" class="c-img" />
+// </figure>
+//
+// Styleguide 0.1
+
+.c-social-icon {
+    padding: 0;
+    margin: 0;
+
+    width: $size-social-icon-width;
+    height: $size-social-icon-width;
+}
+
+.c-social-icon .c-img {
+    width: $size-social-icon-width;
+    height: $size-social-icon-width;
+}

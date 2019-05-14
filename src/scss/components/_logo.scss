@@ -4,4 +4,21 @@
 .c-logo {
     padding: 0;
     margin: 0;
+
+    width: $size-logo-width-m;
+
+    @include media('>tablet') {
+        width: $size-logo-width-d;
+    }
+}
+
+.c-logo--narrow {
+    width: $size-logo-narrow;
+}
+
+.c-logo .c-img {
+    object-fit: cover;
+
+    max-width: 100%;
+    height: auto;
 }
