@@ -74,7 +74,7 @@
     font-size: font-size(h1-m);
     line-height: font-size(h1-m) * 1.2;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(h1);
         line-height: font-size(h1) * 1.18;
     }
@@ -92,7 +92,7 @@
     font-size: font-size(h2-m);
     line-height: font-size(h2-m) * 1.13;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(h2);
         line-height: font-size(h2) * 1.22;
     }
@@ -110,7 +110,7 @@
     font-size: font-size(body-m);
     line-height: font-size(body-m) * 1.5;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(body);
         line-height: font-size(body) * 1.9;
     }
@@ -129,7 +129,7 @@
     font-size: font-size(body-m);
     line-height: font-size(body-m) * 1.5;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(body);
         line-height: font-size(body) * 1.9;
     }
@@ -147,7 +147,7 @@
     font-size: font-size(body-m);
     line-height: font-size(body-m) * 1.5;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(body);
         line-height: font-size(body) * 1.9;
     }
@@ -171,7 +171,7 @@
         font-weight: $font-weight-bold;
     }
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(body);
         line-height: font-size(body) * 1.9;
     }
@@ -181,7 +181,7 @@
         line-height: font-size(body--big) * 1.4;
     }
     &--alt {
-        @include media('>=tablet') {
+        @include media('>mobile') {
             font-size: font-size(body-m);
             line-height: font-size(body-m) * 1.5;
         }
@@ -201,7 +201,7 @@
     font-size: font-size(small-m);
     line-height: font-size(small-m) * 1.4;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(small);
         line-height: font-size(small) * 1.4;
     }
@@ -234,7 +234,7 @@
     font-size: font-size(small-m);
     line-height: font-size(small-m) * 1.11;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(small);
         line-height: font-size(small) * 1.11;
     }
@@ -267,7 +267,7 @@
     font-size: font-size(standfirst-m);
     line-height: font-size(standfirst-m) * 1.55;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         font-size: font-size(standfirst);
         line-height: font-size(standfirst) * 1.45;
     }
@@ -347,7 +347,7 @@
             transition: $transition-default;
         }
 
-        @include media('>=tablet') {
+        @include media('>mobile') {
             font-size: font-size(body);
             line-height: font-size(body) * 1.9;
         }

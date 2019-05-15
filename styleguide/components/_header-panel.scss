@@ -6,7 +6,7 @@ Header panel full
 // markup:
 // <div class="l-section">
 //     <div class="c-header-panel-wrapper" style="background-image: url('../static/img/img-header-panel-1.jpg');">
-//         <div class="l-inner l-inner--90">
+//         <div class="l-inner l-inner--90 l-inner--desktop-70">
 //             <div class="c-header-panel t-center">
 //                 <h1 class="c-header-panel__title t-h1">
 //                     Global outlook, local focus
@@ -65,7 +65,17 @@ Header panel full
     align-items: center;
     justify-content: flex-start;
 
-    padding-top: offset(main) * 8.5;
+    padding-top: offset(main) * 3;
+
+    @include media ('>=mobile-small') {
+        padding-top: offset(main) * 8.5;
+    }
+    @include media('>=mobile') {
+        padding-top: offset(main) * 18;
+    }
+    @include media('>=tablet') {
+        padding-top: offset(main) * 18;
+    }
 }
 
 .c-header-panel__title {
@@ -74,6 +84,14 @@ Header panel full
 .c-header-panel__desc {
     padding-bottom: offset(main) * 4.5;
     margin-bottom: 0;
+
+    @include media('>mobile') {
+        padding-bottom: offset(main) * 8.5;
+        padding-top: offset(main);
+    }
+    // @include media('>tablet') {
+    //     padding-bottom: offset(main) * 8.5;
+    // }
 }
 
 .c-header-panel__arrow-container {

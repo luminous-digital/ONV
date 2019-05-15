@@ -35,13 +35,16 @@ Header panel tab
 
     position: relative;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         margin: 0;
+
+        width: $size-header-panel-tab-width-t;
+        height: $size-header-panel-tab-height-t;
     }
 }
 
 .c-header-panel-tab:nth-child(2) {
-    @include media('>=tablet') {
+    @include media('>mobile') {
         margin-left: offset(main) * 3;
     }
 }
@@ -86,7 +89,7 @@ Header panel tab
 .c-header-panel-tab:nth-child(2) {
     display: none;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         display: list-item;
     }
 }

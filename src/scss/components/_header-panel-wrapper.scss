@@ -3,9 +3,12 @@ Header panel wrapper
 ========================================================================== */
 .c-header-panel-wrapper {
     width: 100%;
-    height: $size-header-panel-height-m;
 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+
+    margin-bottom: offset(main) * 3;
+
+    position: relative;
 }

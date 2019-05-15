@@ -4,7 +4,8 @@
 $breakpoints: (
     'desktop': size(breakpoint, desktop),
     'tablet': size(breakpoint, tablet),
-    'mobile': size(breakpoint, mobile)
+    'mobile': size(breakpoint, mobile),
+    'mobile-small': size(breakpoint, mobile-small)
 );
 
 // media expressions and how they are aliased in include-media
