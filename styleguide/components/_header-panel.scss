@@ -73,7 +73,7 @@ Header panel full
     @include media('>=mobile') {
         padding-top: offset(main) * 18;
     }
-    @include media('>=tablet') {
+    @include media('>tablet') {
         padding-top: offset(main) * 18;
     }
 }
@@ -89,14 +89,17 @@ Header panel full
         padding-bottom: offset(main) * 8.5;
         padding-top: offset(main);
     }
-    // @include media('>tablet') {
-    //     padding-bottom: offset(main) * 8.5;
-    // }
 }
 
 .c-header-panel__arrow-container {
     display: block;
     padding: offset(main);
+
+    padding-bottom: offset(main) * 8;
+
+    @include media('>mobile') {
+        padding-bottom: offset(main) * 10.5;
+    }
 }
 
 .c-header-panel__arrow {

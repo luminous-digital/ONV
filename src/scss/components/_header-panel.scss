@@ -73,7 +73,7 @@ Header panel full
     @include media('>=mobile') {
         padding-top: offset(main) * 18;
     }
-    @include media('>=tablet') {
+    @include media('>tablet') {
         padding-top: offset(main) * 18;
     }
 }

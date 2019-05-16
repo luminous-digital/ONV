@@ -19,7 +19,7 @@ Header nav
 
     z-index: $z-index-header;
 
-    @include media('>=tablet') {
+    @include media('>tablet') {
         flex-direction: row;
 
         order: 4;
@@ -36,7 +36,7 @@ Header nav
     width: 100%;
     max-height: 200vh;
 
-    @include media('>=tablet') {
+    @include media('>tablet') {
         order: 4;
         width: auto;
     }
@@ -56,10 +56,13 @@ Header nav
 }
 
 .is-search-active .c-header-nav__search {
-    bottom: auto;
-    top: 0;
 
-    height: 100vh;
+    @include media('>tablet') {
+        bottom: auto;
+        top: 0;
 
-    background-color: rgba(color(main), .9);
+        height: 100vh;
+
+        background-color: rgba(color(main), .9);
+    }
 }
