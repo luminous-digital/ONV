@@ -21,6 +21,8 @@ Sub nav
 
         width: $size-header-sub-menu-width-d;
         min-height: 0;
+
+        background-color: color(white);
     }
 }
 
@@ -48,10 +50,25 @@ Sub nav
     }
 }
 
+.c-sub-nav__item:first-of-type {
+
+    @include media('>mobile') {
+        margin-top: offset(main);
+    }
+}
+
+.c-sub-nav__item:last-of-type {
+
+    @include media('>mobile') {
+        margin-bottom: offset(main);
+    }
+}
+
 .c-sub-nav.is-active {
     @include media('>mobile') {
         width: $size-header-sub-menu-width-d;
-        min-height: 100%;
+        min-height: 400px;
+        height: 100%;
     }
 }
 

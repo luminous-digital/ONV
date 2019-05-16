@@ -77,13 +77,6 @@
                                 <li class="c-sub-nav__item">
                                     <a href="#" class="c-link t-menu-sub">
                                         <span class="c-label">
-                                            OCI Nitrogen
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
                                             Egyptian Fertilizers Company
                                         </span>
                                     </a>
@@ -149,13 +142,6 @@
                                 <li class="c-sub-nav__item">
                                     <a href="#" class="c-link t-menu-sub">
                                         <span class="c-label">
-                                            OCI Nitrogen
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
                                             Egyptian Fertilizers Company
                                         </span>
                                     </a>
@@ -215,13 +201,6 @@
                                     <a href="#" class="c-link t-menu-sub">
                                         <span class="c-label">
                                             Sorfert Algerie
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            OCI Nitrogen
                                         </span>
                                     </a>
                                 </li>
