@@ -32,9 +32,11 @@ $sizes: (
         mobile: 320px // 0 - 767
     ),
     breakpoint: (
-        desktop: 1400px, // 1025 up
-        tablet: 1024px, // 768 up
-        mobile: 767px // 0 up
+        desktop: 1400px, // up
+        desktop-small: 1200px, // up
+        tablet: 1024px, // up
+        mobile: 768px, // up
+        mobile-small: 375px // up
     )
 );
 
@@ -125,11 +127,9 @@ $size-search-form-height: 40px;
 /* Header panel (hero)
 =========================== */
 
-$size-header-panel-height-m: 490px;
-$size-header-panel-height-t: 605px;
-
 $size-header-panel-arrow-width: 38px;
 
 $size-header-panel-tab-width: 235px;
 $size-header-panel-tab-height: 60px;
-
+$size-header-panel-tab-width-t: 235px;
+$size-header-panel-tab-height-t: 60px;

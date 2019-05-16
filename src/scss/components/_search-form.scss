@@ -43,9 +43,9 @@ Search form
 }
 
 .is-search-active .c-search-form {
-    width: 96.5%;
+    width: 95%;
 
-    @include media('>=desktop') {
+    @include media('>=desktop-small') {
         width: 100%;
     }
 }

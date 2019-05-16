@@ -7,7 +7,7 @@
 
     width: $size-logo-width-m;
 
-    @include media('>=tablet') {
+    @include media('>mobile') {
         width: $size-logo-width-d;
     }
 }

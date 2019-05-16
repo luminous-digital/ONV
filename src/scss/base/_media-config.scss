@@ -3,8 +3,10 @@
 // breakpoints values array - used to generate custom attributes with include-media rwd and for include-media itself
 $breakpoints: (
     'desktop': size(breakpoint, desktop),
+    'desktop-small': size(breakpoint, desktop-small),
     'tablet': size(breakpoint, tablet),
-    'mobile': size(breakpoint, mobile)
+    'mobile': size(breakpoint, mobile),
+    'mobile-small': size(breakpoint, mobile-small)
 );
 
 // media expressions and how they are aliased in include-media
