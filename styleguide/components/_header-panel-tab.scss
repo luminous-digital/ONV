@@ -35,7 +35,7 @@ Header panel tab
 
     position: relative;
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         margin: 0;
 
         width: $size-header-panel-tab-width-t;
@@ -44,7 +44,7 @@ Header panel tab
 }
 
 .c-header-panel-tab:nth-child(2) {
-    @include media('>mobile') {
+    @include media('>=mobile') {
         margin-left: offset(main) * 3;
     }
 }
@@ -80,16 +80,13 @@ Header panel tab
 
 .c-header-panel-tab:after {
     right: - offset(main);
-}
-
-.c-header-panel-tab:after {
     border-right: $size-big-border solid color(accent);
 }
 
 .c-header-panel-tab:nth-child(2) {
     display: none;
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         display: list-item;
     }
 }

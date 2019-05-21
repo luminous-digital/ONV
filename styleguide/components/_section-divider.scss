@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Section divider
+   ========================================================================== */
+// Section divider
+//
+// markup:
+// <div class="c-section-divider">
+//     <div class="l-inner">
+//         <h4 class="c-section-divider__title t-sec-divider">
+//             Latest news
+//         </h4>
+//     </div>
+// </div>
+//
+// Styleguide 5
+
+.c-section-divider {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.c-section-divider__title {
+    padding-bottom: offset(main) * 3;
+}

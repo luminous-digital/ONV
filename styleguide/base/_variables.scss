@@ -32,7 +32,7 @@ $sizes: (
         mobile: 320px // 0 - 767
     ),
     breakpoint: (
-        desktop: 1400px, // up
+        desktop: 1440px, // up
         desktop-small: 1200px, // up
         tablet: 1024px, // up
         mobile: 768px, // up
@@ -124,12 +124,32 @@ $size-social-icon-width: 27px;
 $size-search-container-height: 80px;
 $size-search-form-height: 40px;
 
+$size-btn-medium-width: 230px;
+
 /* Header panel (hero)
 =========================== */
-
 $size-header-panel-arrow-width: 38px;
+$size-header-panel-arrow-width-small: 24px;
 
 $size-header-panel-tab-width: 235px;
 $size-header-panel-tab-height: 60px;
 $size-header-panel-tab-width-t: 235px;
 $size-header-panel-tab-height-t: 60px;
+
+/* Latest news component
+=========================== */
+$size-latest-news-card: 230px;
+$size-latest-news-arrow-z-index: 10;
+
+/* Feature panel
+=========================== */
+$size-feature-panel-decor-height: 250px;
+
+/* Quick links component
+=========================== */
+$size-quick-links-card-width: 230px;
+$size-quick-links-card-height: 400px;
+$size-quick-links-card-height-t: 420px;
+$size-quick-links-arrow-z-index: 10;
+$size-quick-links-img-height: 170px;
+$size-quick-links-img-height-t: 230px;

@@ -21,7 +21,7 @@
 
     padding: 0 offset(s);
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         padding: 0 offset(main);
     }
 }
@@ -43,7 +43,7 @@
 
     padding: 0 offset(s);
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         padding: 0 offset(main);
     }
 }
@@ -59,7 +59,7 @@
 
     padding: 0 offset(s);
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         padding: 0 offset(main);
     }
 }

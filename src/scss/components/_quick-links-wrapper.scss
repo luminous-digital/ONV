@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Quick links wrapper
+   ========================================================================== */
+
+// Quick links
+//
+// markup:
+
+//
+// Styleguide 8
+
+.c-quick-links-wrapper {
+    width: 100%;
+
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.c-quick-links-wrapper__slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    @include media('>=mobile') {
+        padding: 0 offset(main) * 3.5;
+    }
+    @include media('>=desktop-small') {
+        padding: 0;
+    }
+}
+
+.c-quick-links-wrapper__next,
+.c-quick-links-wrapper__prev {
+    position: absolute;
+
+    @include arrow-small;
+    cursor: pointer;
+
+    z-index: $size-quick-links-arrow-z-index;
+
+    outline: none;
+
+    top: offset(main) * 11;
+
+    @include media('>=mobile') {
+        top: offset(main) * 14;
+    }
+    @include media('>=desktop-small') {
+        display: none;
+    }
+}
+
+.c-quick-links-wrapper__prev {
+    transform: rotate(135deg);
+
+    left: offset(main) * 0.5;
+}
+
+.c-quick-links-wrapper__next {
+    transform: rotate(-45deg);
+
+    right: offset(main) * 0.5;
+
+}

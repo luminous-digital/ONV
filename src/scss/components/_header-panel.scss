@@ -78,14 +78,11 @@ Header panel full
     }
 }
 
-.c-header-panel__title {
-}
-
 .c-header-panel__desc {
     padding-bottom: offset(main) * 4.5;
     margin-bottom: 0;
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         padding-bottom: offset(main) * 8.5;
         padding-top: offset(main);
     }
@@ -97,21 +94,12 @@ Header panel full
 
     padding-bottom: offset(main) * 8;
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         padding-bottom: offset(main) * 10.5;
     }
 }
 
 .c-header-panel__arrow {
-    display: block;
-
-    width: $size-header-panel-arrow-width;
-    height: $size-header-panel-arrow-width;
-
-    border: {
-        bottom: $size-default-border solid color(accent);
-        right: $size-default-border solid color(accent);
-    }
-
+    @include arrow;
     transform: rotate(45deg);
 }

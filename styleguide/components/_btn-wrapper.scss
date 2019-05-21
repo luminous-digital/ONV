@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Btn wrapper
+   ========================================================================== */
+
+// Btn wrapper
+//
+// markup:
+// <div class="c-btn-wrapper">
+//     <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+//         All news
+//     </a>
+// </div>
+//
+// Styleguide 6
+
+.c-btn-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-btn-wrapper--left {
+    justify-content: flex-start;
+}
+
+.c-latest-news-wrapper .c-btn {
+    width: $size-latest-news-card;
+}

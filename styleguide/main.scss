@@ -5,8 +5,9 @@
 /* External
    ========================================================================== */
 // Normalize
-@import "vendor/_normalize.scss";
-@import "../../node_modules/include-media/dist/_include-media";  // Absolute paths to node_modules/ cause build errors on windows.
+@import "vendor/normalize";
+@import "../../node_modules/include-media/dist/_include-media";
+@import "vendor/swiper";
 
 /* Base
    ========================================================================== */
@@ -28,6 +29,11 @@
 
 /* Components
    ========================================================================== */
+@import "components/btn";
+@import "components/btn-wrapper";
+@import "components/feature-panel";
+@import "components/feature-panel-decor";
+@import "components/feature-panel-wrapper";
 @import "components/footer";
 @import "components/forms";
 @import "components/header";
@@ -37,8 +43,15 @@
 @import "components/header-panel-tab";
 @import "components/header-panel-tabs";
 @import "components/header-panel-wrapper";
+@import "components/latest-news";
+@import "components/latest-news-card";
+@import "components/latest-news-wrapper";
 @import "components/logo";
 @import "components/menu-toggle";
+@import "components/quick-links";
+@import "components/quick-links-card";
+@import "components/quick-links-wrapper";
+@import "components/section-divider";
 @import "components/search-form";
 @import "components/search-form-close";
 @import "components/search-toggle";
