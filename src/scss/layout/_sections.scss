@@ -2,8 +2,15 @@
    Sections
    ========================================================================== */
 .l-section {
+    padding-bottom: offset(main) * 6;
 
     &--bg-alt {
         background-color: color(lblue);
+    }
+    &--no-overflow {
+        overflow: hidden;
+    }
+    &--no-offset {
+        padding-bottom: 0;
     }
 }

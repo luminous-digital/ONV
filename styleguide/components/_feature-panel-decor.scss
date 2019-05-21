@@ -1,0 +1,49 @@
+/* ==========================================================================
+Feature panel decor
+========================================================================== */
+
+.c-feature-panel-decor {
+    position: absolute;
+    top: - ($size-feature-panel-decor-height - offset(main) * 6);
+    right: - offset(main) * 5;
+
+    width: 100vw;
+
+    height: $size-feature-panel-decor-height;
+
+    transform: skew(-10deg);
+
+    overflow: hidden;
+
+    @include media('>=mobile') {
+        top: - (offset(main) * 4);
+        right: - offset(main) * 5.5;
+
+        width: 50vw;
+        height: calc(100% + #{offset(main)} * 8);
+    }
+}
+
+.c-feature-panel-decor img {
+    transform: skew(10deg);
+
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: - offset(main) * 2.5;
+
+    object-fit: cover;
+
+    @include media('>=mobile') {
+        height: 100%;
+        width: auto;
+
+        left: - offset(main) * 5.8;
+    }
+    @include media('>=desktop-small') {
+        width: 100%;
+        height: auto;
+    }
+}

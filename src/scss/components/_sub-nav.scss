@@ -14,7 +14,7 @@ Sub nav
 
     transition: $transition-slow;
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         position: fixed;
 
         transition: none;
@@ -30,7 +30,7 @@ Sub nav
     display: flex;
     max-height: 150vh;
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         min-height: 100px;
     }
 }
@@ -43,7 +43,7 @@ Sub nav
 
     border-bottom: $size-mobile-menu-border-width solid color(white);
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         width: 100%;
         background-color: color(white);
         padding: 0 offset(default);
@@ -52,20 +52,20 @@ Sub nav
 
 .c-sub-nav__item:first-of-type {
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         margin-top: offset(main);
     }
 }
 
 .c-sub-nav__item:last-of-type {
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         margin-bottom: offset(main);
     }
 }
 
 .c-sub-nav.is-active {
-    @include media('>mobile') {
+    @include media('>=mobile') {
         width: $size-header-sub-menu-width-d;
         min-height: 400px;
         height: 100%;
@@ -74,14 +74,14 @@ Sub nav
 
 .c-sub-nav__item > .c-link > .c-label {
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         position: relative;
     }
 }
 
 .c-sub-nav__item > .c-link > .c-label:after {
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         content: '';
         display: block;
 
@@ -99,7 +99,7 @@ Sub nav
 
 .c-sub-nav__item:hover > .c-link > .c-label:after {
 
-    @include media('>mobile') {
+    @include media('>=mobile') {
         width: 100%;
     }
 }
