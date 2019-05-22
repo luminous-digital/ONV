@@ -52,6 +52,8 @@ Header nav
     background-color: color(main);
 
     padding: offset(l) offset(l) * 1.5;
+
+    z-index: 110;
 }
 
 .is-header-open .c-header-nav__search {

@@ -4,7 +4,7 @@ Header panel full
 // Header panel
 //
 // markup:
-// <div class="l-section">
+// <div class="l-hero">
 //     <div class="c-header-panel-wrapper" style="background-image: url('../static/img/img-header-panel-1.jpg');">
 //         <div class="l-inner l-inner--90 l-inner--desktop-70">
 //             <div class="c-header-panel t-center">
@@ -14,10 +14,10 @@ Header panel full
 //                 <p class="c-header-panel__desc t-body t-body--big t-white">
 //                     We are a global producer and distributor of natural gas-based fertilizers and industrial chemicals with excellent diversification across products and geographies.
 //                 </p>
-//                 <a class="c-header-panel__arrow-container" href="#latest-news">
+//                 <div class="c-header-panel__arrow-container js-scroll-down">
 //                     <span class="c-header-panel__arrow">
 //                     </span>
-//                 </a>
+//                 </div>
 //                 <ul class="c-header-panel-tabs">
 //                     <li class="c-header-panel-tab t-center">
 //                         <a href="#" class="c-link">

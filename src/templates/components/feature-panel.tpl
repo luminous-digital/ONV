@@ -1,6 +1,6 @@
-{% macro render(compTitle, compContent, compBtnTitle, compBgSrc, isFirstSection) %}
+{% macro render(compTitle, compContent, compBtnTitle, compBgSrc) %}
 
-<div class="l-section l-section--no-overflow" {% if isFirstSection %}id="first-section"{% endif %}>
+<div class="l-section l-section--no-overflow">
     <div class="c-feature-panel-wrapper">
         <div class="c-feature-panel-decor">
             <img src="./static/img/{{ compBgSrc }}">

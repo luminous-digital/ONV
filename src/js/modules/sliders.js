@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import Swiper from 'swiper/dist/js/swiper'
 
 const Sliders = {
@@ -5,6 +6,7 @@ const Sliders = {
     this.latestNewsSlider()
     this.quickLinksSlider()
     this.ourStorySlider()
+    this.ourStorySliderBullets()
   },
   latestNewsSlider: function () {
     const sliderClass = '.js-slider-latest-news'
@@ -85,7 +87,6 @@ const Sliders = {
         }
       })
     }
-    this.ourStorySliderBullets()
   },
   ourStorySliderBullets: function () {
     const sliderClass = this.ourStorySliderConfig.sliderClass
@@ -97,15 +98,27 @@ const Sliders = {
       let elemString = ''
       Array.from(slides).forEach((slide, index) => {
         const date = slide.querySelector('.js-slider-date').innerHTML
-        let datePos
-        if (index === currentItem) {
-          datePos = 'current-slide'
-        } else if (index > currentItem) {
-          datePos = 'after-slide'
-        } else {
-          datePos = 'before-slide'
+        let currentElemPosition
+        switch (index) {
+          case currentItem:
+            currentElemPosition = 'current-slide is-active'
+            break
+          case currentItem + 1:
+            currentElemPosition = 'after-slide is-active'
+            break
+          case currentItem + 2:
+            currentElemPosition = 'after-after-slide is-active'
+            break
+          case currentItem - 1:
+            currentElemPosition = 'before-slide is-active'
+            break
+          case currentItem - 2:
+            currentElemPosition = 'before-before-slide is-active'
+            break
+          default:
+            currentElemPosition = ''
         }
-        elemString += `<div class="c-our-history-slider-date js-slider-date-elem ${datePos}" data-order="${index}">
+        elemString += `<div class="c-our-history-slider-date js-slider-date-elem ${currentElemPosition}" data-order="${index}">
             <h3 class="t-h3 js-slider-date">${date}</h3>
         </div>`
       })
@@ -115,27 +128,19 @@ const Sliders = {
   ourStorySliderBulletsCallback: function () {
     const currentIndex = this.activeIndex
     const items = this.$el.find('.js-slider-date-elem')
-
-    // eslint-disable-next-line
     const beforeBeforeSlide = $(items[currentIndex - 2])
-    // eslint-disable-next-line
     const beforeSlide = $(items[currentIndex - 1])
-    // eslint-disable-next-line
     const currentSlide = $(items[currentIndex])
-    // eslint-disable-next-line
     const afterSlide = $(items[currentIndex + 1])
-    // eslint-disable-next-line
     const afterAfterSlide = $(items[currentIndex + 2])
-
     items.each(function () {
-      // eslint-disable-next-line
-      $(this).removeClass('is-active').removeClass('before-before-slide').removeClass('before-slide').removeClass('current-slide').removeClass('after-slide').removeClass('after-after-slide')
+      $(this).removeClass('is-active').removeClass('before-before-slide before-slide current-slide after-slide after-after-slide')
     })
-    beforeBeforeSlide.addClass('before-before-slide').addClass('is-active')
-    beforeSlide.addClass('before-slide').addClass('is-active')
-    currentSlide.addClass('current-slide').addClass('is-active')
-    afterSlide.addClass('after-slide').addClass('is-active')
-    afterAfterSlide.addClass('after-after-slide').addClass('is-active')
+    beforeBeforeSlide.addClass('before-before-slide is-active')
+    beforeSlide.addClass('before-slide is-active')
+    currentSlide.addClass('current-slide is-active')
+    afterSlide.addClass('after-slide is-active')
+    afterAfterSlide.addClass('after-after-slide is-active')
   }
 }
 

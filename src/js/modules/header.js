@@ -1,7 +1,7 @@
 const Header = {
   init: function () {
     const windowWidth = window.innerWidth
-    if (windowWidth > 1024) {
+    if (windowWidth >= 768) {
       this.desktopHeader()
     } else {
       this.mobileHeader()
@@ -32,15 +32,19 @@ const Header = {
     const searchClose = document.querySelector('.js-close-search')
     const parents = header.querySelectorAll('.has-children')
     const body = document.querySelector('body')
-    if (header && searchToggle) {
-      searchToggle.addEventListener('click', e => {
-        body.classList.toggle('is-search-active')
-      })
+    const toggleSearch = e => {
+      e.stopPropagation()
+      body.classList.add('is-search-active')
     }
-    if (searchClose) {
-      searchClose.addEventListener('click', e => {
-        body.classList.remove('is-search-active')
-      })
+    const closeSearch = e => {
+      e.stopPropagation()
+      body.classList.remove('is-search-active')
+    }
+    if (header && searchToggle) {
+      searchToggle.addEventListener('click', toggleSearch)
+    }
+    if (header && searchClose) {
+      searchClose.addEventListener('click', closeSearch)
     }
     if (parents) {
       Array.from(parents).forEach(item => {
@@ -48,15 +52,18 @@ const Header = {
         const itemPosX = itemPos.left
         const itemPosY = itemPos.height
         const subNav = item.querySelector('.c-sub-nav')
-        subNav.style.top = itemPosY
-        subNav.style.left = itemPosX - 18
-        item.addEventListener('mouseenter', e => {
+        const toggleSubmenu = e => {
           e.stopPropagation()
           subNav.classList.add('is-active')
-        })
-        item.addEventListener('mouseleave', e => {
+        }
+        const closeSubmenu = e => {
           subNav.classList.remove('is-active')
-        })
+        }
+        subNav.style.top = itemPosY
+        subNav.style.left = itemPosX - 18
+        item.addEventListener('mouseenter', toggleSubmenu)
+        item.addEventListener('touchstart', toggleSubmenu)
+        item.addEventListener('mouseleave', closeSubmenu)
       })
     }
   }

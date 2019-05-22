@@ -1,6 +1,6 @@
-{% macro render(isFirstSection) %}
+{% macro render() %}
 
-<section class="l-section l-section--bg-alt l-section--our-story" {% if isFirstSection %}id="first-section"{% endif %}>
+<section class="l-section l-section--bg-alt l-section--our-story">
     <div class="l-inner">
         <div class="c-our-history">
             <div class="c-our-history__column">

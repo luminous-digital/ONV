@@ -19,8 +19,7 @@ About
 {% block standfirst %}
     {% import "components/standfirst.tpl" as standfirst with context %}
     {{ standfirst.render(
-        paragraph='OCI produces nitrogen fertilizers, methanol and other natural gas based products, serving agricultural and industrial customers from the Americas to Asia. OCI is a leading global nitrogen fertilizer producer with over 9.6 million metric tons of capacity. OCI is also on track to become one of the world’s largest methanol producers with almost 3.7 million tons of capacity.<br><br>OCI N.V. employs approximately 3,000 people and is listed on the NYSE Euronext in Amsterdam under the symbol “OCI”.',
-        isFirstSection='true'
+        paragraph='OCI produces nitrogen fertilizers, methanol and other natural gas based products, serving agricultural and industrial customers from the Americas to Asia. OCI is a leading global nitrogen fertilizer producer with over 9.6 million metric tons of capacity. OCI is also on track to become one of the world’s largest methanol producers with almost 3.7 million tons of capacity.<br><br>OCI N.V. employs approximately 3,000 people and is listed on the NYSE Euronext in Amsterdam under the symbol “OCI”.'
     ) }}
 {% endblock %}
 

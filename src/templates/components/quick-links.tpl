@@ -1,6 +1,6 @@
-{% macro render(secTitle, isFirstSection) %}
+{% macro render(secTitle) %}
 
-<section class="l-section" {% if isFirstSection %}id="first-section"{% endif %}>
+<section class="l-section">
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">

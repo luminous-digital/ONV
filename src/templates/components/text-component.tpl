@@ -1,6 +1,6 @@
-{% macro render(secTitle, firstParagraph, secondParagraph, btnText, btnSubtitle, btnType, isFirstSection) %}
+{% macro render(secTitle, firstParagraph, secondParagraph, btnText, btnSubtitle, btnType) %}
 
-<section class="l-section" {% if isFirstSection %}id="first-section"{% endif %}>
+<section class="l-section">
     <div class="l-inner">
         <div class="c-text-component">
             <div class="c-text-component__column">

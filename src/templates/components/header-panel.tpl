@@ -1,6 +1,6 @@
 {% macro render(pageTitle, pageSubtitle, bgPhoto) %}
 
-<div class="l-section">
+<div class="l-hero">
     <div class="c-header-panel-wrapper" style="background-image: url('../static/img/{{ bgPhoto }}');">
         <div class="l-inner l-inner--90 l-inner--desktop-70">
             <div class="c-header-panel t-center">
@@ -10,7 +10,7 @@
                 <p class="c-header-panel__desc t-body t-body--big t-white">
                     {{ pageSubtitle }}
                 </p>
-                <div class="c-header-panel__arrow-container js-anchor-link" data-scroll-to="latest-news">
+                <div class="c-header-panel__arrow-container js-scroll-down">
                     <span class="c-header-panel__arrow">
                     </span>
                 </div>
