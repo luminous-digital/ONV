@@ -6,7 +6,13 @@ Homepage
 
 {% block header_panel %}
     {% import "components/header-panel.tpl" as header_panel with context %}
-    {{ header_panel.render() }}
+    {{
+        header_panel.render(
+            pageTitle='Global outlook, local focus',
+            pageSubtitle='We are a global producer and distributor of natural gas-based fertilizers and industrial chemicals with excellent diversification across products and geographies.',
+            bgPhoto='img-header-panel-1.jpg'
+        )
+    }}
 {% endblock %}
 
 {% block latest_news %}

@@ -1,0 +1,61 @@
+/* ==========================================================================
+Our history slider container
+========================================================================== */
+
+.c-our-history-slider-container {
+    margin-top: offset(main) * 3;
+
+    position: relative;
+
+    padding: 0 $size-our-story-offset-t;
+}
+
+.c-our-history-slider-container__prev,
+.c-our-history-slider-container__next {
+    position: absolute;
+
+    bottom: 0;
+
+    width: $size-our-story-arrow-width;
+    height: $size-our-story-card-year-height;
+
+    z-index: 10;
+
+    outline: none;
+
+    transition: $transition-default;
+
+    background-image: url('./../img/our-history-arrow.svg');
+    background-size: 15px 15px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @include media('>=mobile') {
+        width: $size-our-story-arrow-width-t;
+    }
+}
+
+.c-our-history-slider-container__prev,
+.c-our-history-slider-container__next {
+    &.swiper-button-disabled {
+        opacity: 0;
+    }
+}
+
+.c-our-history-slider-container__prev {
+    left: 0;
+
+    transform: scale(-1);
+
+    @include media('>=mobile') {
+        left: $size-our-story-offset-t;
+    }
+}
+
+.c-our-history-slider-container__next {
+    right: 0;
+
+    @include media('>=mobile') {
+        right: $size-our-story-offset-t;
+    }
+}

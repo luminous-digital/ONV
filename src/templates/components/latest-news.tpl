@@ -1,6 +1,6 @@
-{% macro render() %}
+{% macro render(sectionTitle) %}
 
-<section class="l-section">
+<section class="l-section" id="latest-news">
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">

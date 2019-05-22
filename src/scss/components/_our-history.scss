@@ -1,0 +1,48 @@
+/* ==========================================================================
+Our history
+========================================================================== */
+
+.c-our-history {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: offset(main) * 3.5;
+    padding-bottom: offset(main);
+}
+
+.c-our-history__column {
+    width: 100%;
+    height: auto;
+}
+
+.c-our-history__title,
+.c-our-history__subtitle,
+.c-our-history__description {
+    margin: 0;
+    padding: 0;
+}
+
+.c-our-history__title {
+    max-width: 50%;
+
+    padding: 0;
+    padding-bottom: offset(main) * 3;
+
+    @include media('>=mobile') {
+        max-width: 30%;
+    }
+}
+
+.c-our-history__subtitle {
+
+    @include media('>=mobile') {
+        max-width: 70%;
+    }
+}
+
+.c-our-history__description {
+
+    @include media('>=mobile') {
+        max-width: 70%;
+    }
+}

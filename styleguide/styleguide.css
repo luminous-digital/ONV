@@ -944,13 +944,15 @@ button.swiper-pagination-bullet {
 ========================================================================== */
 /* Header
 =========================== */
-/* Header panel (hero)
+/* Header panel / hero panel component
 =========================== */
 /* Latest news component
 =========================== */
-/* Feature panel
+/* Feature panel component
 =========================== */
 /* Quick links component
+=========================== */
+/* Our history / Our story component
 =========================== */
 /* Breakpoints for include-media plugin
 ========================================================================== */
@@ -1554,6 +1556,9 @@ body.is-header-open {
     max-width: 80%; }
   .l-inner--70 {
     max-width: 70%; }
+  @media (min-width: 1200px) {
+    .l-inner--55 {
+      max-width: 700px; } }
 
 .l-header .l-inner {
   padding: 0; }
@@ -1568,13 +1573,28 @@ body.is-header-open {
    Sections
    ========================================================================== */
 .l-section {
-  padding-bottom: 60px; }
+  margin-bottom: 60px; }
   .l-section--bg-alt {
     background-color: #F3F5F9; }
   .l-section--no-overflow {
     overflow: hidden; }
   .l-section--no-offset {
     padding-bottom: 0; }
+  .l-section--our-story {
+    position: relative;
+    overflow: hidden; }
+    .l-section--our-story:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 64px;
+      left: -10px;
+      width: 110vw;
+      height: 1px;
+      background-color: #283A6A; }
+      @media (min-width: 768px) {
+        .l-section--our-story:before {
+          display: none; } }
 
 /* Components
    ========================================================================== */
@@ -1678,7 +1698,7 @@ Feature panel decor
       height: 100%;
       width: auto;
       left: -58px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1440px) {
     .c-feature-panel-decor img {
       width: 100%;
       height: auto; } }
@@ -1875,9 +1895,12 @@ Header nav menu
       width: 100%;
       height: 100%;
       padding: 0 10px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     .c-header-nav-menu__item {
       padding: 0 22px; } }
+
+.c-header-nav-menu__item.current-menu-item .c-link {
+  font-weight: bold; }
 
 .c-header-nav-menu__item.has-children > .c-link {
   position: relative; }
@@ -2281,6 +2304,182 @@ Menu toggle
     transform: rotate(-90deg);
     top: 0;
     right: 0; }
+
+/* ==========================================================================
+Our history
+========================================================================== */
+.c-our-history {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 10px; }
+
+.c-our-history__column {
+  width: 100%;
+  height: auto; }
+
+.c-our-history__title,
+.c-our-history__subtitle,
+.c-our-history__description {
+  margin: 0;
+  padding: 0; }
+
+.c-our-history__title {
+  max-width: 50%;
+  padding: 0;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .c-our-history__title {
+      max-width: 30%; } }
+
+@media (min-width: 768px) {
+  .c-our-history__subtitle {
+    max-width: 70%; } }
+
+@media (min-width: 768px) {
+  .c-our-history__description {
+    max-width: 70%; } }
+
+/* ==========================================================================
+Our history slide
+========================================================================== */
+.c-our-history-slide {
+  height: 480px;
+  background-color: #fff;
+  transition: all 0.2s linear; }
+
+@media (min-width: 768px) {
+  .c-our-history-slide.swiper-slide-next,
+  .c-our-history-slide.swiper-slide-prev {
+    opacity: .5; } }
+
+.c-our-history-slide__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.c-our-history-slide__img {
+  width: 100%;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden; }
+
+.c-our-history-slide__img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto; }
+
+.c-our-history-slide__content {
+  margin: 0;
+  padding: 15px 10px; }
+
+.c-our-history-slide__year {
+  margin: 0;
+  margin-top: auto;
+  text-align: center;
+  height: 55px;
+  padding: auto 15px;
+  border-top: 1px solid #283A6A;
+  position: relative; }
+  .c-our-history-slide__year:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    left: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #F79727; }
+
+.c-our-history-slide__year h3 {
+  height: 100%;
+  line-height: 55px; }
+
+/* ==========================================================================
+Our history slider
+========================================================================== */
+.c-our-history-slider {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* ==========================================================================
+Our history slider container
+========================================================================== */
+.c-our-history-slider-container {
+  margin-top: 30px;
+  position: relative;
+  padding: 0 120px; }
+
+.c-our-history-slider-container__prev,
+.c-our-history-slider-container__next {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 55px;
+  z-index: 10;
+  outline: none;
+  transition: all 0.2s linear;
+  background-image: url("./../img/our-history-arrow.svg");
+  background-size: 15px 15px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .c-our-history-slider-container__prev,
+    .c-our-history-slider-container__next {
+      width: 38px; } }
+
+.c-our-history-slider-container__prev.swiper-button-disabled,
+.c-our-history-slider-container__next.swiper-button-disabled {
+  opacity: 0; }
+
+.c-our-history-slider-container__prev {
+  left: 0;
+  transform: scale(-1); }
+  @media (min-width: 768px) {
+    .c-our-history-slider-container__prev {
+      left: 120px; } }
+
+.c-our-history-slider-container__next {
+  right: 0; }
+  @media (min-width: 768px) {
+    .c-our-history-slider-container__next {
+      right: 120px; } }
+
+/* ==========================================================================
+Our history slider date
+========================================================================== */
+.c-our-history-slider-date {
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  margin-top: auto;
+  text-align: center;
+  height: 55px;
+  padding: 10px 15px;
+  border-top: 1px solid #283A6A; }
+  .c-our-history-slider-date:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    left: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #F79727; }
+
+.c-our-history-slider-date h3 {
+  height: 100%; }
 
 /* ==========================================================================
    Quick links

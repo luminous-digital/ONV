@@ -41,9 +41,13 @@ Header nav menu
 
         padding: 0 offset(main);
     }
-    @include media('>=desktop') {
+    @include media('>=desktop-small') {
         padding: 0 offset(main) * 2.2;
     }
+}
+
+.c-header-nav-menu__item.current-menu-item .c-link {
+    font-weight: bold;
 }
 
 .c-header-nav-menu__item.has-children > .c-link {
