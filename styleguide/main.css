@@ -1109,7 +1109,7 @@ button.swiper-pagination-bullet {
       font-size: 18px;
       line-height: 34.2px; } }
 
-.t-body {
+.t-body, .c-wysiwyg {
   margin: 0;
   padding: 0;
   font-family: Lato, Arial, sans-serif;
@@ -1119,10 +1119,10 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   margin-bottom: 14px;
   max-width: 100%; }
-  .t-body a {
+  .t-body a, .c-wysiwyg a {
     font-weight: 700; }
   @media (min-width: 768px) {
-    .t-body {
+    .t-body, .c-wysiwyg {
       font-size: 18px;
       line-height: 28.08px; } }
   .t-body--big {
@@ -1168,6 +1168,13 @@ button.swiper-pagination-bullet {
     .t-btn {
       font-size: 14px;
       line-height: 15.54px; } }
+  .t-btn--small {
+    font-size: 10px;
+    line-height: 14px; }
+    @media (min-width: 768px) {
+      .t-btn--small {
+        font-size: 10px;
+        line-height: 14px; } }
 
 .t-sec-divider {
   margin: 0;
@@ -1365,6 +1372,9 @@ User interface
 .ui-bg--mapgreen {
   background-color: #30B6B5; }
 
+.ui-bg--black {
+  background-color: black; }
+
 .ui-color--main {
   color: #283A6A; }
 
@@ -1388,6 +1398,9 @@ User interface
 
 .ui-color--mapgreen {
   color: #30B6B5; }
+
+.ui-color--black {
+  color: black; }
 
 .ui-icon {
   display: inline-flex;
@@ -1498,6 +1511,9 @@ select select {
   select select:focus {
     outline: none; }
 
+/* ==========================================================================
+Body
+========================================================================== */
 body.is-header-open {
   overflow: hidden;
   position: fixed;
@@ -1592,7 +1608,7 @@ body.is-header-open {
       content: '';
       display: block;
       position: absolute;
-      bottom: 64px;
+      bottom: 51px;
       left: -10px;
       width: 110vw;
       height: 1px;
@@ -1612,29 +1628,67 @@ body.is-header-open {
   cursor: pointer;
   padding-top: 15px;
   padding-bottom: 15px; }
-  .c-btn--primary {
-    background-color: #F79727;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative; }
-    .c-btn--primary:hover {
-      text-align: left; }
-      .c-btn--primary:hover .c-label:after {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 15px;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        background-image: url("./../img/btn-arrow-01.svg");
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat; }
   .c-btn--medium {
     width: 230px; }
   .c-btn--center {
     text-align: center; }
+  .c-btn--block {
+    display: block;
+    width: auto; }
+
+.c-btn--primary {
+  background-color: #F79727;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative; }
+  .c-btn--primary:hover {
+    text-align: left; }
+    .c-btn--primary:hover .c-label:after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-image: url("./../img/btn-arrow-01.svg");
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat; }
+
+.c-btn--download {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F79727;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 6px; }
+  .c-btn--download .c-sub-label {
+    font-weight: 400; }
+  .c-btn--download:hover {
+    align-items: flex-start; }
+    .c-btn--download:hover .c-label,
+    .c-btn--download:hover .c-sub-label {
+      margin-left: -40px;
+      margin-right: 40px; }
+    .c-btn--download:hover:after {
+      content: '';
+      display: block;
+      width: 27px;
+      height: 15px;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-image: url("./../img/icon-download.svg");
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat; }
+
+.c-btn--padded {
+  padding-left: 60px;
+  padding-right: 60px; }
 
 /* ==========================================================================
    Btn wrapper
@@ -1661,7 +1715,11 @@ Feature panel
       width: 50%; } }
   @media (min-width: 1200px) {
     .c-feature-panel {
-      width: 39%; } }
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; } }
 
 .c-feature-panel__title,
 .c-feature-panel__content {
@@ -1689,6 +1747,9 @@ Feature panel
 
 .c-feature-panel .c-btn-wrapper {
   padding-bottom: 40px; }
+  @media (min-width: 1200px) {
+    .c-feature-panel .c-btn-wrapper {
+      margin-top: auto; } }
 
 /* ==========================================================================
 Feature panel decor
@@ -1740,6 +1801,13 @@ Feature panel wrapper
       margin-top: 40px;
       margin-bottom: 40px;
       padding-top: 70px; } }
+  @media (min-width: 1200px) {
+    .c-feature-panel-wrapper {
+      height: 490px; } }
+
+@media (min-width: 1200px) {
+  .c-feature-panel-wrapper .l-inner {
+    height: 100%; } }
 
 /* ==========================================================================
    Footer
@@ -2349,10 +2417,26 @@ Our history
   flex-direction: column;
   padding-top: 35px;
   padding-bottom: 10px; }
+  @media (min-width: 1200px) {
+    .c-our-history {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      padding-top: 10px; } }
 
 .c-our-history__column {
   width: 100%;
   height: auto; }
+
+@media (min-width: 1200px) {
+  .c-our-history__column:nth-child(1) {
+    width: 33%;
+    padding-top: 70px; } }
+
+@media (min-width: 1200px) {
+  .c-our-history__column:nth-child(2) {
+    width: 63%;
+    margin-right: -40px; } }
 
 .c-our-history__title,
 .c-our-history__subtitle,
@@ -2367,14 +2451,25 @@ Our history
   @media (min-width: 768px) {
     .c-our-history__title {
       max-width: 30%; } }
+  @media (min-width: 1200px) {
+    .c-our-history__title {
+      max-width: 60%; } }
 
 @media (min-width: 768px) {
   .c-our-history__subtitle {
     max-width: 70%; } }
 
+@media (min-width: 1200px) {
+  .c-our-history__subtitle {
+    max-width: 100%; } }
+
 @media (min-width: 768px) {
   .c-our-history__description {
     max-width: 70%; } }
+
+@media (min-width: 1200px) {
+  .c-our-history__description {
+    max-width: 95%; } }
 
 /* ==========================================================================
 Our history slide
@@ -2383,11 +2478,17 @@ Our history slide
   height: 480px;
   background-color: #fff;
   transition: all 0.2s linear; }
+  @media (min-width: 1200px) {
+    .c-our-history-slide {
+      height: 550px; } }
 
 @media (min-width: 768px) {
   .c-our-history-slide.swiper-slide-next,
   .c-our-history-slide.swiper-slide-prev {
-    opacity: .5; } }
+    opacity: .5; }
+    .c-our-history-slide.swiper-slide-next .c-our-history-slide__year h3,
+    .c-our-history-slide.swiper-slide-prev .c-our-history-slide__year h3 {
+      opacity: 0; } }
 
 .c-our-history-slide__wrapper {
   width: 100%;
@@ -2402,6 +2503,9 @@ Our history slide
   margin: 0;
   position: relative;
   overflow: hidden; }
+  @media (min-width: 768px) {
+    .c-our-history-slide__img {
+      height: 230px; } }
 
 .c-our-history-slide__img img {
   position: absolute;
@@ -2414,13 +2518,17 @@ Our history slide
 .c-our-history-slide__content {
   margin: 0;
   padding: 15px 10px; }
+  @media (min-width: 1200px) {
+    .c-our-history-slide__content {
+      max-width: 85%; } }
 
 .c-our-history-slide__year {
   margin: 0;
   margin-top: auto;
   text-align: center;
-  height: 55px;
-  padding: auto 15px;
+  height: 42px;
+  width: calc(100% + 20px);
+  left: -10px;
   border-top: 1px solid #283A6A;
   position: relative; }
   .c-our-history-slide__year:before {
@@ -2434,9 +2542,14 @@ Our history slide
     border-radius: 50%;
     background-color: #F79727; }
 
+.c-our-history-slide:first-child .c-our-history-slide__year,
+.c-our-history-slide:last-child .c-our-history-slide__year {
+  width: 100%;
+  left: 0; }
+
 .c-our-history-slide__year h3 {
   height: 100%;
-  line-height: 55px; }
+  line-height: 42px; }
 
 /* ==========================================================================
 Our history slider
@@ -2451,15 +2564,20 @@ Our history slider container
 ========================================================================== */
 .c-our-history-slider-container {
   margin-top: 30px;
-  position: relative;
-  padding: 0 120px; }
+  position: relative; }
+  @media (min-width: 768px) {
+    .c-our-history-slider-container {
+      padding: 0 120px; } }
+  @media (min-width: 1200px) {
+    .c-our-history-slider-container {
+      margin-top: 0; } }
 
 .c-our-history-slider-container__prev,
 .c-our-history-slider-container__next {
   position: absolute;
   bottom: 0;
   width: 30px;
-  height: 55px;
+  height: 42px;
   z-index: 10;
   outline: none;
   transition: all 0.2s linear;
@@ -2493,16 +2611,16 @@ Our history slider container
 Our history slider date
 ========================================================================== */
 .c-our-history-slider-date {
-  background: red;
+  opacity: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   margin: 0;
   margin-top: auto;
   text-align: center;
-  height: 55px;
-  padding: 10px 15px;
-  border-top: 1px solid #283A6A; }
+  height: 42px;
+  padding: 10px 5px;
+  transition: all 0.2s linear; }
   .c-our-history-slider-date:before {
     display: block;
     content: '';
@@ -2512,10 +2630,36 @@ Our history slider date
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #F79727; }
+    background-color: #fff;
+    border: 1px solid #F79727; }
 
 .c-our-history-slider-date h3 {
-  height: 100%; }
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -7px;
+  color: black; }
+
+.c-our-history-slider-date.is-active {
+  opacity: 1; }
+
+.c-our-history-slider-date.before-before-slide {
+  left: 0; }
+
+.c-our-history-slider-date.before-slide {
+  left: 55px; }
+
+.c-our-history-slider-date.current-slide {
+  left: 0;
+  opacity: 0; }
+
+.c-our-history-slider-date.after-slide {
+  left: auto;
+  right: 55px; }
+
+.c-our-history-slider-date.after-after-slide {
+  left: auto;
+  right: 0; }
 
 /* ==========================================================================
    Quick links
@@ -2763,6 +2907,13 @@ Social icon
   height: 27px; }
 
 /* ==========================================================================
+   Standfirst
+   ========================================================================== */
+@media (min-width: 1200px) {
+  .c-standfirst {
+    padding-top: 30px; } }
+
+/* ==========================================================================
 Sub nav
 ========================================================================== */
 .c-sub-nav {
@@ -2832,3 +2983,73 @@ Sub nav
 @media (min-width: 768px) {
   .c-sub-nav__item:hover > .c-link > .c-label:after {
     width: 100%; } }
+
+/* ==========================================================================
+Text component
+========================================================================== */
+.c-text-component {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 10px; }
+  @media (min-width: 1200px) {
+    .c-text-component {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      padding-top: 10px; } }
+
+.c-text-component__column {
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 1200px) {
+  .c-text-component__column:nth-child(1) {
+    width: 33%;
+    padding-top: 70px; } }
+
+@media (min-width: 1200px) {
+  .c-text-component__column:nth-child(2) {
+    width: 63%;
+    margin-right: -40px; } }
+
+.c-text-component__title,
+.c-text-component__subtitle,
+.c-text-component__description {
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 768px) {
+  .c-text-component__subtitle {
+    max-width: 70%; } }
+
+@media (min-width: 1200px) {
+  .c-text-component__subtitle {
+    max-width: 100%; } }
+
+@media (min-width: 768px) {
+  .c-text-component__description {
+    max-width: 70%; } }
+
+@media (min-width: 1200px) {
+  .c-text-component__description {
+    max-width: 95%; } }
+
+/* ==========================================================================
+WYSIWYG
+========================================================================== */
+.c-wysiwyg ul li {
+  margin-bottom: 15px; }
+
+@media (min-width: 768px) {
+  .c-wysiwyg {
+    padding-bottom: 40px; } }
+
+/* Utilities - on the end because they have to overwrite other styles
+   ========================================================================== */
+/* ==========================================================================
+Utilities
+========================================================================== */
+@media (max-width: 767px) {
+  .u-m-hidden {
+    display: none; } }

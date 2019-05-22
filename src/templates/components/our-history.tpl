@@ -1,6 +1,6 @@
-{% macro render() %}
+{% macro render(isFirstSection) %}
 
-<section class="l-section l-section--bg-alt l-section--our-story">
+<section class="l-section l-section--bg-alt l-section--our-story" {% if isFirstSection %}id="first-section"{% endif %}>
     <div class="l-inner">
         <div class="c-our-history">
             <div class="c-our-history__column">
@@ -88,21 +88,6 @@
                     <div class="c-our-history-slider-container__next js-slider-our-story-next">
                     </div>
                     <div class="c-our-history-slider-container__nav js-slider-our-story-nav">
-                        <div class="c-our-history-slider-date">
-                            <h3 class="t-h3 js-slider-date">1999</h3>
-                        </div>
-                        <div class="c-our-history-slider-date">
-                            <h3 class="t-h3 js-slider-date">2004</h3>
-                        </div>
-                        <div class="c-our-history-slider-date">
-                            <h3 class="t-h3 js-slider-date">2005</h3>
-                        </div>
-                        <div class="c-our-history-slider-date">
-                            <h3 class="t-h3 js-slider-date">2007</h3>
-                        </div>
-                        <div class="c-our-history-slider-date">
-                            <h3 class="t-h3 js-slider-date">2010</h3>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -22,7 +22,8 @@ $colors: (
     dgrey: #444444,
     white: #fff,
     lgrey: #A2A1A2,
-    mapgreen: #30B6B5
+    mapgreen: #30B6B5,
+    black: black
 );
 
 $sizes: (
@@ -47,6 +48,7 @@ $font-sizes: (
     small: 14px,
     small-m: 14px,
     smaller: 12px,
+    smallest: 10px,
     h1: 44px,
     h1-m: 36px,
     h2: 36px,
@@ -145,6 +147,7 @@ $size-latest-news-arrow-z-index: 10;
 /* Feature panel component
 =========================== */
 $size-feature-panel-decor-height: 250px;
+$size-feature-panel-height-d: 570px;
 
 /* Quick links component
 =========================== */
@@ -158,9 +161,12 @@ $size-quick-links-img-height-t: 230px;
 /* Our history / Our story component
 =========================== */
 $size-our-story-card-height: 480px;
+$size-our-story-card-height-d: 550px;
 $size-our-story-card-img-height: 180px;
-$size-our-story-card-year-height: 55px;
+$size-our-story-card-img-height-t: 230px;
+$size-our-story-card-year-height: 42px;
 $size-our-story-card-dot-size: 15px;
 $size-our-story-arrow-width: 30px;
 $size-our-story-arrow-width-t: 38px;
 $size-our-story-offset-t: 120px;
+$size-our-story-slider-date-width: 55px;

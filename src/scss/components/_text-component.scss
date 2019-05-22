@@ -1,8 +1,8 @@
 /* ==========================================================================
-Our history
+Text component
 ========================================================================== */
 
-.c-our-history {
+.c-text-component {
     display: flex;
     flex-direction: column;
 
@@ -18,12 +18,12 @@ Our history
     }
 }
 
-.c-our-history__column {
+.c-text-component__column {
     width: 100%;
     height: auto;
 }
 
-.c-our-history__column:nth-child(1) {
+.c-text-component__column:nth-child(1) {
 
     @include media('>=desktop-small') {
         width: 33%;
@@ -32,7 +32,7 @@ Our history
     }
 }
 
-.c-our-history__column:nth-child(2) {
+.c-text-component__column:nth-child(2) {
 
     @include media('>=desktop-small') {
         width: 63%;
@@ -41,28 +41,14 @@ Our history
     }
 }
 
-.c-our-history__title,
-.c-our-history__subtitle,
-.c-our-history__description {
+.c-text-component__title,
+.c-text-component__subtitle,
+.c-text-component__description {
     margin: 0;
     padding: 0;
 }
 
-.c-our-history__title {
-    max-width: 50%;
-
-    padding: 0;
-    padding-bottom: offset(main) * 3;
-
-    @include media('>=mobile') {
-        max-width: 30%;
-    }
-    @include media('>=desktop-small') {
-        max-width: 60%;
-    }
-}
-
-.c-our-history__subtitle {
+.c-text-component__subtitle {
 
     @include media('>=mobile') {
         max-width: 70%;
@@ -72,7 +58,7 @@ Our history
     }
 }
 
-.c-our-history__description {
+.c-text-component__description {
 
     @include media('>=mobile') {
         max-width: 70%;

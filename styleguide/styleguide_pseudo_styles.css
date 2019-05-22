@@ -51,6 +51,30 @@ select select.pseudo-class-focus {
   background-repeat: no-repeat;
 }
 
+.c-btn--download.pseudo-class-hover {
+  align-items: flex-start;
+}
+
+.c-btn--download.pseudo-class-hover .c-label,
+.c-btn--download.pseudo-class-hover .c-sub-label {
+  margin-left: -40px;
+  margin-right: 40px;
+}
+
+.c-btn--download.pseudo-class-hover:after {
+  content: '';
+  display: block;
+  width: 27px;
+  height: 15px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-image: url("./../img/icon-download.svg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 .c-header-nav-menu__item.pseudo-class-first-child > .c-link {
   border-top: 2px solid #F3F5F9;
 }
@@ -74,4 +98,10 @@ select select.pseudo-class-focus {
 
 .c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__hover {
   opacity: 1;
+}
+
+.c-our-history-slide.pseudo-class-first-child .c-our-history-slide__year,
+.c-our-history-slide.pseudo-class-last-child .c-our-history-slide__year {
+  width: 100%;
+  left: 0;
 }

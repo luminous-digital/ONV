@@ -1,10 +1,10 @@
-{% macro render() %}
+{% macro render(secTitle, isFirstSection) %}
 
-<section class="l-section">
+<section class="l-section" {% if isFirstSection %}id="first-section"{% endif %}>
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">
-                Quick links
+                {{ secTitle }}
             </h4>
         </div>
     </div>

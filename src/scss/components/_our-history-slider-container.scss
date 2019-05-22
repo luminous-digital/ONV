@@ -7,7 +7,12 @@ Our history slider container
 
     position: relative;
 
-    padding: 0 $size-our-story-offset-t;
+    @include media('>=mobile') {
+        padding: 0 $size-our-story-offset-t;
+    }
+    @include media('>=desktop-small') {
+        margin-top: 0;
+    }
 }
 
 .c-our-history-slider-container__prev,

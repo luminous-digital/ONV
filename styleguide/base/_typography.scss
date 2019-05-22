@@ -243,6 +243,16 @@
         font-size: font-size(small);
         line-height: font-size(small) * 1.11;
     }
+
+    &--small {
+        font-size: font-size(smallest);
+        line-height: font-size(smallest) * 1.4;
+
+        @include media('>=mobile') {
+            font-size: font-size(smallest);
+            line-height: font-size(smallest) * 1.4;
+        }
+    }
 }
 
 .t-sec-divider {

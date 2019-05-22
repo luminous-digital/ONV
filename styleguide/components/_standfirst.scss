@@ -19,4 +19,8 @@
 // Styleguide 9
 
 .c-standfirst {
+
+    @include media('>=desktop-small') {
+        padding-top: offset(main) * 3;
+    }
 }

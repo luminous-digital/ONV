@@ -17,4 +17,13 @@ Feature panel wrapper
         margin-bottom: offset(main) * 4;
         padding-top: offset(main) * 7;
     }
+    @include media('>=desktop-small') {
+        height: #{$size-feature-panel-height-d - (offset(main) * 8)};
+    }
+}
+
+.c-feature-panel-wrapper .l-inner {
+    @include media('>=desktop-small') {
+        height: 100%;
+    }
 }
