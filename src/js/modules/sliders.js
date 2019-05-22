@@ -4,6 +4,8 @@ const Sliders = {
   init: function () {
     this.latestNewsSlider()
     this.quickLinksSlider()
+    this.ourStorySlider()
+    this.ourStorySliderBullets()
   },
   latestNewsSlider: function () {
     const sliderClass = '.js-slider-latest-news'
@@ -56,6 +58,52 @@ const Sliders = {
         }
       })
     }
+  },
+  ourStorySlider: function () {
+    const sliderClass = '.js-slider-our-story'
+    if (document.querySelector(sliderClass)) {
+      Sliders.heroSwiper = new Swiper(sliderClass, {
+        loop: false,
+        autoplay: false,
+        speed: 300,
+        slidesPerView: 1,
+        spaceBetween: 25,
+        navigation: {
+          nextEl: '.js-slider-our-story-next',
+          prevEl: '.js-slider-our-story-prev'
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+          768: {
+            spaceBetween: 10
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 25
+          }
+        },
+        on: {
+          slideChange: this.ourStorySliderBulletsCallback
+        }
+      })
+    }
+  },
+  ourStorySliderBullets: function () {
+    const sliderClass = '.js-slider-our-story'
+    if (document.querySelector(sliderClass)) {
+      const slider = document.querySelector(sliderClass)
+      const slides = slider.querySelectorAll('.swiper-slide')
+      // const nav = slider.querySelector('.js-slider-our-story-nav')
+      const dates = []
+      Array.from(slides).forEach(slide => {
+        const date = slide.querySelector('.js-slider-date').innerHTML
+        dates.push(date)
+      })
+      console.log(dates)
+    }
+  },
+  ourStorySliderBulletsCallback: function () {
+    console.log('a')
   }
 }
 

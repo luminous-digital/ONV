@@ -1,4 +1,4 @@
-{% macro render(_active_no) %}
+{% macro render(_active_no, _menu_item) %}
     {% if _active_no == '' %}
         {% set logo_href='#' %}
     {% else %}
@@ -8,7 +8,7 @@
         <div class="l-inner">
             <div class="c-header js-header">
                 <div class="c-header__logo-wrapper">
-                    <a class="c-link" href="#">
+                    <a class="c-link" href="/">
                         <figure class="c-logo">
                             <img src="../static/img/logo.png" alt="OCI" class="c-img" />
                         </figure>
@@ -25,8 +25,8 @@
                 </div>
                 <div class="c-header-nav">
                     <ul class="c-header-nav-menu">
-                        <li class="c-header-nav-menu__item">
-                            <a href="#" class="c-link t-menu">
+                        <li class="c-header-nav-menu__item {% if menu_item == 'about' %}current-menu-item{% endif %}">
+                            <a href="/about.html" class="c-link t-menu">
                                 <span class="c-label">
                                     About
                                 </span>

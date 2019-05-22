@@ -1,0 +1,43 @@
+/* ==========================================================================
+Our history slider date
+========================================================================== */
+
+.c-our-history-slider-date {
+    background: red;
+
+    position: absolute;
+    bottom: 0;
+
+    left: 0;
+
+    margin: 0;
+    margin-top: auto;
+
+    text-align: center;
+
+    height: $size-our-story-card-year-height;
+
+    padding: offset(main) offset(main) * 1.5;
+
+    border-top: 1px solid color(main);
+
+    &:before {
+        display: block;
+        content: '';
+
+        position: absolute;
+        top: - #{$size-our-story-card-dot-size / 2};
+        left: calc(50% - #{$size-our-story-card-dot-size / 2});
+
+        width: $size-our-story-card-dot-size;
+        height: $size-our-story-card-dot-size;
+
+        border-radius: 50%;
+
+        background-color: color(accent);
+    }
+}
+
+.c-our-history-slider-date h3 {
+    height: 100%;
+}

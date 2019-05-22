@@ -2,7 +2,7 @@
    Sections
    ========================================================================== */
 .l-section {
-    padding-bottom: offset(main) * 6;
+    margin-bottom: offset(main) * 6;
 
     &--bg-alt {
         background-color: color(lblue);
@@ -12,5 +12,27 @@
     }
     &--no-offset {
         padding-bottom: 0;
+    }
+    &--our-story {
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            display: block;
+
+            position: absolute;
+            bottom: $size-our-story-card-year-height + offset(main) - 1;
+            left: - offset(main);
+
+            width: 110vw;
+            height: 1px;
+
+            background-color: color(main);
+
+            @include media('>=mobile') {
+                display: none;
+            }
+        }
     }
 }

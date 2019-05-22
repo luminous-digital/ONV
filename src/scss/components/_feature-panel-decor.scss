@@ -42,7 +42,7 @@ Feature panel decor
 
         left: - offset(main) * 5.8;
     }
-    @include media('>=desktop-small') {
+    @include media('>=desktop') {
         width: 100%;
         height: auto;
     }

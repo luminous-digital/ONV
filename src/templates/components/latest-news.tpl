@@ -1,6 +1,6 @@
-{% macro render() %}
+{% macro render(sectionTitle) %}
 
-<section class="l-section">
+<section class="l-section" id="latest-news">
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">
@@ -65,7 +65,9 @@
             </div>
             <div class="c-btn-wrapper">
                 <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                    All news
+                    <span class="c-label">
+                        All news
+                    </span>
                 </a>
             </div>
         </div>
