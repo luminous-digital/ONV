@@ -6,20 +6,18 @@ const ScrollToAnchor = {
     const anchorLinks = document.querySelectorAll('.js-anchor-link')
     if (anchorLinks) {
       Array.from(anchorLinks).forEach(link => {
-        const scrollElemID = link.dataset.scrollTo
-        const element = document.getElementById(scrollElemID)
-        const elementPosY = element.getBoundingClientRect().top
-        link.addEventListener('click', e => {
-          e.preventDefault()
-          e.stopPropagation()
-          e.stopImmediatePropagation()
-          // console.log('a')
-          // window.scrollTo({
-          //   top: elementPosY - 30,
-          //   behavior: 'smooth'
-          // })
-          setTimeout(window.scrollTo(0, elementPosY - 30), 1)
-        })
+        const element = document.getElementById('first-section')
+        if (element) {
+          const elementPosY = element.getBoundingClientRect().top
+          link.addEventListener('click', e => {
+            e.preventDefault()
+            e.stopPropagation()
+            e.stopImmediatePropagation()
+            setTimeout(window.scrollTo(0, elementPosY - 50), 1)
+          })
+        } else {
+          console.log('First section not specified!')
+        }
       })
     }
   }

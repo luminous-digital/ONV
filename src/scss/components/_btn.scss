@@ -20,44 +20,8 @@
     cursor: pointer;
 
     padding: {
-        top: 15px;
-        bottom: 15px;
-    }
-
-    &--primary {
-        background-color: color(accent);
-
-        padding: {
-            left: 15px;
-            right: 15px;
-        }
-
-        position: relative;
-
-        &:hover {
-            text-align: left;
-
-            .c-label {
-
-                &:after {
-                    content: '';
-
-                    display: block;
-
-                    width: 20px;
-                    height: 15px;
-
-                    position: absolute;
-                    top: 15px;
-                    right: 15px;
-
-                    background-image: url('./../img/btn-arrow-01.svg');
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
+        top: offset(main) * 1.5;
+        bottom: offset(main) * 1.5;
     }
     &--medium {
         width: $size-btn-medium-width;
@@ -65,5 +29,124 @@
     &--center {
         text-align: center;
     }
+    &--block {
+        display: block;
+        width: auto;
+    }
 }
 
+// Btn primary
+//
+// markup:
+// <div class="c-btn-wrapper">
+//     <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+//         <span class="c-label">
+//             All news
+//         </span>
+//     </a>
+// </div>
+//
+// Styleguide 6.2
+
+.c-btn--primary {
+    background-color: color(accent);
+
+    padding: {
+        left: offset(main) * 1.5;
+        right: offset(main) * 1.5;
+    }
+
+    position: relative;
+
+    &:hover {
+        text-align: left;
+
+        .c-label {
+
+            &:after {
+                content: '';
+
+                display: block;
+
+                width: offset(main) * 2;
+                height: offset(main) * 1.5;
+
+                position: absolute;
+                top: offset(main) * 1.5;
+                right: offset(main) * 1.5;
+
+                background-image: url('./../img/btn-arrow-01.svg');
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+// Btn download
+//
+// markup:
+// <div class="c-btn-wrapper c-btn-wrapper--left">
+//     <a href="/news.html" class="c-btn c-btn--download c-btn--block c-btn--padded">
+//         <span class="c-label t-btn t-white">Download our business model</span>
+//         <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//     </a>
+// </div>
+//
+// Styleguide 6.3
+
+.c-btn--download {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: color(accent);
+
+    position: relative;
+
+    padding: {
+        top: offset(main);
+        bottom: offset(main) * 0.6;
+    }
+
+    .c-sub-label {
+        font-weight: $font-weight-regular;
+    }
+
+    &:hover {
+        align-items: flex-start;
+
+        .c-label,
+        .c-sub-label {
+            margin-left: - offset(main) * 4;
+            margin-right: offset(main) * 4;
+        }
+
+        &:after {
+            content: '';
+
+                display: block;
+
+                width: offset(main) * 2.7;
+                height: offset(main) * 1.5;
+
+                position: absolute;
+                top: offset(main) * 1.5;
+                right: offset(main) * 2;
+
+                background-image: url('./../img/icon-download.svg');
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+        }
+    }
+}
+
+.c-btn--padded {
+    padding: {
+        left: offset(main) * 6;
+        right: offset(main) * 6
+    }
+}

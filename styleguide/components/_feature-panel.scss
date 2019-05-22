@@ -36,7 +36,13 @@ Feature panel
         width: 50%;
     }
     @include media('>=desktop-small') {
-        width: 39%;
+        width: 40%;
+
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
 
@@ -71,4 +77,8 @@ Feature panel
 
 .c-feature-panel .c-btn-wrapper {
     padding-bottom: offset(main) * 4;
+
+    @include media('>=desktop-small') {
+        margin-top: auto;
+    }
 }

@@ -79,10 +79,7 @@ Header nav menu
 }
 
 .c-header-nav-menu__item.has-children.is-active > .c-link:before {
-    // top: auto;
     top: 15px;
-    // bottom: offset(main);
-
     transform: rotate(225deg);
 }
 

@@ -8,6 +8,10 @@ Our history slide
     background-color: color(white);
 
     transition: $transition-default;
+
+    @include media('>=desktop-small') {
+        height: $size-our-story-card-height-d;
+    }
 }
 
 .c-our-history-slide.swiper-slide-next,
@@ -15,6 +19,10 @@ Our history slide
 
     @include media('>=mobile') {
         opacity: .5;
+
+        .c-our-history-slide__year h3 {
+            opacity: 0;
+        }
     }
 }
 
@@ -36,6 +44,10 @@ Our history slide
     position: relative;
 
     overflow: hidden;
+
+    @include media('>=mobile') {
+        height: $size-our-story-card-img-height-t;
+    }
 }
 
 .c-our-history-slide__img img {
@@ -52,6 +64,10 @@ Our history slide
 .c-our-history-slide__content {
     margin: 0;
     padding: offset(main) * 1.5 offset(main);
+
+    @include media('>=desktop-small') {
+        max-width: 85%;
+    }
 }
 
 .c-our-history-slide__year {
@@ -62,7 +78,8 @@ Our history slide
 
     height: $size-our-story-card-year-height;
 
-    padding: auto offset(main) * 1.5;
+    width: calc(100% + #{offset(main) * 2});
+    left: - offset(main);
 
     border-top: 1px solid color(main);
 
@@ -83,6 +100,12 @@ Our history slide
 
         background-color: color(accent);
     }
+}
+
+.c-our-history-slide:first-child .c-our-history-slide__year,
+.c-our-history-slide:last-child .c-our-history-slide__year {
+    width: 100%;
+    left: 0;
 }
 
 .c-our-history-slide__year h3 {

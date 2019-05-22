@@ -8,11 +8,37 @@ Our history
 
     padding-top: offset(main) * 3.5;
     padding-bottom: offset(main);
+
+    @include media('>=desktop-small') {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        padding-top: offset(main);
+    }
 }
 
 .c-our-history__column {
     width: 100%;
     height: auto;
+}
+
+.c-our-history__column:nth-child(1) {
+
+    @include media('>=desktop-small') {
+        width: 33%;
+
+        padding-top: offset(main) * 7;
+    }
+}
+
+.c-our-history__column:nth-child(2) {
+
+    @include media('>=desktop-small') {
+        width: 63%;
+
+        margin-right: - offset(main) * 4;
+    }
 }
 
 .c-our-history__title,
@@ -31,6 +57,9 @@ Our history
     @include media('>=mobile') {
         max-width: 30%;
     }
+    @include media('>=desktop-small') {
+        max-width: 60%;
+    }
 }
 
 .c-our-history__subtitle {
@@ -38,11 +67,17 @@ Our history
     @include media('>=mobile') {
         max-width: 70%;
     }
+    @include media('>=desktop-small') {
+        max-width: 100%;
+    }
 }
 
 .c-our-history__description {
 
     @include media('>=mobile') {
         max-width: 70%;
+    }
+    @include media('>=desktop-small') {
+        max-width: 95%;
     }
 }
