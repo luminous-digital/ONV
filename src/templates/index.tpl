@@ -17,11 +17,7 @@ Homepage
 
 {% block latest_news %}
     {% import "components/latest-news.tpl" as latest_news with context %}
-    {{
-        latest_news.render(
-            isFirstSection='true'
-        )
-    }}
+    {{ latest_news.render() }}
 {% endblock %}
 
 {% block feature_panel %}
