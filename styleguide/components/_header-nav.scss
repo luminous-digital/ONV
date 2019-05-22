@@ -30,6 +30,9 @@ Header nav
 
         margin-left: auto;
     }
+    @include media('>=tablet') {
+        overflow: visible;
+    }
 }
 
 .c-header.is-active .c-header-nav {

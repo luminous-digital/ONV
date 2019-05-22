@@ -1117,7 +1117,8 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 14px; }
+  margin-bottom: 14px;
+  max-width: 100%; }
   .t-body a {
     font-weight: 700; }
   @media (min-width: 768px) {
@@ -1498,7 +1499,11 @@ select select {
     outline: none; }
 
 body.is-header-open {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
   @media (min-width: 1440px) {
     body.is-header-open {
       overflow: auto; } }
@@ -1604,10 +1609,28 @@ body.is-header-open {
 .c-btn {
   width: 100%;
   height: auto;
+  cursor: pointer;
   padding-top: 15px;
   padding-bottom: 15px; }
   .c-btn--primary {
-    background-color: #F79727; }
+    background-color: #F79727;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative; }
+    .c-btn--primary:hover {
+      text-align: left; }
+      .c-btn--primary:hover .c-label:after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 15px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-image: url("./../img/btn-arrow-01.svg");
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
   .c-btn--medium {
     width: 230px; }
   .c-btn--center {
@@ -1809,7 +1832,8 @@ Forms
   bottom: -100px;
   left: 0;
   width: 100%;
-  transition: all 0.2s linear; }
+  transition: all 0.2s linear;
+  z-index: 105; }
 
 .is-header-open .c-header-nav__search {
   transition: all 0.2s linear;
@@ -1838,6 +1862,9 @@ Header nav
       width: auto;
       overflow: auto;
       margin-left: auto; } }
+  @media (min-width: 1024px) {
+    .c-header-nav {
+      overflow: visible; } }
 
 .c-header.is-active .c-header-nav {
   width: 100%;
@@ -1892,7 +1919,8 @@ Header nav menu
       align-items: center;
       justify-content: center;
       position: relative;
-      width: 100%;
+      width: auto;
+      max-width: 100%;
       height: 100%;
       padding: 0 10px; } }
   @media (min-width: 1200px) {
@@ -1910,7 +1938,7 @@ Header nav menu
   position: absolute;
   display: block;
   right: 31px;
-  top: 5px;
+  top: 0;
   width: 25px;
   height: 25px;
   border-right: 2px solid #F79727;
@@ -1922,8 +1950,7 @@ Header nav menu
       display: none; } }
 
 .c-header-nav-menu__item.has-children.is-active > .c-link:before {
-  top: auto;
-  bottom: 10px;
+  top: 15px;
   transform: rotate(225deg); }
 
 .c-header-nav-menu__item .c-link {
@@ -1949,12 +1976,15 @@ Header nav menu
   border-bottom: 2px solid #F3F5F9; }
   @media (min-width: 768px) {
     .c-header-nav-menu__item > .c-link {
-      height: 100%;
+      height: auto;
+      width: 100%;
       border: none; } }
 
 @media (min-width: 768px) {
   .c-header-nav-menu__item > .c-link > .c-label {
-    position: relative; } }
+    position: relative;
+    display: block;
+    width: 100%; } }
 
 @media (min-width: 768px) {
   .c-header-nav-menu__item > .c-link > .c-label:after {
@@ -1972,9 +2002,10 @@ Header nav menu
     width: 100%; } }
 
 .is-header-open .c-header-nav-menu {
-  height: calc(100vh - 60px - 60px - 80px);
+  height: calc(100vh - 60px - 60px - 75px);
   overflow-y: scroll;
-  transition: all 0.2s linear; }
+  transition: all 0.2s linear;
+  padding-bottom: 80px; }
 
 /* ==========================================================================
 Header panel full
@@ -2006,7 +2037,8 @@ Header panel full
 .c-header-panel__arrow-container {
   display: block;
   padding: 10px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  cursor: pointer; }
   @media (min-width: 768px) {
     .c-header-panel__arrow-container {
       padding-bottom: 105px; } }
@@ -2124,6 +2156,7 @@ Header panel tabs
   list-style: none;
   padding: 0;
   margin: 0;
+  left: 0;
   position: absolute;
   bottom: -30px; }
   @media (min-width: 768px) {
@@ -2151,7 +2184,8 @@ Header panel wrapper
   display: flex;
   padding: 0;
   margin: 0;
-  position: relative; }
+  position: relative;
+  height: auto; }
 
 /* ==========================================================================
    Latest news card
@@ -2162,7 +2196,7 @@ Header panel wrapper
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto; }
+  height: 230px; }
 
 .c-latest-news-card__container {
   width: 230px;
@@ -2181,7 +2215,8 @@ Header panel wrapper
 .c-latest-news-card__excerpt,
 .c-latest-news-card__cta {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  max-width: 100%; }
 
 @media (min-width: 768px) {
   .c-latest-news-card__excerpt {
@@ -2193,6 +2228,7 @@ Header panel wrapper
    ========================================================================== */
 .c-latest-news-wrapper {
   width: 100%;
+  height: auto;
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 70px;
@@ -2207,7 +2243,7 @@ Header panel wrapper
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding-bottom: 105px; }
   @media (min-width: 768px) {
     .c-latest-news-wrapper__slider {
@@ -2488,7 +2524,8 @@ Our history slider date
   display: flex;
   padding: 0;
   margin: 0;
-  position: relative; }
+  position: relative;
+  height: auto; }
 
 /* ==========================================================================
    Quick links card
@@ -2556,6 +2593,7 @@ Our history slider date
    ========================================================================== */
 .c-quick-links-wrapper {
   width: 100%;
+  height: auto;
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -2565,7 +2603,7 @@ Our history slider date
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%; }
+  height: auto; }
   @media (min-width: 768px) {
     .c-quick-links-wrapper__slider {
       padding: 0 35px; } }
@@ -2607,10 +2645,14 @@ Our history slider date
    ========================================================================== */
 .c-section-divider {
   width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center; }
+
+.c-section-divider .l-inner {
+  margin: 0; }
 
 .c-section-divider__title {
   padding-bottom: 30px; }
@@ -2687,6 +2729,9 @@ Search toggle
       margin-right: 25px;
       height: 100%;
       padding: 0; } }
+  @media (min-width: 1024px) {
+    .c-search-toggle {
+      margin-right: 0; } }
   @media (min-width: 1440px) {
     .c-search-toggle {
       width: 76px;

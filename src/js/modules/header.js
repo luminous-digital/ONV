@@ -45,7 +45,7 @@ const Header = {
     if (parents) {
       Array.from(parents).forEach(item => {
         const itemPos = item.getBoundingClientRect()
-        const itemPosX = itemPos.x
+        const itemPosX = itemPos.left
         const itemPosY = itemPos.height
         const subNav = item.querySelector('.c-sub-nav')
         subNav.style.top = itemPosY

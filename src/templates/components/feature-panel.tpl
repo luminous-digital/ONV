@@ -15,7 +15,9 @@
                 </p>
                 <div class="c-btn-wrapper c-btn-wrapper--left">
                     <a href="/our-operations.html" class="c-btn c-btn--medium c-btn--primary c-btn--center t-btn t-white">
-                        Our operations
+                        <span class="c-label">
+                            Our operations
+                        </span>
                     </a>
                 </div>
             </div>

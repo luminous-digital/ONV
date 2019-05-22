@@ -10,10 +10,10 @@
                 <p class="c-header-panel__desc t-body t-body--big t-white">
                     {{ pageSubtitle }}
                 </p>
-                <a class="c-header-panel__arrow-container" href="#latest-news">
+                <div class="c-header-panel__arrow-container js-anchor-link" data-scroll-to="latest-news">
                     <span class="c-header-panel__arrow">
                     </span>
-                </a>
+                </div>
                 <ul class="c-header-panel-tabs">
                     <li class="c-header-panel-tab t-center">
                         <a href="#" class="c-link">

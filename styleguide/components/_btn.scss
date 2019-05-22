@@ -6,7 +6,9 @@
 //
 // markup:
 // <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-//     All news
+//     <span class="c-label">
+//         All news
+//     </span>
 // </a>
 //
 // Styleguide 6.1
@@ -15,6 +17,8 @@
     width: 100%;
     height: auto;
 
+    cursor: pointer;
+
     padding: {
         top: 15px;
         bottom: 15px;
@@ -22,6 +26,38 @@
 
     &--primary {
         background-color: color(accent);
+
+        padding: {
+            left: 15px;
+            right: 15px;
+        }
+
+        position: relative;
+
+        &:hover {
+            text-align: left;
+
+            .c-label {
+
+                &:after {
+                    content: '';
+
+                    display: block;
+
+                    width: 20px;
+                    height: 15px;
+
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+
+                    background-image: url('./../img/btn-arrow-01.svg');
+                    background-size: cover;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
     }
     &--medium {
         width: $size-btn-medium-width;

@@ -47,6 +47,8 @@
     width: 100%;
 
     transition: $transition-default;
+
+    z-index: $z-index-search-container;
 }
 
 .is-header-open .c-header-nav__search {

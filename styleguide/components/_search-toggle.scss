@@ -24,6 +24,9 @@ Search toggle
 
         padding: 0;
     }
+    @include media('>=tablet') {
+        margin-right: 0;
+    }
     @include media('>=desktop') {
         width: $size-search-width + offset(main) * 5.5;
 

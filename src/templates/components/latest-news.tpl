@@ -65,7 +65,9 @@
             </div>
             <div class="c-btn-wrapper">
                 <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                    All news
+                    <span class="c-label">
+                        All news
+                    </span>
                 </a>
             </div>
         </div>

@@ -94,6 +94,8 @@ Header panel full
 
     padding-bottom: offset(main) * 8;
 
+    cursor: pointer;
+
     @include media('>=mobile') {
         padding-bottom: offset(main) * 10.5;
     }
