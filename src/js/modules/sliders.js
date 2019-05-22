@@ -98,19 +98,27 @@ const Sliders = {
       let elemString = ''
       Array.from(slides).forEach((slide, index) => {
         const date = slide.querySelector('.js-slider-date').innerHTML
-        let datePos
-        if (index === currentItem) {
-          datePos = 'current-slide is-active'
-        } else if (index === currentItem + 1) {
-          datePos = 'after-slide is-active'
-        } else if (index === currentItem + 2) {
-          datePos = 'after-after-slide is-active'
-        } else if (index === currentItem - 1) {
-          datePos = 'before-slide is-active'
-        } else if (index === currentItem - 2) {
-          datePos = 'before-before-slide is-active'
+        let currentElemPosition
+        switch (index) {
+          case currentItem:
+            currentElemPosition = 'current-slide is-active'
+            break
+          case currentItem + 1:
+            currentElemPosition = 'after-slide is-active'
+            break
+          case currentItem + 2:
+            currentElemPosition = 'after-after-slide is-active'
+            break
+          case currentItem - 1:
+            currentElemPosition = 'before-slide is-active'
+            break
+          case currentItem - 2:
+            currentElemPosition = 'before-before-slide is-active'
+            break
+          default:
+            currentElemPosition = ''
         }
-        elemString += `<div class="c-our-history-slider-date js-slider-date-elem ${datePos}" data-order="${index}">
+        elemString += `<div class="c-our-history-slider-date js-slider-date-elem ${currentElemPosition}" data-order="${index}">
             <h3 class="t-h3 js-slider-date">${date}</h3>
         </div>`
       })
