@@ -12,6 +12,7 @@
     }
     &--no-offset {
         padding-bottom: 0;
+        margin-bottom: 0;
     }
     &--our-story {
         position: relative;
@@ -39,4 +40,13 @@
 
 .l-hero {
     margin-bottom: offset(main) * 6;
+}
+
+.l-tab {
+    overflow: hidden;
+    height: 0;
+
+    &.is-active {
+        height: auto;
+    }
 }

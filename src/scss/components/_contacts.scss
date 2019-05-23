@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Contacts
+   ========================================================================== */
+// Contacts
+//
+// markup:
+// <section class="l-section">
+//     <div class="c-section-divider">
+//         <div class="l-inner">
+//             <h4 class="c-section-divider__title t-sec-divider">
+//                 {{ secTitle }}
+//             </h4>
+//         </div>
+//     </div>
+//     <div class="l-inner">
+//         <div class="c-contacts">
+//             <h3 class="c-contacts__title t-h3 t-center">
+//                 {{ firstTitle }}
+//             </h3>
+//             <p class="c-contacts__content t-body t-center">
+//                 {{ firstContent | safe }}
+//             </p>
+//             <h3 class="c-contacts__title t-h3 t-center">
+//                 {{ secondTitle }}
+//             </h3>
+//             <p class="c-contacts__content t-body t-center">
+//                 {{ secondContent | safe }}
+//             </p>
+//         </div>
+//     </div>
+// </section>
+//
+// Styleguide 12
+
+.c-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media('>=mobile') {
+        margin: 0 auto;
+
+        max-width: 70%;
+    }
+    @include media('>=mobile') {
+        max-width: 50%;
+    }
+}
+
+.c-contacts__title {
+    padding-top: offset(main) * 2;
+    padding-bottom: offset(main) * 3;
+}
+
+.c-contacts__content {
+    margin: 0;
+    padding-bottom: offset(main) * 3;
+
+    a {
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,16 @@
+/* ==========================================================================
+   HR Horizontal rule
+   ========================================================================== */
+.c-hr {
+    border: none;
+
+    width: 100%;
+    height: offset(main);
+
+    background-color: color(lblue);
+
+    &--padded {
+        margin-top: offset(main) * 6;
+        margin-bottom: offset(main) * 6;
+    }
+}

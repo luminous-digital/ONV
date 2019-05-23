@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Content tabs
+   ========================================================================== */
+// Content tabs
+//
+// markup:
+// <section class="l-section">
+//     <div class="l-inner">
+//         <ul class="c-content-tabs js-content-tabs">
+//             <li class="c-content-tabs__tab t-btn c-content-tabs__tab--inactive">
+//                 <button class="c-content-tabs__btn c-content-tabs__btn--active" data-tab="0">
+//                     <span class="c-label">
+//                         Fertilizers
+//                     </span>
+//                 </button>
+//             </li>
+//             <li class="c-content-tabs__tab">
+//                 <button class="c-content-tabs__btn t-btn" data-tab="1">
+//                     <span class="c-label">
+//                         Industrial chemicals
+//                     </span>
+//                 </button>
+//             </li>
+//         </ul>
+//     </div>
+// </section>
+//
+// Styleguide 10
+
+.c-content-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    margin-top: offset(main) * 4;
+}
+
+.c-content-tabs__tab {
+    width: calc(50% - #{offset(main)} * .2);
+
+    @include media('>=mobile') {
+        width: calc(50% - #{offset(main)} * 1.25);
+    }
+}
+
+.c-content-tabs__btn {
+    width: 100%;
+    height: $size-content-tabs-tab-height;
+
+    border: none;
+
+    background: transparent;
+    color: color(accent);
+
+    border: 2px solid color(accent);
+}
+
+.c-content-tabs__tab.is-active .c-content-tabs__btn {
+    background-color: color(accent);
+    color: color(white);
+
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        bottom: -$size-content-tabs-tab-arrow-height;
+        left: calc(50% - #{$size-content-tabs-tab-arrow-width});
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size-content-tabs-tab-arrow-height $size-content-tabs-tab-arrow-width 0 $size-content-tabs-tab-arrow-width;
+        border-color: color(accent) transparent transparent transparent;
+    }
+}

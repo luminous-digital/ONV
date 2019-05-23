@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Map pin
+   ========================================================================== */
+.c-map-pin {
+    position: absolute;
+
+    width: offset(main) * 3;
+    height: offset(main) * 3;
+
+    cursor: pointer;
+
+    background-color: black;
+
+    background-image: url('../img/img-map-pin.svg');
+    background-size: offset(main) * 2.1 offset(main) * 2.1;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    border-radius: 50%;
+
+    &--cat-0 {
+        background-color: color(mapgreen);
+    }
+    &--cat-1 {
+        background-color: color(mapblue);
+    }
+    &--cat-2 {
+        background-color: color(lgrey);
+    }
+}
+
+.c-map-pin__modal {
+    display: none;
+}
