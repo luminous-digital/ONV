@@ -1,6 +1,38 @@
 /* ==========================================================================
 Text component
 ========================================================================== */
+// Text component
+//
+// markup:
+// <div class="c-text-component">
+//     <div class="c-text-component__column">
+//         <h2 class="c-text-component__title t-h2">
+//             Our facilities
+//         </h2>
+//     </div>
+//     <div class="c-text-component__column">
+//         <div class="c-wysiwyg {% if noPadding %}c-wysiwyg--nopadding{% endif %}">
+//             Our Fertilizer & Chemicals Group began in 2005 as a single minority investment in Egypt Basic Industries Corporation (EBIC).<br><br>
+//             Today, our production facilities include OCI Nitrogen and BioMCN in the Netherlands, Egyptian Fertilizers Company (EFC) and EBIC in Egypt, Sorfert Algerie in Algeria, and Iowa Fertilizer Company, OCI Beaumont and Natgasoline in the United States.
+//         </div>
+//         {% if secondParagraph %}
+//             <div class="c-wysiwyg u-m-hidden {% if noPadding %}c-wysiwyg--nopadding{% endif %}">
+//                 Our plants are strategically located on the Red Sea (south of Suez Canal), Mediterranean and Atlantic coasts, making them easily accessible from sea via key ports. Good road links enable swift distribution inland and to other ports.<br><br>
+//                 Click on our interactive locations map below for more information about each production facility.
+//             </div>
+//         {% endif %}
+//         {% if btnText %}
+//             <div class="c-btn-wrapper c-btn-wrapper--left u-m-hidden">
+//                 <a href="/news.html" class="c-btn c-btn--{{ btnType }} c-btn--block c-btn--padded">
+//                     <span class="c-label t-btn t-white">{{ btnText }}</span>
+//                     <span class="c-sub-label t-btn t-btn--small t-white">{{ btnSubtitle }}</span>
+//                 </a>
+//             </div>
+//         {% endif %}
+//     </div>
+// </div>
+//
+// Styleguide 11
 
 .c-text-component {
     display: flex;
@@ -27,8 +59,6 @@ Text component
 
     @include media('>=desktop-small') {
         width: 33%;
-
-        padding-top: offset(main) * 7;
     }
 }
 

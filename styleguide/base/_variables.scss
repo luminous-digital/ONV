@@ -18,10 +18,10 @@ $colors: (
     main: #283A6A,
     accent: #F79727,
     lblue: #F3F5F9,
-    mapblue: #4A90E2,
     dgrey: #444444,
     white: #fff,
     lgrey: #A2A1A2,
+    mapblue: #4A90E2,
     mapgreen: #30B6B5,
     black: black
 );
@@ -160,3 +160,18 @@ $size-our-story-arrow-width: 30px;
 $size-our-story-arrow-width-t: 38px;
 $size-our-story-offset-t: 120px;
 $size-our-story-slider-date-width: 55px;
+
+/* Content tabs / Content tab
+=========================== */
+$size-content-tabs-tab-height: 45px;
+$size-content-tabs-tab-arrow-height: 10px;
+$size-content-tabs-tab-arrow-width: 15px;
+
+/* Map
+=========================== */
+$size-map-container-width: 955px;
+$size-map-container-height: 521px;
+$size-map-width: 891px;
+$size-map-width-t: 1000px;
+$size-map-height: 490px;
+$size-map-height-t: 550px;
