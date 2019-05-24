@@ -3,10 +3,10 @@
     <div class="l-inner">
         <div class="c-footer">
             <div class="c-footer__logo-wrapper">
-                <a class="c-link" href="#">
-                    <figure class="c-logo c-logo--narrow">
-                        <img src="../static/img/logo-white.png" alt="OCI" class="c-img" />
-                    </figure>
+                <a class="c-logo c-logo--alt" href="/">
+                    <svg class="o-svg c-logo__decor">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#logo"></use>
+                    </svg>
                 </a>
             </div>
             <p class="c-footer__nav-item t-menu t-menu--small t-white">
@@ -26,7 +26,9 @@
             <div class="c-footer__social-wrapper">
                 <a class="c-link" href="#">
                     <figure class="c-social-icon">
-                        <img src="../static/img/linkedin.svg" alt="OCI LinkedIn" class="c-img" />
+                        <svg class="o-svg c-logo__decor">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#linkedin"></use>
+                        </svg>
                     </figure>
                 </a>
             </div>

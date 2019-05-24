@@ -19,4 +19,13 @@ Search form close
     height: offset(main) * 3;
 
     padding: offset(main) * 0.65;
+
+    fill: color(accent);
+}
+
+.c-search-form-close .o-svg {
+    fill: currentColor;
+
+    width: 100%;
+    height: 100%;
 }

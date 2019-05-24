@@ -8,10 +8,10 @@
         <div class="l-inner">
             <div class="c-header js-header">
                 <div class="c-header__logo-wrapper">
-                    <a class="c-link" href="/">
-                        <figure class="c-logo">
-                            <img src="../static/img/logo.png" alt="OCI" class="c-img" />
-                        </figure>
+                    <a class="c-logo" href="/">
+                        <svg class="o-svg c-logo__decor">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#logo"></use>
+                        </svg>
                     </a>
                 </div>
                 <div class="c-menu-toggle js-menu-toggle">
@@ -20,7 +20,9 @@
                 </div>
                 <div class="c-search-toggle js-toggle-search">
                     <span class="c-search-toggle__icon">
-                        <img src="../static/img/search.svg" alt="Search" class="c-img" />
+                        <svg class="o-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#search"></use>
+                        </svg>
                     </span>
                 </div>
                 <div class="c-header-nav">
@@ -255,11 +257,15 @@
                                 <form method="POST" action="" class="c-search-form t-body">
                                     <input placeholder="Search now" id="search" name="search" class="c-search-form__input">
                                     <button type="submit" class="c-search-form__submit">
-                                        <img src="../static/img/search-orange.svg" alt="Search" class="c-img" />
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#search"></use>
+                                        </svg>
                                     </button>
                                 </form>
                                 <span class="c-search-form-close js-close-search">
-                                    <img src="../static/img/close-orange.svg" alt="Close search" class="c-img" />
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
                                 </span>
                             </div>
                         </div>

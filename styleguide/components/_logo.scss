@@ -6,19 +6,26 @@
     margin: 0;
 
     width: $size-logo-width-m;
+    height: $size-header-height-m;
+
+    color: color(main);
 
     @include media('>=mobile') {
         width: $size-logo-width-d;
+        height: $size-header-height-d;
     }
 }
 
-.c-logo--narrow {
+.c-logo--alt {
     width: $size-logo-narrow;
+    height: $size-footer-height;
+
+    color: color(white);
 }
 
-.c-logo .c-img {
-    object-fit: cover;
-
+.c-logo__decor {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+
+    fill: currentColor;
 }
