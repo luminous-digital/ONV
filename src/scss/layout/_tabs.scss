@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Tabs tab
+========================================================================== */
+.l-tabbed-section {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.l-tab {
+    transition: $transition-default;
+    margin-left: -100vw;
+
+    &.is-active {
+        margin-left: 0;
+    }
+}

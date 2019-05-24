@@ -27,6 +27,7 @@
 @import "layout/inner";
 @import "layout/main";
 @import "layout/sections";
+@import "layout/tabs";
 
 /* Components
    ========================================================================== */
@@ -42,6 +43,7 @@
 @import "components/header";
 @import "components/header-nav";
 @import "components/header-nav-menu";
+@import "components/header-overlay";
 @import "components/header-panel";
 @import "components/header-panel-tab";
 @import "components/header-panel-tabs";

@@ -5,7 +5,6 @@ Sub nav
     display: flex;
     flex-direction: column;
 
-    max-height: 0;
     overflow: hidden;
 
     padding: 0;
@@ -14,25 +13,23 @@ Sub nav
 
     transition: $transition-slow;
 
-    @include media('>=mobile') {
-        position: fixed;
+    z-index: $z-index-sub-nav;
 
-        transition: none;
+    @include media('>=mobile') {
+        position: absolute;
+
+        top: $size-header-height-d;
+        left: 0;
 
         width: $size-header-sub-menu-width-d;
-        min-height: 0;
+        max-height: 0;
 
         background-color: color(white);
     }
 }
 
-.c-header-nav-menu__item.is-active .c-sub-nav {
-    display: flex;
-    max-height: 150vh;
-
-    @include media('>=mobile') {
-        min-height: 100px;
-    }
+.c-header-nav-menu__item.is-active > .c-sub-nav {
+    max-height: 100vh;
 }
 
 .c-sub-nav__item {
@@ -47,6 +44,7 @@ Sub nav
         width: 100%;
         background-color: color(white);
         padding: 0 offset(default);
+        border-bottom: 0;
     }
 }
 
@@ -61,14 +59,6 @@ Sub nav
 
     @include media('>=mobile') {
         margin-bottom: offset(main);
-    }
-}
-
-.c-sub-nav.is-active {
-    @include media('>=mobile') {
-        width: $size-header-sub-menu-width-d;
-        min-height: 400px;
-        height: 100%;
     }
 }
 
@@ -98,6 +88,13 @@ Sub nav
 }
 
 .c-sub-nav__item:hover > .c-link > .c-label:after {
+
+    @include media('>=mobile') {
+        width: 100%;
+    }
+}
+
+.c-header-nav-menu__item.is-active >.c-sub-nav__item > .c-link > .c-label:after {
 
     @include media('>=mobile') {
         width: 100%;

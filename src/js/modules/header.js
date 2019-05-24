@@ -47,23 +47,22 @@ const Header = {
       searchClose.addEventListener('click', closeSearch)
     }
     if (parents) {
-      Array.from(parents).forEach(item => {
-        const itemPos = item.getBoundingClientRect()
-        const itemPosX = itemPos.left
-        const itemPosY = itemPos.height
-        const subNav = item.querySelector('.c-sub-nav')
-        const toggleSubmenu = e => {
-          e.stopPropagation()
-          subNav.classList.add('is-active')
-        }
-        const closeSubmenu = e => {
-          subNav.classList.remove('is-active')
-        }
-        subNav.style.top = itemPosY
-        subNav.style.left = itemPosX - 18
-        item.addEventListener('mouseenter', toggleSubmenu)
+      const headerOverlay = document.querySelector('.js-header-overlay')
+      const parentsArr = Array.from(parents)
+      const toggleSubmenu = e => {
+        const navItem = e.currentTarget
+        navItem.classList.toggle('is-active')
+        headerOverlay.classList.toggle('is-active')
+      }
+      headerOverlay.addEventListener('click', e => {
+        headerOverlay.classList.toggle('is-active')
+        parentsArr.forEach(item => {
+          item.classList.remove('is-active')
+        })
+      })
+      parentsArr.forEach(item => {
+        item.addEventListener('click', toggleSubmenu)
         item.addEventListener('touchstart', toggleSubmenu)
-        item.addEventListener('mouseleave', closeSubmenu)
       })
     }
   }
