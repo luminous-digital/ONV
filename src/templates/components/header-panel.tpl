@@ -26,7 +26,9 @@
                                     View listing information
                                 </p>
                                 <span class="c-header-panel-tab__hover-icon">
-                                    <img src="./static/img/icon-arrow.svg" alt="View listing information" />
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#arrow"></use>
+                                    </svg>
                                 </span>
                             </div>
                         </a>
@@ -42,7 +44,9 @@
                                     Download
                                 </p>
                                 <span class="c-header-panel-tab__hover-icon">
-                                    <img src="./static/img/icon-download.svg" alt="View listing information" />
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                    </svg>
                                 </span>
                             </div>
                         </a>

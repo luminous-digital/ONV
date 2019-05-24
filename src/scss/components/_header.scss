@@ -25,8 +25,10 @@
     display: flex;
     align-items: center;
 
-    @include media('>=desktop') {
-        margin-left: - offset(main);
+    padding: 0 offset(main) * 2.5;
+
+    @include media('>=desktop-small') {
+        padding: 0;
     }
 }
 

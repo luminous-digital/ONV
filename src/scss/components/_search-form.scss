@@ -40,6 +40,15 @@ Search form
 
     border: none;
     background: none;
+
+    color: color(accent);
+}
+
+.c-search-form__submit .o-svg {
+    width: $size-search-form-icon-size;
+    height: $size-search-form-icon-size;
+
+    fill: currentColor;
 }
 
 .is-search-active .c-search-form {
