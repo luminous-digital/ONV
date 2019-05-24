@@ -30,7 +30,7 @@ Header nav
 
         margin-left: auto;
     }
-    @include media('>=tablet') {
+    @include media('>=mobile') {
         overflow: visible;
     }
 }

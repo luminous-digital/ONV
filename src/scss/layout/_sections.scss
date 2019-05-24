@@ -41,12 +41,3 @@
 .l-hero {
     margin-bottom: offset(main) * 6;
 }
-
-.l-tab {
-    overflow: hidden;
-    height: 0;
-
-    &.is-active {
-        height: auto;
-    }
-}
