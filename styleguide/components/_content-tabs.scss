@@ -48,6 +48,10 @@
     }
 }
 
+.c-content-tabs__tab:hover {
+    cursor: pointer;
+}
+
 .c-content-tabs__btn {
     width: 100%;
     height: $size-content-tabs-tab-height;

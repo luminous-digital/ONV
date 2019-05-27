@@ -11,6 +11,13 @@
     position: relative;
 
     list-style: none;
+
+    @include media('>=mobile') {
+        margin: 0 auto;
+
+        width: $size-map-width-t;
+        height: $size-map-height-t;
+    }
 }
 
 .c-map__img {
@@ -27,6 +34,10 @@
     background-image: url('../img/img-map-bg.png');
     background-position: 0 -41px;
     background-repeat: no-repeat;
-
     background-size: $size-map-container-width $size-map-container-height;
+
+    @include media('>=mobile') {
+        background-position: 0 10px;
+        background-size: $size-map-container-width-t $size-map-container-height-t;
+    }
 }

@@ -75,6 +75,10 @@ select select.pseudo-class-focus {
   background-repeat: no-repeat;
 }
 
+.c-content-tabs__tab.pseudo-class-hover {
+  cursor: pointer;
+}
+
 .c-header-nav-menu__item.pseudo-class-first-child > .c-link {
   border-top: 2px solid #F3F5F9;
 }

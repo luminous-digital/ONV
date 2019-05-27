@@ -87,66 +87,131 @@
 
 <section class="l-section">
     <div class="c-map-wrapper">
-        <div class="c-map-container">
-            <div class="c-map-container__scrollbar">
+        <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
+            {# <div class="c-map-container__scrollbar">
                 <div class="c-scroll">
                 </div>
-            </div>
-            <ul class="c-map">
+            </div> #}
+            <div class="c-map">
                 <figure class="c-map__img">
                 </figure>
-                {% for mapPoint in mapPoints %}
-                    <li
-                        class="c-map-pin c-map-pin--cat-{{ mapPoint.catID }} js-map-pin"
-                        data-category-id="{{ mapPoint.catID }}"
-                        data-territory="{{ mapPoint.territory }}"
-                        data-location-type="{{ mapPoint.locType }}"
-                        style="left: {{ mapPoint.posX }}; bottom: {{ mapPoint.posY }}"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                <ul class="c-map-pin-list">
+                    {% set pinColors = [
+                        'green',
+                        'blue',
+                        'grey'
+                    ] %}
+                    {% for mapPoint in mapPoints %}
+                        <li
+                            class="c-map-pin c-map-pin--{{ pinColors[mapPoint.catID] }} js-map-pin"
+                            data-category-id="{{ mapPoint.catID }}"
+                            data-territory="{{ mapPoint.territory }}"
+                            data-location-type="{{ mapPoint.locType }}"
+                            style="left: {{ mapPoint.posX }}; bottom: {{ mapPoint.posY }}"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    {{ mapPoint.name }}
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    {{ mapPoint.locDesc }}
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                {{ mapPoint.name }}
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                {{ mapPoint.locDesc }}
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-map-nav-wrapper">
         <div class="l-inner">
             <div class="c-map-nav">
                 <ul class="c-map-nav__pins">
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--blue">
                         <p class="c-map-nav-pin__desc">
                             Fertilizers
                         </p>
                     </li>
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--green">
                         <p class="c-map-nav-pin__desc">
                             Chemicals
                         </p>
                     </li>
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--grey">
                         <p class="c-map-nav-pin__desc">
                             Sales and distribution
                         </p>
                     </li>
                 </ul>
+                <p class="c-map-nav__filters-title t-h3">
+                    Filter by:
+                </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
+                        <div class="c-dropdown is-open">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Country/territory
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
                         <div class="c-dropdown">
-                            <button class="c-dropdown__label">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Country/territory
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
+                        <div class="c-dropdown">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label">
                                     Country/territory
                                 </span>

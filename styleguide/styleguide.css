@@ -925,6 +925,180 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start; }
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit; }
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0; }
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch; }
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%;
+  /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+  visibility: visible;
+  overflow: auto;
+  /* Scroll on this element otherwise element can't have a padding applied properly */
+  max-width: 100%;
+  /* Not required for horizontal scroll to trigger */
+  max-height: 100%;
+  /* Needed for vertical scroll to trigger */ }
+
+.simplebar-content:before,
+.simplebar-content:after {
+  content: " ";
+  display: table; }
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none; }
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: inherit;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0; }
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1; }
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden; }
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all; }
+
+.simplebar-scrollbar {
+  position: absolute;
+  right: 2px;
+  width: 7px;
+  min-height: 10px; }
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: "";
+  background: black;
+  border-radius: 7px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.2s linear; }
+
+.simplebar-track .simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear; }
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px; }
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px; }
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px; }
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px; }
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto; }
+
+/* Rtl support */
+[data-simplebar-direction="rtl"] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0; }
+
+.hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll; }
+
 /* Base
    ========================================================================== */
 /* ==========================================================================
@@ -957,6 +1131,8 @@ button.swiper-pagination-bullet {
 /* Our history / Our story component
 =========================== */
 /* Content tabs / Content tab
+=========================== */
+/* Map
 =========================== */
 /* Map
 =========================== */
@@ -1636,16 +1812,6 @@ body.is-header-open {
 /* ==========================================================================
    Tabs tab
 ========================================================================== */
-.l-tabbed-section {
-  overflow: hidden;
-  width: 100vw; }
-
-.l-tab {
-  transition: all 0.2s linear;
-  margin-left: -100vw; }
-  .l-tab.is-active {
-    margin-left: 0; }
-
 /* Components
    ========================================================================== */
 /* ==========================================================================
@@ -1777,6 +1943,9 @@ body.is-header-open {
     .c-content-tabs__tab {
       width: calc(50% - 10px * 1.25); } }
 
+.c-content-tabs__tab:hover {
+  cursor: pointer; }
+
 .c-content-tabs__btn {
   width: 100%;
   height: 45px;
@@ -1800,6 +1969,63 @@ body.is-header-open {
     border-style: solid;
     border-width: 10px 15px 0 15px;
     border-color: #F79727 transparent transparent transparent; }
+
+/* ==========================================================================
+   Dropdown
+   ========================================================================== */
+.c-dropdown {
+  width: 100%;
+  max-height: 45px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  font-size: 14px;
+  cursor: pointer; }
+
+.c-dropdown.is-open {
+  max-height: 500px; }
+
+.c-dropdown__title {
+  height: 45px;
+  width: 100%;
+  background-color: #F79727;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer; }
+  .c-dropdown__title:after {
+    content: '';
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top: calc(50% - offset(main) * 1.7 / 2);
+    right: 20px;
+    background-image: url("../img/chevron.svg");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: all 0.2s linear; }
+
+.c-dropdown.is-open .c-dropdown__title:after {
+  transform: rotate(180deg); }
+
+.c-dropdown__options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px; }
+
+.c-dropdown__option {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 2px;
+  padding: 0 20px;
+  background-color: #F3F5F9; }
 
 /* ==========================================================================
 Feature panel
@@ -2514,6 +2740,11 @@ Header panel wrapper
   margin: 0;
   position: relative;
   list-style: none; }
+  @media (min-width: 768px) {
+    .c-map {
+      margin: 0 auto;
+      width: 1000px;
+      height: 570px; } }
 
 .c-map__img {
   position: absolute;
@@ -2527,6 +2758,10 @@ Header panel wrapper
   background-position: 0 -41px;
   background-repeat: no-repeat;
   background-size: 955px 521px; }
+  @media (min-width: 768px) {
+    .c-map__img {
+      background-position: 0 10px;
+      background-size: 965px 550px; } }
 
 /* ==========================================================================
    Map Container
@@ -2538,7 +2773,92 @@ Header panel wrapper
   padding: 0;
   overflow-x: scroll;
   overflow-y: hidden; }
+  @media (min-width: 1200px) {
+    .c-map-container {
+      overflow: hidden; } }
 
+/* Simplebar styles
+--------------------- */
+.c-map-container .simplebar-track:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #283A6A; }
+
+.c-map-container .simplebar-track.simplebar-horizontal {
+  height: 17px;
+  left: 40px;
+  right: 40px;
+  bottom: 17px; }
+  @media (min-width: 768px) {
+    .c-map-container .simplebar-track.simplebar-horizontal {
+      bottom: 50px; } }
+
+.c-map-container .simplebar-track .simplebar-scrollbar {
+  height: 15px;
+  width: 94px; }
+  .c-map-container .simplebar-track .simplebar-scrollbar:before {
+    width: 94px;
+    background-color: #F79727;
+    opacity: 1; }
+  @media (min-width: 768px) {
+    .c-map-container .simplebar-track .simplebar-scrollbar:before {
+      width: calc(100% - 5px); } }
+
+/* ==========================================================================
+   Map nav
+   ========================================================================== */
+.c-map-nav {
+  width: 100%; }
+
+.c-map-nav__pins {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 20px; }
+
+.c-map-nav__filters {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0;
+  border-bottom: 1px solid #283A6A;
+  list-style: none; }
+
+/* ==========================================================================
+   Map nav pin
+   ========================================================================== */
+.c-map-nav-pin--green .c-map-nav-pin__desc:before {
+  background-color: #30B6B5; }
+
+.c-map-nav-pin--blue .c-map-nav-pin__desc:before {
+  background-color: #4A90E2; }
+
+.c-map-nav-pin--grey .c-map-nav-pin__desc:before {
+  background-color: #A2A1A2; }
+
+.c-map-nav-pin__desc {
+  margin: 0;
+  padding: 10px 30px;
+  position: relative; }
+  .c-map-nav-pin__desc:before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(62%);
+    border-radius: 50%; }
+
+/* ==========================================================================
+   Map nav wrapper
+   ========================================================================== */
 /* ==========================================================================
    Map pin
    ========================================================================== */
@@ -2552,16 +2872,76 @@ Header panel wrapper
   background-size: 21px 21px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   border-radius: 50%; }
-  .c-map-pin--cat-0 {
+  .c-map-pin--green {
     background-color: #30B6B5; }
-  .c-map-pin--cat-1 {
+  .c-map-pin--blue {
     background-color: #4A90E2; }
-  .c-map-pin--cat-2 {
+  .c-map-pin--grey {
     background-color: #A2A1A2; }
+  @media (min-width: 768px) {
+    .c-map-pin {
+      width: 33.5px;
+      height: 33.5px;
+      border-radius: 100%; } }
 
 .c-map-pin__modal {
-  display: none; }
+  max-height: 0;
+  overflow: hidden; }
+
+.c-map-pin__modal.is-active {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(-25%);
+  z-index: 1;
+  background-color: #F3F5F9;
+  padding: 30px 15px 20px;
+  width: 320px;
+  height: auto;
+  max-height: 470px;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5); }
+  @media (min-width: 768px) {
+    .c-map-pin__modal.is-active {
+      position: absolute;
+      left: -160px;
+      top: -150px;
+      transform: none; } }
+
+.c-map-pin__modal.is-active .c-map-pin__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 5px; }
+
+.c-map-pin__modal.is-active .c-map-pin__close .o-svg {
+  width: 100%;
+  height: 100%; }
+
+.c-map-pin__modal.is-active .c-map-pin__desc {
+  padding-bottom: 35px; }
+
+.c-map-pin__modal.is-active .c-btn-wrapper {
+  max-width: 230px; }
+
+/* ==========================================================================
+   Map pin list
+   ========================================================================== */
+.c-map-pin-list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .c-map-pin-list {
+      position: absolute;
+      top: 21px;
+      left: -51px;
+      transform: scale(0.9); } }
 
 /* ==========================================================================
    Map wrapper
