@@ -85,7 +85,7 @@
     ]
 %}
 
-<section class="l-section">
+<section class="l-section l-section--no-offset">
     <div class="c-map-wrapper">
         <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
             {# <div class="c-map-container__scrollbar">
@@ -109,23 +109,29 @@
                             data-location-type="{{ mapPoint.locType }}"
                             style="left: {{ mapPoint.posX }}; bottom: {{ mapPoint.posY }}"
                         >
-                            <div class="c-map-pin__modal js-map-modal">
-                                <div class="c-map-pin__close js-map-modal-close">
-                                    <svg class="o-svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
-                                    </svg>
-                                </div>
-                                <h3 class="c-map-pin__title t-h3">
-                                    {{ mapPoint.name }}
-                                </h3>
-                                <p class="c-map-pin__desc t-body">
-                                    {{ mapPoint.locDesc }}
-                                </p>
-                                <div class="c-btn-wrapper c-btn-wrapper--left">
-                                    <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        </li>
+                    {% endfor %}
+                </ul>
+                <ul class="c-map__modals">
+                    {% for mapPoint in mapPoints %}
+                        <li class="c-map-pin__modal js-map-modal">
+                            <div class="c-map-pin__close js-map-modal-close">
+                                <svg class="o-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                </svg>
+                            </div>
+                            <h3 class="c-map-pin__title t-h3">
+                                {{ mapPoint.name }}
+                            </h3>
+                            <p class="c-map-pin__desc t-body">
+                                {{ mapPoint.locDesc }}
+                            </p>
+                            <div class="c-btn-wrapper c-btn-wrapper--left">
+                                <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                    <span class="c-label">
                                         Read more
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
                         </li>
                     {% endfor %}
@@ -158,32 +164,6 @@
                 </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown is-open">
-                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
-                                    Country/territory
-                                </span>
-                            </button>
-                            <ul class="c-dropdown__options">
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Country/territory
-                                    </span>
-                                </li>
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Country/territory
-                                    </span>
-                                </li>
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Country/territory
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="c-map-nav__filter">
                         <div class="c-dropdown">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label">
@@ -213,23 +193,49 @@
                         <div class="c-dropdown">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label">
-                                    Country/territory
+                                    Location type
                                 </span>
                             </button>
                             <ul class="c-dropdown__options">
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Location type
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Location type
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Location type
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
+                        <div class="c-dropdown">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Facility name
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Facility name
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Facility name
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Facility name
                                     </span>
                                 </li>
                             </ul>

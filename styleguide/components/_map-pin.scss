@@ -21,6 +21,10 @@
 
     border-radius: 50%;
 
+    transition: $transition-default;
+
+    z-index: -1;
+
     &--green {
         background-color: color(mapgreen);
     }
@@ -42,6 +46,8 @@
 .c-map-pin__modal {
     max-height: 0;
     overflow: hidden;
+
+    z-index: 2;
 }
 
 .c-map-pin__modal.is-active {
