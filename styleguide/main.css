@@ -1885,6 +1885,12 @@ body.is-header-open {
   padding-left: 60px;
   padding-right: 60px; }
 
+.c-btn--download-icon {
+  background-color: transparent;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 60px; }
+
 /* ==========================================================================
    Btn wrapper
    ========================================================================== */
