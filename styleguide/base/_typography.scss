@@ -27,7 +27,7 @@
 //         <p class="t-body">
 //             Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum placerat hendrerit. In pretium, nisi placerat feugiat tempus, ante ligula egestas sapien, eu malesuada velit dui non est. Phasellus vel erat elit. Sed tortor libero, dapibus eget facilisis vel, sodales a libero.
 //         </p>
-//         <p class="t-body--alt">
+//         <p class="t-body--alt t-dgrey">
 //             Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum placerat hendrerit. In pretium, nisi placerat feugiat tempus, ante ligula egestas sapien, eu malesuada velit dui non est. Phasellus vel erat elit. Sed tortor libero, dapibus eget facilisis vel, sodales a libero.
 //         </p>
 //         <p class="t-standfirst">
@@ -190,8 +190,6 @@
     }
 
     &--alt {
-        color: color(dgrey);
-
         @include media('>=mobile') {
             font-size: font-size(body-m);
             line-height: font-size(body-m) * 1.5;
@@ -455,6 +453,10 @@
 
 .t-blue {
     color: color(main);
+}
+
+.t-dgrey {
+    color: color(dgrey);
 }
 
 .t-bold {
