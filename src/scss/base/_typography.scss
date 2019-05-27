@@ -188,7 +188,10 @@
         font-size: font-size(body--big);
         line-height: font-size(body--big) * 1.4;
     }
+
     &--alt {
+        color: color(dgrey);
+
         @include media('>=mobile') {
             font-size: font-size(body-m);
             line-height: font-size(body-m) * 1.5;

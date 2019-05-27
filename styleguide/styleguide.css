@@ -1310,10 +1310,12 @@ button.swiper-pagination-bullet {
   .t-body--big {
     font-size: 20px;
     line-height: 28px; }
-  @media (min-width: 768px) {
-    .t-body--alt {
-      font-size: 16px;
-      line-height: 24px; } }
+  .t-body--alt {
+    color: #444444; }
+    @media (min-width: 768px) {
+      .t-body--alt {
+        font-size: 16px;
+        line-height: 24px; } }
 
 .t-small {
   margin: 0;
@@ -1817,6 +1819,9 @@ body.is-header-open {
 /* ==========================================================================
 Article header
 ========================================================================== */
+.c-article-header__date {
+  margin-top: 10px; }
+
 /* ==========================================================================
    Btn
    ========================================================================== */
