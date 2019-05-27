@@ -1,6 +1,7 @@
 const Map = {
   init: function () {
     this.initMap()
+    this.mapFilters()
   },
   initMap: function () {
     const mapWrapper = document.querySelector('.c-map-wrapper')
@@ -24,6 +25,13 @@ const Map = {
         })
       })
     }
+  },
+  mapFilters: function () {
+    // const mapWrapper = document.querySelector('.c-map-wrapper')
+    // if (mapWrapper) {
+    //   const mapPins = Array.from(mapWrapper.querySelectorAll('.js-map-pin'))
+    //   const mapFilters =
+    // }
   }
 }
 

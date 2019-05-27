@@ -109,29 +109,25 @@
                             data-location-type="{{ mapPoint.locType }}"
                             style="left: {{ mapPoint.posX }}; bottom: {{ mapPoint.posY }}"
                         >
-                        </li>
-                    {% endfor %}
-                </ul>
-                <ul class="c-map__modals">
-                    {% for mapPoint in mapPoints %}
-                        <li class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                                <svg class="o-svg">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
-                                </svg>
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                {{ mapPoint.name }}
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                {{ mapPoint.locDesc }}
-                            </p>
-                            <div class="c-btn-wrapper c-btn-wrapper--left">
-                                <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    <span class="c-label">
-                                        Read more
-                                    </span>
-                                </a>
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    {{ mapPoint.name }}
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    {{ mapPoint.locDesc }}
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        <span class="c-label">
+                                            Read more
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </li>
                     {% endfor %}
@@ -164,9 +160,9 @@
                 </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown">
+                        <div class="c-dropdown js-map-filter" data-filter-type="country">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
+                                <span class="c-label js-filter-name">
                                     Country/territory
                                 </span>
                             </button>
@@ -190,9 +186,9 @@
                         </div>
                     </li>
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown">
+                        <div class="c-dropdown js-map-filter" data-filter-type="location-type">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
+                                <span class="c-label js-filter-name">
                                     Location type
                                 </span>
                             </button>
@@ -216,9 +212,9 @@
                         </div>
                     </li>
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown">
+                        <div class="c-dropdown js-map-filter" data-filter-type="location-type">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
+                                <span class="c-label js-filter-name">
                                     Facility name
                                 </span>
                             </button>

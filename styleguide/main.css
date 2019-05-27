@@ -2893,8 +2893,7 @@ Header panel wrapper
   outline: none;
   -webkit-tap-highlight-color: transparent;
   border-radius: 50%;
-  transition: all 0.2s linear;
-  z-index: -1; }
+  transition: all 0.2s linear; }
   .c-map-pin--green {
     background-color: #30B6B5; }
   .c-map-pin--blue {
@@ -2915,7 +2914,7 @@ Header panel wrapper
 .c-map-pin__modal.is-active {
   position: fixed;
   left: 50%;
-  transform: translateX(-50%) translateY(-25%);
+  transform: translateX(-50%) translateY(-20%);
   z-index: 1;
   background-color: #F3F5F9;
   padding: 30px 15px 20px;
