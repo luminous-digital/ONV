@@ -2461,6 +2461,18 @@ Header panel full
   transform: rotate(45deg); }
 
 /* ==========================================================================
+Header panel short
+========================================================================== */
+.c-header-panel--short {
+  padding-bottom: 85px; }
+  @media (min-width: 768px) {
+    .c-header-panel--short {
+      padding-top: 85px; } }
+
+.c-header-panel--short .c-header-panel__desc {
+  padding-bottom: 0; }
+
+/* ==========================================================================
 Header panel tab
 ========================================================================== */
 .c-header-panel-tab {
