@@ -2416,6 +2416,9 @@ Header overlay
 /* ==========================================================================
 Header panel full
 ========================================================================== */
+/* ==========================================================================
+Header panel short
+========================================================================== */
 .c-header-panel {
   display: flex;
   flex-direction: column;
@@ -2431,6 +2434,15 @@ Header panel full
   @media (min-width: 1025px) {
     .c-header-panel {
       padding-top: 180px; } }
+
+.c-header-panel--short {
+  padding-bottom: 85px; }
+  @media (min-width: 768px) {
+    .c-header-panel--short {
+      padding-top: 85px; } }
+
+.c-header-panel--short .c-header-panel__desc {
+  padding-bottom: 0; }
 
 .c-header-panel__desc {
   padding-bottom: 45px;
