@@ -105,3 +105,38 @@ Header panel full
     @include arrow;
     transform: rotate(45deg);
 }
+
+/* ==========================================================================
+Header panel short
+========================================================================== */
+// Header panel short
+//
+// markup:
+// <div class="l-hero">
+//     <div class="c-header-panel-wrapper" style="background-image: url('../static/img/img-header-panel-3.jpg');">
+//         <div class="l-inner l-inner--90 l-inner--desktop-70">
+//             <div class="c-header-panel c-header-panel--short t-center">
+//                 <h1 class="c-header-panel__title t-h1">
+//                     OCI Nitrogen
+//                 </h1>
+//                 <p class="c-header-panel__desc t-body t-body--big t-white">
+//                     OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer.
+//                 </p>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//
+// Styleguide 3.4
+
+.c-header-panel--short {
+    padding-bottom: offset(main) * 8.5;
+
+    @include media('>=mobile') {
+        padding-top: offset(main) * 8.5;
+    }
+}
+
+.c-header-panel--short .c-header-panel__desc {
+    padding-bottom: 0;
+}
