@@ -318,33 +318,21 @@ Operations
     
     
 
-<section class="l-tabbed-section js-tabbed-section">
+<section class="swiper-container l-tabbed-section js-tabbed-section-slider">
 
-    <section class="l-section">
+    <section class="l-section l-section--header">
         <div class="l-inner">
-            <ul class="c-content-tabs">
-                <li class="c-content-tabs__tab js-section-tab">
-                    <button class="c-content-tabs__btn t-btn" data-tab="0">
-                        <span class="c-label">
-                            Fertilizers
-                        </span>
-                    </button>
-                </li>
-                <li class="c-content-tabs__tab js-section-tab is-active">
-                    <button class="c-content-tabs__btn t-btn" data-tab="1">
-                        <span class="c-label">
-                            Industrial chemicals
-                        </span>
-                    </button>
-                </li>
+            <ul class="c-content-tabs js-tabbed-section-nav">
             </ul>
         </div>
     </section>
 
-    <section class="l-tab js-section-content" data-tab-section="0">
-        
+    <div class="swiper-wrapper l-tab-wrapper">
+
+        <section class="swiper-slide l-tab swiper-no-swiping" data-slide-title="Fertilizers">
             
-            
+                
+                
 
     
         
@@ -476,234 +464,313 @@ Operations
 
 <section class="l-section">
     <div class="c-map-wrapper">
-        <div class="c-map-container">
-            <div class="c-map-container__scrollbar">
-                <div class="c-scroll">
-                </div>
-            </div>
-            <ul class="c-map">
+        <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
+            
+            <div class="c-map">
                 <figure class="c-map__img">
                 </figure>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="0"
-                        data-location-type="Type 1"
-                        style="left: 20%; bottom: 71%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                <ul class="c-map-pin-list">
+                    
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="0"
+                            data-location-type="Type 1"
+                            style="left: 20%; bottom: 71%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 1
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 1
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="2"
+                            data-location-type="Type 2"
+                            style="left: 18%; bottom: 63%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 2
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="2"
-                        data-location-type="Type 2"
-                        style="left: 18%; bottom: 63%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="1"
+                            data-location-type="Type 1"
+                            style="left: 52%; bottom: 71%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 3
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 2
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="2"
+                            data-location-type="Type 3"
+                            style="left: 52%; bottom: 61%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 4
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="1"
-                        data-location-type="Type 1"
-                        style="left: 52%; bottom: 71%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="3"
+                            data-location-type="Type 5"
+                            style="left: 59%; bottom: 58%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 5
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 3
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--grey js-map-pin"
+                            data-category-id="2"
+                            data-territory="2"
+                            data-location-type="Type 3"
+                            style="left: 61%; bottom: 52%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 6
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="2"
-                        data-location-type="Type 3"
-                        style="left: 52%; bottom: 61%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--blue js-map-pin"
+                            data-category-id="1"
+                            data-territory="3"
+                            data-location-type="Type 2"
+                            style="left: 21%; bottom: 58%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 7
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 4
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--blue js-map-pin"
+                            data-category-id="1"
+                            data-territory="3"
+                            data-location-type="Type 2"
+                            style="left: 54%; bottom: 77%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 8
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="3"
-                        data-location-type="Type 5"
-                        style="left: 59%; bottom: 58%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 5
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-2 js-map-pin"
-                        data-category-id="2"
-                        data-territory="2"
-                        data-location-type="Type 3"
-                        style="left: 61%; bottom: 52%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 6
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-1 js-map-pin"
-                        data-category-id="1"
-                        data-territory="3"
-                        data-location-type="Type 2"
-                        style="left: 21%; bottom: 58%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 7
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-1 js-map-pin"
-                        data-category-id="1"
-                        data-territory="3"
-                        data-location-type="Type 2"
-                        style="left: 54%; bottom: 77%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 8
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-map-nav-wrapper">
         <div class="l-inner">
             <div class="c-map-nav">
                 <ul class="c-map-nav__pins">
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--blue">
                         <p class="c-map-nav-pin__desc">
                             Fertilizers
                         </p>
                     </li>
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--green">
                         <p class="c-map-nav-pin__desc">
                             Chemicals
                         </p>
                     </li>
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--grey">
                         <p class="c-map-nav-pin__desc">
                             Sales and distribution
                         </p>
                     </li>
                 </ul>
+                <p class="c-map-nav__filters-title t-h3">
+                    Filter by:
+                </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
+                        <div class="c-dropdown is-open">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Country/territory
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
                         <div class="c-dropdown">
-                            <button class="c-dropdown__label">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Country/territory
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
+                        <div class="c-dropdown">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label">
                                     Country/territory
                                 </span>
@@ -840,13 +907,13 @@ Operations
     
 
 
-        
-    </section>
+            
+        </section>
 
-    <section class="l-tab js-section-content is-active" data-tab-section="1">
-        
+        <section class="swiper-slide l-tab swiper-no-swiping" data-slide-title="Industrial chemicals">
             
-            
+                
+                
 
     
         
@@ -978,234 +1045,313 @@ Operations
 
 <section class="l-section">
     <div class="c-map-wrapper">
-        <div class="c-map-container">
-            <div class="c-map-container__scrollbar">
-                <div class="c-scroll">
-                </div>
-            </div>
-            <ul class="c-map">
+        <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
+            
+            <div class="c-map">
                 <figure class="c-map__img">
                 </figure>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="0"
-                        data-location-type="Type 1"
-                        style="left: 20%; bottom: 71%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                <ul class="c-map-pin-list">
+                    
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="0"
+                            data-location-type="Type 1"
+                            style="left: 20%; bottom: 71%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 1
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 1
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="2"
+                            data-location-type="Type 2"
+                            style="left: 18%; bottom: 63%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 2
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="2"
-                        data-location-type="Type 2"
-                        style="left: 18%; bottom: 63%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="1"
+                            data-location-type="Type 1"
+                            style="left: 52%; bottom: 71%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 3
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 2
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="2"
+                            data-location-type="Type 3"
+                            style="left: 52%; bottom: 61%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 4
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="1"
-                        data-location-type="Type 1"
-                        style="left: 52%; bottom: 71%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--green js-map-pin"
+                            data-category-id="0"
+                            data-territory="3"
+                            data-location-type="Type 5"
+                            style="left: 59%; bottom: 58%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 5
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 3
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--grey js-map-pin"
+                            data-category-id="2"
+                            data-territory="2"
+                            data-location-type="Type 3"
+                            style="left: 61%; bottom: 52%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 6
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="2"
-                        data-location-type="Type 3"
-                        style="left: 52%; bottom: 61%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--blue js-map-pin"
+                            data-category-id="1"
+                            data-territory="3"
+                            data-location-type="Type 2"
+                            style="left: 21%; bottom: 58%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 7
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 4
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
+                        </li>
+                    
+                        <li
+                            class="c-map-pin c-map-pin--blue js-map-pin"
+                            data-category-id="1"
+                            data-territory="3"
+                            data-location-type="Type 2"
+                            style="left: 54%; bottom: 77%"
+                        >
+                            <div class="c-map-pin__modal js-map-modal">
+                                <div class="c-map-pin__close js-map-modal-close">
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="c-map-pin__title t-h3">
+                                    Name 8
+                                </h3>
+                                <p class="c-map-pin__desc t-body">
+                                    OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
+                                </p>
+                                <div class="c-btn-wrapper c-btn-wrapper--left">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                        Read more
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-0 js-map-pin"
-                        data-category-id="0"
-                        data-territory="3"
-                        data-location-type="Type 5"
-                        style="left: 59%; bottom: 58%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 5
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-2 js-map-pin"
-                        data-category-id="2"
-                        data-territory="2"
-                        data-location-type="Type 3"
-                        style="left: 61%; bottom: 52%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 6
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-1 js-map-pin"
-                        data-category-id="1"
-                        data-territory="3"
-                        data-location-type="Type 2"
-                        style="left: 21%; bottom: 58%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 7
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li
-                        class="c-map-pin c-map-pin--cat-1 js-map-pin"
-                        data-category-id="1"
-                        data-territory="3"
-                        data-location-type="Type 2"
-                        style="left: 54%; bottom: 77%"
-                    >
-                        <div class="c-map-pin__modal js-map-modal">
-                            <div class="c-map-pin__close js-map-modal-close">
-                            </div>
-                            <h3 class="c-map-pin__title t-h3">
-                                Name 8
-                            </h3>
-                            <p class="c-map-pin__desc t-body">
-                                OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.
-                            </p>
-                            <div class="c-btn-wrapper">
-                                <a href="#" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                
-            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-map-nav-wrapper">
         <div class="l-inner">
             <div class="c-map-nav">
                 <ul class="c-map-nav__pins">
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--blue">
                         <p class="c-map-nav-pin__desc">
                             Fertilizers
                         </p>
                     </li>
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--green">
                         <p class="c-map-nav-pin__desc">
                             Chemicals
                         </p>
                     </li>
-                    <li class="c-map-nav-pin">
+                    <li class="c-map-nav-pin c-map-nav-pin--grey">
                         <p class="c-map-nav-pin__desc">
                             Sales and distribution
                         </p>
                     </li>
                 </ul>
+                <p class="c-map-nav__filters-title t-h3">
+                    Filter by:
+                </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
+                        <div class="c-dropdown is-open">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Country/territory
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
                         <div class="c-dropdown">
-                            <button class="c-dropdown__label">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+                                <span class="c-label">
+                                    Country/territory
+                                </span>
+                            </button>
+                            <ul class="c-dropdown__options">
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                                <li class="c-dropdown__option">
+                                    <span class="c-label">
+                                        Country/territory
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-map-nav__filter">
+                        <div class="c-dropdown">
+                            <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label">
                                     Country/territory
                                 </span>
@@ -1342,8 +1488,10 @@ Operations
     
 
 
-        
-    </section>
+            
+        </section>
+
+    </div>
 
 </section>
 

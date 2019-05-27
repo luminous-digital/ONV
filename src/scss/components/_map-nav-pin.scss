@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Map nav pin
+   ========================================================================== */
+.c-map-nav-pin {
+
+    &--green {
+        .c-map-nav-pin__desc:before {
+            background-color: color(mapgreen);
+        }
+    }
+    &--blue {
+        .c-map-nav-pin__desc:before {
+            background-color: color(mapblue);
+        }
+    }
+    &--grey {
+        .c-map-nav-pin__desc:before {
+            background-color: color(lgrey);
+        }
+    }
+}
+
+.c-map-nav-pin__desc {
+    margin: 0;
+    padding: offset(main) offset(main) * 3;
+
+    position: relative;
+
+    &:before {
+        content: '';
+        width: offset(main) * 2.1;
+        height: offset(main) * 2.1;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translateY(62%);
+        border-radius: 50%;
+    }
+}

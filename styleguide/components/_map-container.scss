@@ -10,4 +10,55 @@
 
     overflow-x: scroll;
     overflow-y: hidden;
+
+    @include media('>=desktop-small') {
+        overflow: hidden;
+    }
+}
+
+/* Simplebar styles
+--------------------- */
+.c-map-container .simplebar-track {
+
+    &:before {
+        content: '';
+
+        position: absolute;
+        top: $size-scrollbar-height - 6;
+        left: 0;
+
+        height: 1px;
+        width: 100%;
+
+        background-color: color(main);
+    }
+}
+
+.c-map-container .simplebar-track.simplebar-horizontal {
+    height: $size-scrollbar-height + 2;
+    left: offset(main) * 4;
+    right: offset(main) * 4;
+    bottom: offset(main) * 1.7;
+
+    @include media('>=mobile') {
+        bottom: offset(main) * 5;
+    }
+}
+
+.c-map-container .simplebar-track .simplebar-scrollbar {
+    height: $size-scrollbar-height;
+    width: offset(main) * 9.4;
+
+    &:before {
+        width: offset(main) * 9.4;
+        background-color: color(accent);
+        opacity: 1;
+    }
+
+    @include media('>=mobile') {
+
+        &:before {
+            width: calc(100% - 5px);
+        }
+    }
 }

@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Map nav
+   ========================================================================== */
+.c-map-nav {
+    width: 100%;
+}
+
+.c-map-nav__pins {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 0;
+
+    padding: offset(main) 0 offset(main) * 2;
+}
+
+.c-map-nav__filters {
+    width: 100%;
+
+    margin: 0;
+    padding: offset(main) 0 0;
+
+    border-bottom: 1px solid color(main);
+
+    list-style: none;
+}

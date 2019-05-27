@@ -7,6 +7,7 @@ const Sliders = {
     this.quickLinksSlider()
     this.ourStorySlider()
     this.ourStorySliderBullets()
+    this.tabbedContentSlider()
   },
   latestNewsSlider: function () {
     const sliderClass = '.js-slider-latest-news'
@@ -141,6 +142,37 @@ const Sliders = {
     currentSlide.addClass('current-slide is-active')
     afterSlide.addClass('after-slide is-active')
     afterAfterSlide.addClass('after-after-slide is-active')
+  },
+  tabbedContentSlider: function () {
+    const sliderClass = '.js-tabbed-section-slider'
+    if (document.querySelector(sliderClass)) {
+      Sliders.sectionSwiper = new Swiper(sliderClass, {
+        loop: false,
+        autoplay: false,
+        speed: 300,
+        slidesPerView: 1,
+        spaceBetween: 25,
+        autoHeight: true,
+        pagination: {
+          el: '.js-tabbed-section-nav',
+          clickable: true,
+          renderBullet: function (index, className) {
+            const slideIndex = index
+            const slideName = this.slides[slideIndex].dataset.slideTitle
+            return `<li class="${className}">
+                <button class="c-content-tabs__btn t-btn">
+                    <span class="c-label">
+                        ${slideName}
+                    </span>
+                </button>
+            </li>`
+          },
+          bulletClass: 'c-content-tabs__tab',
+          modifierClass: 'c-content-tabs__tab--',
+          bulletActiveClass: 'is-active'
+        }
+      })
+    }
   }
 }
 
