@@ -32,6 +32,7 @@ const Map = {
     'facility': ''
   },
   filterMap: function (pins) {
+    console.log(this.mapFilterObject)
     const filteredPins = pins.filter(pin => {
       if (
         pin.dataset.territory === this.mapFilterObject.territory ||
@@ -61,6 +62,13 @@ const Map = {
         const filterType = filter.dataset.filterType
         filterOptions.forEach(option => {
           option.addEventListener('click', e => {
+            mapFilters.forEach(filter => {
+              filter.querySelector('.js-chosen-option').innerHTML = ''
+              filter.dataset.chosenOption = ''
+            })
+            mapPins.forEach(pin => {
+              pin.style.opacity = 1
+            })
             const chosenOption = e.currentTarget.querySelector('.c-label').innerText.trim()
             filter.dataset.chosenOption = chosenOption
             filterChosenOptionText.innerHTML = `&nbsp;(${chosenOption})`
