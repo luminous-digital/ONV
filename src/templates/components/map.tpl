@@ -7,8 +7,8 @@
             catID: '0',
             posX: '20%',
             posY: '71%',
-            territory: '0',
-            locType: 'Type 1',
+            territory: 'USA',
+            locType: 'Steppe',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s',
             locUrl: '#'
         },
@@ -17,8 +17,8 @@
             catID: '0',
             posX: '18%',
             posY: '63%',
-            territory: '2',
-            locType: 'Type 2',
+            territory: 'USA',
+            locType: 'Mountains',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
@@ -27,8 +27,8 @@
             catID: '0',
             posX: '52%',
             posY: '71%',
-            territory: '1',
-            locType: 'Type 1',
+            territory: 'Europe',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
@@ -37,8 +37,8 @@
             catID: '0',
             posX: '52%',
             posY: '61%',
-            territory: '2',
-            locType: 'Type 3',
+            territory: 'Africa',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
@@ -47,8 +47,8 @@
             catID: '0',
             posX: '59%',
             posY: '58%',
-            territory: '3',
-            locType: 'Type 5',
+            territory: 'Africa',
+            locType: 'Mountains',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
@@ -57,8 +57,8 @@
             catID: '2',
             posX: '61%',
             posY: '52%',
-            territory: '2',
-            locType: 'Type 3',
+            territory: 'Africa',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
@@ -67,8 +67,8 @@
             catID: '1',
             posX: '21%',
             posY: '58%',
-            territory: '3',
-            locType: 'Type 2',
+            territory: 'USA',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
@@ -77,8 +77,8 @@
             catID: '1',
             posX: '54%',
             posY: '77%',
-            territory: '3',
-            locType: 'Type 2',
+            territory: 'Europe',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         }
@@ -106,7 +106,8 @@
                             class="c-map-pin c-map-pin--{{ pinColors[mapPoint.catID] }} js-map-pin"
                             data-category-id="{{ mapPoint.catID }}"
                             data-territory="{{ mapPoint.territory }}"
-                            data-location-type="{{ mapPoint.locType }}"
+                            data-location="{{ mapPoint.locType }}"
+                            data-facility="{{ mapPoint.name }}"
                             style="left: {{ mapPoint.posX }}; bottom: {{ mapPoint.posY }}"
                         >
                             <div class="c-map-pin__modal js-map-modal">
@@ -160,78 +161,81 @@
                 </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown js-map-filter" data-filter-type="country">
+                        <div class="c-dropdown js-map-filter" data-filter-type="territory" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label js-filter-name">
                                     Country/territory
                                 </span>
+                                <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        USA
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Europe
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Africa
                                     </span>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown js-map-filter" data-filter-type="location-type">
+                        <div class="c-dropdown js-map-filter" data-filter-type="location" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label js-filter-name">
                                     Location type
                                 </span>
+                                <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Location type
+                                        Steppe
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Location type
+                                        Mountains
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Location type
+                                        Lowlands
                                     </span>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown js-map-filter" data-filter-type="location-type">
+                        <div class="c-dropdown js-map-filter" data-filter-type="facility" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                 <span class="c-label js-filter-name">
                                     Facility name
                                 </span>
+                                <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Facility name
+                                        Facility 1
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Facility name
+                                        Facility 2
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Facility name
+                                        Facility 3
                                     </span>
                                 </li>
                             </ul>
