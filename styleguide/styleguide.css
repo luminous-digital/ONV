@@ -1328,6 +1328,9 @@ button.swiper-pagination-bullet {
       font-size: 14px;
       line-height: 19.6px; } }
 
+.t-thin {
+  font-weight: 400; }
+
 .t-smaller {
   margin: 0;
   padding: 0;
@@ -2167,6 +2170,14 @@ Feature panel wrapper
 @media (min-width: 1200px) {
   .c-feature-panel-wrapper .l-inner {
     height: 100%; } }
+
+.c-file-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 /* ==========================================================================
    Footer
