@@ -27,4 +27,22 @@
     border-bottom: 1px solid color(main);
 
     list-style: none;
+
+    @include media('>=mobile') {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    @include media('>=desktop-small') {
+        margin-bottom: offset(main) * 6;
+    }
+}
+
+.c-map-nav__filter {
+
+    @include media('>=mobile') {
+        width: 32%;
+    }
 }

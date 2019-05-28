@@ -3,89 +3,89 @@
 {% set mapPoints =
     [
         {
-            name: 'Name 1',
+            name: 'Facility 1',
             catID: '0',
             posX: '20%',
             posY: '71%',
-            territory: '0',
-            locType: 'Type 1',
+            territory: 'USA',
+            locType: 'Steppe',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s',
             locUrl: '#'
         },
         {
-            name: 'Name 2',
+            name: 'Facility 2',
             catID: '0',
             posX: '18%',
             posY: '63%',
-            territory: '2',
-            locType: 'Type 2',
+            territory: 'USA',
+            locType: 'Mountains',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
         {
-            name: 'Name 3',
+            name: 'Facility 3',
             catID: '0',
             posX: '52%',
             posY: '71%',
-            territory: '1',
-            locType: 'Type 1',
+            territory: 'Europe',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
         {
-            name: 'Name 4',
+            name: 'Facility 4',
             catID: '0',
             posX: '52%',
             posY: '61%',
-            territory: '2',
-            locType: 'Type 3',
+            territory: 'Africa',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
         {
-            name: 'Name 5',
+            name: 'Facility 5',
             catID: '0',
             posX: '59%',
             posY: '58%',
-            territory: '3',
-            locType: 'Type 5',
+            territory: 'Africa',
+            locType: 'Mountains',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
         {
-            name: 'Name 6',
+            name: 'Facility 6',
             catID: '2',
             posX: '61%',
             posY: '52%',
-            territory: '2',
-            locType: 'Type 3',
+            territory: 'Africa',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
         {
-            name: 'Name 7',
+            name: 'Facility 7',
             catID: '1',
             posX: '21%',
             posY: '58%',
-            territory: '3',
-            locType: 'Type 2',
+            territory: 'USA',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         },
         {
-            name: 'Name 8',
+            name: 'Facility 8',
             catID: '1',
             posX: '54%',
             posY: '77%',
-            territory: '3',
-            locType: 'Type 2',
+            territory: 'Europe',
+            locType: 'Lowlands',
             locDesc: 'OCI Nitrogen is Europe’s second largest CAN producer and the world’s largest melamine producer. Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.',
             locUrl: '#'
         }
     ]
 %}
 
-<section class="l-section">
+<section class="l-section l-section--no-offset">
     <div class="c-map-wrapper">
         <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
             {# <div class="c-map-container__scrollbar">
@@ -106,7 +106,8 @@
                             class="c-map-pin c-map-pin--{{ pinColors[mapPoint.catID] }} js-map-pin"
                             data-category-id="{{ mapPoint.catID }}"
                             data-territory="{{ mapPoint.territory }}"
-                            data-location-type="{{ mapPoint.locType }}"
+                            data-location="{{ mapPoint.locType }}"
+                            data-facility="{{ mapPoint.name }}"
                             style="left: {{ mapPoint.posX }}; bottom: {{ mapPoint.posY }}"
                         >
                             <div class="c-map-pin__modal js-map-modal">
@@ -123,7 +124,9 @@
                                 </p>
                                 <div class="c-btn-wrapper c-btn-wrapper--left">
                                     <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                                        Read more
+                                        <span class="c-label">
+                                            Read more
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -158,80 +161,75 @@
                 </p>
                 <ul class="c-map-nav__filters">
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown is-open">
+                        <div class="c-dropdown js-map-filter" data-filter-type="territory" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
+                                <span class="c-label js-filter-name">
                                     Country/territory
                                 </span>
+                                <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        USA
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Europe
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Africa
                                     </span>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown">
+                        <div class="c-dropdown js-map-filter" data-filter-type="location" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
-                                    Country/territory
+                                <span class="c-label js-filter-name">
+                                    Location type
                                 </span>
+                                <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Steppe
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Mountains
                                     </span>
                                 </li>
                                 <li class="c-dropdown__option">
                                     <span class="c-label">
-                                        Country/territory
+                                        Lowlands
                                     </span>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="c-map-nav__filter">
-                        <div class="c-dropdown">
+                        <div class="c-dropdown js-map-filter" data-filter-type="facility" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label">
-                                    Country/territory
+                                <span class="c-label js-filter-name">
+                                    Facility name
                                 </span>
+                                <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Country/territory
-                                    </span>
-                                </li>
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Country/territory
-                                    </span>
-                                </li>
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Country/territory
-                                    </span>
-                                </li>
+                                {% for mapPoint in mapPoints %}
+                                    <li class="c-dropdown__option">
+                                        <span class="c-label">
+                                            {{ mapPoint.name }}
+                                        </span>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </li>

@@ -4,7 +4,30 @@
 // Dropdown
 //
 // markup:
-
+// <div class="c-dropdown">
+//     <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+//         <span class="c-label">
+//             Facility name
+//         </span>
+//     </button>
+//     <ul class="c-dropdown__options">
+//         <li class="c-dropdown__option">
+//             <span class="c-label">
+//                 Facility name
+//             </span>
+//         </li>
+//         <li class="c-dropdown__option">
+//             <span class="c-label">
+//                 Facility name
+//             </span>
+//         </li>
+//         <li class="c-dropdown__option">
+//             <span class="c-label">
+//                 Facility name
+//             </span>
+//         </li>
+//     </ul>
+// </div>
 //
 // Styleguide 13
 
@@ -13,14 +36,18 @@
     max-height: $size-dropdown-height;
 
     margin-bottom: offset(main) * 2;
-
-    overflow: hidden;
-
-    transition: $transition-default;
-
     font-size: font-size(small);
 
+    overflow: hidden;
+    transition: $transition-default;
+
+    position: relative;
+
     cursor: pointer;
+
+    @include media('>=mobile') {
+        margin-bottom: offset(main) * .8;
+    }
 }
 
 .c-dropdown.is-open {
