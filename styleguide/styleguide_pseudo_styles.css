@@ -75,6 +75,12 @@ select select.pseudo-class-focus {
   background-repeat: no-repeat;
 }
 
+.c-btn--download-icon.pseudo-class-hover .c-label,
+.c-btn--download-icon.pseudo-class-hover .c-sub-label {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .c-content-tabs__tab.pseudo-class-hover {
   cursor: pointer;
 }

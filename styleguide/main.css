@@ -1888,8 +1888,25 @@ body.is-header-open {
 .c-btn--download-icon {
   background-color: transparent;
   align-items: flex-start;
+  border-left: 2px solid #A2A1A2;
   padding-left: 30px;
   padding-right: 60px; }
+  .c-btn--download-icon:after {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url("./../img/icon-download.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+  .c-btn--download-icon:hover .c-label,
+  .c-btn--download-icon:hover .c-sub-label {
+    margin-left: 0;
+    margin-right: 0; }
 
 /* ==========================================================================
    Btn wrapper
