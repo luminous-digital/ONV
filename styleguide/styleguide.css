@@ -1481,6 +1481,9 @@ button.swiper-pagination-bullet {
 .t-blue {
   color: #283A6A; }
 
+.t-dgrey {
+  color: #444444; }
+
 .t-bold {
   font-weight: 700; }
 
@@ -1815,6 +1818,12 @@ body.is-header-open {
 /* Components
    ========================================================================== */
 /* ==========================================================================
+Article header
+========================================================================== */
+.c-article-header__date {
+  margin-top: 10px; }
+
+/* ==========================================================================
    Btn
    ========================================================================== */
 .c-btn {
@@ -1916,6 +1925,9 @@ body.is-header-open {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.c-btn-wrapper--small {
+  max-width: 230px; }
 
 .c-btn-wrapper--left {
   justify-content: flex-start; }
@@ -2740,6 +2752,48 @@ Header panel wrapper
 .c-latest-news-wrapper__next {
   transform: rotate(-45deg);
   right: 5px; }
+
+/* ==========================================================================
+   Lead Teaser
+   ========================================================================== */
+.c-lead-teaser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  @media (min-width: 375px) {
+    .c-lead-teaser {
+      padding-top: 85px; } }
+  @media (min-width: 768px) {
+    .c-lead-teaser {
+      padding-top: 180px; } }
+  @media (min-width: 1025px) {
+    .c-lead-teaser {
+      padding-top: 180px; } }
+
+.c-lead-teaser__desc {
+  padding-bottom: 130px;
+  margin-bottom: 0;
+  max-width: 510px; }
+  @media (min-width: 768px) {
+    .c-lead-teaser__desc {
+      padding-bottom: 100px;
+      padding-top: 10px; } }
+
+/* ==========================================================================
+Lead Teaser
+========================================================================== */
+.c-lead-teaser-wrapper {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: 60% 50%; }
+  @media (min-width: 768px) {
+    .c-lead-teaser-wrapper {
+      width: 100%;
+      background-position: 90% 50%; } }
 
 /* ==========================================================================
    Logo

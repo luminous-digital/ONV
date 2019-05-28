@@ -21,6 +21,10 @@
     justify-content: center;
 }
 
+.c-btn-wrapper--small {
+    max-width: offset(main) * 23;
+}
+
 .c-btn-wrapper--left {
     justify-content: flex-start;
 }
