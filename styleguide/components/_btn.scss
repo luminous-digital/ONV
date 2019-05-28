@@ -155,46 +155,47 @@
 //
 // markup:
 // <div class="c-btn-wrapper c-btn-wrapper--left">
-//     <a href="/news.html" class="c-btn c-btn--download c-btn--download-icon c-btn--block c-btn--padded">
+//     <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
 //         <span class="c-label t-btn t-blue">Download PDF</span>
 //         <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//         <span class="c-btn__icon">
+//             <svg class="o-svg">
+//                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download-2"></use>
+//             </svg>
+//         </span>
 //     </a>
 // </div>
 //
 // Styleguide 6.4
 
 .c-btn--download-icon {
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     align-items: flex-start;
     border-left: 2px solid color(lgrey);
+    position: relative;
+
     padding: {
+        top: offset(main);
+        bottom: offset(main) * 0.6;
         left: offset(main) * 3;
         right: offset(main) * 6;
     }
+}
 
-    &:after {
-        content: '';
+.c-btn__icon {
+    width: offset(main) * 3.6;
+    height: offset(main) * 2.6;
 
-        display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
 
-        width: offset(main) * 2.7;
-        height: offset(main) * 1.5;
-
-        position: absolute;
-        top: offset(main) * 1.5;
-        right: offset(main) * 2;
-
-        background-image: url('./../img/icon-download.svg');
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-
-    &:hover {
-        .c-label,
-        .c-sub-label {
-            margin-left: 0;
-            margin-right: 0;
-        }
-    }
+.c-btn__icon .o-svg {
+    width: 100%;
+    height: 100%;
 }
