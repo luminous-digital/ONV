@@ -91,6 +91,11 @@
 //     <a href="/news.html" class="c-btn c-btn--download c-btn--block c-btn--padded">
 //         <span class="c-label t-btn t-white">Download our business model</span>
 //         <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//         <span class="c-btn__icon">
+//             <svg class="o-svg">
+//                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//             </svg>
+//         </span>
 //     </a>
 // </div>
 //
@@ -124,24 +129,37 @@
             margin-right: offset(main) * 4;
         }
 
-        &:after {
-            content: '';
-
-                display: block;
-
-                width: offset(main) * 2.7;
-                height: offset(main) * 1.5;
-
-                position: absolute;
-                top: offset(main) * 1.5;
-                right: offset(main) * 2;
-
-                background-image: url('./../img/icon-download.svg');
-                background-size: cover;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
+        .c-btn__icon {
+            opacity: 1;
         }
+
+        //&:after {
+        //    content: '';
+        //
+        //        display: block;
+        //
+        //        width: offset(main) * 2.7;
+        //        height: offset(main) * 1.5;
+        //
+        //        position: absolute;
+        //        top: offset(main) * 1.5;
+        //        right: offset(main) * 2;
+        //
+        //        background-image: url('./../img/icon-download.svg');
+        //        background-size: cover;
+        //        background-position: 50% 50%;
+        //        background-repeat: no-repeat;
+        //}
     }
+}
+
+.c-btn--download .c-btn__icon {
+    right: offset(main) * 2;
+    opacity: 0;
+}
+
+.c-btn--download .o-svg {
+    stroke: color(white);
 }
 
 .c-btn--padded {
@@ -160,7 +178,7 @@
 //         <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
 //         <span class="c-btn__icon">
 //             <svg class="o-svg">
-//                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download-2"></use>
+//                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
 //             </svg>
 //         </span>
 //     </a>
@@ -182,6 +200,10 @@
         left: offset(main) * 3;
         right: offset(main) * 6;
     }
+}
+
+.c-btn--download-icon .o-svg {
+    stroke: color(accent);
 }
 
 .c-btn__icon {
