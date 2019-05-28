@@ -61,18 +61,8 @@ select select.pseudo-class-focus {
   margin-right: 40px;
 }
 
-.c-btn--download.pseudo-class-hover:after {
-  content: '';
-  display: block;
-  width: 27px;
-  height: 15px;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  background-image: url("./../img/icon-download.svg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.c-btn--download.pseudo-class-hover .c-btn__icon {
+  opacity: 1;
 }
 
 .c-content-tabs__tab.pseudo-class-hover {

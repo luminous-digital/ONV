@@ -1877,22 +1877,47 @@ Article header
     .c-btn--download:hover .c-sub-label {
       margin-left: -40px;
       margin-right: 40px; }
-    .c-btn--download:hover:after {
-      content: '';
-      display: block;
-      width: 27px;
-      height: 15px;
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      background-image: url("./../img/icon-download.svg");
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: no-repeat; }
+    .c-btn--download:hover .c-btn__icon {
+      opacity: 1; }
+
+.c-btn--download .c-btn__icon {
+  right: 20px;
+  opacity: 0; }
+
+.c-btn--download .o-svg {
+  stroke: #fff; }
 
 .c-btn--padded {
   padding-left: 60px;
   padding-right: 60px; }
+
+.c-btn--download-icon {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: flex-start;
+  border-left: 2px solid #A2A1A2;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  padding-left: 30px;
+  padding-right: 60px; }
+
+.c-btn--download-icon .o-svg {
+  stroke: #F79727; }
+
+.c-btn__icon {
+  width: 36px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0; }
+
+.c-btn__icon .o-svg {
+  width: 100%;
+  height: 100%; }
 
 /* ==========================================================================
    Btn wrapper

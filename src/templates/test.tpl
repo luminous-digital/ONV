@@ -33,5 +33,20 @@ Test
         </div>
     </div>
 </section>
+<section class="l-section">
+    <div class="l-inner">
+        <div class="c-btn-wrapper c-btn-wrapper--left">
+            <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                <span class="c-label t-btn t-blue">Download PDF</span>
+                <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                <span class="c-btn__icon">
+                    <svg class="o-svg">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
