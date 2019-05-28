@@ -20,7 +20,7 @@ Test
                     Our commitment
                 </h2>
                 <p class="c-lead-teaser__desc t-body t-body--big t-white">
-                    “We believe our position as a leading nitrogen fertilizer  and industrial chemicals company gives us the opportunity  to encourage sustainable practices in our industries  and communities.”
+                    “We believe our position as a leading nitrogen fertilizer and industrial chemicals company gives us the opportunity to encourage sustainable practices in our industries and communities.”
                 </p>
                 <div class="c-btn-wrapper c-btn-wrapper--small">
                     <a href="/" class="c-btn c-btn--primary c-btn--center t-btn t-white">
