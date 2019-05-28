@@ -29,6 +29,10 @@
     justify-content: flex-start;
 }
 
+.c-btn-wrapper--right {
+    justify-content: flex-end;
+}
+
 .c-latest-news-wrapper .c-btn {
     width: $size-latest-news-card;
 }
