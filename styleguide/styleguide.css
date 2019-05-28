@@ -2728,19 +2728,48 @@ Header panel wrapper
   right: 5px; }
 
 /* ==========================================================================
+   Lead Teaser
+   ========================================================================== */
+.c-lead-teaser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  @media (min-width: 375px) {
+    .c-lead-teaser {
+      padding-top: 85px; } }
+  @media (min-width: 768px) {
+    .c-lead-teaser {
+      padding-top: 180px; } }
+  @media (min-width: 1025px) {
+    .c-lead-teaser {
+      padding-top: 180px; } }
+
+.c-lead-teaser__desc {
+  padding-bottom: 130px;
+  margin-bottom: 0;
+  max-width: 510px; }
+  @media (min-width: 768px) {
+    .c-lead-teaser__desc {
+      padding-bottom: 100px;
+      padding-top: 10px; } }
+
+.c-lead-teaser__btn {
+  max-width: 230px; }
+
+/* ==========================================================================
 Lead Teaser
 ========================================================================== */
-.c-header-panel--teaser {
-  padding-bottom: 40px; }
-
-.c-header-panel--teaser .c-header-panel__desc {
-  padding-bottom: 130px; }
+.c-lead-teaser-wrapper {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: 50% 50%; }
   @media (min-width: 768px) {
-    .c-header-panel--teaser .c-header-panel__desc {
-      padding-bottom: 100px; } }
-
-.c-header-panel--teaser .c-btn {
-  max-width: 230px; }
+    .c-lead-teaser-wrapper {
+      width: 100%; } }
 
 /* ==========================================================================
    Logo

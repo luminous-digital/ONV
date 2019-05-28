@@ -13,16 +13,16 @@ Lead Teaser
 //                      </h4>
 //                  </div>
 //              </div>
-//              <div class="c-header-panel-wrapper" style="background-image: url('../static/img/img-lead-teaser.jpg');">
+//              <div class="c-lead-teaser-wrapper" style="background-image: url('../static/img/img-lead-teaser.jpg');">
 //                  <div class="l-inner l-inner--90 l-inner--desktop-70">
-//                      <div class="c-header-panel c-header-panel--teaser t-center">
-//                      <h1 class="c-header-panel__title t-h1">
+//                      <div class="c-lead-teaser c-header-panel--teaser t-center">
+//                      <h2 class="c-lead-teaser__title t-h1">
 //                        Our committment
-//                      </h1>
-//                      <p class="c-header-panel__desc t-body t-body--big t-white">
-//                          We believe our position as a leading nitrogen fertilizer industrial chemicals company gives us the opportunity
+//                      </h2>
+//                      <p class="c-lead-teaser__desc t-body t-body--big t-white">
+//                          “We believe our position as a leading nitrogen fertilizer  and industrial chemicals company gives us the opportunity  to encourage sustainable practices in our industries  and communities.”
 //                      </p>
-//                      <a href="/" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+//                      <a href="/" class="c-lead-teaser__btn c-btn--primary c-btn--center t-btn t-white">
 //                         <span class="c-label">
 //                            Our stories
 //                         </span>
@@ -34,18 +34,14 @@ Lead Teaser
 //
 // Styleguide 14
 
-.c-header-panel--teaser {
-    padding-bottom: offset(main) * 4;
-}
+.c-lead-teaser-wrapper {
+    width: 100%;
+    height: auto;
 
-.c-header-panel--teaser .c-header-panel__desc {
-    padding-bottom: offset(main) * 13;
+    background-size: cover;
+    background-position: 50% 50%;
 
     @include media('>=mobile') {
-        padding-bottom: offset(main) * 10;
+        width: 100%;
     }
-}
-
-.c-header-panel--teaser .c-btn {
-    max-width: offset(main) * 23;
 }
