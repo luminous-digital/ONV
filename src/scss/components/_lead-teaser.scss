@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Lead Teaser
+   ========================================================================== */
+
+.c-lead-teaser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: offset(main) * 6;
+    padding-bottom: offset(main) * 4;
+
+    @include media ('>=mobile-small') {
+        padding-top: offset(main) * 8.5;
+    }
+    @include media('>=mobile') {
+        padding-top: offset(main) * 18;
+    }
+    @include media('>tablet') {
+        padding-top: offset(main) * 18;
+    }
+}
+
+.c-lead-teaser__desc {
+    padding-bottom: offset(main) * 13;
+    margin-bottom: 0;
+    max-width: offset(main) * 51;
+
+    @include media('>=mobile') {
+        padding-bottom: offset(main) * 10;
+        padding-top: offset(main);
+    }
+}
