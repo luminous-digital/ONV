@@ -3,7 +3,7 @@
 {% set mapPoints =
     [
         {
-            name: 'Name 1',
+            name: 'Facility 1',
             catID: '0',
             posX: '20%',
             posY: '71%',
@@ -13,7 +13,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 2',
+            name: 'Facility 2',
             catID: '0',
             posX: '18%',
             posY: '63%',
@@ -23,7 +23,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 3',
+            name: 'Facility 3',
             catID: '0',
             posX: '52%',
             posY: '71%',
@@ -33,7 +33,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 4',
+            name: 'Facility 4',
             catID: '0',
             posX: '52%',
             posY: '61%',
@@ -43,7 +43,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 5',
+            name: 'Facility 5',
             catID: '0',
             posX: '59%',
             posY: '58%',
@@ -53,7 +53,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 6',
+            name: 'Facility 6',
             catID: '2',
             posX: '61%',
             posY: '52%',
@@ -63,7 +63,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 7',
+            name: 'Facility 7',
             catID: '1',
             posX: '21%',
             posY: '58%',
@@ -73,7 +73,7 @@
             locUrl: '#'
         },
         {
-            name: 'Name 8',
+            name: 'Facility 8',
             catID: '1',
             posX: '54%',
             posY: '77%',
@@ -223,21 +223,13 @@
                                 <span class="c-label js-chosen-option"></span>
                             </button>
                             <ul class="c-dropdown__options">
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Facility 1
-                                    </span>
-                                </li>
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Facility 2
-                                    </span>
-                                </li>
-                                <li class="c-dropdown__option">
-                                    <span class="c-label">
-                                        Facility 3
-                                    </span>
-                                </li>
+                                {% for mapPoint in mapPoints %}
+                                    <li class="c-dropdown__option">
+                                        <span class="c-label">
+                                            {{ mapPoint.name }}
+                                        </span>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </li>
