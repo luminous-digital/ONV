@@ -1964,6 +1964,9 @@ Article header
 .c-btn-wrapper--left {
   justify-content: flex-start; }
 
+.c-btn-wrapper--right {
+  justify-content: flex-end; }
+
 .c-latest-news-wrapper .c-btn {
   width: 230px; }
 
@@ -2208,7 +2211,8 @@ Feature panel wrapper
   margin: 0; }
 
 .c-file-list__date {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  white-space: nowrap; }
 
 .c-file-list__item {
   border-bottom: 1px solid #F3F5F9;
@@ -2221,7 +2225,11 @@ Feature panel wrapper
       margin-bottom: 0; } }
 
 .c-file-list__title {
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-file-list__title {
+      margin-left: 80px; } }
 
 .c-file-list__item-wrapper {
   display: flex;
@@ -2230,31 +2238,6 @@ Feature panel wrapper
     .c-file-list__item-wrapper {
       align-items: center;
       flex-direction: row; } }
-
-.c-file-list__item-block {
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .c-file-list__item-block {
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row; }
-      .c-file-list__item-block:first-child {
-        white-space: nowrap; }
-      .c-file-list__item-block:last-child {
-        margin-left: 80px;
-        justify-content: space-between;
-        width: 100%; } }
-
-.c-file-list__item-block-inside {
-  width: 100%; }
-  .c-file-list__item-block-inside:last-child {
-    margin-top: 5px; }
-  @media (min-width: 768px) {
-    .c-file-list__item-block-inside {
-      width: auto; }
-      .c-file-list__item-block-inside:last-child {
-        margin-top: 0; } }
 
 /* ==========================================================================
    Footer
