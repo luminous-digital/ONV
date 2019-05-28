@@ -2766,10 +2766,11 @@ Lead Teaser
   width: 100%;
   height: auto;
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 60% 50%; }
   @media (min-width: 768px) {
     .c-lead-teaser-wrapper {
-      width: 100%; } }
+      width: 100%;
+      background-position: 90% 50%; } }
 
 /* ==========================================================================
    Logo

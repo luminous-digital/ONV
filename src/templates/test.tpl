@@ -23,11 +23,13 @@ Test
                 <p class="c-lead-teaser__desc t-body t-body--big t-white">
                     “We believe our position as a leading nitrogen fertilizer  and industrial chemicals company gives us the opportunity  to encourage sustainable practices in our industries  and communities.”
                 </p>
-                <a href="/" class="c-lead-teaser__btn c-btn c-btn--primary c-btn--center t-btn t-white">
-                    <span class="c-label">
-                       Our stories
-                    </span>
-                </a>
+                <div class="c-btn-wrapper c-btn-wrapper--small">
+                    <a href="/" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        <span class="c-label">
+                           Our stories
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
