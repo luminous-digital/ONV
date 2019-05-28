@@ -1310,10 +1310,13 @@ button.swiper-pagination-bullet {
   .t-body--big {
     font-size: 20px;
     line-height: 28px; }
-  @media (min-width: 768px) {
-    .t-body--alt {
-      font-size: 16px;
-      line-height: 24px; } }
+  .t-body--alt {
+    font-size: 14px;
+    line-height: 21px; }
+    @media (min-width: 768px) {
+      .t-body--alt {
+        font-size: 16px;
+        line-height: 24px; } }
 
 .t-small {
   margin: 0;
@@ -1824,7 +1827,16 @@ body.is-header-open {
 Article header
 ========================================================================== */
 .c-article-header__date {
-  margin-top: 10px; }
+  margin-top: 35px; }
+  @media (min-width: 768px) {
+    .c-article-header__date {
+      margin-top: 10px; } }
+
+.c-article-header-wrapper__title {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .c-article-header-wrapper__title {
+      margin-bottom: 75px; } }
 
 /* ==========================================================================
    Btn
@@ -1896,15 +1908,27 @@ Article header
 
 .c-btn--download-icon {
   display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  align-items: flex-start;
-  border-left: 2px solid #A2A1A2;
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 6px;
-  padding-left: 30px;
-  padding-right: 60px; }
+  width: 100%;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .c-btn--download-icon {
+      width: auto;
+      flex-direction: column;
+      background-color: transparent;
+      align-items: flex-start;
+      border-left: 2px solid #A2A1A2;
+      padding-top: 10px;
+      padding-bottom: 6px;
+      padding-left: 30px;
+      padding-right: 60px; } }
+
+.c-btn--download-icon .c-sub-label {
+  margin-left: 20px;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    .c-btn--download-icon .c-sub-label {
+      margin-left: 0; } }
 
 .c-btn--download-icon .o-svg {
   stroke: #F79727; }
@@ -1914,9 +1938,12 @@ Article header
   height: 26px;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
   margin: auto 0; }
+  @media (min-width: 768px) {
+    .c-btn__icon {
+      bottom: 0; } }
 
 .c-btn__icon .o-svg {
   width: 100%;
@@ -2174,10 +2201,56 @@ Feature panel wrapper
 .c-file-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0; }
+
+.c-file-list__date {
+  margin-bottom: 0; }
+
+.c-file-list__item {
+  border-bottom: 1px solid #F3F5F9;
+  margin-bottom: 20px;
+  padding: 7px 0; }
+  .c-file-list__item:last-child {
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .c-file-list__item {
+      margin-bottom: 0; } }
+
+.c-file-list__title {
+  text-align: left; }
+
+.c-file-list__item-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .c-file-list__item-wrapper {
+      align-items: center;
+      flex-direction: row; } }
+
+.c-file-list__item-block {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .c-file-list__item-block {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; }
+      .c-file-list__item-block:first-child {
+        white-space: nowrap; }
+      .c-file-list__item-block:last-child {
+        margin-left: 80px;
+        justify-content: space-between;
+        width: 100%; } }
+
+.c-file-list__item-block-inside {
+  width: 100%; }
+  .c-file-list__item-block-inside:last-child {
+    margin-top: 5px; }
+  @media (min-width: 768px) {
+    .c-file-list__item-block-inside {
+      width: auto; }
+      .c-file-list__item-block-inside:last-child {
+        margin-top: 0; } }
 
 /* ==========================================================================
    Footer

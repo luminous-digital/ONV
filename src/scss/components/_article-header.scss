@@ -12,5 +12,9 @@ Article header
 // Styleguide 1.1
 
 .c-article-header__date {
-    margin-top: offset(main);
+    margin-top: offset(main) * 3.5;
+
+    @include media('>=mobile') {
+        margin-top: offset(main);
+    }
 }

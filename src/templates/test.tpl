@@ -52,30 +52,141 @@ Test
     <div class="l-inner">
         <ul class="c-file-list">
             <li class="c-file-list__item">
-                <p class="c-file-list__date t-dgrey">
-                    4 June 2018
-                </p>
+                <div class="c-file-list__item-wrapper">
+                    <div class="c-file-list__item-block">
+                        <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                            4 June 2018
+                        </p>
+                    </div>
+                    <div class="c-file-list__item-block">
+                        <div class="c-file-list__item-block-inside">
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                        </div>
+                        <div class="c-file-list__item-block-inside">
+                            <div class="c-btn-wrapper c-btn-wrapper--left">
+                                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                    <span class="c-label t-btn t-blue">Download PDF</span>
+                                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                    <span class="c-btn__icon">
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li class="c-file-list__item">
-                <h4 class="c-file-list__title t-h4 t-thin">
-                    Tender Offer to Purchase OCIP Common Units
-                </h4>
-            </li>
-            <li class="c-file-list__item">
-                <div class="c-btn-wrapper c-btn-wrapper--left">
-                    <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
-                        <span class="c-label t-btn t-blue">Download PDF</span>
-                        <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
-                        <span class="c-btn__icon">
-                            <svg class="o-svg">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
-                            </svg>
-                        </span>
-                    </a>
+                <div class="c-file-list__item-wrapper">
+                    <div class="c-file-list__item-block">
+                        <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                            4 June 2018
+                        </p>
+                    </div>
+                    <div class="c-file-list__item-block">
+                        <div class="c-file-list__item-block-inside">
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                        </div>
+                        <div class="c-file-list__item-block-inside">
+                            <div class="c-btn-wrapper c-btn-wrapper--left">
+                                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                    <span class="c-label t-btn t-blue">Download PDF</span>
+                                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                    <span class="c-btn__icon">
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </li>
         </ul>
     </div>
 </section>
+
+<section class="l-section">
+    <div class="l-inner">
+        <div class="c-article-header-wrapper">
+            <div class="c-article-header-wrapper__title">
+                <div class="c-article-header">
+                    <h2 class="c-article-header__title t-h2">OCI N.V. Announces Tender Offer to Purchase Common Units of OCI Partners LP for $11.00 Per Unit in Cash</h2>
+                    <p class="c-article-header__date t-body t-body--alt t-dgrey">4 June 2018</p>
+                </div>
+            </div>
+            <div class="c-article-header-wrapper__list">
+                <ul class="c-file-list">
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <div class="c-file-list__item-block">
+                                <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                                    4 June 2018
+                                </p>
+                            </div>
+                            <div class="c-file-list__item-block">
+                                <div class="c-file-list__item-block-inside">
+                                    <h4 class="c-file-list__title t-h4 t-thin">
+                                        Tender Offer to Purchase OCIP Common Units
+                                    </h4>
+                                </div>
+                                <div class="c-file-list__item-block-inside">
+                                    <div class="c-btn-wrapper c-btn-wrapper--left">
+                                        <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                            <span class="c-label t-btn t-blue">Download PDF</span>
+                                            <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                            <span class="c-btn__icon">
+                                                <svg class="o-svg">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <div class="c-file-list__item-block">
+                                <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                                    4 June 2018
+                                </p>
+                            </div>
+                            <div class="c-file-list__item-block">
+                                <div class="c-file-list__item-block-inside">
+                                    <h4 class="c-file-list__title t-h4 t-thin">
+                                        Tender Offer to Purchase OCIP Common Units
+                                    </h4>
+                                </div>
+                                <div class="c-file-list__item-block-inside">
+                                    <div class="c-btn-wrapper c-btn-wrapper--left">
+                                        <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                            <span class="c-label t-btn t-blue">Download PDF</span>
+                                            <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                            <span class="c-btn__icon">
+                                                <svg class="o-svg">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 {% endblock %}
