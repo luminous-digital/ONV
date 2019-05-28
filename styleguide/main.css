@@ -2719,6 +2719,21 @@ Header panel wrapper
   right: 5px; }
 
 /* ==========================================================================
+Lead Teaser
+========================================================================== */
+.c-header-panel--teaser {
+  padding-bottom: 40px; }
+
+.c-header-panel--teaser .c-header-panel__desc {
+  padding-bottom: 130px; }
+  @media (min-width: 768px) {
+    .c-header-panel--teaser .c-header-panel__desc {
+      padding-bottom: 100px; } }
+
+.c-header-panel--teaser .c-btn {
+  max-width: 230px; }
+
+/* ==========================================================================
    Logo
    ========================================================================== */
 .c-logo {
