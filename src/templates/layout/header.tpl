@@ -35,21 +35,21 @@
                             </a>
                         </li>
                         <li class="c-header-nav-menu__item has-children {% if menu_item == 'operations' %}current-menu-item{% endif %}">
-                            <a href="#" class="c-link t-menu">
+                            <a href="/operations.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Operations
                                 </span>
                             </a>
                             <ul class="c-sub-nav">
                                 <li class="c-sub-nav__item">
-                                    <a href="/operations.html" class="c-link t-menu-sub">
+                                    <a href="/operation-oci-nitrogen.html" class="c-link t-menu-sub">
                                         <span class="c-label">
                                             OCI Nitrogen
                                         </span>
                                     </a>
                                 </li>
                                 <li class="c-sub-nav__item">
-                                    <a href="/operations.html" class="c-link t-menu-sub">
+                                    <a href="/operations-oci-beaumont.html" class="c-link t-menu-sub">
                                         <span class="c-label">
                                             OCI Beaumont
                                         </span>

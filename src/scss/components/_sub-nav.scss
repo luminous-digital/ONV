@@ -11,6 +11,8 @@ Sub nav
     margin: 0;
     list-style: none;
 
+    max-height: 0;
+
     transition: $transition-slow;
 
     z-index: $z-index-sub-nav;
@@ -22,7 +24,6 @@ Sub nav
         left: 0;
 
         width: $size-header-sub-menu-width-d;
-        max-height: 0;
 
         background-color: color(white);
     }
@@ -31,6 +32,13 @@ Sub nav
 .c-header-nav-menu__item.is-active > .c-sub-nav {
     max-height: 100vh;
 }
+
+// @include media('>=desktop-small') {
+
+//     .c-header-nav-menu__item:hover > .c-sub-nav {
+//         max-height: 100vh;
+//     }
+// }
 
 .c-sub-nav__item {
     width: 100%;
@@ -59,6 +67,13 @@ Sub nav
 
     @include media('>=mobile') {
         margin-bottom: offset(main);
+    }
+}
+
+.c-sub-nav__item > .c-link {
+
+    @include media('<mobile') {
+        padding: 0 offset(main) * 3;
     }
 }
 

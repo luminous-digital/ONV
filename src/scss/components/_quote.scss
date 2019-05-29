@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Quote
+   ========================================================================== */
+
+.c-quote {
+    position: relative;
+
+    padding: {
+        top: offset(main) * 7;
+        bottom: offset(main) * 12;
+    }
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+
+        left: calc(50% - #{$size-quote-sign-width / 2});
+
+        width: $size-quote-sign-width;
+        height: $size-quote-sign-height;
+
+        background-image: url('./../img/quote.svg');
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    &:before {
+        top: offset(main) * 2;
+    }
+    &:after {
+        bottom: offset(main) * 6.5;
+        transform: rotate(180deg);
+    }
+}
+
+.c-quote__title {
+    font-weight: 400;
+}

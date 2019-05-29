@@ -2,6 +2,11 @@
   background-color: #283A6A;
 }
 
+.t-underline.pseudo-class-hover:after,
+.c-wysiwyg a.pseudo-class-hover:after {
+  background-color: #283A6A;
+}
+
 .t-body-link.pseudo-class-hover .c-label:after {
   background-color: #283A6A;
 }
@@ -73,6 +78,10 @@ select select.pseudo-class-focus {
   margin-bottom: 0;
 }
 
+.c-footer__nav-item.pseudo-class-hover .c-link .c-label:after {
+  width: 100%;
+}
+
 .c-header-nav-menu__item.pseudo-class-first-child > .c-link {
   border-top: 2px solid #F3F5F9;
 }
@@ -102,4 +111,8 @@ select select.pseudo-class-focus {
 .c-our-history-slide.pseudo-class-last-child .c-our-history-slide__year {
   width: 100%;
   left: 0;
+}
+
+.c-social-icon.pseudo-class-hover {
+  color: #F79727;
 }

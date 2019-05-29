@@ -37,6 +37,13 @@ WYSIWYG
             }
         }
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    a {
+        @extend .t-underline;
+    }
 
     @include media('>=mobile') {
         padding-bottom: offset(main) * 4;

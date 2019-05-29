@@ -7,9 +7,19 @@ Social icon
 
     width: $size-social-icon-width;
     height: $size-social-icon-width;
+
+    color: color(white);
+
+    transition: $transition-default;
 }
 
-.c-social-icon .c-img {
-    width: $size-social-icon-width;
-    height: $size-social-icon-width;
+.c-social-icon:hover {
+    color: color(accent);
+}
+
+.c-social-icon__decor {
+    max-width: 100%;
+    height: 100%;
+
+    fill: currentColor;
 }
