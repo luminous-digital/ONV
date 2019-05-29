@@ -1,0 +1,196 @@
+/* ==========================================================================
+Grid
+========================================================================== */
+// Grid
+//
+// markup:
+//<section class="l-section">
+//    <div class="l-inner">
+//        <div class="c-section-divider">
+//            <div class="l-inner">
+//                <h4 class="c-section-divider__title t-sec-divider">
+//                    Our four key areas
+//                </h4>
+//            </div>
+//        </div>
+//        <div class="c-grid-wrapper">
+//            <div class="c-grid-wrapper__block">
+//                <div class="c-grid-block">
+//                    <h5 class="c-grid-block__title t-h5">
+//                        Health and Safety
+//                    </h5>
+//                    <figure class="c-grid-block__image">
+//                        <img src="./static/img/key-areas/img-health-safety.jpg" alt="Health and Safety">
+//                    </figure>
+//                    <p class="c-grid-block__desc t-body">
+//                        We are committed to providing a safe and healthy workplace.
+//                    </p>
+//                    <a class="c-grid-block__link t-link" href="#">
+//                         <span class="c-label">
+//                             Health and Safety
+//                         </span>
+//                     </a>
+//                </div>
+//            </div>
+//            <div class="c-grid-wrapper__block">
+//                <div class="c-grid-block">
+//                    <h5 class="c-grid-block__title t-h5">
+//                        Environment
+//                    </h5>
+//                    <figure class="c-grid-block__image">
+//                        <img src="./static/img/key-areas/img-environment.jpg" alt="Environment">
+//                    </figure>
+//                    <p class="c-grid-block__desc t-body">
+//                        We are committed to being an environmental steward.
+//                    </p>
+//                    <a class="c-grid-block__link t-link" href="#">
+//                         <span class="c-label">
+//                             Environment
+//                         </span>
+//                     </a>
+//                </div>
+//            </div>
+//            <div class="c-grid-wrapper__block">
+//                <div class="c-grid-block">
+//                    <h5 class="c-grid-block__title t-h5">
+//                        Our communities
+//                    </h5>
+//                    <figure class="c-grid-block__image">
+//                        <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities">
+//                    </figure>
+//                    <p class="c-grid-block__desc t-body">
+//                        We are committed to working towards global food security.
+//                    </p>
+//                    <a class="c-grid-block__link t-link" href="#">
+//                         <span class="c-label">
+//                             Our communities
+//                         </span>
+//                     </a>
+//                </div>
+//            </div>
+//            <div class="c-grid-wrapper__block">
+//                <div class="c-grid-block">
+//                    <h5 class="c-grid-block__title t-h5">
+//                        Our communities
+//                    </h5>
+//                    <figure class="c-grid-block__image">
+//                        <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities">
+//                    </figure>
+//                    <p class="c-grid-block__desc t-body">
+//                        We are committed to working towards global food security.
+//                    </p>
+//                    <a class="c-grid-block__link t-link" href="#">
+//                         <span class="c-label">
+//                             Our communities
+//                         </span>
+//                     </a>
+//                </div>
+//            </div>
+//        </div>
+//    </div>
+//</section>
+//
+// Styleguide 26
+
+.c-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-grid-wrapper__block {
+    display: flex;
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: 23%;
+    }
+}
+
+// Grid three columns
+//
+// markup:
+//<div class="c-grid-wrapper c-grid-wrapper--one-third">
+//    <div class="c-grid-wrapper__block">
+//        <div class="c-grid-block">
+//            <h5 class="c-grid-block__title t-h5">
+//                Health and Safety
+//            </h5>
+//            <figure class="c-grid-block__image">
+//                <img src="./static/img/key-areas/img-health-safety.jpg" alt="Health and Safety">
+//            </figure>
+//            <p class="c-grid-block__desc t-body">
+//                We are committed to providing a safe and healthy workplace.
+//            </p>
+//            <a class="c-grid-block__link t-link" href="#">
+//                 <span class="c-label">
+//                     Health and Safety
+//                 </span>
+//             </a>
+//        </div>
+//    </div>
+//    <div class="c-grid-wrapper__block">
+//        <div class="c-grid-block">
+//            <h5 class="c-grid-block__title t-h5">
+//                Environment
+//            </h5>
+//            <figure class="c-grid-block__image">
+//                <img src="./static/img/key-areas/img-environment.jpg" alt="Environment">
+//            </figure>
+//            <p class="c-grid-block__desc t-body">
+//                We are committed to being an environmental steward.
+//            </p>
+//            <a class="c-grid-block__link t-link" href="#">
+//                 <span class="c-label">
+//                     Environment
+//                 </span>
+//             </a>
+//        </div>
+//    </div>
+//    <div class="c-grid-wrapper__block">
+//        <div class="c-grid-block">
+//            <h5 class="c-grid-block__title t-h5">
+//                Our communities
+//            </h5>
+//            <figure class="c-grid-block__image">
+//                <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities">
+//            </figure>
+//            <p class="c-grid-block__desc t-body">
+//                We are committed to working towards global food security.
+//            </p>
+//            <a class="c-grid-block__link t-link" href="#">
+//                 <span class="c-label">
+//                     Our communities
+//                 </span>
+//             </a>
+//        </div>
+//    </div>
+//    <div class="c-grid-wrapper__block">
+//        <div class="c-grid-block">
+//            <h5 class="c-grid-block__title t-h5">
+//                Our employees
+//            </h5>
+//            <figure class="c-grid-block__image">
+//                <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+//            </figure>
+//            <p class="c-grid-block__desc t-body">
+//                We are committed to creating a safe and encouraging workplace.
+//            </p>
+//            <a class="c-grid-block__link t-link" href="#">
+//                 <span class="c-label">
+//                     Our employees
+//                 </span>
+//             </a>
+//        </div>
+//    </div>
+//</div>
+//
+// Styleguide 26.1
+
+.c-grid-wrapper--one-third .c-grid-wrapper__block {
+    margin-bottom: offset(main) * 4;
+
+    @include media('>=mobile') {
+        width: 31%;
+    }
+}
