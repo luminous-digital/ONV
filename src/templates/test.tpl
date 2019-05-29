@@ -96,7 +96,34 @@ Test
         </ul>
     </div>
 </section>
-
+<section class="l-section">
+    <div class="c-section-divider">
+        <div class="l-inner">
+            <h4 class="c-section-divider__title t-sec-divider">
+                Focused on sustainability
+            </h4>
+        </div>
+    </div>
+    <div class="c-lead-teaser-wrapper" style="background-image: url('../static/img/img-lead-teaser.jpg');">
+        <div class="l-inner l-inner--90 l-inner--desktop-70">
+            <div class="c-lead-teaser t-center">
+                <h2 class="c-lead-teaser__title t-h1">
+                    Our committment
+                </h2>
+                <p class="c-lead-teaser__desc t-body t-body--big t-white">
+                    “We believe our position as a leading nitrogen fertilizer"
+                </p>
+                <div class="c-btn-wrapper c-btn-wrapper--small">
+                    <a href="/" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        <span class="c-label">
+                            Our stories
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="l-section">
     <div class="l-inner">
         <div class="c-article-header-wrapper">
@@ -170,7 +197,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Health and Safety
                     </h5>
-                    <img src="./static/img/key-areas/img-health-safety.jpg" alt="Health and Safety" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-health-safety.jpg" alt="Health and Safety">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to providing a safe and healthy workplace.
                     </p>
@@ -186,7 +215,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Environment
                     </h5>
-                    <img src="./static/img/key-areas/img-environment.jpg" alt="Environment" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-environment.jpg" alt="Environment">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to being an environmental steward.
                     </p>
@@ -202,7 +233,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Our communities
                     </h5>
-                    <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to working towards global food security.
                     </p>
@@ -216,15 +249,17 @@ Test
             <div class="c-grid-wrapper__block">
                 <div class="c-grid-block">
                     <h5 class="c-grid-block__title t-h5">
-                        Our employees
+                        Our communities
                     </h5>
-                    <img src="./static/img/key-areas/img-employees.jpg" alt="Our employees" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
-                        We are committed to creating a safe and encouraging workplace.
+                        We are committed to working towards global food security.
                     </p>
                     <a class="c-grid-block__link t-link" href="#">
                          <span class="c-label">
-                             Our employees
+                             Our communities
                          </span>
                      </a>
                 </div>
@@ -240,7 +275,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Health and Safety
                     </h5>
-                    <img src="./static/img/key-areas/img-health-safety.jpg" alt="Health and Safety" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-health-safety.jpg" alt="Health and Safety">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to providing a safe and healthy workplace.
                     </p>
@@ -256,7 +293,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Environment
                     </h5>
-                    <img src="./static/img/key-areas/img-environment.jpg" alt="Environment" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-environment.jpg" alt="Environment">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to being an environmental steward.
                     </p>
@@ -272,7 +311,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Our communities
                     </h5>
-                    <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-communities.jpg" alt="Our communities">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to working towards global food security.
                     </p>
@@ -288,7 +329,9 @@ Test
                     <h5 class="c-grid-block__title t-h5">
                         Our employees
                     </h5>
-                    <img src="./static/img/key-areas/img-employees.jpg" alt="Our employees" class="c-grid-block__image">
+                    <figure class="c-grid-block__image">
+                        <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+                    </figure>
                     <p class="c-grid-block__desc t-body">
                         We are committed to creating a safe and encouraging workplace.
                     </p>
@@ -305,7 +348,9 @@ Test
 <section class="l-section">
     <div class="l-inner">
         <div class="c-grid-block c-grid-block--title-below c-grid-block--gray-image">
-            <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett" class="c-grid-block__image">
+            <figure class="c-grid-block__image">
+                <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+            </figure>
             <h5 class="c-grid-block__title t-h5">
                 Michael Bennett
             </h5>
@@ -323,7 +368,9 @@ Test
 <section class="l-section">
     <div class="l-inner">
         <div class="c-grid-block c-grid-block--title-below">
-            <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett" class="c-grid-block__image">
+            <figure class="c-grid-block__image">
+                <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+            </figure>
             <h5 class="c-grid-block__title t-h5">
                 Michael Bennett
             </h5>
@@ -341,7 +388,9 @@ Test
 <section class="l-section">
     <div class="l-inner">
         <div class="c-grid-block c-grid-block--title-below c-grid-block--link-space">
-            <img src="./static/img/key-areas/img-employees.jpg" alt="Supporting local  STEM programmes" class="c-grid-block__image">
+            <figure class="c-grid-block__image">
+                <img src="./static/img/key-areas/img-employees.jpg" alt="Supporting local  STEM programmes">
+            </figure>
             <h5 class="c-grid-block__title t-h5 t-thin">
                 Supporting local  STEM programmes
             </h5>

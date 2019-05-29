@@ -4,22 +4,24 @@ Grid block
 // Grid block
 //
 // markup:
-//<div class="c-grid-block">
+//<div class="c-grid-block c-grid-block--title-below c-grid-block--gray-image">
+//    <figure class="c-grid-block__image">
+//        <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+//    </figure>
 //    <h5 class="c-grid-block__title t-h5">
-//        Our employees
+//        Michael Bennett
 //    </h5>
-//    <img src="./static/img/key-areas/img-employees.jpg" alt="Our employees" class="c-grid-block__image">
 //    <p class="c-grid-block__desc t-body">
-//        We are committed to creating a safe and encouraging workplace.
+//        Independent Non-Executive Director and Chairman
 //    </p>
 //    <a class="c-grid-block__link t-link" href="#">
 //         <span class="c-label">
-//             Our employees
+//             Read biography
 //         </span>
 //     </a>
 //</div>
 //
-// Styleguide 16.2
+// Styleguide 26.2
 
 .c-grid-block {
     width: 100%;
@@ -35,6 +37,11 @@ Grid block
 }
 
 .c-grid-block__image {
+    width: 100%;
+    margin: 0;
+}
+
+.c-grid-block__image img {
     width: 100%;
 }
 
@@ -54,7 +61,9 @@ Grid block
 //
 // markup:
 //<div class="c-grid-block c-grid-block--title-below">
-//    <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett" class="c-grid-block__image">
+//    <figure class="c-grid-block__image">
+//        <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+//    </figure>
 //    <h5 class="c-grid-block__title t-h5">
 //        Michael Bennett
 //    </h5>
@@ -68,7 +77,7 @@ Grid block
 //     </a>
 //</div>
 //
-// Styleguide 16.3
+// Styleguide 26.3
 
 .c-grid-block--title-below .c-grid-block__title {
     margin: {
@@ -85,7 +94,9 @@ Grid block
 //
 // markup:
 //<div class="c-grid-block c-grid-block--title-below c-grid-block--gray-image">
-//    <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett" class="c-grid-block__image">
+//    <figure class="c-grid-block__image">
+//        <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
+//    </figure>
 //    <h5 class="c-grid-block__title t-h5">
 //        Michael Bennett
 //    </h5>
@@ -99,7 +110,7 @@ Grid block
 //     </a>
 //</div>
 //
-// Styleguide 16.4
+// Styleguide 26.4
 
 .c-grid-block--gray-image .c-grid-block__image {
     filter: grayscale(100%);
@@ -109,9 +120,11 @@ Grid block
 //
 // markup:
 //<div class="c-grid-block c-grid-block--title-below c-grid-block--link-space">
-//    <img src="./static/img/key-areas/img-employees.jpg" alt="Supporting local" class="c-grid-block__image">
+//    <figure class="c-grid-block__image">
+//        <img src="./static/img/key-areas/img-employees.jpg" alt="Supporting local stem programmes">
+//    </figure>
 //    <h5 class="c-grid-block__title t-h5 t-thin">
-//        Supporting local stem
+//        Supporting local stem programmes
 //    </h5>
 //    <a class="c-grid-block__link t-link" href="#">
 //         <span class="c-label">
@@ -120,7 +133,7 @@ Grid block
 //     </a>
 //</div>
 //
-// Styleguide 16.5
+// Styleguide 26.5
 
 .c-grid-block--link-space {
     padding-bottom: offset(main) * 5;

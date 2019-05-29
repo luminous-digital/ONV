@@ -2471,6 +2471,10 @@ Grid block
   margin-bottom: 5px; }
 
 .c-grid-block__image {
+  width: 100%;
+  margin: 0; }
+
+.c-grid-block__image img {
   width: 100%; }
 
 .c-grid-block__link {
