@@ -74,7 +74,7 @@ Test
             </li>
             <li class="c-file-list__item">
                 <div class="c-file-list__item-wrapper">
-                    <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                    <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
                         4 June 2018
                     </p>
                     <h4 class="c-file-list__title t-h4 t-thin">
@@ -103,14 +103,14 @@ Test
             <div class="c-article-header-wrapper__title">
                 <div class="c-article-header">
                     <h2 class="c-article-header__title t-h2">OCI N.V. Announces Tender Offer to Purchase Common Units of OCI Partners LP for $11.00 Per Unit in Cash</h2>
-                    <p class="c-article-header__date t-body t-body--alt t-dgrey">4 June 2018</p>
+                    <p class="c-article-header__date t-body t-body--alt-mobile t-dgrey">4 June 2018</p>
                 </div>
             </div>
             <div class="c-article-header-wrapper__list">
                 <ul class="c-file-list">
                     <li class="c-file-list__item">
                         <div class="c-file-list__item-wrapper">
-                            <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
                                 4 June 2018
                             </p>
                             <h4 class="c-file-list__title t-h4 t-thin">
@@ -131,7 +131,7 @@ Test
                     </li>
                     <li class="c-file-list__item">
                         <div class="c-file-list__item-wrapper">
-                            <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
                                 4 June 2018
                             </p>
                             <h4 class="c-file-list__title t-h4 t-thin">
