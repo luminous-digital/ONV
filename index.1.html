@@ -21,10 +21,10 @@ Homepage
         <div class="l-inner">
             <div class="c-header js-header">
                 <div class="c-header__logo-wrapper">
-                    <a class="c-link" href="/">
-                        <figure class="c-logo">
-                            <img src="../static/img/logo.png" alt="OCI" class="c-img" />
-                        </figure>
+                    <a class="c-logo" href="/">
+                        <svg class="o-svg c-logo__decor">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#logo"></use>
+                        </svg>
                     </a>
                 </div>
                 <div class="c-menu-toggle js-menu-toggle">
@@ -33,7 +33,9 @@ Homepage
                 </div>
                 <div class="c-search-toggle js-toggle-search">
                     <span class="c-search-toggle__icon">
-                        <img src="../static/img/search.svg" alt="Search" class="c-img" />
+                        <svg class="o-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#search"></use>
+                        </svg>
                     </span>
                 </div>
                 <div class="c-header-nav">
@@ -45,66 +47,24 @@ Homepage
                                 </span>
                             </a>
                         </li>
-                        <li class="c-header-nav-menu__item has-children">
-                            <a href="#" class="c-link t-menu">
+                        <li class="c-header-nav-menu__item has-children ">
+                            <a href="/operations.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Operations
                                 </span>
                             </a>
                             <ul class="c-sub-nav">
                                 <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
+                                    <a href="/operation-oci-nitrogen.html" class="c-link t-menu-sub">
                                         <span class="c-label">
                                             OCI Nitrogen
                                         </span>
                                     </a>
                                 </li>
                                 <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
+                                    <a href="/operations-oci-beaumont.html" class="c-link t-menu-sub">
                                         <span class="c-label">
                                             OCI Beaumont
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            Iowa Fertilizer Company
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            Natgasoline LLC
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            Sorfert Algerie
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            Egyptian Fertilizers Company
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            Egypt Basic Industries Corporation
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="#" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            BioMCN
                                         </span>
                                     </a>
                                 </li>
@@ -268,15 +228,20 @@ Homepage
                                 <form method="POST" action="" class="c-search-form t-body">
                                     <input placeholder="Search now" id="search" name="search" class="c-search-form__input">
                                     <button type="submit" class="c-search-form__submit">
-                                        <img src="../static/img/search-orange.svg" alt="Search" class="c-img" />
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#search"></use>
+                                        </svg>
                                     </button>
                                 </form>
                                 <span class="c-search-form-close js-close-search">
-                                    <img src="../static/img/close-orange.svg" alt="Close search" class="c-img" />
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#close"></use>
+                                    </svg>
                                 </span>
                             </div>
                         </div>
                     </div>
+                    <div class="c-header-overlay js-header-overlay"></div>
                 </div>
             </div>
         </div>
@@ -315,7 +280,9 @@ Homepage
                                     View listing information
                                 </p>
                                 <span class="c-header-panel-tab__hover-icon">
-                                    <img src="./static/img/icon-arrow.svg" alt="View listing information" />
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#arrow"></use>
+                                    </svg>
                                 </span>
                             </div>
                         </a>
@@ -331,7 +298,9 @@ Homepage
                                     Download
                                 </p>
                                 <span class="c-header-panel-tab__hover-icon">
-                                    <img src="./static/img/icon-download.svg" alt="View listing information" />
+                                    <svg class="o-svg">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                    </svg>
                                 </span>
                             </div>
                         </a>
@@ -438,7 +407,7 @@ Homepage
         <div class="l-inner">
             <div class="c-feature-panel">
                 <h2 class="c-feature-panel__title t-h2">
-                    Our operational strength
+                    Our operational<br>strength
                 </h2>
                 <p class="c-feature-panel__content t-body">
                     Our competitive strengths lie in our high quality production facilities, our global low cost producer advantage, our diversified product portfolio, and our strategic locations with access to strong distribution and logistics capabilities.
@@ -549,10 +518,10 @@ Homepage
     <div class="l-inner">
         <div class="c-footer">
             <div class="c-footer__logo-wrapper">
-                <a class="c-link" href="#">
-                    <figure class="c-logo c-logo--narrow">
-                        <img src="../static/img/logo-white.png" alt="OCI" class="c-img" />
-                    </figure>
+                <a class="c-logo c-logo--alt" href="/">
+                    <svg class="o-svg c-logo__decor">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#logo"></use>
+                    </svg>
                 </a>
             </div>
             <p class="c-footer__nav-item t-menu t-menu--small t-white">
@@ -572,7 +541,9 @@ Homepage
             <div class="c-footer__social-wrapper">
                 <a class="c-link" href="#">
                     <figure class="c-social-icon">
-                        <img src="../static/img/linkedin.svg" alt="OCI LinkedIn" class="c-img" />
+                        <svg class="o-svg c-social-icon__decor">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#linkedin"></use>
+                        </svg>
                     </figure>
                 </a>
             </div>

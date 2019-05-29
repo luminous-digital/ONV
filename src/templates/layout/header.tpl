@@ -57,8 +57,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item has-children">
-                            <a href="#" class="c-link t-menu">
+                        <li class="c-header-nav-menu__item has-children {% if menu_item == 'sustainability' %}current-menu-item{% endif %}">
+                            <a href="/sustainability.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Sustainability
                                 </span>
