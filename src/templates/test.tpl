@@ -402,6 +402,214 @@ Test
         </div>
     </div>
 </section>
+<section class="l-section">
+    <div class="l-inner">
+        <div class="c-list-wrapper">
+            <h2 class="c-list-wrapper__title t-h2">
+                Upcoming<br />
+                Events
+            </h2>
+            <h3 class="c-list-wrapper__subtitle t-h3">
+                Shareholder meetings
+            </h3>
+            <div class="c-list-wrapper__list">
+                <ul class="c-file-list">
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                            <div class="c-btn-wrapper c-btn-wrapper--right">
+                                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                    <span class="c-label t-btn t-blue">Download PDF</span>
+                                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                    <span class="c-btn__icon">
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                            <div class="c-btn-wrapper c-btn-wrapper--right">
+                                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                    <span class="c-label t-btn t-blue">Download PDF</span>
+                                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                    <span class="c-btn__icon">
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-list-wrapper__link t-center">
+                <a href="#" class="t-link">
+                <span class="c-label">
+                     Show more
+                </span>
+            </a>
+            </div>
+        </div>
+        <div class="c-list-wrapper">
+            <h3 class="c-list-wrapper__subtitle t-h3">
+                Shareholder meetings
+            </h3>
+            <div class="c-list-wrapper__list">
+                <ul class="c-file-list">
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                            <div class="c-btn-wrapper c-btn-wrapper--right">
+                                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                    <span class="c-label t-btn t-blue">Download PDF</span>
+                                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                    <span class="c-btn__icon">
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                            <div class="c-btn-wrapper c-btn-wrapper--right">
+                                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+                                    <span class="c-label t-btn t-blue">Download PDF</span>
+                                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+                                    <span class="c-btn__icon">
+                                        <svg class="o-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-list-wrapper__link t-center">
+                <a href="#" class="t-link">
+                <span class="c-label">
+                     Show more
+                </span>
+            </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="l-section">
+    <div class="l-inner">
+        <div class="c-list-wrapper">
+            <h2 class="c-list-wrapper__title t-h2">
+                Upcoming<br />
+                Events
+            </h2>
+            <h3 class="c-list-wrapper__subtitle t-h3">
+                Shareholder meetings
+            </h3>
+            <div class="c-list-wrapper__list">
+                <ul class="c-file-list c-file-list--no-mobile-margin">
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                        </div>
+                    </li>
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-list-wrapper__link t-center">
+                <a href="#" class="t-link">
+                <span class="c-label">
+                     Show more
+                </span>
+            </a>
+            </div>
+        </div>
+        <div class="c-list-wrapper">
+            <h2 class="c-list-wrapper__title t-h2">
+                Upcoming<br />
+                Events
+            </h2>
+            <h3 class="c-list-wrapper__subtitle t-h3">
+                Shareholder meetings
+            </h3>
+            <div class="c-list-wrapper__list">
+                <ul class="c-file-list c-file-list--no-mobile-margin">
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                        </div>
+                    </li>
+                    <li class="c-file-list__item">
+                        <div class="c-file-list__item-wrapper">
+                            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+                                4 June 2018
+                            </p>
+                            <h4 class="c-file-list__title t-h4 t-thin">
+                                Tender Offer to Purchase OCIP Common Units
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-list-wrapper__link t-center">
+                <a href="#" class="t-link">
+                <span class="c-label">
+                     Show more
+                </span>
+            </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 {% endblock %}

@@ -107,6 +107,10 @@ select select.pseudo-class-focus {
   opacity: 1;
 }
 
+.c-list-wrapper.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
 .c-our-history-slide.pseudo-class-first-child .c-our-history-slide__year,
 .c-our-history-slide.pseudo-class-last-child .c-our-history-slide__year {
   width: 100%;

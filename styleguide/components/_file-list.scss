@@ -62,7 +62,7 @@
 .c-file-list__item {
     border-bottom: 1px solid color(lblue);
     margin-bottom: offset(main) * 2;
-    padding: offset(main) * 0.7 0;
+    padding: offset(main) * 1.2 0;
 
     &:last-child {
         margin-bottom: 0;
@@ -90,4 +90,36 @@
         align-items: center;
         flex-direction: row;
     }
+}
+
+// File List without mobile margin bottom
+//
+// markup:
+//<ul class="c-file-list c-file-list--no-mobile-margin">
+//    <li class="c-file-list__item">
+//        <div class="c-file-list__item-wrapper">
+//            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+//                4 June 2018
+//            </p>
+//            <h4 class="c-file-list__title t-h4 t-thin">
+//                Tender Offer to Purchase OCIP Common Units
+//            </h4>
+//        </div>
+//    </li>
+//    <li class="c-file-list__item">
+//        <div class="c-file-list__item-wrapper">
+//            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+//                4 June 2018
+//            </p>
+//            <h4 class="c-file-list__title t-h4 t-thin">
+//                Tender Offer to Purchase OCIP Common Units
+//            </h4>
+//        </div>
+//    </li>
+//</ul>
+//
+// Styleguide 15.1
+
+.c-file-list--no-mobile-margin .c-file-list__item {
+    margin-bottom: 0;
 }

@@ -2365,7 +2365,7 @@ Feature panel wrapper
 .c-file-list__item {
   border-bottom: 1px solid #F3F5F9;
   margin-bottom: 20px;
-  padding: 7px 0; }
+  padding: 12px 0; }
   .c-file-list__item:last-child {
     margin-bottom: 0; }
   @media (min-width: 768px) {
@@ -2386,6 +2386,9 @@ Feature panel wrapper
     .c-file-list__item-wrapper {
       align-items: center;
       flex-direction: row; } }
+
+.c-file-list--no-mobile-margin .c-file-list__item {
+  margin-bottom: 0; }
 
 /* ==========================================================================
    Footer
@@ -3095,6 +3098,35 @@ Lead Teaser
     .c-lead-teaser-wrapper {
       width: 100%;
       background-position: 90% 50%; } }
+
+/* ==========================================================================
+List wrapper
+========================================================================== */
+/* ==========================================================================
+List wrapper no download
+========================================================================== */
+.c-list-wrapper {
+  margin-bottom: 60px; }
+  .c-list-wrapper:last-child {
+    margin-bottom: 0; }
+
+.c-list-wrapper__title {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .c-list-wrapper__title {
+      margin-bottom: 50px; } }
+
+.c-list-wrapper__subtitle {
+  margin-bottom: 8px; }
+
+.c-list-wrapper__link {
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .c-list-wrapper__link {
+      margin-top: 40px; } }
+
+.c-list-wrapper__link a {
+  margin-bottom: 0; }
 
 /* ==========================================================================
    Logo
