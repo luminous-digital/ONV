@@ -1,6 +1,6 @@
 {% extends "base/base.tpl" %}
 {% block title %}
-Operations - OCI Beaumont
+Operations subpage
 {% endblock %}
 {% set menu_item = 'operations' %}
 {% block content %}
@@ -9,7 +9,7 @@ Operations - OCI Beaumont
     {% import "components/header-panel-short.tpl" as header_panel_short with context %}
     {{
         header_panel_short.render(
-            pageTitle='OCI Beaumont',
+            pageTitle='Operations subpage',
             pageSubtitle='Our competitive strengths lie in our high quality production assets, our global low cost advantage, and our strategic locations with access to strong distribution and logistics capabilities',
             bgPhoto='img-header-panel-operations-nitrogen.jpg'
         )
