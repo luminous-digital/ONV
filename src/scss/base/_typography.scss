@@ -350,7 +350,31 @@
 }
 
 .t-underline {
+    margin: 0;
+    padding: 0;
 
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+
+        left: 0;
+        bottom: - offset(main) / 3;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: color(accent);
+
+        transition: $transition-default;
+    }
+
+    &:hover {
+        &:after {
+            background-color: color(main);
+        }
+    }
 }
 
 .t-body-link {

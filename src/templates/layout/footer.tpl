@@ -26,7 +26,7 @@
             <div class="c-footer__social-wrapper">
                 <a class="c-link" href="#">
                     <figure class="c-social-icon">
-                        <svg class="o-svg c-logo__decor">
+                        <svg class="o-svg c-social-icon__decor">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#linkedin"></use>
                         </svg>
                     </figure>

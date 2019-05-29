@@ -131,3 +131,15 @@
         right: $size-default-border solid color(accent);
     }
 }
+
+@mixin arrow-big() {
+    display: block;
+
+    width: $size-header-panel-arrow-width-big;
+    height: $size-header-panel-arrow-width-big;
+
+    border: {
+        bottom: $size-default-border solid color(accent);
+        right: $size-default-border solid color(accent);
+    }
+}

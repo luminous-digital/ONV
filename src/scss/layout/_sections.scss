@@ -4,6 +4,16 @@
 .l-section {
     margin-bottom: offset(main) * 6;
 
+    &--inner-spacing {
+        padding: offset(main) * 3 0 offset(main) * 9;
+
+        @include media('>=mobile') {
+            padding: offset(main) * 5 0 offset(main) * 9;
+        }
+        @include media('>=desktop-small') {
+            padding: offset(main) * 5 0 offset(main) * 9;
+        }
+    }
     &--bg-alt {
         background-color: color(lblue);
     }

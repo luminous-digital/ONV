@@ -8,6 +8,7 @@ const Sliders = {
     this.ourStorySlider()
     this.ourStorySliderBullets()
     this.tabbedContentSlider()
+    this.dataSlider()
   },
   latestNewsSlider: function () {
     const sliderClass = '.js-slider-latest-news'
@@ -54,6 +55,35 @@ const Sliders = {
             spaceBetween: 25
           },
           1200: {
+            slidesPerView: 3,
+            spaceBetween: 25
+          }
+        }
+      })
+    }
+  },
+  dataSlider: function () {
+    const sliderClass = '.js-slider-data'
+    if (document.querySelector(sliderClass)) {
+      Sliders.dataSwiper = new Swiper(sliderClass, {
+        loop: true,
+        autoplay: false,
+        speed: 300,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        navigation: {
+          nextEl: '.c-data-slider-wrapper__next',
+          prevEl: '.c-data-slider-wrapper__prev'
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+          768: {
+            autoHeight: true,
+            slidesPerView: 2,
+            spaceBetween: 25
+          },
+          1200: {
+            autoHeight: true,
             slidesPerView: 3,
             spaceBetween: 25
           }
