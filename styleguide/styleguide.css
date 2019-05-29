@@ -2294,7 +2294,11 @@ Feature panel
       padding-bottom: 35px; } }
 
 .c-feature-panel .c-btn-wrapper {
-  margin-top: auto; }
+  margin-top: auto;
+  padding-top: 70px; }
+  @media (min-width: 768px) {
+    .c-feature-panel .c-btn-wrapper {
+      padding-top: 0; } }
 
 /* ==========================================================================
 Feature panel decor

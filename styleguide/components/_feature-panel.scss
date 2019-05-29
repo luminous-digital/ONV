@@ -62,4 +62,9 @@ Feature panel
 
 .c-feature-panel .c-btn-wrapper {
     margin-top: auto;
+    padding-top: offset(main) * 7;
+
+    @include media('>=mobile') {
+        padding-top: 0;
+    }
 }
