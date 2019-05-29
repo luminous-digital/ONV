@@ -69,6 +69,10 @@ select select.pseudo-class-focus {
   cursor: pointer;
 }
 
+.c-file-list__item.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
 .c-header-nav-menu__item.pseudo-class-first-child > .c-link {
   border-top: 2px solid #F3F5F9;
 }

@@ -190,6 +190,9 @@
     }
 
     &--alt {
+        font-size: font-size(small-m);
+        line-height: font-size(small-m) * 1.5;
+
         @include media('>=mobile') {
             font-size: font-size(body-m);
             line-height: font-size(body-m) * 1.5;
@@ -214,6 +217,10 @@
         font-size: font-size(small);
         line-height: font-size(small) * 1.4;
     }
+}
+
+.t-thin {
+    font-weight: $font-weight-regular;
 }
 
 .t-smaller {
