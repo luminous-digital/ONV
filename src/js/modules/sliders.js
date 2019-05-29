@@ -9,6 +9,7 @@ const Sliders = {
     this.ourStorySliderBullets()
     this.tabbedContentSlider()
     this.dataSlider()
+    this.fourBlockSliders()
   },
   latestNewsSlider: function () {
     const sliderClass = '.js-slider-latest-news'
@@ -200,6 +201,32 @@ const Sliders = {
           bulletClass: 'c-content-tabs__tab',
           modifierClass: 'c-content-tabs__tab--',
           bulletActiveClass: 'is-active'
+        }
+      })
+    }
+  },
+  fourBlockSliders: function () {
+    const sliderClass = '.js-four-blocks-slider'
+    if (document.querySelector(sliderClass)) {
+      Sliders.heroSwiper = new Swiper(sliderClass, {
+        loop: true,
+        autoplay: false,
+        speed: 300,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: '.js-four-blocks-slider-next',
+          prevEl: '.js-four-blocks-slider-prev'
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 25
+          }
         }
       })
     }
