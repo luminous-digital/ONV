@@ -1,0 +1,21 @@
+.c-image-group {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-image-group__item {
+    margin-bottom: offset(main);
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: calc(50% - #{offset(main) * 0.5});
+    }
+}
+
+.c-image-group__image {
+    margin: 0;
+    padding: 0;
+}

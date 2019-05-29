@@ -1,0 +1,34 @@
+.c-list-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media('>=mobile') {
+        flex-wrap: nowrap;
+    }
+}
+
+.c-list-block__item {
+    width: calc(100% - #{offset(main) * 10});
+
+    &:first-child {
+        max-width: offset(main) * 10;
+        margin-bottom: offset(main);
+    }
+
+    @include media('>=mobile') {
+        width: auto;
+        max-width: none;
+
+        &:first-child {
+            width: offset(main) * 20;
+            min-width: offset(main) * 20;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.c-list-block__item p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

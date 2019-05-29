@@ -610,6 +610,75 @@ Test
         </div>
     </div>
 </section>
+<section class="l-section">
+    <div class="l-inner">
+        <ul class="c-table-list">
+            <li class="c-table-list__item c-table-list__item--heading">
+                <div class="c-list-block">
+                    <div class="c-list-block__item">
+                        <h3 class="t-h3">Goal</h3>
+                    </div>
+                    <div class="c-list-block__item">
+                        <h3 class="t-h3">OCI contribution</h3>
+                    </div>
+                </div>
+            </li>
+            <li class="c-table-list__item">
+                <div class="c-list-block">
+                    <div class="c-list-block__item">
+                        <ul class="c-image-group">
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-1.jpg" alt="" />
+                                </figure>
+                            </li>
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-2.jpg" alt="" />
+                                </figure>
+                            </li>
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-1.jpg" alt="" />
+                                </figure>
+                            </li>
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-1.jpg" alt="" />
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-list-block__item">
+                        <p class="t-body">
+                            Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.
+                        </p>
+                        <p class="t-body">
+                            Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="c-table-list__item">
+                <div class="c-list-block">
+                    <div class="c-list-block__item">
+                        <figure class="c-list-block__image">
+                            <img src="./static/img/goals/img-icon-2.png" alt="" />
+                        </figure>
+                    </div>
+                    <div class="c-list-block__item">
+                        <p class="t-body">
+                            Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.
+                        </p>
+                        <p class="t-body">
+                            Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 
 
 {% endblock %}
