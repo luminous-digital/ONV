@@ -24,7 +24,7 @@ Homepage
     {% import "components/feature-panel.tpl" as feature_panel with context %}
     {{
         feature_panel.render(
-            compTitle='Our operational strength',
+            compTitle='Our operational<br>strength',
             compContent='Our competitive strengths lie in our high quality production facilities, our global low cost producer advantage, our diversified product portfolio, and our strategic locations with access to strong distribution and logistics capabilities.',
             compBtnTitle='Our operations',
             compBgSrc='feature-panel-decor.jpg'

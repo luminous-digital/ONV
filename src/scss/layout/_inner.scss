@@ -33,6 +33,12 @@
     &--70 {
         max-width: 70%;
     }
+    &--65 {
+
+        @include media('>=desktop-small') {
+            max-width: 65%;
+        }
+    }
     &--55 {
 
         @include media('>=desktop-small') {

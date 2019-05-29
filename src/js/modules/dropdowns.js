@@ -4,7 +4,7 @@ const Dropdowns = {
   },
   initDropdowns: function () {
     const dropdownTogglers = document.querySelectorAll('.js-dropdown-toggle')
-    if (dropdownTogglers) {
+    if (dropdownTogglers.length) {
       if (window.innerWidth < 768) {
         dropdownTogglers[0].parentNode.classList.add('is-open')
       }

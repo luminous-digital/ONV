@@ -7,6 +7,7 @@ Feature panel wrapper
 
     margin-top: offset(main) * 19;
     padding-top: offset(main) * 6;
+    padding-bottom: offset(main) * 4;
 
     background-color: color(lblue);
 
@@ -15,15 +16,13 @@ Feature panel wrapper
     @include media('>=mobile') {
         margin-top: offset(main) * 4;
         margin-bottom: offset(main) * 4;
-        padding-top: offset(main) * 7;
-    }
-    @include media('>=desktop-small') {
         height: #{$size-feature-panel-height-d - (offset(main) * 8)};
     }
 }
 
 .c-feature-panel-wrapper .l-inner {
-    @include media('>=desktop-small') {
+
+    @include media('>=mobile') {
         height: 100%;
     }
 }

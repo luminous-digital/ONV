@@ -34,15 +34,14 @@ Feature panel
 
     @include media('>=mobile') {
         width: 50%;
-    }
-    @include media('>=desktop-small') {
-        width: 40%;
-
         height: 100%;
 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+    }
+    @include media('>=desktop-small') {
+        width: 40%;
     }
 }
 
@@ -57,28 +56,10 @@ Feature panel
 
     @include media('>=mobile') {
         padding-top: 0;
-        padding-bottom: offset(main) * 4;
-    }
-    @include media('>=desktop-small') {
-        max-width: 80%;
-    }
-}
-
-.c-feature-panel__content {
-    padding-bottom: offset(main) * 7.5;
-
-    @include media('>=mobile') {
-        padding-bottom: offset(main) * 5;
-    }
-    @include media('>=desktop-small') {
-        padding-bottom: offset(main) * 8;
+        padding-bottom: offset(main) * 3.5;
     }
 }
 
 .c-feature-panel .c-btn-wrapper {
-    padding-bottom: offset(main) * 4;
-
-    @include media('>=desktop-small') {
-        margin-top: auto;
-    }
+    margin-top: auto;
 }

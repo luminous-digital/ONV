@@ -44,14 +44,14 @@
                                 <li class="c-sub-nav__item">
                                     <a href="/operations.html" class="c-link t-menu-sub">
                                         <span class="c-label">
-                                            OCI Nitrogen
+                                            Operations
                                         </span>
                                     </a>
                                 </li>
                                 <li class="c-sub-nav__item">
-                                    <a href="/operations.html" class="c-link t-menu-sub">
+                                    <a href="/operations-oci-nitrogen.html" class="c-link t-menu-sub">
                                         <span class="c-label">
-                                            OCI Beaumont
+                                            OCI Nitrogen
                                         </span>
                                     </a>
                                 </li>
