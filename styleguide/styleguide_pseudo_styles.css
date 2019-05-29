@@ -74,6 +74,10 @@ select select.pseudo-class-focus {
   cursor: pointer;
 }
 
+.c-file-list__item.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
 .c-footer__nav-item.pseudo-class-hover .c-link .c-label:after {
   width: 100%;
 }

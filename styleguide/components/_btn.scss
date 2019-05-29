@@ -170,17 +170,32 @@
 
 .c-btn--download-icon {
     display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    align-items: flex-start;
-    border-left: 2px solid color(lgrey);
     position: relative;
+    width: 100%;
+    padding: 0;
 
-    padding: {
-        top: offset(main);
-        bottom: offset(main) * 0.6;
-        left: offset(main) * 3;
-        right: offset(main) * 6;
+    @include media('>=mobile') {
+        width: auto;
+        flex-direction: column;
+        background-color: transparent;
+        align-items: flex-start;
+        border-left: 2px solid color(lgrey);
+
+        padding: {
+            top: offset(main);
+            bottom: offset(main) * 0.6;
+            left: offset(main) * 3;
+            right: offset(main) * 6;
+        }
+    }
+}
+
+.c-btn--download-icon .c-sub-label {
+    margin-left: offset(main) * 2;
+    font-weight: $font-weight-regular;
+
+    @include media('>=mobile') {
+        margin-left: 0;
     }
 }
 
@@ -194,9 +209,13 @@
 
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: offset(main);
     right: 0;
     margin: auto 0;
+
+    @include media('>=mobile') {
+        bottom: 0;
+    }
 }
 
 .c-btn__icon .o-svg {
