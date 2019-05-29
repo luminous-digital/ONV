@@ -1,10 +1,10 @@
 const Header = {
   init: function () {
-    const windowWidth = window.innerWidth
-    if (windowWidth >= 768) {
-      this.desktopHeader()
-    } else {
+    const isTouch = 'ontouchstart' in document.documentElement
+    if (isTouch) {
       this.mobileHeader()
+    } else {
+      this.desktopHeader()
     }
   },
   mobileHeader: function () {
@@ -13,13 +13,13 @@ const Header = {
     if (header && menuToggle) {
       const parents = header.querySelectorAll('.has-children')
       const body = document.querySelector('body')
-      menuToggle.addEventListener('click', e => {
+      menuToggle.addEventListener('touchstart', e => {
         header.classList.toggle('is-active')
         body.classList.toggle('is-header-open')
       })
       if (parents) {
         Array.from(parents).forEach(item => {
-          item.addEventListener('click', e => {
+          item.addEventListener('touchstart', e => {
             item.classList.toggle('is-active')
           })
         })

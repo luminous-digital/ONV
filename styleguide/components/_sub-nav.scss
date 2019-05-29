@@ -33,6 +33,13 @@ Sub nav
     max-height: 100vh;
 }
 
+// @include media('>=desktop-small') {
+
+//     .c-header-nav-menu__item:hover > .c-sub-nav {
+//         max-height: 100vh;
+//     }
+// }
+
 .c-sub-nav__item {
     width: 100%;
     height: $size-header-menu-item-height;
