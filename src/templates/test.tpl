@@ -637,16 +637,6 @@ Test
                                     <img src="./static/img/goals/img-icon-2.jpg" alt="" />
                                 </figure>
                             </li>
-                            <li class="c-image-group__item">
-                                <figure class="c-image-group__image">
-                                    <img src="./static/img/goals/img-icon-1.jpg" alt="" />
-                                </figure>
-                            </li>
-                            <li class="c-image-group__item">
-                                <figure class="c-image-group__image">
-                                    <img src="./static/img/goals/img-icon-1.jpg" alt="" />
-                                </figure>
-                            </li>
                         </ul>
                     </div>
                     <div class="c-list-block__item">
@@ -662,16 +652,95 @@ Test
             <li class="c-table-list__item">
                 <div class="c-list-block">
                     <div class="c-list-block__item">
-                        <figure class="c-list-block__image">
-                            <img src="./static/img/goals/img-icon-2.png" alt="" />
-                        </figure>
+                        <ul class="c-image-group">
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-3.jpg" alt="" />
+                                </figure>
+                            </li>
+                        </ul>
                     </div>
                     <div class="c-list-block__item">
                         <p class="t-body">
-                            Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.
+                            Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="c-table-list__item">
+                <div class="c-list-block">
+                    <div class="c-list-block__item">
+                        <ul class="c-image-group">
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-4.jpg" alt="" />
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-list-block__item">
+                        <p class="t-body">
+                            Distribution of economic growth ensures the financial wellbeing of employees and the communities in which we operate.
                         </p>
                         <p class="t-body">
-                            Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+                            Good workplace practices as described in our Code of Conduct and other policies promotes a safe and encouraging workplace, diversity, and equal opportunity.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="c-table-list__item">
+                <div class="c-list-block">
+                    <div class="c-list-block__item">
+                        <ul class="c-image-group">
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-5.jpg" alt="" />
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-list-block__item">
+                        <p class="t-body">
+                            Nutrient stewardship promotes effective crop yields that improve farmers’ returns.
+                        </p>
+                        <p class="t-body">
+                            We strictly maintain safe, environmentally responsible production sites that protect local environments and ensure safe communities.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="c-table-list__item">
+                <div class="c-list-block">
+                    <div class="c-list-block__item">
+                        <ul class="c-image-group">
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-6.jpg" alt="" />
+                                </figure>
+                            </li>
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-7.jpg" alt="" />
+                                </figure>
+                            </li>
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-8.jpg" alt="" />
+                                </figure>
+                            </li>
+                            <li class="c-image-group__item">
+                                <figure class="c-image-group__image">
+                                    <img src="./static/img/goals/img-icon-9.jpg" alt="" />
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-list-block__item">
+                        <p class="t-body">
+                            Our investment in maintaining state-of-the-art production facilities, coupled with our GHG targets allows us to minimize our emissions and consequently out impact on climate change.
+                        </p>
+                        <p class="t-body">
+                            Our commitment to educating farmers on nutrient stewardship allows them to maximize yields at optimal fertilizer application. This in turn reduces soil nutrient loss, protects from deforestation, and minimizes runoff to groundwater.
                         </p>
                     </div>
                 </div>
