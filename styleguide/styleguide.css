@@ -1140,6 +1140,8 @@ button.swiper-pagination-bullet {
 =========================== */
 /* Quote component
 =========================== */
+/* Grid component
+=========================== */
 /* Breakpoints for include-media plugin
 ========================================================================== */
 /* ==========================================================================
@@ -2294,7 +2296,11 @@ Feature panel
       padding-bottom: 35px; } }
 
 .c-feature-panel .c-btn-wrapper {
-  margin-top: auto; }
+  margin-top: auto;
+  padding-top: 70px; }
+  @media (min-width: 768px) {
+    .c-feature-panel .c-btn-wrapper {
+      padding-top: 0; } }
 
 /* ==========================================================================
 Feature panel decor
@@ -2463,28 +2469,47 @@ Forms
 Grid block
 ========================================================================== */
 .c-grid-block {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
-  padding-bottom: 35px; }
+  width: 100%;
+  height: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0;
+  transition: all 0.2s linear; }
+  @media (min-width: 375px) {
+    .c-grid-block {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (min-width: 768px) {
+    .c-grid-block {
+      padding: 0; } }
+  @media (min-width: 1200px) {
+    .c-grid-block {
+      opacity: 1; } }
+
+.c-grid-block.swiper-slide-active,
+.c-grid-block.swiper-slide-next {
+  opacity: 1; }
 
 .c-grid-block__title {
   margin-bottom: 5px; }
 
 .c-grid-block__image {
   width: 100%;
+  height: 175px;
+  overflow: hidden;
   margin: 0; }
 
 .c-grid-block__image img {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .c-grid-block__link {
-  margin-bottom: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding-top: 10px; }
 
 .c-grid-block__desc {
   padding-top: 15px;
@@ -2508,15 +2533,53 @@ Grid
 ========================================================================== */
 .c-grid-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto; }
+  @media (min-width: 768px) {
+    .c-grid-wrapper {
+      padding: 0 110px; } }
+  @media (min-width: 1200px) {
+    .c-grid-wrapper {
+      padding: 0; } }
 
 .c-grid-wrapper__block {
-  display: flex;
-  width: 100%; }
+  height: 100%; }
+
+.c-grid-wrapper__next,
+.c-grid-wrapper__prev {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid #F79727;
+  border-right: 2px solid #F79727;
+  cursor: pointer;
+  z-index: 10;
+  outline: none;
+  top: 110px; }
   @media (min-width: 768px) {
-    .c-grid-wrapper__block {
-      width: 23%; } }
+    .c-grid-wrapper__next,
+    .c-grid-wrapper__prev {
+      top: 140px;
+      display: block;
+      width: 38px;
+      height: 38px;
+      border-bottom: 2px solid #F79727;
+      border-right: 2px solid #F79727; } }
+  @media (min-width: 1200px) {
+    .c-grid-wrapper__next,
+    .c-grid-wrapper__prev {
+      display: none; } }
+
+.c-grid-wrapper__prev {
+  transform: rotate(135deg);
+  left: 5px; }
+
+.c-grid-wrapper__next {
+  transform: rotate(-45deg);
+  right: 5px; }
 
 .c-grid-wrapper--one-third .c-grid-wrapper__block {
   margin-bottom: 40px; }
@@ -3091,7 +3154,8 @@ Image group grid
   align-items: center;
   justify-content: flex-start;
   padding-top: 60px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  z-index: 1; }
   @media (min-width: 375px) {
     .c-lead-teaser {
       padding-top: 85px; } }
@@ -3118,11 +3182,18 @@ Lead Teaser
   width: 100%;
   height: auto;
   background-size: cover;
-  background-position: 60% 50%; }
+  background-position: 60% 50%;
+  position: relative; }
   @media (min-width: 768px) {
     .c-lead-teaser-wrapper {
       width: 100%;
       background-position: 90% 50%; } }
+  .c-lead-teaser-wrapper:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); }
 
 /* ==========================================================================
 List block
@@ -3632,7 +3703,8 @@ Our history slider
 .c-our-history-slider {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: auto; }
 
 /* ==========================================================================
 Our history slider container
@@ -3655,9 +3727,9 @@ Our history slider container
   height: 42px;
   z-index: 10;
   outline: none;
+  cursor: pointer;
   transition: all 0.2s linear;
   background-image: url("./../img/our-history-arrow.svg");
-  background-size: 15px 15px;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
@@ -4030,6 +4102,12 @@ Social icon
 @media (min-width: 1200px) {
   .c-standfirst {
     padding-top: 30px; } }
+
+/* ==========================================================================
+   Standfirst with desc
+   ========================================================================== */
+.c-standfirst-desc {
+  padding-top: 60px; }
 
 /* ==========================================================================
 Sub nav

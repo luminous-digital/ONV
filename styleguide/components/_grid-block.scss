@@ -24,12 +24,38 @@ Grid block
 // Styleguide 26.2
 
 .c-grid-block {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
-    padding-bottom: offset(main) * 3.5;
+
+    width: 100%;
+    height: $size-grid-component-card-height;
+
+    padding: {
+        left: offset(main) * 2;
+        right: offset(main) * 2;
+    }
+
+    opacity: 0;
+    transition: $transition-default;
+
+    @include media('>=mobile-small') {
+        padding: {
+            left: offset(main) * 5;
+            right: offset(main) * 5;
+        }
+    }
+    @include media('>=mobile') {
+        padding: 0;
+    }
+    @include media('>=desktop-small') {
+        opacity: 1;
+    }
+}
+
+.c-grid-block.swiper-slide-active,
+.c-grid-block.swiper-slide-next {
+    opacity: 1;
 }
 
 .c-grid-block__title {
@@ -38,18 +64,22 @@ Grid block
 
 .c-grid-block__image {
     width: 100%;
+    height: $size-grid-component-card-img-height;
+
+    overflow: hidden;
+
     margin: 0;
 }
 
 .c-grid-block__image img {
     width: 100%;
+    height: auto;
 }
 
 .c-grid-block__link {
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
+    margin-bottom: offset(main);
+    padding-top: offset(main);
 }
 
 .c-grid-block__desc {

@@ -11,6 +11,8 @@
     padding-top: offset(main) * 6;
     padding-bottom: offset(main) * 4;
 
+    z-index: 1;
+
     @include media ('>=mobile-small') {
         padding-top: offset(main) * 8.5;
     }

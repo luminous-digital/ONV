@@ -41,24 +41,30 @@
                                 </span>
                             </a>
                             <ul class="c-sub-nav">
-                                <li class="c-sub-nav__item">
-                                    <a href="/operation-oci-nitrogen.html" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            OCI Nitrogen
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="c-sub-nav__item">
-                                    <a href="/operations-oci-beaumont.html" class="c-link t-menu-sub">
-                                        <span class="c-label">
-                                            OCI Beaumont
-                                        </span>
-                                    </a>
-                                </li>
+                                {% set operations_items =
+                                    [
+                                        'OCI Nitrogen',
+                                        'OCI Beaumont',
+                                        'Natgasoline LLC',
+                                        'Sorfert Algérie',
+                                        'Egyptian Fertilizers Company',
+                                        'Egypt Basic Industries Corporation',
+                                        'BioMCN'
+                                    ]
+                                %}
+                                {% for item in operations_items %}
+                                    <li class="c-sub-nav__item">
+                                        <a href="/operations-subpage.html" class="c-link t-menu-sub">
+                                            <span class="c-label">
+                                                {{ item }}
+                                            </span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item has-children">
-                            <a href="#" class="c-link t-menu">
+                        <li class="c-header-nav-menu__item has-children {% if menu_item == 'sustainability' %}current-menu-item{% endif %}">
+                            <a href="/sustainability.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Sustainability
                                 </span>

@@ -32,7 +32,6 @@ const Map = {
     'facility': ''
   },
   filterMap: function (pins) {
-    console.log(this.mapFilterObject)
     const filteredPins = pins.filter(pin => {
       if (
         pin.dataset.territory === this.mapFilterObject.territory ||
