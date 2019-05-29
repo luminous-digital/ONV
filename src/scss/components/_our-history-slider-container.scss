@@ -28,10 +28,11 @@ Our history slider container
 
     outline: none;
 
+    cursor: pointer;
+
     transition: $transition-default;
 
     background-image: url('./../img/our-history-arrow.svg');
-    background-size: 15px 15px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
