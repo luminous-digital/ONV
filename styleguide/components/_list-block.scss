@@ -1,0 +1,68 @@
+/* ==========================================================================
+List block
+========================================================================== */
+// List block
+//
+// markup:
+//<div class="c-list-block">
+//    <div class="c-list-block__item">
+//        <ul class="c-image-group">
+//            <li class="c-image-group__item">
+//                <figure class="c-image-group__image">
+//                    <img src="./static/img/goals/img-icon-1.jpg" alt="" />
+//                </figure>
+//            </li>
+//            <li class="c-image-group__item">
+//                <figure class="c-image-group__image">
+//                    <img src="./static/img/goals/img-icon-2.jpg" alt="" />
+//                </figure>
+//            </li>
+//        </ul>
+//    </div>
+//    <div class="c-list-block__item">
+//        <div class="c-wysiwyg">
+//            <p>
+//                Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.<br><br>
+//                Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+//            </p>
+//        </div>
+//    </div>
+//</div>
+//
+// Styleguide 30
+
+.c-list-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media('>=mobile') {
+        flex-wrap: nowrap;
+    }
+}
+
+.c-list-block__item {
+    &:first-child {
+        width: 30%;
+    }
+
+    &:last-child {
+        width: 70%;
+        padding-left: offset(main) * 2;
+    }
+
+    @include media('>=mobile') {
+        width: auto;
+
+        &:first-child {
+            max-width: offset(main) * 20;
+        }
+
+        &:last-child {
+            width: 100%;
+        }
+    }
+}
+
+.c-list-block__item p {
+    margin: 0;
+}

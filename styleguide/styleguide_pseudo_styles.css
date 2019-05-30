@@ -107,6 +107,15 @@ select select.pseudo-class-focus {
   opacity: 1;
 }
 
+.c-list-block__item.pseudo-class-first-child {
+  width: 30%;
+}
+
+.c-list-block__item.pseudo-class-last-child {
+  width: 70%;
+  padding-left: 20px;
+}
+
 .c-list-wrapper.pseudo-class-last-child {
   margin-bottom: 0;
 }
