@@ -61,6 +61,8 @@ const Map = {
         filterOptions.forEach(option => {
           option.addEventListener('click', e => {
             const chosenOption = e.currentTarget.querySelector('.c-label').innerText.trim()
+            const dropdownToggle = e.currentTarget.parentNode.parentNode
+            dropdownToggle.classList.remove('is-open')
             filter.dataset.chosenOption = chosenOption
             filterChosenOptionText.innerHTML = chosenOption
             filterName.classList.remove('is-visible')
