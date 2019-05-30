@@ -1,0 +1,95 @@
+/* ==========================================================================
+Image content
+========================================================================== */
+// Image content
+//
+// markup:
+//<div class="c-image-content">
+//    <figure class="c-image-content__image">
+//        <img src="./static/img/img-reports.jpg" alt="">
+//    </figure>
+//    <div class="c-image-content__content">
+//        <h2 class="image-content__title t-h2">
+//            Latest<br>
+//            Reports
+//        </h2>
+//        <p class="c-image-content__text t-body">
+//            OCI is also on track to become one of the world’s largest methanol producers with almost 3.7 million tons of capacity.
+//        </p>
+//        <div class="c-image-content__btns c-btn-wrapper c-btn-wrapper--equal-btns">
+//            <a href="/news.html" class="c-btn c-btn--download c-btn--download--center-icon c-btn--block">
+//                <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
+//                <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//                <span class="c-btn__icon">
+//                    <svg class="o-svg">
+//                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                    </svg>
+//                </span>
+//            </a>
+//            <a href="/news.html" class="c-btn c-btn--download c-btn--download--center-icon c-btn--block">
+//                <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
+//                <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//                <span class="c-btn__icon">
+//                    <svg class="o-svg">
+//                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                    </svg>
+//                </span>
+//            </a>
+//        </div>
+//    </div>
+//</div>
+//
+// Styleguide 31
+
+.c-image-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.c-image-content__image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: offset(main);
+
+    @include media('>=mobile') {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+.c-image-content__image img {
+    width: 100%;
+}
+
+.c-image-content__content {
+    width: 100%;
+    position: relative;
+
+    @include media('>=mobile') {
+        width: 50%;
+        padding-left: offset(main) * 2.5;
+    }
+}
+
+.c-image-content__text {
+    margin: {
+        top: offset(main) * 3;
+        bottom: 0;
+    }
+
+    @include media('>=mobile') {
+        max-width: offset(main) * 31.6;
+    }
+}
+
+.c-image-content__btns {
+    margin-top: offset(main);
+
+    @include media('>=mobile') {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+    }
+}

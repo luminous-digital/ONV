@@ -36,3 +36,24 @@
 .c-latest-news-wrapper .c-btn {
     width: $size-latest-news-card;
 }
+
+.c-btn-wrapper--equal-btns {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.c-btn-wrapper--equal-btns .c-btn {
+    width: 100%;
+
+    &:first-child {
+        margin-bottom: offset(main);
+    }
+
+    @include media('>=mobile') {
+        width: calc(50% - #{offset(main) * 1.2});
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+    }
+}
