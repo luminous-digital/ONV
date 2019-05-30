@@ -37,11 +37,11 @@
     width: $size-latest-news-card;
 }
 
-// Btn wrapper equal buttons
+// Btn wrapper two equal buttons
 //
 // markup:
-//<div class="c-btn-wrapper c-btn-wrapper--equal-btns">
-//    <a href="/news.html" class="c-btn c-btn--download c-btn--download--center-icon c-btn--block">
+//<div class="c-btn-wrapper c-btn-wrapper--equal-btns c-btn-wrapper--two-btns">
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
 //        <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
 //        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
 //        <span class="c-btn__icon">
@@ -50,7 +50,7 @@
 //            </svg>
 //        </span>
 //    </a>
-//    <a href="/news.html" class="c-btn c-btn--download c-btn--download--center-icon c-btn--block">
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
 //        <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
 //        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
 //        <span class="c-btn__icon">
@@ -70,16 +70,60 @@
 
 .c-btn-wrapper--equal-btns .c-btn {
     width: 100%;
+    margin-bottom: offset(main);
 
-    &:first-child {
-        margin-bottom: offset(main);
+    &:last-child {
+        margin-bottom: 0;
     }
 
     @include media('>=mobile') {
-        width: calc(50% - #{offset(main) * 1.2});
+        margin-bottom: 0;
+    }
+}
 
-        &:first-child {
-            margin-bottom: 0;
-        }
+.c-btn-wrapper--two-btns .c-btn {
+    @include media('>=mobile') {
+        width: calc(50% - #{offset(main) * 1.2});
+    }
+}
+
+// Btn wrapper three equal buttons
+//
+// markup:
+//<div class="c-btn-wrapper c-btn-wrapper--equal-btns c-btn-wrapper--three-btns">
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//        <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
+//        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//        <span class="c-btn__icon">
+//            <svg class="o-svg">
+//                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//            </svg>
+//        </span>
+//    </a>
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//        <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
+//        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//        <span class="c-btn__icon">
+//            <svg class="o-svg">
+//                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//            </svg>
+//        </span>
+//    </a>
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//        <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
+//        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//        <span class="c-btn__icon">
+//            <svg class="o-svg">
+//                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//            </svg>
+//        </span>
+//    </a>
+//</div>
+//
+// Styleguide 6.7
+
+.c-btn-wrapper--three-btns .c-btn {
+    @include media('>=mobile') {
+        width: calc(33% - #{offset(main) * 1.2});
     }
 }

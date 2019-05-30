@@ -24,3 +24,11 @@
 .c-standfirst-desc {
     padding-top: offset(main) * 6;
 }
+
+.c-standfirst-desc--small-padding {
+    padding-top: offset(main) * 4.5;
+
+    @include media('>=mobile') {
+        padding-top: offset(main) * 3;
+    }
+}

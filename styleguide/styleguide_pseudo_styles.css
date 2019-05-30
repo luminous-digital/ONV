@@ -70,20 +70,20 @@ select select.pseudo-class-focus {
   opacity: 1;
 }
 
-.c-btn--center-icon.pseudo-class-hover .c-label,
-.c-btn--center-icon.pseudo-class-hover .c-sub-label {
+.c-btn--icon-centered.pseudo-class-hover .c-label,
+.c-btn--icon-centered.pseudo-class-hover .c-sub-label {
   opacity: 0;
 }
 
-.c-btn--center-icon.pseudo-class-hover .c-btn__icon {
+.c-btn--icon-centered.pseudo-class-hover .c-btn__icon {
   opacity: 1;
   right: 0;
   left: 0;
   margin: auto;
 }
 
-.c-btn-wrapper--equal-btns .c-btn.pseudo-class-first-child {
-  margin-bottom: 10px;
+.c-btn-wrapper--equal-btns .c-btn.pseudo-class-last-child {
+  margin-bottom: 0;
 }
 
 .c-content-tabs__tab.pseudo-class-hover {
@@ -121,6 +121,10 @@ select select.pseudo-class-focus {
 
 .c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__hover {
   opacity: 1;
+}
+
+.c-info-panel__item.pseudo-class-first-child {
+  margin-top: 0;
 }
 
 .c-list-block__item.pseudo-class-first-child {
