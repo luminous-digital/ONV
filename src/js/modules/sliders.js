@@ -10,6 +10,7 @@ const Sliders = {
     this.tabbedContentSlider()
     this.dataSlider()
     this.fourBlockSliders()
+    this.logosSlider()
   },
   latestNewsSlider: function () {
     const sliderClass = '.js-slider-latest-news'
@@ -226,6 +227,33 @@ const Sliders = {
           1200: {
             slidesPerView: 4,
             spaceBetween: 25
+          }
+        }
+      })
+    }
+  },
+  logosSlider: function () {
+    const sliderClass = '.js-slider-logos'
+    if (document.querySelector(sliderClass)) {
+      Sliders.heroSwiper = new Swiper(sliderClass, {
+        loop: true,
+        autoplay: false,
+        speed: 300,
+        slidesPerView: 1,
+        spaceBetween: 40,
+        navigation: {
+          nextEl: '.js-logos-slider-next',
+          prevEl: '.js-logos-slider-prev'
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 50
           }
         }
       })

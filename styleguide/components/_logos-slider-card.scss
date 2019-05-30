@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Logos slider card
+   ========================================================================== */
+.c-logos-slider-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: $size-logos-slider-card-width;
+    height: $size-logos-slider-card-height;
+
+    border: 2px solid color(lblue);
+
+    opacity: 0;
+    transition: $transition-default;
+
+    @include media('>=mobile') {
+
+        padding: 0 offset(main) * 1.4;
+    }
+    @include media('>=desktop-small') {
+        opacity: 1;
+        padding: 0;
+    }
+}
+
+.c-logos-slider-card.swiper-slide-active,
+.c-logos-slider-card.swiper-slide-next {
+    opacity: 1;
+}
+
+.c-logos-slider-card__container {
+    width: $size-quick-links-card-width;
+    height: $size-quick-links-card-height;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: $size-data-slider-card-width;
+    height: 100%;
+
+    @include media('>=mobile') {
+        width: $size-data-slider-card-width;
+        height: 100%;
+
+        // padding: 0 offset(main) * 2;
+    }
+}
+
+.c-logos-slider-card__fig {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-logos-slider-card__fig img {
+    max-width: 100%;
+    height: auto;
+}

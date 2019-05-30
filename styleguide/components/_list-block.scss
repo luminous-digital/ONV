@@ -63,6 +63,8 @@ List block
     }
 }
 
-.c-list-block__item p {
+.c-list-block__item .c-wysiwyg,
+.c-list-block__item .c-wysiwyg p {
     margin: 0;
+    padding: 0;
 }

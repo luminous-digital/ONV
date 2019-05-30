@@ -145,3 +145,7 @@ select select.pseudo-class-focus {
 .c-social-icon.pseudo-class-hover {
   color: #F79727;
 }
+
+.c-table-list__item.pseudo-class-last-child {
+  border-bottom: 2px solid #283A6A;
+}

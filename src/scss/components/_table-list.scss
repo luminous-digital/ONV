@@ -76,6 +76,10 @@ Table list
     border-bottom: 1px solid color(main);
 }
 
+.c-table-list__item:last-child {
+    border-bottom: 2px solid color(main);
+}
+
 .c-table-list__item--heading {
     border-width: 2px;
     padding-bottom: 0;

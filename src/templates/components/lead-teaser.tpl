@@ -1,4 +1,4 @@
-{% macro render(secTitle, compTitle, compDesc, btnText) %}
+{% macro render(secTitle, compTitle, compDesc, btnText, secImg) %}
 
     <section class="l-section">
         <div class="c-section-divider">
@@ -8,7 +8,7 @@
                 </h4>
             </div>
         </div>
-        <div class="c-lead-teaser-wrapper" style="background-image: url('../static/img/img-lead-teaser.jpg');">
+        <div class="c-lead-teaser-wrapper" style="background-image: url('../static/img/{{ secImg | safe}}');">
             <div class="l-inner l-inner--90 l-inner--desktop-70">
                 <div class="c-lead-teaser t-center">
                     <h2 class="c-lead-teaser__title t-h1">

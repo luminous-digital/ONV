@@ -1,4 +1,4 @@
-{% macro render(mapPoints) %}
+{% macro render() %}
 
 {% set mapPoints =
     [
