@@ -20,12 +20,12 @@ List block
 //        </ul>
 //    </div>
 //    <div class="c-list-block__item">
-//        <p class="t-body">
-//            Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.
-//        </p>
-//        <p class="t-body">
-//            Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
-//        </p>
+//        <div class="c-wysiwyg">
+//            <p>
+//                Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.<br><br>
+//                Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+//            </p>
+//        </div>
 //    </div>
 //</div>
 //
@@ -64,7 +64,5 @@ List block
 }
 
 .c-list-block__item p {
-    &:last-child {
-        margin-bottom: 0;
-    }
+    margin: 0;
 }

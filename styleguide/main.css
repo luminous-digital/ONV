@@ -3220,8 +3220,8 @@ List block
     .c-list-block__item:last-child {
       width: 100%; } }
 
-.c-list-block__item p:last-child {
-  margin-bottom: 0; }
+.c-list-block__item p {
+  margin: 0; }
 
 /* ==========================================================================
 List wrapper

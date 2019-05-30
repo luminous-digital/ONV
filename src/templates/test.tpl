@@ -640,12 +640,12 @@ Test
                         </ul>
                     </div>
                     <div class="c-list-block__item">
-                        <p class="t-body">
-                            Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.
-                        </p>
-                        <p class="t-body">
-                            Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
-                        </p>
+                        <div class="c-wysiwyg">
+                            <p>
+                                Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.<br><br>
+                                Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -661,9 +661,11 @@ Test
                         </ul>
                     </div>
                     <div class="c-list-block__item">
-                        <p class="t-body">
-                            Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
-                        </p>
+                        <div class="c-wysiwyg">
+                            <p>
+                                Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -679,12 +681,12 @@ Test
                         </ul>
                     </div>
                     <div class="c-list-block__item">
-                        <p class="t-body">
-                            Distribution of economic growth ensures the financial wellbeing of employees and the communities in which we operate.
-                        </p>
-                        <p class="t-body">
-                            Good workplace practices as described in our Code of Conduct and other policies promotes a safe and encouraging workplace, diversity, and equal opportunity.
-                        </p>
+                        <div class="c-wysiwyg">
+                            <p>
+                                Distribution of economic growth ensures the financial wellbeing of employees and the communities in which we operate.<br><br>
+                                Good workplace practices as described in our Code of Conduct and other policies promotes a safe and encouraging workplace, diversity, and equal opportunity.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -700,12 +702,12 @@ Test
                         </ul>
                     </div>
                     <div class="c-list-block__item">
-                        <p class="t-body">
-                            Nutrient stewardship promotes effective crop yields that improve farmers’ returns.
-                        </p>
-                        <p class="t-body">
-                            We strictly maintain safe, environmentally responsible production sites that protect local environments and ensure safe communities.
-                        </p>
+                        <div class="c-wysiwyg">
+                            <p>
+                                Nutrient stewardship promotes effective crop yields that improve farmers’ returns.<br><br>
+                                We strictly maintain safe, environmentally responsible production sites that protect local environments and ensure safe communities.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -736,11 +738,17 @@ Test
                         </ul>
                     </div>
                     <div class="c-list-block__item">
+                        <div class="c-wysiwyg">
+                            <p>
+                                Our investment in maintaining state-of-the-art production facilities, coupled with our GHG targets allows us to minimize our emissions and consequently out impact on climate change.<br><br>
+                                Our commitment to educating farmers on nutrient stewardship allows them to maximize yields at optimal fertilizer application. This in turn reduces soil nutrient loss, protects from deforestation, and minimizes runoff to groundwater.
+                            </p>
+                        </div>
                         <p class="t-body">
-                            Our investment in maintaining state-of-the-art production facilities, coupled with our GHG targets allows us to minimize our emissions and consequently out impact on climate change.
+
                         </p>
                         <p class="t-body">
-                            Our commitment to educating farmers on nutrient stewardship allows them to maximize yields at optimal fertilizer application. This in turn reduces soil nutrient loss, protects from deforestation, and minimizes runoff to groundwater.
+
                         </p>
                     </div>
                 </div>

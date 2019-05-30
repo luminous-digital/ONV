@@ -116,10 +116,6 @@ select select.pseudo-class-focus {
   padding-left: 20px;
 }
 
-.c-list-block__item p.pseudo-class-last-child {
-  margin-bottom: 0;
-}
-
 .c-list-wrapper.pseudo-class-last-child {
   margin-bottom: 0;
 }
