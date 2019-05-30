@@ -3507,7 +3507,8 @@ List wrapper no download
    Map nav
    ========================================================================== */
 .c-map-nav {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .c-map-nav__pins {
   width: 100%;
@@ -3517,6 +3518,34 @@ List wrapper no download
   list-style: none;
   margin: 0;
   padding: 10px 0 20px; }
+
+.c-map-nav__clear-all {
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s linear; }
+
+.c-map-nav__clear-all.is-visible {
+  opacity: 1; }
+
+.c-map-nav__clear-all .c-label {
+  position: relative; }
+
+.c-map-nav__clear-all .c-label:before {
+  content: '';
+  position: absolute;
+  left: -19px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-image: url("./../img/close-orange.svg");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .c-map-nav__filters {
   width: 100%;
@@ -3538,6 +3567,18 @@ List wrapper no download
 @media (min-width: 768px) {
   .c-map-nav__filter {
     width: 32%; } }
+
+.js-filter-name,
+.js-chosen-option {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.2s linear; }
+  .js-filter-name.is-visible,
+  .js-chosen-option.is-visible {
+    opacity: 1;
+    width: auto;
+    overflow: auto; }
 
 /* ==========================================================================
    Map nav pin
