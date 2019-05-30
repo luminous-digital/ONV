@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Logos slider wrapper
+   ========================================================================== */
+
+// Logos slider
+//
+// markup:
+
+// Styleguide 40
+
+.c-logos-slider-wrapper {
+    width: 100%;
+    height: auto;
+
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.c-logos-slider-wrapper__slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    @include media('>=mobile') {
+        padding: {
+            left: offset(main) * 10;
+            right: offset(main) * 10;
+        }
+    }
+    @include media('>=desktop-small') {
+        padding: {
+            left: offset(main) * 5;
+            right: offset(main) * 5;
+        }
+    }
+}
+
+.c-logos-slider-wrapper__next,
+.c-logos-slider-wrapper__prev {
+    position: absolute;
+
+    @include arrow-small;
+    cursor: pointer;
+
+    z-index: $size-quick-links-arrow-z-index;
+
+    outline: none;
+
+    top: 40%;
+
+    @include media('>=mobile') {
+        @include arrow;
+    }
+    @include media('>=desktop-small') {
+        @include arrow-big;
+    }
+}
+
+.c-logos-slider-wrapper__prev {
+    transform: rotate(135deg);
+
+    left: offset(main) * 0.5;
+
+    @include media('>=desktop-small') {
+        left: offset(main);
+    }
+}
+
+.c-logos-slider-wrapper__next {
+    transform: rotate(-45deg);
+
+    right: offset(main) * 0.5;
+
+    @include media('>=desktop-small') {
+        right: offset(main);
+    }
+}
