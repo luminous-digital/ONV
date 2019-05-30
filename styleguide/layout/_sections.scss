@@ -24,6 +24,9 @@
         padding-bottom: 0;
         margin-bottom: 0;
     }
+    &--offset-m-only {
+        margin-bottom: offset(main) * 4;
+    }
     &--our-story {
         position: relative;
         overflow: hidden;

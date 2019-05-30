@@ -48,7 +48,8 @@ Sustainability
             secTitle='Focused on sustainability',
             compTitle='Our committment',
             compDesc='"We believe our position as a leading nitrogen fertilizer and industrial chemicals company gives us the opportunity to encourage sustainable practices in our industries and communities."',
-            btnText='Our stories'
+            btnText='Our stories',
+            secImg='img-lead-teaser.jpg'
         )
     }}
 {% endblock %}
