@@ -226,10 +226,6 @@
     }
 }
 
-.t-thin {
-    font-weight: $font-weight-regular;
-}
-
 .t-smaller {
     margin: 0;
     padding: 0;
@@ -481,6 +477,11 @@
 
 /* Text utils
 ========================================================================== */
+
+.t-thin {
+    font-weight: $font-weight-regular;
+}
+
 .t-center {
     text-align: center;
 }

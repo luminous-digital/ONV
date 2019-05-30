@@ -154,6 +154,37 @@
 // Btn download icon
 //
 // markup:
+//<a href="/news.html" class="c-btn c-btn--download c-btn--center-icon c-btn--block">
+//    <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
+//    <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//    <span class="c-btn__icon">
+//        <svg class="o-svg">
+//            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//        </svg>
+//    </span>
+//</a>
+//
+// Styleguide 6.4
+
+.c-btn--center-icon {
+    &:hover {
+        .c-label,
+        .c-sub-label {
+            opacity: 0;
+        }
+
+        .c-btn__icon {
+            opacity: 1;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+    }
+}
+
+// Btn download icon
+//
+// markup:
 // <div class="c-btn-wrapper c-btn-wrapper--left">
 //     <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
 //         <span class="c-label t-btn t-blue">Download PDF</span>
@@ -166,7 +197,7 @@
 //     </a>
 // </div>
 //
-// Styleguide 6.4
+// Styleguide 6.5
 
 .c-btn--download-icon {
     display: flex;

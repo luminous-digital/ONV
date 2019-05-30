@@ -70,6 +70,22 @@ select select.pseudo-class-focus {
   opacity: 1;
 }
 
+.c-btn--center-icon.pseudo-class-hover .c-label,
+.c-btn--center-icon.pseudo-class-hover .c-sub-label {
+  opacity: 0;
+}
+
+.c-btn--center-icon.pseudo-class-hover .c-btn__icon {
+  opacity: 1;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.c-btn-wrapper--equal-btns .c-btn.pseudo-class-first-child {
+  margin-bottom: 10px;
+}
+
 .c-content-tabs__tab.pseudo-class-hover {
   cursor: pointer;
 }
