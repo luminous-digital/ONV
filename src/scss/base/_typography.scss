@@ -447,6 +447,20 @@
     line-height: font-size(big);
 }
 
+.t-big-info {
+    margin: 0;
+    padding: 0;
+
+    font-family: font(main);
+    font-weight: $font-weight-regular;
+    text-align: center;
+
+    color: color(main);
+
+    font-size: font-size(info);
+    line-height: font-size(info);
+}
+
 .t-menu {
     margin: 0;
     padding: 0;

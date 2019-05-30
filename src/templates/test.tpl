@@ -770,8 +770,8 @@ Test
                 <p class="c-image-content__text t-body">
                     OCI is also on track to become one of the world’s largest methanol producers with almost 3.7 million tons of capacity.
                 </p>
-                <div class="c-image-content__btns c-btn-wrapper c-btn-wrapper--equal-btns">
-                    <a href="/news.html" class="c-btn c-btn--download c-btn--center-icon c-btn--block">
+                <div class="c-image-content__btns c-btn-wrapper c-btn-wrapper--equal-btns c-btn-wrapper--two-btns">
+                    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
                         <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
                         <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
                         <span class="c-btn__icon">
@@ -780,13 +780,102 @@ Test
                             </svg>
                         </span>
                     </a>
-                    <a href="/news.html" class="c-btn c-btn--download c-btn--center-icon c-btn--block">
+                    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
                         <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
                         <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
                         <span class="c-btn__icon">
                             <svg class="o-svg">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
                             </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="l-section">
+    <div class="l-inner">
+        <div class="c-standfirst-wrapper">
+            <div class="l-inner l-inner--55">
+                <p class="c-standfirst t-standfirst">
+                    “Our latest results reflect the continuing step-up in the volumes from new capacity additions and productivity improvements this year and again in 2019.”
+                </p>
+                <p class="c-standfirst-desc c-standfirst-desc--small-padding t-body t-center">
+                    <span class="t-bold">Nassef Sawiris,</span> Chief Executive Officer
+                </p>
+            </div>
+            <div class="c-btn-wrapper c-btn-wrapper--equal-btns c-btn-wrapper--three-btns">
+                <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+                    <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
+                    <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+                    <span class="c-btn__icon">
+                        <svg class="o-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+                    <span class="c-label t-btn t-white t-thin">Download latest presentation</span>
+                    <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+                    <span class="c-btn__icon">
+                        <svg class="o-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                        </svg>
+                    </span>
+                </a>
+                <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                    <span class="c-label">
+                        Report archive
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="l-section l-section--bg-alt">
+    <div class="l-inner">
+        <div class="c-info-panel">
+            <div class="c-info-panel__item">
+                <div class="c-section-divider">
+                    <div class="l-inner">
+                        <h4 class="c-section-divider__title t-sec-divider">
+                            Next event
+                        </h4>
+                    </div>
+                </div>
+                <h3 class="c-info-panel__title t-h3">
+                    24 May 2019
+                </h3>
+                <p class="c-info-panel__desc t-big-info">
+                    Annual General Meeting  of Shareholders
+                </p>
+                <div class="c-btn-wrapper c-btn-wrapper--small">
+                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        <span class="c-label">
+                            View full calendar
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="c-info-panel__item">
+                <div class="c-section-divider">
+                    <div class="l-inner">
+                        <h4 class="c-section-divider__title t-sec-divider">
+                            Share price
+                        </h4>
+                    </div>
+                </div>
+                <h3 class="c-info-panel__title t-h3">
+                    24 May 2019
+                </h3>
+                <p class="c-info-panel__desc t-big-number">
+                    €25.95
+                </p>
+                <div class="c-btn-wrapper c-btn-wrapper--small">
+                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        <span class="c-label">
+                            View listing information
                         </span>
                     </a>
                 </div>
