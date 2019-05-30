@@ -837,13 +837,9 @@ Test
     <div class="l-inner">
         <div class="c-info-panel">
             <div class="c-info-panel__item">
-                <div class="c-section-divider">
-                    <div class="l-inner">
-                        <h4 class="c-section-divider__title t-sec-divider">
-                            Next event
-                        </h4>
-                    </div>
-                </div>
+                <h4 class="c-info-panel__heading t-sec-divider">
+                    Next event
+                </h4>
                 <h3 class="c-info-panel__title t-h3">
                     24 May 2019
                 </h3>
@@ -859,13 +855,9 @@ Test
                 </div>
             </div>
             <div class="c-info-panel__item">
-                <div class="c-section-divider">
-                    <div class="l-inner">
-                        <h4 class="c-section-divider__title t-sec-divider">
-                            Share price
-                        </h4>
-                    </div>
-                </div>
+                <h4 class="c-info-panel__heading t-sec-divider">
+                    Share price
+                </h4>
                 <h3 class="c-info-panel__title t-h3">
                     24 May 2019
                 </h3>
