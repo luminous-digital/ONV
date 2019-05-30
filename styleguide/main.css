@@ -1852,6 +1852,8 @@ body.is-header-open {
     margin-bottom: 0; }
   .l-section--offset-m-only {
     margin-bottom: 40px; }
+  .l-section--padded {
+    padding-top: 90px; }
   .l-section--our-story {
     position: relative;
     overflow: hidden; }
@@ -2092,18 +2094,22 @@ Article header
   margin-top: 40px; }
 
 .c-content-tabs__tab {
-  width: calc(50% - 10px * .2); }
-  @media (min-width: 768px) {
-    .c-content-tabs__tab {
-      width: calc(50% - 10px * 1.25); } }
+  width: 100%;
+  height: 45px;
+  display: flex; }
+  .c-content-tabs__tab:not(:last-child) {
+    margin-right: 10px; }
 
 .c-content-tabs__tab:hover {
   cursor: pointer; }
 
 .c-content-tabs__btn {
   width: 100%;
-  height: 45px;
+  height: 100%;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   color: #F79727;
   border: 2px solid #F79727; }
@@ -3084,6 +3090,9 @@ Info panel
     .c-info-panel__item {
       width: 50%;
       margin-top: 0; } }
+
+.c-info-panel__heading {
+  padding-bottom: 30px; }
 
 .c-info-panel__desc {
   margin-top: 15px;
@@ -4284,6 +4293,9 @@ Our history slider date
 
 .c-section-divider__title {
   padding-bottom: 30px; }
+
+.c-section-divider--nopadding .c-section-divider__title {
+  padding-bottom: 0; }
 
 .c-section-divider--padded .c-section-divider__title {
   padding-bottom: 50px; }

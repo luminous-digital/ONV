@@ -9,17 +9,15 @@ Info panel
 //        <div class="c-info-panel">
 //            <div class="c-info-panel__item">
 //                <div class="c-section-divider">
-//                    <div class="l-inner">
-//                        <h4 class="c-section-divider__title t-sec-divider">
-//                            Next event
-//                        </h4>
-//                    </div>
+//                    <h4 class="c-section-divider__title t-sec-divider">
+//                        Next event
+//                    </h4>
 //                </div>
 //                <h3 class="c-info-panel__title t-h3">
 //                    24 May 2019
 //                </h3>
 //                <p class="c-info-panel__desc t-big-info">
-//                    Annual General Meeting  
+//                    Annual General Meeting  of Shareholders
 //                </p>
 //                <div class="c-btn-wrapper c-btn-wrapper--small">
 //                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
@@ -31,11 +29,9 @@ Info panel
 //            </div>
 //            <div class="c-info-panel__item">
 //                <div class="c-section-divider">
-//                    <div class="l-inner">
-//                        <h4 class="c-section-divider__title t-sec-divider">
-//                            Share price
-//                        </h4>
-//                    </div>
+//                    <h4 class="c-section-divider__title t-sec-divider">
+//                        Share price
+//                    </h4>
 //                </div>
 //                <h3 class="c-info-panel__title t-h3">
 //                    24 May 2019
@@ -86,6 +82,10 @@ Info panel
         width: 50%;
         margin-top: 0;
     }
+}
+
+.c-info-panel__heading {
+    padding-bottom: offset(main) * 3;
 }
 
 .c-info-panel__desc {

@@ -34,6 +34,10 @@
     padding-bottom: offset(main) * 3;
 }
 
+.c-section-divider--nopadding .c-section-divider__title {
+    padding-bottom: 0;
+}
+
 .c-section-divider--padded .c-section-divider__title {
     padding-bottom: offset(main) * 5;
 }
