@@ -41,10 +41,13 @@
 }
 
 .c-content-tabs__tab {
-    width: calc(50% - #{offset(main)} * .2);
+    width: 100%;
+    height: $size-content-tabs-tab-height;
 
-    @include media('>=mobile') {
-        width: calc(50% - #{offset(main)} * 1.25);
+    display: flex;
+
+    &:not(:last-child) {
+        margin-right: 10px;
     }
 }
 
@@ -54,9 +57,13 @@
 
 .c-content-tabs__btn {
     width: 100%;
-    height: $size-content-tabs-tab-height;
+    height: 100%;
 
     border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: transparent;
     color: color(accent);

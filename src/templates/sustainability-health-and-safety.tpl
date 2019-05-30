@@ -1,9 +1,9 @@
 {% extends "base/base.tpl" %}
 {% block title %}
-Sustainability - our communities
+Sustainability - health and safety
 {% endblock %}
 {% set menu_item = 'sustainability' %}
-{% set page_title = 'Our communities' %}
+{% set page_title = 'Health and Safety' %}
 {% block content %}
 
     {% block header_panel_short %}

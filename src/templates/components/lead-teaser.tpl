@@ -1,4 +1,4 @@
-{% macro render(secTitle, compTitle, compDesc, btnText, secImg) %}
+{% macro render(secTitle, compTitle, compDesc, btnText, btnUrl, secImg) %}
 
     <section class="l-section">
         <div class="c-section-divider">
@@ -18,7 +18,7 @@
                         {{ compDesc | safe }}
                     </p>
                     <div class="c-btn-wrapper c-btn-wrapper--small">
-                        <a href="/" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        <a href="{% if btnUrl %}{{ btnUrl | safe }}{% else %}#{% endif %}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
                             <span class="c-label">
                                 {{ btnText | safe }}
                             </span>

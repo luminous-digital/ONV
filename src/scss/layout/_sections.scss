@@ -27,6 +27,9 @@
     &--offset-m-only {
         margin-bottom: offset(main) * 4;
     }
+    &--padded {
+        padding-top: offset(main) * 9;
+    }
     &--our-story {
         position: relative;
         overflow: hidden;
