@@ -4442,8 +4442,10 @@ Social icon
 Standfirst wrapper
 ========================================================================== */
 .c-standfirst-wrapper {
-  padding-top: 97px;
-  padding-bottom: 60px; }
+  padding-top: 37px; }
+
+.c-standfirst-wrapper .c-standfirst {
+  padding-top: 0; }
 
 .c-standfirst-wrapper .c-btn-wrapper {
   margin-top: 57px; }
