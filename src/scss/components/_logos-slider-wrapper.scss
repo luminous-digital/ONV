@@ -25,6 +25,11 @@
     width: 100%;
     height: auto;
 
+    padding: {
+        left: offset(main) * 3;
+        right: offset(main) * 3;
+    }
+
     @include media('>=mobile') {
         padding: {
             left: offset(main) * 10;

@@ -240,6 +240,7 @@ const Sliders = {
         autoplay: false,
         speed: 300,
         slidesPerView: 1,
+        spaceBetween: 40,
         navigation: {
           nextEl: '.js-logos-slider-next',
           prevEl: '.js-logos-slider-prev'

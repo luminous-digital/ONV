@@ -13,4 +13,8 @@
         margin-top: offset(main) * 6;
         margin-bottom: offset(main) * 6;
     }
+    &--padded-small {
+        margin-top: offset(main);
+        margin-bottom: offset(main) * 5;
+    }
 }

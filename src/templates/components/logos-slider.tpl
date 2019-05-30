@@ -48,9 +48,9 @@
                         </div>
                     </li>
                 </ul>
-                <div class="c-logos-slider-wrapper__prev js-slider-quick-links-prev">
+                <div class="c-logos-slider-wrapper__prev js-logos-slider-prev">
                 </div>
-                <div class="c-logos-slider-wrapper__next js-slider-quick-links-next">
+                <div class="c-logos-slider-wrapper__next js-logos-slider-next">
                 </div>
             </div>
         </div>

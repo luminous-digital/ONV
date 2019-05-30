@@ -1,0 +1,87 @@
+/* ==========================================================================
+Table list
+========================================================================== */
+// Table list
+//
+// markup:
+//<ul class="c-table-list">
+//    <li class="c-table-list__item c-table-list__item--heading">
+//        <div class="c-list-block">
+//            <div class="c-list-block__item">
+//                <h3 class="t-h3">Goal</h3>
+//            </div>
+//            <div class="c-list-block__item">
+//                <h3 class="t-h3">OCI contribution</h3>
+//            </div>
+//        </div>
+//    </li>
+//    <li class="c-table-list__item">
+//        <div class="c-list-block">
+//            <div class="c-list-block__item">
+//                <ul class="c-image-group">
+//                    <li class="c-image-group__item">
+//                        <figure class="c-image-group__image">
+//                            <img src="./static/img/goals/img-icon-1.jpg" alt="" />
+//                        </figure>
+//                    </li>
+//                    <li class="c-image-group__item">
+//                        <figure class="c-image-group__image">
+//                            <img src="./static/img/goals/img-icon-2.jpg" alt="" />
+//                        </figure>
+//                    </li>
+//                </ul>
+//            </div>
+//            <div class="c-list-block__item">
+//                <div class="c-wysiwyg">
+//                    <p>
+//                        Our nitrogen fertilizers allow farmers to increase crop yields and improve food quality, resulting in improved food availability and improved diets.<br><br>
+//                        Community engagement with local charities provides food security at a local level, which helps improve income and access to education.
+//                    </p>
+//                </div>
+//            </div>
+//        </div>
+//    </li>
+//    <li class="c-table-list__item">
+//        <div class="c-list-block">
+//            <div class="c-list-block__item">
+//                <ul class="c-image-group">
+//                    <li class="c-image-group__item">
+//                        <figure class="c-image-group__image">
+//                            <img src="./static/img/goals/img-icon-3.jpg" alt="" />
+//                        </figure>
+//                    </li>
+//                </ul>
+//            </div>
+//            <div class="c-list-block__item">
+//                <div class="c-wysiwyg">
+//                    <p>
+//                        Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                    </p>
+//                </div>
+//            </div>
+//        </div>
+//    </li>
+//</ul>
+//
+// Styleguide 28
+
+.c-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.c-table-list__item {
+    padding: offset(main) * 2.5 0;
+    border-bottom: 1px solid color(main);
+}
+
+.c-table-list__item:last-child {
+    border-bottom: 2px solid color(main);
+}
+
+.c-table-list__item--heading {
+    border-width: 2px;
+    padding-bottom: 0;
+    padding-top: 0;
+}

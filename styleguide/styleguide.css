@@ -1840,6 +1840,8 @@ body.is-header-open {
   .l-section--no-offset {
     padding-bottom: 0;
     margin-bottom: 0; }
+  .l-section--offset-m-only {
+    margin-bottom: 40px; }
   .l-section--our-story {
     position: relative;
     overflow: hidden; }
@@ -3017,6 +3019,31 @@ Header panel wrapper
   position: relative; }
 
 /* ==========================================================================
+Image group grid
+========================================================================== */
+.c-image-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.c-image-group__item {
+  margin: 5px 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-image-group__item {
+      width: calc(50% - 5px); } }
+
+.c-image-group__image {
+  margin: 0;
+  padding: 0; }
+
+.c-image-group__image img {
+  width: 100%; }
+
+/* ==========================================================================
    HR Horizontal rule
    ========================================================================== */
 .c-hr {
@@ -3027,6 +3054,9 @@ Header panel wrapper
   .c-hr--padded {
     margin-top: 60px;
     margin-bottom: 60px; }
+  .c-hr--padded-small {
+    margin-top: 10px;
+    margin-bottom: 50px; }
 
 /* ==========================================================================
    Latest news
@@ -3180,6 +3210,36 @@ Lead Teaser
     background-color: rgba(0, 0, 0, 0.25); }
 
 /* ==========================================================================
+List block
+========================================================================== */
+.c-list-block {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .c-list-block {
+      flex-wrap: nowrap; } }
+
+.c-list-block__item:first-child {
+  width: 30%; }
+
+.c-list-block__item:last-child {
+  width: 70%;
+  padding-left: 20px; }
+
+@media (min-width: 768px) {
+  .c-list-block__item {
+    width: auto; }
+    .c-list-block__item:first-child {
+      max-width: 200px; }
+    .c-list-block__item:last-child {
+      width: 100%; } }
+
+.c-list-block__item .c-wysiwyg,
+.c-list-block__item .c-wysiwyg p {
+  margin: 0;
+  padding: 0; }
+
+/* ==========================================================================
 List wrapper
 ========================================================================== */
 /* ==========================================================================
@@ -3310,7 +3370,9 @@ List wrapper no download
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding-left: 30px;
+  padding-right: 30px; }
   @media (min-width: 768px) {
     .c-logos-slider-wrapper__slider {
       padding-left: 100px;
@@ -4266,6 +4328,26 @@ Sub nav
 @media (min-width: 768px) {
   .c-header-nav-menu__item.is-active > .c-sub-nav__item > .c-link > .c-label:after {
     width: 100%; } }
+
+/* ==========================================================================
+Table list
+========================================================================== */
+.c-table-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.c-table-list__item {
+  padding: 25px 0;
+  border-bottom: 1px solid #283A6A; }
+
+.c-table-list__item:last-child {
+  border-bottom: 2px solid #283A6A; }
+
+.c-table-list__item--heading {
+  border-width: 2px;
+  padding-bottom: 0;
+  padding-top: 0; }
 
 /* ==========================================================================
 Text component

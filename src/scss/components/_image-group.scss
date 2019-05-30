@@ -1,0 +1,47 @@
+/* ==========================================================================
+Image group grid
+========================================================================== */
+// Image group grid
+//
+// markup:
+//<ul class="c-image-group">
+//    <li class="c-image-group__item">
+//        <figure class="c-image-group__image">
+//            <img src="./static/img/goals/img-icon-1.jpg" alt="" />
+//        </figure>
+//    </li>
+//    <li class="c-image-group__item">
+//        <figure class="c-image-group__image">
+//            <img src="./static/img/goals/img-icon-2.jpg" alt="" />
+//        </figure>
+//    </li>
+//</ul>
+//
+// Styleguide 29
+
+.c-image-group {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-image-group__item {
+    margin: offset(main) * 0.5 0;
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: calc(50% - #{offset(main) * 0.5});
+    }
+}
+
+.c-image-group__image {
+    margin: 0;
+    padding: 0;
+}
+
+.c-image-group__image img {
+    width: 100%;
+}
