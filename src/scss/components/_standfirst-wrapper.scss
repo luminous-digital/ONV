@@ -43,10 +43,11 @@ Standfirst wrapper
 // Styleguide 32
 
 .c-standfirst-wrapper {
-    padding: {
-        top: offset(main) * 9.7;
-        bottom: offset(main) * 6;
-    }
+    padding-top: offset(main) * 3.7;
+}
+
+.c-standfirst-wrapper .c-standfirst {
+    padding-top: 0;
 }
 
 .c-standfirst-wrapper .c-btn-wrapper {
