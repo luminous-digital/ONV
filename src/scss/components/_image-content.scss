@@ -8,8 +8,8 @@ Image content
 //    <figure class="c-image-content__image">
 //        <img src="./static/img/img-reports.jpg" alt="">
 //    </figure>
-//    <div class="c-image-content__content">
-//        <h2 class="image-content__title t-h2">
+//    <div class="c-image-content__wrapper">
+//        <h2 class="c-image-content__title t-h2">
 //            Latest<br>
 //            Reports
 //        </h2>
@@ -64,13 +64,23 @@ Image content
     display: block;
 }
 
-.c-image-content__content {
+.c-image-content__wrapper {
     width: 100%;
     position: relative;
 
     @include media('>=mobile') {
         width: 50%;
         padding-left: offset(main) * 2.5;
+    }
+}
+
+.c-image-content__wrapper .c-btn-wrapper {
+    margin-top: offset(main);
+
+    @include media('>=mobile') {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -82,15 +92,5 @@ Image content
 
     @include media('>=mobile') {
         max-width: offset(main) * 31.6;
-    }
-}
-
-.c-image-content__btns {
-    margin-top: offset(main);
-
-    @include media('>=mobile') {
-        margin-top: 0;
-        position: absolute;
-        bottom: 0;
     }
 }
