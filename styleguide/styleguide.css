@@ -1345,9 +1345,6 @@ button.swiper-pagination-bullet {
       font-size: 14px;
       line-height: 19.6px; } }
 
-.t-thin {
-  font-weight: 400; }
-
 .t-smaller {
   margin: 0;
   padding: 0;
@@ -1508,6 +1505,9 @@ button.swiper-pagination-bullet {
 
 /* Text utils
 ========================================================================== */
+.t-thin {
+  font-weight: 400; }
+
 .t-center {
   text-align: center; }
 
@@ -1949,6 +1949,16 @@ Article header
   padding-left: 60px;
   padding-right: 60px; }
 
+.c-btn--download--center-icon:hover .c-label,
+.c-btn--download--center-icon:hover .c-sub-label {
+  opacity: 0; }
+
+.c-btn--download--center-icon:hover .c-btn__icon {
+  opacity: 1;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
 .c-btn--download-icon {
   display: flex;
   position: relative;
@@ -2012,6 +2022,20 @@ Article header
 
 .c-latest-news-wrapper .c-btn {
   width: 230px; }
+
+.c-btn-wrapper--equal-btns {
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.c-btn-wrapper--equal-btns .c-btn {
+  width: 100%; }
+  .c-btn-wrapper--equal-btns .c-btn:first-child {
+    margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .c-btn-wrapper--equal-btns .c-btn {
+      width: calc(50% - 12px); }
+      .c-btn-wrapper--equal-btns .c-btn:first-child {
+        margin-bottom: 0; } }
 
 /* ==========================================================================
    Contacts
@@ -3017,6 +3041,51 @@ Header panel wrapper
   background-repeat: no-repeat;
   margin-bottom: 30px;
   position: relative; }
+
+/* ==========================================================================
+Image content
+========================================================================== */
+.c-image-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.c-image-content__image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .c-image-content__image {
+      width: 50%;
+      margin-bottom: 0; } }
+
+.c-image-content__image img {
+  width: 100%;
+  display: block; }
+
+.c-image-content__content {
+  width: 100%;
+  position: relative; }
+  @media (min-width: 768px) {
+    .c-image-content__content {
+      width: 50%;
+      padding-left: 25px; } }
+
+.c-image-content__text {
+  margin-top: 30px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .c-image-content__text {
+      max-width: 316px; } }
+
+.c-image-content__btns {
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .c-image-content__btns {
+      margin-top: 0;
+      position: absolute;
+      bottom: 0; } }
 
 /* ==========================================================================
 Image group grid
