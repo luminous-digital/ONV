@@ -3,6 +3,8 @@
    ========================================================================== */
 .c-map-nav {
     width: 100%;
+
+    position: relative;
 }
 
 .c-map-nav__pins {
@@ -16,6 +18,47 @@
     margin: 0;
 
     padding: offset(main) 0 offset(main) * 2;
+}
+
+.c-map-nav__clear-all {
+    cursor: pointer;
+
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+    padding-top: offset(main) * 0.7;
+
+    right: 0;
+
+    opacity: 0;
+
+    transition: $transition-default;
+}
+
+.c-map-nav__clear-all.is-visible {
+    opacity: 1;
+}
+
+.c-map-nav__clear-all .c-label {
+    position: relative;
+}
+
+.c-map-nav__clear-all .c-label:before {
+    content: '';
+
+    position: absolute;
+
+    left: - offset(main) * 1.9;
+    top: offset(main) * .4;
+
+    width: offset(main) * 1.2;
+    height: offset(main) * 1.2;
+
+    background-image: url('./../img/close-orange.svg');
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .c-map-nav__filters {
@@ -44,5 +87,20 @@
 
     @include media('>=mobile') {
         width: 32%;
+    }
+}
+
+.js-filter-name,
+.js-chosen-option {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+
+    transition: $transition-default;
+
+    &.is-visible {
+        opacity: 1;
+        width: auto;
+        overflow: auto;
     }
 }

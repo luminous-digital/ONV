@@ -88,10 +88,6 @@
 <section class="l-section l-section--no-offset">
     <div class="c-map-wrapper">
         <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
-            {# <div class="c-map-container__scrollbar">
-                <div class="c-scroll">
-                </div>
-            </div> #}
             <div class="c-map">
                 <figure class="c-map__img">
                 </figure>
@@ -156,6 +152,9 @@
                         </p>
                     </li>
                 </ul>
+                <p class="c-map-nav__clear-all t-body t-body--alt js-map-clear-all">
+                    <span class="c-label">Clear all</span>
+                </p>
                 <p class="c-map-nav__filters-title t-h3">
                     Filter by:
                 </p>
@@ -163,7 +162,7 @@
                     <li class="c-map-nav__filter">
                         <div class="c-dropdown js-map-filter" data-filter-type="territory" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label js-filter-name">
+                                <span class="c-label js-filter-name is-visible">
                                     Country/territory
                                 </span>
                                 <span class="c-label js-chosen-option"></span>
@@ -190,7 +189,7 @@
                     <li class="c-map-nav__filter">
                         <div class="c-dropdown js-map-filter" data-filter-type="location" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label js-filter-name">
+                                <span class="c-label js-filter-name is-visible">
                                     Location type
                                 </span>
                                 <span class="c-label js-chosen-option"></span>
@@ -217,7 +216,7 @@
                     <li class="c-map-nav__filter">
                         <div class="c-dropdown js-map-filter" data-filter-type="facility" data-chosen-option="">
                             <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
-                                <span class="c-label js-filter-name">
+                                <span class="c-label js-filter-name is-visible">
                                     Facility name
                                 </span>
                                 <span class="c-label js-chosen-option"></span>
