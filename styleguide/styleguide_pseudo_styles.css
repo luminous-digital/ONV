@@ -70,12 +70,12 @@ select select.pseudo-class-focus {
   opacity: 1;
 }
 
-.c-btn--download--center-icon.pseudo-class-hover .c-label,
-.c-btn--download--center-icon.pseudo-class-hover .c-sub-label {
+.c-btn--center-icon.pseudo-class-hover .c-label,
+.c-btn--center-icon.pseudo-class-hover .c-sub-label {
   opacity: 0;
 }
 
-.c-btn--download--center-icon.pseudo-class-hover .c-btn__icon {
+.c-btn--center-icon.pseudo-class-hover .c-btn__icon {
   opacity: 1;
   right: 0;
   left: 0;

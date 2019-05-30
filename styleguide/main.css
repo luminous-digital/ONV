@@ -1949,11 +1949,11 @@ Article header
   padding-left: 60px;
   padding-right: 60px; }
 
-.c-btn--download--center-icon:hover .c-label,
-.c-btn--download--center-icon:hover .c-sub-label {
+.c-btn--center-icon:hover .c-label,
+.c-btn--center-icon:hover .c-sub-label {
   opacity: 0; }
 
-.c-btn--download--center-icon:hover .c-btn__icon {
+.c-btn--center-icon:hover .c-btn__icon {
   opacity: 1;
   right: 0;
   left: 0;
@@ -3064,13 +3064,21 @@ Image content
   width: 100%;
   display: block; }
 
-.c-image-content__content {
+.c-image-content__wrapper {
   width: 100%;
   position: relative; }
   @media (min-width: 768px) {
-    .c-image-content__content {
+    .c-image-content__wrapper {
       width: 50%;
       padding-left: 25px; } }
+
+.c-image-content__wrapper .c-btn-wrapper {
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .c-image-content__wrapper .c-btn-wrapper {
+      margin-top: 0;
+      position: absolute;
+      bottom: 0; } }
 
 .c-image-content__text {
   margin-top: 30px;
@@ -3078,14 +3086,6 @@ Image content
   @media (min-width: 768px) {
     .c-image-content__text {
       max-width: 316px; } }
-
-.c-image-content__btns {
-  margin-top: 10px; }
-  @media (min-width: 768px) {
-    .c-image-content__btns {
-      margin-top: 0;
-      position: absolute;
-      bottom: 0; } }
 
 /* ==========================================================================
 Image group grid
@@ -3576,7 +3576,8 @@ List wrapper no download
    Map nav
    ========================================================================== */
 .c-map-nav {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .c-map-nav__pins {
   width: 100%;
@@ -3586,6 +3587,34 @@ List wrapper no download
   list-style: none;
   margin: 0;
   padding: 10px 0 20px; }
+
+.c-map-nav__clear-all {
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s linear; }
+
+.c-map-nav__clear-all.is-visible {
+  opacity: 1; }
+
+.c-map-nav__clear-all .c-label {
+  position: relative; }
+
+.c-map-nav__clear-all .c-label:before {
+  content: '';
+  position: absolute;
+  left: -19px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-image: url("./../img/close-orange.svg");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .c-map-nav__filters {
   width: 100%;
@@ -3607,6 +3636,18 @@ List wrapper no download
 @media (min-width: 768px) {
   .c-map-nav__filter {
     width: 32%; } }
+
+.js-filter-name,
+.js-chosen-option {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.2s linear; }
+  .js-filter-name.is-visible,
+  .js-chosen-option.is-visible {
+    opacity: 1;
+    width: auto;
+    overflow: auto; }
 
 /* ==========================================================================
    Map nav pin
