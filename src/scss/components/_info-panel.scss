@@ -1,0 +1,103 @@
+/* ==========================================================================
+Info panel
+========================================================================== */
+// Info panel
+//
+// markup:
+//<section class="l-section l-section--bg-alt">
+//    <div class="l-inner">
+//        <div class="c-info-panel">
+//            <div class="c-info-panel__item">
+//                <div class="c-section-divider">
+//                    <h4 class="c-section-divider__title t-sec-divider">
+//                        Next event
+//                    </h4>
+//                </div>
+//                <h3 class="c-info-panel__title t-h3">
+//                    24 May 2019
+//                </h3>
+//                <p class="c-info-panel__desc t-big-info">
+//                    Annual General Meeting  of Shareholders
+//                </p>
+//                <div class="c-btn-wrapper c-btn-wrapper--small">
+//                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+//                        <span class="c-label">
+//                            View full calendar
+//                        </span>
+//                    </a>
+//                </div>
+//            </div>
+//            <div class="c-info-panel__item">
+//                <div class="c-section-divider">
+//                    <h4 class="c-section-divider__title t-sec-divider">
+//                        Share price
+//                    </h4>
+//                </div>
+//                <h3 class="c-info-panel__title t-h3">
+//                    24 May 2019
+//                </h3>
+//                <p class="c-info-panel__desc t-big-number">
+//                    €25.95
+//                </p>
+//                <div class="c-btn-wrapper c-btn-wrapper--small">
+//                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+//                        <span class="c-label">
+//                            View listing information
+//                        </span>
+//                    </a>
+//                </div>
+//            </div>
+//        </div>
+//    </div>
+//</section>
+//
+// Styleguide 33
+
+.c-info-panel {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: {
+        top: offset(main) * 5;
+        bottom: offset(main) * 3.6;
+    }
+
+    @include media('>=mobile') {
+        padding-bottom: offset(main) * 8.5;
+    }
+}
+
+.c-info-panel__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: offset(main) * 8.5;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @include media('>=mobile') {
+        width: 50%;
+        margin-top: 0;
+    }
+}
+
+.c-info-panel__heading {
+    padding-bottom: offset(main) * 3;
+}
+
+.c-info-panel__desc {
+    margin: {
+        top: offset(main) * 1.5;
+        bottom: offset(main) * 7;
+    }
+}
+
+.c-info-panel .c-btn-wrapper {
+    @include media('>=mobile') {
+        position: absolute;
+        bottom: offset(main) * 4;
+    }
+}

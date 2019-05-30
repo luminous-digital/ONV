@@ -1484,6 +1484,16 @@ button.swiper-pagination-bullet {
   font-size: 70px;
   line-height: 70px; }
 
+.t-big-info {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #283A6A;
+  font-size: 28px;
+  line-height: 28px; }
+
 .t-menu {
   margin: 0;
   padding: 0;
@@ -1949,11 +1959,11 @@ Article header
   padding-left: 60px;
   padding-right: 60px; }
 
-.c-btn--center-icon:hover .c-label,
-.c-btn--center-icon:hover .c-sub-label {
+.c-btn--icon-centered:hover .c-label,
+.c-btn--icon-centered:hover .c-sub-label {
   opacity: 0; }
 
-.c-btn--center-icon:hover .c-btn__icon {
+.c-btn--icon-centered:hover .c-btn__icon {
   opacity: 1;
   right: 0;
   left: 0;
@@ -2028,14 +2038,21 @@ Article header
   flex-wrap: wrap; }
 
 .c-btn-wrapper--equal-btns .c-btn {
-  width: 100%; }
-  .c-btn-wrapper--equal-btns .c-btn:first-child {
-    margin-bottom: 10px; }
+  width: 100%;
+  margin-bottom: 10px; }
+  .c-btn-wrapper--equal-btns .c-btn:last-child {
+    margin-bottom: 0; }
   @media (min-width: 768px) {
     .c-btn-wrapper--equal-btns .c-btn {
-      width: calc(50% - 12px); }
-      .c-btn-wrapper--equal-btns .c-btn:first-child {
-        margin-bottom: 0; } }
+      margin-bottom: 0; } }
+
+@media (min-width: 768px) {
+  .c-btn-wrapper--two-btns .c-btn {
+    width: calc(50% - 12px); } }
+
+@media (min-width: 768px) {
+  .c-btn-wrapper--three-btns .c-btn {
+    width: calc(33% - 12px); } }
 
 /* ==========================================================================
    Contacts
@@ -3041,6 +3058,41 @@ Header panel wrapper
   background-repeat: no-repeat;
   margin-bottom: 30px;
   position: relative; }
+
+/* ==========================================================================
+Info panel
+========================================================================== */
+.c-info-panel {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 36px; }
+  @media (min-width: 768px) {
+    .c-info-panel {
+      padding-bottom: 85px; } }
+
+.c-info-panel__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 85px; }
+  .c-info-panel__item:first-child {
+    margin-top: 0; }
+  @media (min-width: 768px) {
+    .c-info-panel__item {
+      width: 50%;
+      margin-top: 0; } }
+
+.c-info-panel__desc {
+  margin-top: 15px;
+  margin-bottom: 70px; }
+
+@media (min-width: 768px) {
+  .c-info-panel .c-btn-wrapper {
+    position: absolute;
+    bottom: 40px; } }
 
 /* ==========================================================================
 Image content
@@ -4367,6 +4419,25 @@ Social icon
    ========================================================================== */
 .c-standfirst-desc {
   padding-top: 60px; }
+
+.c-standfirst-desc--small-padding {
+  padding-top: 45px; }
+  @media (min-width: 768px) {
+    .c-standfirst-desc--small-padding {
+      padding-top: 30px; } }
+
+/* ==========================================================================
+Standfirst wrapper
+========================================================================== */
+.c-standfirst-wrapper {
+  padding-top: 97px;
+  padding-bottom: 60px; }
+
+.c-standfirst-wrapper .c-btn-wrapper {
+  margin-top: 57px; }
+  @media (min-width: 768px) {
+    .c-standfirst-wrapper .c-btn-wrapper {
+      margin-top: 30px; } }
 
 /* ==========================================================================
 Sub nav

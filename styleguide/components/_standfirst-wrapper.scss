@@ -1,0 +1,58 @@
+/* ==========================================================================
+Standfirst wrapper
+========================================================================== */
+// Standfirst wrapper
+//
+// markup:
+//<div class="c-standfirst-wrapper">
+//    <div class="l-inner l-inner--55">
+//        <p class="c-standfirst t-standfirst">
+//            “Our latest results reflect the continuing step-up in the volumes from new capacity additions and productivity improvements this year and again in 2019.”
+//        </p>
+//        <p class="c-standfirst-desc c-standfirst-desc--small-padding t-body t-center">
+//            <span class="t-bold">Nassef Sawiris,</span> Chief Executive Officer
+//        </p>
+//    </div>
+//    <div class="c-btn-wrapper c-btn-wrapper--equal-btns c-btn-wrapper--three-btns">
+//        <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//            <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
+//            <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//            <span class="c-btn__icon">
+//                <svg class="o-svg">
+//                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                </svg>
+//            </span>
+//        </a>
+//        <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//            <span class="c-label t-btn t-white t-thin">Download latest presentation</span>
+//            <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//            <span class="c-btn__icon">
+//                <svg class="o-svg">
+//                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                </svg>
+//            </span>
+//        </a>
+//        <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+//            <span class="c-label">
+//                Report archive
+//            </span>
+//        </a>
+//    </div>
+//</div>
+//
+// Styleguide 32
+
+.c-standfirst-wrapper {
+    padding: {
+        top: offset(main) * 9.7;
+        bottom: offset(main) * 6;
+    }
+}
+
+.c-standfirst-wrapper .c-btn-wrapper {
+    margin-top: offset(main) * 5.7;
+
+    @include media('>=mobile') {
+        margin-top: offset(main) * 3;
+    }
+}
