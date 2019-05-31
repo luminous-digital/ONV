@@ -1,6 +1,6 @@
 {% extends "base/base.tpl" %}
 {% block title %}
-Test
+Investors
 {% endblock %}
 {% set menu_item = 'investors' %}
 {% block content %}
@@ -21,7 +21,7 @@ Test
         <div class="c-standfirst-wrapper">
             <div class="l-inner l-inner--55">
                 <p class="c-standfirst t-standfirst">
-                    “Our latest results reflect the continuing step-up in the volumes from new capacity additions and productivity improvements this year and again in 2019.”
+                    "Our latest results reflect the continuing step-up in the volumes from new capacity additions and productivity improvements this year and again in 2019."
                 </p>
                 <p class="c-standfirst-desc c-standfirst-desc--small-padding t-body t-center">
                     <span class="t-bold">Nassef Sawiris,</span> Chief Executive Officer
@@ -69,7 +69,7 @@ Test
     {% import "components/feature-panel.tpl" as feature_panel with context %}
     {{
         feature_panel.render(
-            compTitle='Leadership &  Governance',
+            compTitle='Leadership &amp; Governance',
             compContent='The composition of the Board of Directors (Board) strives to arm OCI N.V. with leadership that is diverse in skills, experience, and background.',
             compBtnTitle='Board profile',
             compBgSrc='img-feature-panel-decor-leadership.jpg'

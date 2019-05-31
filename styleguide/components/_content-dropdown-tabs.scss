@@ -199,6 +199,9 @@
 
     padding: 0 offset(main) * 2;
 
+    font-weight: $font-weight-regular;
+    color: color(main);
+
     @include media('>=desktop-small') {
         justify-content: center;
         color: color(accent);
