@@ -5,11 +5,13 @@
         <div class="l-inner l-inner--90 l-inner--desktop-70">
             <div class="c-header-panel c-header-panel--short t-center">
                 <h1 class="c-header-panel__title t-h1">
-                    {{ pageTitle }}
+                    {{ pageTitle | safe }}
                 </h1>
-                <p class="c-header-panel__desc t-body t-body--big t-white">
-                    {{ pageSubtitle }}
-                </p>
+                {% if pageSubtitle %}
+                    <p class="c-header-panel__desc t-body t-body--big t-white">
+                        {{ pageSubtitle }}
+                    </p>
+                {% endif %}
             </div>
         </div>
     </div>
