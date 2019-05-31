@@ -86,6 +86,10 @@ select select.pseudo-class-focus {
   margin-bottom: 0;
 }
 
+.c-content-dropdown-tabs__option.pseudo-class-first-child {
+  margin-top: 2px;
+}
+
 .c-content-tabs__tab.pseudo-class-hover {
   cursor: pointer;
 }

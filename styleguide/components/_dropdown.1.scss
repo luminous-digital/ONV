@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Dropdown
+   ========================================================================== */
+// Dropdown
+//
+// markup:
+// <div class="c-dropdown">
+//     <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
+//         <span class="c-label">
+//             Facility name
+//         </span>
+//     </button>
+//     <ul class="c-dropdown__options">
+//         <li class="c-dropdown__option">
+//             <span class="c-label">
+//                 Facility name
+//             </span>
+//         </li>
+//         <li class="c-dropdown__option">
+//             <span class="c-label">
+//                 Facility name
+//             </span>
+//         </li>
+//         <li class="c-dropdown__option">
+//             <span class="c-label">
+//                 Facility name
+//             </span>
+//         </li>
+//     </ul>
+// </div>
+//
+// Styleguide 13
+
+.c-dropdown {
+    width: 100%;
+    max-height: $size-dropdown-height;
+
+    margin-bottom: offset(main) * 2;
+    font-size: font-size(small);
+
+    overflow: hidden;
+    transition: $transition-default;
+
+    position: relative;
+
+    cursor: pointer;
+
+    @include media('>=mobile') {
+        margin-bottom: offset(main) * .8;
+    }
+}
+
+.c-dropdown.is-open {
+    max-height: 500px;
+}
+
+.c-dropdown__title {
+    height: $size-dropdown-height;
+    width: 100%;
+
+    background-color: color(accent);
+
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0 offset(main) * 2;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &:after {
+        content: '';
+
+        width: offset(main) * 1.6;
+        height: offset(main) * 1.7;
+
+        position: absolute;
+        top: calc(50% - offset(main) * 1.7 / 2);
+        right: offset(main) * 2;
+
+        background-image: url('../img/chevron.svg');
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        transition: $transition-default;
+    }
+}
+
+.c-dropdown.is-open .c-dropdown__title {
+
+    &:after {
+        transform: rotate(180deg);
+    }
+}
+
+.c-dropdown__options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    margin-top: - offset(main);
+}
+
+.c-dropdown__option {
+    width: 100%;
+    height: $size-dropdown-height;
+    line-height: $size-dropdown-height;
+
+    margin-bottom: 2px;
+
+    padding: 0 offset(main) * 2;
+
+    background-color: color(lblue);
+}
