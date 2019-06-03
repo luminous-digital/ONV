@@ -1,6 +1,6 @@
 {% macro render(secTitle, firstTitle, firstContent, secondTitle, secondContent) %}
 
-<section class="l-section l-section--no-offset">
+<section class="l-section l-section--no-offset l-section--always-centered">
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">

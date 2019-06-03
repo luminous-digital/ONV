@@ -100,11 +100,8 @@ Grid
 
     width: 100%;
     height: auto;
+}
 
-    // @include media('>=mobile') {
-    //     padding: 0 offset(main) * 11;
-    // }
-    // @include media('>=desktop-small') {
-    //     padding: 0;
-    // }
+.c-grid-wrapper__block {
+    height: 100%;
 }

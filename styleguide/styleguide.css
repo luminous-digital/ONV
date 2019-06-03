@@ -1851,6 +1851,8 @@ body.is-header-open {
   .l-section--no-offset {
     padding-bottom: 0;
     margin-bottom: 0; }
+  .l-section--always-centered .l-inner {
+    align-items: center; }
   .l-section--offset-m-only {
     margin-bottom: 40px; }
   @media (min-width: 1200px) {
@@ -2247,6 +2249,7 @@ Article header
 .c-content-tabs__tab {
   width: 100%;
   height: 45px;
+  outline: 0;
   display: flex; }
   .c-content-tabs__tab:not(:last-child) {
     margin-right: 10px; }
@@ -2264,6 +2267,9 @@ Article header
   background: transparent;
   color: #F79727;
   border: 2px solid #F79727; }
+
+.c-content-tabs__btn:focus {
+  outline: none !important; }
 
 .c-content-tabs__tab.is-active .c-content-tabs__btn {
   background-color: #F79727;
@@ -2418,16 +2424,12 @@ Article header
   max-height: 45px;
   margin-bottom: 20px;
   font-size: 14px;
-  overflow: hidden;
   transition: all 0.2s linear;
   position: relative;
   cursor: pointer; }
   @media (min-width: 768px) {
     .c-dropdown {
       margin-bottom: 8px; } }
-
-.c-dropdown.is-open {
-  max-height: 500px; }
 
 .c-dropdown__title {
   height: 45px;
@@ -2461,7 +2463,14 @@ Article header
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: -10px; }
+  margin-top: -10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  background-color: #fff; }
+
+.c-dropdown.is-open .c-dropdown__options {
+  max-height: 500px; }
 
 .c-dropdown__option {
   width: 100%;
@@ -2760,6 +2769,9 @@ Grid
   flex-wrap: wrap;
   width: 100%;
   height: auto; }
+
+.c-grid-wrapper__block {
+  height: 100%; }
 
 /* ==========================================================================
    Header
@@ -3178,6 +3190,7 @@ Header panel tabs
   list-style: none;
   padding: 0;
   margin: 0;
+  z-index: 10;
   left: 0;
   position: absolute;
   bottom: -30px; }
