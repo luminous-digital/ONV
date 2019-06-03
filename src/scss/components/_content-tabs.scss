@@ -44,6 +44,8 @@
     width: 100%;
     height: $size-content-tabs-tab-height;
 
+    outline: 0;
+
     display: flex;
 
     &:not(:last-child) {
@@ -69,6 +71,10 @@
     color: color(accent);
 
     border: 2px solid color(accent);
+}
+
+.c-content-tabs__btn:focus {
+    outline: none !important;
 }
 
 .c-content-tabs__tab.is-active .c-content-tabs__btn {

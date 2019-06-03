@@ -4,7 +4,6 @@ const ScrollToAnchor = {
   init: function () {
     const $scrollDownTrigger = $('.js-scroll-down')
     if ($scrollDownTrigger.length) {
-      console.log('a')
       const $body = $('html, body')
       const scrollHeight = $('.l-hero').height() + 100
       const ANIMATION_SPEED = 500

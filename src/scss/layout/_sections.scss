@@ -24,6 +24,11 @@
         padding-bottom: 0;
         margin-bottom: 0;
     }
+    &--always-centered {
+        .l-inner {
+            align-items: center;
+        }
+    }
     &--offset-m-only {
         margin-bottom: offset(main) * 4;
     }

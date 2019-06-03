@@ -94,6 +94,10 @@ select select.pseudo-class-focus {
   cursor: pointer;
 }
 
+.c-content-tabs__btn.pseudo-class-focus {
+  outline: none !important;
+}
+
 .c-file-list__item.pseudo-class-last-child {
   margin-bottom: 0;
 }

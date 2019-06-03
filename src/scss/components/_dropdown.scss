@@ -38,7 +38,7 @@
     margin-bottom: offset(main) * 2;
     font-size: font-size(small);
 
-    overflow: hidden;
+    // overflow: hidden;
     transition: $transition-default;
 
     position: relative;
@@ -50,9 +50,9 @@
     }
 }
 
-.c-dropdown.is-open {
-    max-height: 500px;
-}
+// .c-dropdown.is-open {
+//     max-height: 500px;
+// }
 
 .c-dropdown__title {
     height: $size-dropdown-height;
@@ -105,6 +105,17 @@
     padding: 0;
 
     margin-top: - offset(main);
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: $transition-default;
+
+    background-color: color(white);
+}
+
+.c-dropdown.is-open .c-dropdown__options {
+    max-height: 500px;
 }
 
 .c-dropdown__option {
