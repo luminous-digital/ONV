@@ -77,10 +77,10 @@
         content: '';
 
         width: offset(main) * 1.6;
-        height: offset(main) * 1.7;
+        height: 100%;
 
         position: absolute;
-        top: calc(50% - offset(main) * 1.7 / 2);
+        top: 0;
         right: offset(main) * 2;
 
         background-image: url('../img/chevron.svg');
