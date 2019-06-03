@@ -35,7 +35,7 @@
                             </a>
                         </li>
                         <li class="c-header-nav-menu__item has-children {% if menu_item == 'operations' %}current-menu-item{% endif %}">
-                            <a href="/operations.html" class="c-link t-menu">
+                            <a href="/operations-oci-nitrogen.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Operations
                                 </span>
@@ -204,7 +204,7 @@
                     <div class="c-header-nav__search">
                         <div class="c-header-search js-search-container">
                             <div class="l-inner">
-                                <form method="POST" action="" class="c-search-form t-body">
+                                <form action="search" method="POST" class="c-search-form t-body js-search-form">
                                     <input placeholder="Search now" id="search" name="search" class="c-search-form__input">
                                     <button type="submit" class="c-search-form__submit">
                                         <svg class="o-svg">

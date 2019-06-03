@@ -3,7 +3,6 @@
 Sustainability - case study
 {% endblock %}
 {% set menu_item = 'sustainability' %}
-{% set page_title = '' %}
 {% block content %}
 
     {% block header_panel_short %}
