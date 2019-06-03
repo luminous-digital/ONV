@@ -64,7 +64,7 @@ Grid block
 
 .c-grid-block__image {
     width: 100%;
-    height: $size-grid-component-card-img-height;
+    height: $size-grid-component-card-img-height-by-4;
 
     overflow: hidden;
 
@@ -87,37 +87,53 @@ Grid block
     margin-bottom: 0;
 }
 
-// Grid block title below photo
-//
-// markup:
-//<div class="c-grid-block c-grid-block--title-below">
-//    <figure class="c-grid-block__image">
-//        <img src="./static/img/key-areas/img-employees.jpg" alt="Michael Bennett">
-//    </figure>
-//    <h5 class="c-grid-block__title t-h5">
-//        Michael Bennett
-//    </h5>
-//    <p class="c-grid-block__desc t-body">
-//        Independent Non-Executive Director and Chairman
-//    </p>
-//    <a class="c-grid-block__link t-link" href="#">
-//         <span class="c-label">
-//             Read biography
-//         </span>
-//     </a>
-//</div>
-//
-// Styleguide 26.3
+.c-grid-wrapper {
 
-.c-grid-block--title-below .c-grid-block__title {
-    margin: {
-        top: offset(main) * 0.7;
-        bottom: 0;
+    &--by-one {
+        .c-grid-block {
+            width: 100%;
+
+            &__image {
+                height: $size-grid-component-card-img-height-by-3;
+            }
+        }
     }
-}
+    &--by-two {
+        .c-grid-block {
+            width: calc(50% - #{offset(main) * 2.5 / 2});
 
-.c-grid-block--title-below .c-grid-block__desc {
-    padding-top: 0;
+            &__image {
+                height: $size-grid-component-card-img-height-by-3;
+            }
+        }
+    }
+    &--by-three {
+        .c-grid-block {
+            width: calc(33% - #{offset(main) * 2.5 / 2});
+
+            &__image {
+                height: $size-grid-component-card-img-height-by-3;
+            }
+        }
+    }
+    &--by-four {
+        .c-grid-block {
+            width: calc(25% - #{offset(main) * 2.5 / 2});
+
+            &__image {
+                height: $size-grid-component-card-img-height-by-4;
+            }
+        }
+    }
+    &--by-five {
+        .c-grid-block {
+            width: calc(20% - #{offset(main) * 2.5 / 2});
+
+            &__image {
+                height: $size-grid-component-card-img-height-by-4;
+            }
+        }
+    }
 }
 
 // Grid block gray image

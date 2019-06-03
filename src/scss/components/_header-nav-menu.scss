@@ -116,6 +116,13 @@ Header nav menu
 
 .c-header-nav-menu__item > .c-link > .c-label {
 
+    @include media('<mobile') {
+        width: 85%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
     @include media('>=mobile') {
         position: relative;
 

@@ -10,8 +10,6 @@ Header panel wrapper
 
     margin-bottom: offset(main) * 3;
 
-    position: relative;
-
     z-index: -2;
 }
 
@@ -27,9 +25,9 @@ Header panel wrapper
 
     @include gradient-background-default();
 
-    z-index: -1;
+    z-index: 5;
 }
 
-.c-header-panel-wrapper .l-inner {
-    z-index: 1;
+.c-header-panel-wrapper--no-gradient:after {
+    display: none;
 }

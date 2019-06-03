@@ -153,11 +153,15 @@ Header panel tab
     height: 17px;
 
     margin-right: -10px;
+
+    color: color(white);
 }
 
 .c-header-panel-tab__hover-icon .o-svg {
     width: 100%;
     height: 100%;
+
+    fill: currentColor;
 }
 
 // Header panel tab alternative

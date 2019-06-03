@@ -1,7 +1,7 @@
-{% macro render(pageTitle, pageSubtitle, bgPhoto) %}
+{% macro render(pageTitle, pageSubtitle, bgPhoto, noGradient) %}
 
 <div class="l-hero">
-    <div class="c-header-panel-wrapper" style="background-image: url('../static/img/{{ bgPhoto }}');">
+    <div class="c-header-panel-wrapper {% if noGradient %}c-header-panel-wrapper--no-gradient{% endif %}" style="background-image: url('../static/img/{{ bgPhoto }}');">
         <div class="l-inner l-inner--90 l-inner--desktop-70">
             <div class="c-header-panel t-center">
                 <h1 class="c-header-panel__title t-h1">
@@ -45,7 +45,7 @@
                                 </p>
                                 <span class="c-header-panel-tab__hover-icon">
                                     <svg class="o-svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download-filled"></use>
                                     </svg>
                                 </span>
                             </div>

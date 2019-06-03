@@ -46,7 +46,6 @@
     height: $size-footer-height;
 
     background-color: color(main);
-
 }
 
 .l-footer .l-inner {
@@ -59,4 +58,6 @@
     left: 0;
 
     transition: $transition-default;
+
+    z-index: $z-index-header - 1;
 }

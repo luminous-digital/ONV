@@ -67,6 +67,8 @@ Header panel full
 
     padding-top: offset(main) * 3;
 
+    z-index: 10;
+
     @include media ('>=mobile-small') {
         padding-top: offset(main) * 8.5;
     }
@@ -139,10 +141,14 @@ Header panel short
     justify-content: center;
 
     @include media('>=mobile') {
-        padding-top: offset(main) * 8.5;
+        padding-top: offset(main) * 14;
     }
 }
 
 .c-header-panel--short .c-header-panel__desc {
     padding-bottom: 0;
+
+    @include media('>=mobile') {
+        max-width: 78%;
+    }
 }
