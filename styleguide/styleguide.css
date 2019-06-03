@@ -2446,9 +2446,9 @@ Article header
   .c-dropdown__title:after {
     content: '';
     width: 16px;
-    height: 17px;
+    height: 100%;
     position: absolute;
-    top: calc(50% - offset(main) * 1.7 / 2);
+    top: 0;
     right: 20px;
     background-image: url("../img/chevron.svg");
     background-size: contain;
@@ -3706,14 +3706,14 @@ List wrapper no download
 
 .c-logos-slider-wrapper__prev {
   transform: rotate(135deg);
-  left: 5px; }
+  left: 15px; }
   @media (min-width: 1200px) {
     .c-logos-slider-wrapper__prev {
       left: 10px; } }
 
 .c-logos-slider-wrapper__next {
   transform: rotate(-45deg);
-  right: 5px; }
+  right: 15px; }
   @media (min-width: 1200px) {
     .c-logos-slider-wrapper__next {
       right: 10px; } }
@@ -4751,6 +4751,9 @@ Text component
 .c-text-component__description {
   margin: 0;
   padding: 0; }
+
+.c-text-component__title {
+  padding-bottom: 15px; }
 
 @media (min-width: 768px) {
   .c-text-component__subtitle {

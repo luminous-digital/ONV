@@ -78,6 +78,10 @@ Text component
     padding: 0;
 }
 
+.c-text-component__title {
+    padding-bottom: offset(main) * 1.5;
+}
+
 .c-text-component__subtitle {
 
     @include media('>=mobile') {
