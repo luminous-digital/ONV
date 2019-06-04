@@ -57,6 +57,8 @@
 .c-file-list__date {
     margin-bottom: 0;
     white-space: nowrap;
+
+    color: color(lgrey);
 }
 
 .c-file-list__item {
@@ -73,12 +75,21 @@
     }
 }
 
+.c-file-list__item:hover > .c-file-list__item-wrapper {
+    background-color: rgba(color(lblue), .4);
+}
+
 .c-file-list__title {
     text-align: left;
     width: 100%;
 
+    font-weight: $font-weight-bold;
+
+    margin-bottom: offset(main) * 1.5;
+
     @include media('>=mobile') {
         margin-left: offset(main) * 8;
+        margin-bottom: 0;
     }
 }
 
@@ -86,9 +97,35 @@
     display: flex;
     flex-direction: column;
 
+    transition: $transition-default;
+
     @include media('>=mobile') {
         align-items: center;
         flex-direction: row;
+    }
+}
+
+.c-file-list__item-wrapper .c-btn-wrapper .c-btn {
+    transition: $transition-default;
+
+    padding: offset(main) offset(main) * 6 offset(main) offset(main) * 3;
+}
+
+.c-file-list__item-wrapper .c-btn-wrapper .c-btn:hover {
+    background-color: color(lblue);
+}
+
+.c-file-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+    right: offset(main);
+}
+
+@include media('<mobile') {
+    .c-file-list__item-wrapper .c-btn-wrapper .c-btn {
+        padding: offset(main) / 2 offset(main) * 5;
+    }
+
+    .c-file-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+        left: 0;
     }
 }
 

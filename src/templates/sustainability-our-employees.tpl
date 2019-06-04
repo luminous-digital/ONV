@@ -27,7 +27,7 @@ Sustainability - our employees
         </div>
         <div class="l-inner">
             {% block content_tabs %}
-                {% import "template-parts/sustainability-content-tabs.tpl" as content_tabs with context %}
+                {% import "components/sustainability-content-tabs.tpl" as content_tabs with context %}
                 {{ content_tabs.render() }}
             {% endblock %}
         </div>

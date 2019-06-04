@@ -252,6 +252,13 @@ List wrapper no download
     }
 }
 
+.c-list-wrapper__link button {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .c-list-wrapper__link a {
     margin-bottom: 0;
 }

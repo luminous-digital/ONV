@@ -51,7 +51,7 @@ Image content
     margin: 0;
     padding: 0;
     width: 100%;
-    margin-bottom: offset(main);
+    margin-bottom: offset(main) * 2;
 
     @include media('>=mobile') {
         width: 50%;
@@ -87,7 +87,7 @@ Image content
 .c-image-content__text {
     margin: {
         top: offset(main) * 3;
-        bottom: 0;
+        bottom: offset(main) * 2;
     }
 
     @include media('>=mobile') {

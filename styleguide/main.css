@@ -2588,7 +2588,8 @@ Feature panel wrapper
 
 .c-file-list__date {
   margin-bottom: 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  color: #A2A1A2; }
 
 .c-file-list__item {
   border-bottom: 1px solid #F3F5F9;
@@ -2600,20 +2601,43 @@ Feature panel wrapper
     .c-file-list__item {
       margin-bottom: 0; } }
 
+.c-file-list__item:hover > .c-file-list__item-wrapper {
+  background-color: rgba(243, 245, 249, 0.4); }
+
 .c-file-list__title {
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 80px; } }
+      margin-left: 80px;
+      margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: all 0.2s linear; }
   @media (min-width: 768px) {
     .c-file-list__item-wrapper {
       align-items: center;
       flex-direction: row; } }
+
+.c-file-list__item-wrapper .c-btn-wrapper .c-btn {
+  transition: all 0.2s linear;
+  padding: 10px 60px 10px 30px; }
+
+.c-file-list__item-wrapper .c-btn-wrapper .c-btn:hover {
+  background-color: #F3F5F9; }
+
+.c-file-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+  right: 10px; }
+
+@media (max-width: 767px) {
+  .c-file-list__item-wrapper .c-btn-wrapper .c-btn {
+    padding: 5px 50px; }
+  .c-file-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+    left: 0; } }
 
 .c-file-list--no-mobile-margin .c-file-list__item {
   margin-bottom: 0; }
@@ -3296,7 +3320,7 @@ Image content
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   @media (min-width: 768px) {
     .c-image-content__image {
       width: 50%;
@@ -3324,7 +3348,7 @@ Image content
 
 .c-image-content__text {
   margin-top: 30px;
-  margin-bottom: 0; }
+  margin-bottom: 20px; }
   @media (min-width: 768px) {
     .c-image-content__text {
       max-width: 316px; } }
@@ -3578,6 +3602,12 @@ List wrapper no download
   @media (min-width: 768px) {
     .c-list-wrapper__link {
       margin-top: 40px; } }
+
+.c-list-wrapper__link button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer; }
 
 .c-list-wrapper__link a {
   margin-bottom: 0; }
