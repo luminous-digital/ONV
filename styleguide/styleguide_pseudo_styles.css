@@ -38,38 +38,6 @@ select select.pseudo-class-focus {
   outline: none;
 }
 
-.c-btn--primary.pseudo-class-hover {
-  text-align: left;
-}
-
-.c-btn--primary.pseudo-class-hover .c-label:after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 15px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-image: url("./../img/icon-arrow.svg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.c-btn--download.pseudo-class-hover {
-  align-items: flex-start;
-}
-
-.c-btn--download.pseudo-class-hover .c-label,
-.c-btn--download.pseudo-class-hover .c-sub-label {
-  margin-left: -40px;
-  margin-right: 40px;
-}
-
-.c-btn--download.pseudo-class-hover .c-btn__icon {
-  opacity: 1;
-}
-
 .c-btn--icon-centered.pseudo-class-hover .c-label,
 .c-btn--icon-centered.pseudo-class-hover .c-sub-label {
   opacity: 0;

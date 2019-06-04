@@ -28,7 +28,7 @@ Investors
                 </p>
             </div>
             <div class="c-btn-wrapper c-btn-wrapper--equal-btns c-btn-wrapper--three-btns">
-                <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+                <a href="/news.html" class="c-btn c-btn--download">
                     <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
                     <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
                     <span class="c-btn__icon">
@@ -37,7 +37,7 @@ Investors
                         </svg>
                     </span>
                 </a>
-                <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+                <a href="/news.html" class="c-btn c-btn--download">
                     <span class="c-label t-btn t-white t-thin">Download latest presentation</span>
                     <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
                     <span class="c-btn__icon">
@@ -103,12 +103,19 @@ Investors
     {{
         contacts.render(
             secTitle='IR CONTACT',
-            firstTitle='For OCI N.V. investor relations or media enquiries, please contact:',
-            firstContent='Hans Zayed',
-            secondTitle='IR Director',
-            secondContent='E: hans.zayed@oci.nl T: (+31) 06 18 25 13 67'
+            firstTitle='For OCI N.V. investor relations or media<br>enquiries, please contact:',
+            firstContent='<strong>Hans Zayed</strong><br>IR Director<br>E: hans.zayed@oci.nl<br>T: (+31) 06 18 25 13 67'
         )
     }}
+{% endblock %}
+
+{% block hr %}
+{% import "components/hr.tpl" as hr with context %}
+{{
+    hr.render(
+        hasSpacing='medium'
+    )
+}}
 {% endblock %}
 
 {% block quick_links %}

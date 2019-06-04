@@ -17,4 +17,8 @@
         margin-top: offset(main);
         margin-bottom: offset(main) * 5;
     }
+    &--padded-medium {
+        margin-top: offset(main) * 3;
+        margin-bottom: offset(main) * 6;
+    }
 }

@@ -115,7 +115,7 @@
                             </ul>
                         </li>
                         <li class="c-header-nav-menu__item has-children">
-                            <a href="#" class="c-link t-menu">
+                            <a href="/investors.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Investors
                                 </span>

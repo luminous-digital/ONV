@@ -4,21 +4,21 @@
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">
-                {{ secTitle }}
+                {{ secTitle | safe }}
             </h4>
         </div>
     </div>
     <div class="l-inner">
         <div class="c-contacts">
             <h3 class="c-contacts__title t-h3 t-center">
-                {{ firstTitle }}
+                {{ firstTitle | safe }}
             </h3>
             <p class="c-contacts__content t-body t-center">
                 {{ firstContent | safe }}
             </p>
             {% if secondTitle %}
                 <h3 class="c-contacts__title t-h3 t-center">
-                    {{ secondTitle }}
+                    {{ secondTitle | safe }}
                 </h3>
             {% endif %}
             {% if secondContent %}

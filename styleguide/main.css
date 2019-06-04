@@ -1920,9 +1920,11 @@ Article header
   padding-left: 15px;
   padding-right: 15px;
   position: relative; }
-  .c-btn--primary:hover {
+
+@media (min-width: 1200px) {
+  .c-btn-primary:hover {
     text-align: left; }
-    .c-btn--primary:hover .c-label:after {
+    .c-btn-primary:hover .c-label:after {
       content: '';
       display: block;
       width: 20px;
@@ -1933,7 +1935,7 @@ Article header
       background-image: url("./../img/icon-arrow.svg");
       background-size: cover;
       background-position: 50% 50%;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat; } }
 
 .c-btn--download {
   display: flex;
@@ -1944,16 +1946,12 @@ Article header
   position: relative;
   padding-top: 10px;
   padding-bottom: 6px; }
-  .c-btn--download .c-sub-label {
-    font-weight: 400; }
-  .c-btn--download:hover {
-    align-items: flex-start; }
-    .c-btn--download:hover .c-label,
-    .c-btn--download:hover .c-sub-label {
-      margin-left: -40px;
-      margin-right: 40px; }
-    .c-btn--download:hover .c-btn__icon {
-      opacity: 1; }
+
+.c-btn--download .c-label {
+  font-weight: 700; }
+
+.c-btn--download .c-sub-label {
+  font-weight: 400; }
 
 .c-btn--download .c-btn__icon {
   right: 20px;
@@ -1962,9 +1960,14 @@ Article header
 .c-btn--download .o-svg {
   stroke: #fff; }
 
-.c-btn--padded {
-  padding-left: 60px;
-  padding-right: 60px; }
+@media (min-width: 1200px) {
+  .c-btn--download:hover {
+    align-items: flex-start; }
+    .c-btn--download:hover .c-label,
+    .c-btn--download:hover .c-sub-label {
+      margin-left: 15px; }
+    .c-btn--download:hover .c-btn__icon {
+      opacity: 1; } }
 
 .c-btn--icon-centered:hover .c-label,
 .c-btn--icon-centered:hover .c-sub-label {
@@ -2018,6 +2021,10 @@ Article header
 .c-btn__icon .o-svg {
   width: 100%;
   height: 100%; }
+
+.c-btn--padded {
+  padding-left: 60px;
+  padding-right: 60px; }
 
 /* ==========================================================================
    Btn wrapper
@@ -2078,7 +2085,8 @@ Article header
 
 .c-contacts__title {
   padding-top: 20px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  line-height: 1.5em; }
 
 .c-contacts__content {
   margin: 0;
@@ -3360,6 +3368,9 @@ Image group grid
   .c-hr--padded-small {
     margin-top: 10px;
     margin-bottom: 50px; }
+  .c-hr--padded-medium {
+    margin-top: 30px;
+    margin-bottom: 60px; }
 
 /* ==========================================================================
    Latest news
