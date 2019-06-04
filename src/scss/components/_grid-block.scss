@@ -36,7 +36,8 @@ Grid block
         right: offset(main) * 2;
     }
 
-    opacity: 0;
+    margin-bottom: offset(main) * 6;
+
     transition: $transition-default;
 
     @include media('>=mobile-small') {
@@ -53,13 +54,16 @@ Grid block
     }
 }
 
+.c-grid-block--no-offset {
+
+    @include media('>=mobile') {
+        margin-bottom: 0;
+    }
+}
+
 .c-grid-block.swiper-slide-active,
 .c-grid-block.swiper-slide-next {
     opacity: 1;
-}
-
-.c-grid-block__title {
-    margin-bottom: offset(main) * 0.5;
 }
 
 .c-grid-block__image {
@@ -74,6 +78,10 @@ Grid block
 .c-grid-block__image img {
     width: 100%;
     height: auto;
+}
+
+.c-grid-block__title {
+    padding-top: offset(main);
 }
 
 .c-grid-block__link {
@@ -94,7 +102,10 @@ Grid block
             width: 100%;
 
             &__image {
-                height: $size-grid-component-card-img-height-by-3;
+
+                @include media('>=desktop-small') {
+                    height: $size-grid-component-card-img-height-by-3;
+                }
             }
         }
     }
@@ -103,7 +114,9 @@ Grid block
             width: calc(50% - #{offset(main) * 2.5 / 2});
 
             &__image {
-                height: $size-grid-component-card-img-height-by-3;
+                @include media('>=desktop-small') {
+                    height: $size-grid-component-card-img-height-by-3;
+                }
             }
         }
     }
@@ -112,7 +125,9 @@ Grid block
             width: calc(33% - #{offset(main) * 2.5 / 2});
 
             &__image {
-                height: $size-grid-component-card-img-height-by-3;
+                @include media('>=desktop-small') {
+                    height: $size-grid-component-card-img-height-by-3;
+                }
             }
         }
     }
@@ -121,7 +136,9 @@ Grid block
             width: calc(25% - #{offset(main) * 2.5 / 2});
 
             &__image {
-                height: $size-grid-component-card-img-height-by-4;
+                @include media('>=desktop-small') {
+                    height: $size-grid-component-card-img-height-by-4;
+                }
             }
         }
     }
@@ -130,7 +147,9 @@ Grid block
             width: calc(20% - #{offset(main) * 2.5 / 2});
 
             &__image {
-                height: $size-grid-component-card-img-height-by-4;
+                @include media('>=desktop-small') {
+                    height: $size-grid-component-card-img-height-by-4;
+                }
             }
         }
     }
