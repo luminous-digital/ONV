@@ -1,6 +1,6 @@
 {% extends "base/base.tpl" %}
 {% block title %}
-Operations - OCI Nitrogen
+Operations
 {% endblock %}
 {% set menu_item = 'operations' %}
 {% block content %}
@@ -9,7 +9,7 @@ Operations - OCI Nitrogen
     {% import "components/header-panel.tpl" as header_panel with context %}
     {{
         header_panel.render(
-            pageTitle='OCI Nitrogen',
+            pageTitle='Operations',
             pageSubtitle='Our competitive strengths lie in our high quality production assets, our global low cost advantage, and our strategic locations with access to strong distribution and logistics capabilities',
             bgPhoto='img-header-panel-operations.jpg'
         )

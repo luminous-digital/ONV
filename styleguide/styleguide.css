@@ -2266,6 +2266,7 @@ Article header
   justify-content: center;
   background: transparent;
   color: #F79727;
+  cursor: pointer;
   border: 2px solid #F79727; }
 
 .c-content-tabs__btn:focus {
