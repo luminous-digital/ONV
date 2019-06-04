@@ -35,7 +35,7 @@
                             </a>
                         </li>
                         <li class="c-header-nav-menu__item has-children {% if menu_item == 'operations' %}current-menu-item{% endif %}">
-                            <a href="/operations-oci-nitrogen.html" class="c-link t-menu">
+                            <a href="/operations.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Operations
                                 </span>
