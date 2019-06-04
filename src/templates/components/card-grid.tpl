@@ -65,7 +65,7 @@
             <div class="c-grid-wrapper c-grid-wrapper--{{ mod }}">
                     {% for card in cards %}
                         {% if loop.index < count + 1 %}
-                            <div class="c-grid-block">
+                            <div class="c-grid-block {% if loop.index > count - perRow %}c-grid-block--no-offset{% endif %}">
                                 <figure class="c-grid-block__image">
                                     <img src="{{ card.cardImg }}" alt="Health and Safety">
                                 </figure>
