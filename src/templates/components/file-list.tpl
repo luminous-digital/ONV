@@ -1,4 +1,4 @@
-{% macro render(secTitle, listCount, showDownload) %}
+{% macro render(secTitle, listCount, showDownload, showShowMore, showSubtitles) %}
 
     <section class="l-section">
         <div class="l-inner">
@@ -9,9 +9,11 @@
                             {{ secTitle | safe }}
                         </h2>
                     {% endif %}
-                    <h3 class="c-list-wrapper__subtitle t-h3">
-                        Shareholder meetings
-                    </h3>
+                    {% if showSubtitles %}
+                        <h3 class="c-list-wrapper__subtitle t-h3">
+                            Shareholder meetings
+                        </h3>
+                    {% endif %}
                     <div class="c-list-wrapper__list">
                         <ul class="c-file-list js-list-items">
                             <li class="c-file-list__item">
@@ -108,13 +110,15 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="c-list-wrapper__link t-center">
-                        <button class="t-link js-list-load-more">
-                            <span class="c-label">
-                                Show more
-                            </span>
-                        </button>
-                    </div>
+                    {% if showShowMore %}
+                        <div class="c-list-wrapper__link t-center">
+                            <button class="t-link js-list-load-more">
+                                <span class="c-label">
+                                    Show more
+                                </span>
+                            </button>
+                        </div>
+                    {% endif %}
                 </div>
             {%- endfor %}
         </div>
