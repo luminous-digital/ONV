@@ -71,8 +71,7 @@ About
                 </p>
                 ',
                 btnText='Download our business model',
-                btnSubtitle='PDF 0.5MB',
-                btnType='download'
+                btnSubtitle='PDF 0.5MB'
             ) }}
         {% endblock %}
     </div>

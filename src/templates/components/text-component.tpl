@@ -1,4 +1,4 @@
-{% macro render(secTitle, firstParagraph, secondParagraph, btnText, btnSubtitle, btnType, noPadding) %}
+{% macro render(secTitle, firstParagraph, secondParagraph, btnText, btnSubtitle, noPadding) %}
 
 <div class="c-text-component">
     <div class="c-text-component__column">

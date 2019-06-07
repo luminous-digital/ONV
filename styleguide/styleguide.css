@@ -2342,11 +2342,10 @@ Article header
   align-items: center;
   justify-content: flex-start;
   width: 230px;
-  height: 100%; }
+  height: auto; }
   @media (min-width: 768px) {
     .c-data-slider-card__container {
-      width: 230px;
-      height: 100%; } }
+      width: 230px; } }
 
 .c-data-slider-card__title,
 .c-data-slider-card__number,
@@ -4856,7 +4855,8 @@ WYSIWYG
 
 .c-wysiwyg img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin-top: 30px; }
 
 @media (min-width: 768px) {
   .c-wysiwyg {
