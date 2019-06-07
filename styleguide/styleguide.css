@@ -1922,9 +1922,9 @@ Article header
   position: relative; }
 
 @media (min-width: 1200px) {
-  .c-btn-primary:hover {
+  .c-btn--primary:hover {
     text-align: left; }
-    .c-btn-primary:hover .c-label:after {
+    .c-btn--primary:hover .c-label:after {
       content: '';
       display: block;
       width: 20px;
@@ -3211,7 +3211,7 @@ Header panel tab
 .c-header-panel-tab__hover-icon {
   width: 25px;
   height: 17px;
-  margin-right: -10px;
+  margin-right: -8px;
   color: #fff; }
 
 .c-header-panel-tab__hover-icon .o-svg {
