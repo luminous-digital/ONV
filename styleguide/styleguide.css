@@ -2181,7 +2181,7 @@ Article header
   transition: all 0.2s linear; }
   @media (min-width: 1200px) {
     .c-content-dropdown-tabs__options {
-      max-height: unset;
+      max-height: 500px;
       width: 100%;
       display: flex;
       justify-content: space-between;

@@ -120,7 +120,7 @@
     transition: $transition-default;
 
     @include media('>=desktop-small') {
-        max-height: unset;
+        max-height: 500px;
         width: 100%;
 
         display: flex;
