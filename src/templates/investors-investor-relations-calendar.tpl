@@ -10,21 +10,8 @@ Investors - results and presentations
     {{
         header_panel_short.render(
             pageTitle='Results and presentations',
-            pageSubtitle='A full archive of our financial reports and investor presentations.',
+            pageSubtitle='OCI N.V.\'s upcoming corporate events',
             bgPhoto='img-header-panel-investors.jpg'
-        )
-    }}
-{% endblock %}
-
-{% block image_content %}
-    {% import "components/image-content.tpl" as image_content with context %}
-    {{
-        image_content.render(
-            sectionTitle='Latest reports',
-            sectionContent='OCI is also on track to become one of the world’s largest methanol producers with almost 3.7 million tons of capacity.',
-            sectionImg='img-reports.jpg',
-            btnFirst='true',
-            btnSecond='false'
         )
     }}
 {% endblock %}
@@ -33,11 +20,8 @@ Investors - results and presentations
     {% import "components/file-list.tpl" as file_list with context %}
     {{
         file_list.render(
-            secTitle='Report<br>archive',
-            showSubtitles=true,
-            listCount='4',
-            showDownload=true,
-            showShowMore=true
+            secTitle='Upcoming<br>events',
+            listCount='2'
         )
     }}
 {% endblock %}
@@ -46,10 +30,10 @@ Investors - results and presentations
     {% import "components/file-list.tpl" as file_list with context %}
     {{
         file_list.render(
-            showSubtitles=true,
+            secTitle='Past<br>events',
             listCount='4',
-            showDownload=true,
-            showShowMore=true
+            showShowMore=true,
+            showSubtitles=true
         )
     }}
 {% endblock %}
@@ -58,10 +42,9 @@ Investors - results and presentations
     {% import "components/file-list.tpl" as file_list with context %}
     {{
         file_list.render(
-            showSubtitles=true,
             listCount='4',
-            showDownload=true,
-            showShowMore=true
+            showShowMore=true,
+            showSubtitles=true
         )
     }}
 {% endblock %}
