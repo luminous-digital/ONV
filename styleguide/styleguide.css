@@ -2722,14 +2722,8 @@ Grid block
   align-items: flex-start;
   width: 100%;
   height: 360px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 60px;
   transition: all 0.2s linear; }
-  @media (min-width: 375px) {
-    .c-grid-block {
-      padding-left: 50px;
-      padding-right: 50px; } }
   @media (min-width: 768px) {
     .c-grid-block {
       padding: 0; } }
@@ -2773,29 +2767,37 @@ Grid block
     .c-grid-wrapper--by-one .c-grid-block__image {
       height: 230px; } }
 
-.c-grid-wrapper--by-two .c-grid-block {
-  width: calc(50% - 12.5px); }
-  @media (min-width: 1200px) {
-    .c-grid-wrapper--by-two .c-grid-block__image {
-      height: 230px; } }
+@media (min-width: 768px) {
+  .c-grid-wrapper--by-two .c-grid-block {
+    width: calc(50% - 12.5px); } }
 
-.c-grid-wrapper--by-three .c-grid-block {
-  width: calc(33% - 12.5px); }
-  @media (min-width: 1200px) {
-    .c-grid-wrapper--by-three .c-grid-block__image {
-      height: 230px; } }
+@media (min-width: 1200px) {
+  .c-grid-wrapper--by-two .c-grid-block__image {
+    height: 230px; } }
 
-.c-grid-wrapper--by-four .c-grid-block {
-  width: calc(25% - 12.5px); }
-  @media (min-width: 1200px) {
-    .c-grid-wrapper--by-four .c-grid-block__image {
-      height: 175px; } }
+@media (min-width: 768px) {
+  .c-grid-wrapper--by-three .c-grid-block {
+    width: calc(33% - 12.5px); } }
 
-.c-grid-wrapper--by-five .c-grid-block {
-  width: calc(20% - 12.5px); }
-  @media (min-width: 1200px) {
-    .c-grid-wrapper--by-five .c-grid-block__image {
-      height: 175px; } }
+@media (min-width: 1200px) {
+  .c-grid-wrapper--by-three .c-grid-block__image {
+    height: 230px; } }
+
+@media (min-width: 768px) {
+  .c-grid-wrapper--by-four .c-grid-block {
+    width: calc(25% - 12.5px); } }
+
+@media (min-width: 1200px) {
+  .c-grid-wrapper--by-four .c-grid-block__image {
+    height: 175px; } }
+
+@media (min-width: 768px) {
+  .c-grid-wrapper--by-five .c-grid-block {
+    width: calc(20% - 12.5px); } }
+
+@media (min-width: 1200px) {
+  .c-grid-wrapper--by-five .c-grid-block__image {
+    height: 175px; } }
 
 .c-grid-block--gray-image .c-grid-block__image {
   filter: grayscale(100%); }

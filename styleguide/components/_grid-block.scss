@@ -31,21 +31,10 @@ Grid block
     width: 100%;
     height: $size-grid-component-card-height;
 
-    padding: {
-        left: offset(main) * 2;
-        right: offset(main) * 2;
-    }
-
     margin-bottom: offset(main) * 6;
 
     transition: $transition-default;
 
-    @include media('>=mobile-small') {
-        padding: {
-            left: offset(main) * 5;
-            right: offset(main) * 5;
-        }
-    }
     @include media('>=mobile') {
         padding: 0;
     }
@@ -111,7 +100,10 @@ Grid block
     }
     &--by-two {
         .c-grid-block {
-            width: calc(50% - #{offset(main) * 2.5 / 2});
+
+            @include media('>=mobile') {
+                width: calc(50% - #{offset(main) * 2.5 / 2});
+            }
 
             &__image {
                 @include media('>=desktop-small') {
@@ -122,7 +114,10 @@ Grid block
     }
     &--by-three {
         .c-grid-block {
-            width: calc(33% - #{offset(main) * 2.5 / 2});
+
+            @include media('>=mobile') {
+                width: calc(33% - #{offset(main) * 2.5 / 2});
+            }
 
             &__image {
                 @include media('>=desktop-small') {
@@ -133,7 +128,10 @@ Grid block
     }
     &--by-four {
         .c-grid-block {
-            width: calc(25% - #{offset(main) * 2.5 / 2});
+
+            @include media('>=mobile') {
+                width: calc(25% - #{offset(main) * 2.5 / 2});
+            }
 
             &__image {
                 @include media('>=desktop-small') {
@@ -144,7 +142,10 @@ Grid block
     }
     &--by-five {
         .c-grid-block {
-            width: calc(20% - #{offset(main) * 2.5 / 2});
+
+            @include media('>=mobile') {
+                width: calc(20% - #{offset(main) * 2.5 / 2});
+            }
 
             &__image {
                 @include media('>=desktop-small') {
