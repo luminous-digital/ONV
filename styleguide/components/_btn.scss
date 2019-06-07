@@ -61,7 +61,7 @@
 
 @include media('>=desktop-small') {
 
-    .c-btn-primary:hover {
+    .c-btn--primary:hover {
         text-align: left;
 
         .c-label {
