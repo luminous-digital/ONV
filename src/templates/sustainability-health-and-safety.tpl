@@ -117,7 +117,7 @@ Sustainability - health and safety
                     <p>
                         OCI promotes sustainable agriculture and nutrient stewardship through its supply chain, which begins with sourcing natural gas and ends at our agricultural and industrial customers. We work diligently to promote best practices across our supply chain and ensure every aspect of our business operates optimally.
                     </p>
-                    <img src="./static/img/img-content-01.png" alt=""Responsible supply chain />
+                    <img src="./static/img/img-content-01.png" alt="Responsible supply chain" />
                     '
                 ) }}
             {% endblock %}
