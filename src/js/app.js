@@ -6,5 +6,6 @@ import './modules/sliders'
 import './modules/scroll-to-anchor'
 import './modules/map'
 import './modules/dropdowns'
+import './modules/people-modal'
 
 svg4everybody()

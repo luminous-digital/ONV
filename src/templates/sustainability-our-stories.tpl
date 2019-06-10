@@ -22,7 +22,8 @@ Sustainability - our stories
         {{
             card_grid.render(
                 perRow='3',
-                count='9'
+                count='9',
+                type='stories'
             )
         }}
     {% endblock %}
