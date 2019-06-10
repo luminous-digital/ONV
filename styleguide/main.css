@@ -1967,7 +1967,9 @@ Article header
     .c-btn--download:hover .c-sub-label {
       margin-left: 15px; }
     .c-btn--download:hover .c-btn__icon {
-      opacity: 1; } }
+      opacity: 1; }
+  .c-btn--icon-hidden:hover .c-btn__icon {
+    opacity: 0; } }
 
 .c-btn--icon-centered:hover .c-label,
 .c-btn--icon-centered:hover .c-sub-label {

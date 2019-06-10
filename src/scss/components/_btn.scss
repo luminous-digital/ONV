@@ -151,6 +151,13 @@
             opacity: 1;
         }
     }
+
+    .c-btn--icon-hidden:hover {
+        .c-btn__icon {
+            opacity: 0;
+        }
+    }
+
 }
 
 // Btn download icon // ??
