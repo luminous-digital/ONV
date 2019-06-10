@@ -16,19 +16,19 @@ Listing and share information
     }}
 {% endblock %}
 
+{% block file_list_1 %}
+    {% import "components/file-list.tpl" as file_list with context %}
+    {{
+        file_list.render(
+            secTitle='Primary<br>listing',
+            twoColumns=true,
+            listCount='8'
+        )
+    }}
+{% endblock %}
+
 <section class="l-section l-section--no-offset">
     <div class="l-inner">
-
-        {% block file_list_1 %}
-            {% import "components/file-list.tpl" as file_list with context %}
-            {{
-                file_list.render(
-                    secTitle='Primary<br>listing',
-                    twoColumns=true,
-                    listCount='8'
-                )
-            }}
-        {% endblock %}
 
         {% block text_component_1 %}
             {% import "components/text-component.tpl" as text_component with context %}

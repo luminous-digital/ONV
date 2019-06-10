@@ -12,7 +12,7 @@
                         </h3>
                     {% endif %}
                     <div class="c-list-wrapper__list">
-                        <ul class="c-file-list {% if twoColumns %} c-file-list--two-columns {% endif %} js-list-items">
+                        <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns {% endif %}">
                             {% for i in range(0, listCount) -%}
                                 <li class="c-file-list__item">
                                     <div class="c-file-list__item-wrapper">
