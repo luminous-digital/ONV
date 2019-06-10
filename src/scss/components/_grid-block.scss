@@ -61,12 +61,19 @@ Grid block
 
     overflow: hidden;
 
+    position: relative;
+
     margin: 0;
 }
 
 .c-grid-block__image img {
     width: 100%;
     height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .c-grid-block__title {
@@ -82,6 +89,10 @@ Grid block
 .c-grid-block__desc {
     padding-top: offset(main) * 1.5;
     margin-bottom: 0;
+}
+
+.c-grid-block__hidden-desc {
+    display: none;
 }
 
 .c-grid-wrapper {
