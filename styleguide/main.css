@@ -1422,11 +1422,11 @@ button.swiper-pagination-bullet {
   .t-link:hover .c-label:after {
     background-color: #283A6A; }
 
-.t-underline, .c-wysiwyg a {
+.t-underline, .c-wysiwyg a:not([class]) {
   margin: 0;
   padding: 0;
   position: relative; }
-  .t-underline:after, .c-wysiwyg a:after {
+  .t-underline:after, .c-wysiwyg a:not([class]):after {
     position: absolute;
     content: '';
     left: 0;
@@ -1435,7 +1435,7 @@ button.swiper-pagination-bullet {
     height: 1px;
     background-color: #F79727;
     transition: all 0.2s linear; }
-  .t-underline:hover:after, .c-wysiwyg a:hover:after {
+  .t-underline:hover:after, .c-wysiwyg a:not([class]):hover:after {
     background-color: #283A6A; }
 
 .t-body-link {
@@ -2645,6 +2645,21 @@ Feature panel wrapper
 
 .c-file-list--no-mobile-margin .c-file-list__item {
   margin-bottom: 0; }
+
+.c-file-list--two-columns {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .c-file-list--two-columns {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+
+.c-file-list--two-columns .c-file-list__item {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-file-list--two-columns .c-file-list__item {
+      width: 48%; } }
 
 /* ==========================================================================
    Footer

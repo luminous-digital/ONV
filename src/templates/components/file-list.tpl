@@ -1,4 +1,4 @@
-{% macro render(secTitle, listCount, showDownload, showShowMore, showSubtitles) %}
+{% macro render(secTitle, twoColumns, listCount, showDownload, showShowMore, showSubtitles) %}
 
     <section class="l-section">
         <div class="l-inner">
@@ -12,7 +12,7 @@
                         </h3>
                     {% endif %}
                     <div class="c-list-wrapper__list">
-                        <ul class="c-file-list js-list-items">
+                        <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns {% endif %}">
                             {% for i in range(0, listCount) -%}
                                 <li class="c-file-list__item">
                                     <div class="c-file-list__item-wrapper">
