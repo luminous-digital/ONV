@@ -3,7 +3,7 @@
 }
 
 .t-underline.pseudo-class-hover:after,
-.c-wysiwyg a.pseudo-class-hover:after {
+.c-wysiwyg a:not([class]).pseudo-class-hover:after {
   background-color: #283A6A;
 }
 
