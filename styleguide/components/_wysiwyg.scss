@@ -49,7 +49,7 @@ WYSIWYG
 
         margin-top: offset(main) * 3;
     }
-    a {
+    a:not([class]) {
         @extend .t-underline;
     }
 

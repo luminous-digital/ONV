@@ -9,7 +9,7 @@ Investors - results and presentations
     {% import "components/header-panel-short.tpl" as header_panel_short with context %}
     {{
         header_panel_short.render(
-            pageTitle='Results and presentations',
+            pageTitle='Investor relations calendar',
             pageSubtitle='OCI N.V.\'s upcoming corporate events',
             bgPhoto='img-header-panel-investors.jpg'
         )
