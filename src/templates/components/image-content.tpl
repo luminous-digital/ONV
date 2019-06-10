@@ -27,7 +27,7 @@
                             </a>
                         {% endif %}
                         {% if btnSecond %}
-                            <a href="/news.html" class="c-btn c-btn--download c-btn--download--icon-centered c-btn--block">
+                            <a href="/news.html" class="c-btn c-btn--download c-btn--icon-hidden c-btn--download--icon-centered c-btn--block">
                                 <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
                                 <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
                                 <span class="c-btn__icon">

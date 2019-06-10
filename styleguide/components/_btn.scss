@@ -61,7 +61,7 @@
 
 @include media('>=desktop-small') {
 
-    .c-btn-primary:hover {
+    .c-btn--primary:hover {
         text-align: left;
 
         .c-label {
@@ -151,6 +151,13 @@
             opacity: 1;
         }
     }
+
+    .c-btn--icon-hidden:hover {
+        .c-btn__icon {
+            opacity: 0;
+        }
+    }
+
 }
 
 // Btn download icon // ??

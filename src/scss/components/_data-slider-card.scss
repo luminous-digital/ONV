@@ -39,13 +39,10 @@
     justify-content: flex-start;
 
     width: $size-data-slider-card-width;
-    height: 100%;
+    height: auto;
 
     @include media('>=mobile') {
         width: $size-data-slider-card-width;
-        height: 100%;
-
-        // padding: 0 offset(main) * 2;
     }
 }
 

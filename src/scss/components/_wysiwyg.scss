@@ -46,6 +46,8 @@ WYSIWYG
     img {
         max-width: 100%;
         height: auto;
+
+        margin-top: offset(main) * 3;
     }
     a:not([class]) {
         @extend .t-underline;
