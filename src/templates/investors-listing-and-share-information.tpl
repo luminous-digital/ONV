@@ -22,6 +22,7 @@ Listing and share information
         file_list.render(
             secTitle='Primary<br>listing',
             twoColumns=true,
+            isDatePadded=true,
             listCount='8'
         )
     }}
