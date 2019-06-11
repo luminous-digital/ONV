@@ -54,6 +54,22 @@ select select.pseudo-class-focus {
   margin-bottom: 0;
 }
 
+.c-contact-list__item.pseudo-class-first-child {
+  display: none;
+}
+
+.c-contact-list__item.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+.c-contact-list__item.pseudo-class-hover > .c-contact-list__item-wrapper {
+  background-color: rgba(243, 245, 249, 0.4);
+}
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn.pseudo-class-hover {
+  background-color: #F3F5F9;
+}
+
 .c-content-dropdown-tabs__option.pseudo-class-first-child {
   margin-top: 2px;
 }

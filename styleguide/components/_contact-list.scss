@@ -1,0 +1,126 @@
+// Contact list
+//
+// markup:
+// <div class="c-list-wrapper__list">
+//     <ul class="c-contact-list">
+//         <li class="c-contact-list__item">
+//             <div class="c-contact-list__item-wrapper">
+//                 <p class="c-contact-list__text t-body t-bold t-dgrey">
+//                     Firm
+//                 </p>
+//                 <p class="c-contact-list__name t-body t-bold">
+//                     Name
+//                 </p>
+//                 <p class="c-contact-list__text t-body t-bold t-dgrey">
+//                     Phone
+//                 </p>
+//             </div>
+//         </li>
+//         <li class="c-contact-list__item">
+//             <div class="c-contact-list__item-wrapper">
+//                 <p class="c-contact-list__text t-body t-body--alt t-bold t-dgrey">
+//                     Berenberg
+//                 </p>
+//                 <p class="c-contact-list__name t-body t-bold t-blue">
+//                     Rikin Patel
+//                 </p>
+//                 <p class="c-contact-list__text t-body t-body--alt t-bold t-dgrey">
+//                     +44 203 758 30 80
+//                 </h4>
+//             </div>
+//         </li>
+//     </ul>
+// </div>
+//
+// Styleguide 15.3
+
+.c-contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-contact-list__text {
+    margin-bottom: 0;
+    white-space: nowrap;
+
+    @include media('>=mobile') {
+        min-width: $size-contact-list-text-width;
+    }
+}
+
+.c-contact-list__item {
+    border-bottom: 1px solid color(lblue);
+    margin-bottom: offset(main) * 2;
+    padding: offset(xl) / 2.1 0;
+
+    &:first-child {
+        display: none;
+
+        @include media('>=mobile') {
+           display: block;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include media('>=mobile') {
+        margin-bottom: 0;
+    }
+}
+
+.c-contact-list__item:hover > .c-contact-list__item-wrapper {
+    background-color: rgba(color(lblue), .4);
+}
+
+.c-contact-list__name {
+    text-align: left;
+    width: 100%;
+
+    font-weight: $font-weight-bold;
+
+    margin-bottom: offset(main) * 1.5;
+
+    @include media('>=mobile') {
+        margin-left: offset(main) * 8;
+        margin-bottom: 0;
+    }
+}
+
+.c-contact-list__item-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    transition: $transition-default;
+
+    @include media('>=mobile') {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn {
+    transition: $transition-default;
+
+    padding: offset(main) offset(main) * 6 offset(main) offset(main) * 3;
+}
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn:hover {
+    background-color: color(lblue);
+}
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+    right: offset(main);
+}
+
+@include media('<mobile') {
+    .c-contact-list__item-wrapper .c-btn-wrapper .c-btn {
+        padding: offset(main) / 2 offset(main) * 5;
+    }
+
+    .c-contact-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+        left: 0;
+    }
+}
