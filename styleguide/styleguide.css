@@ -1146,6 +1146,8 @@ button.swiper-pagination-bullet {
 =========================== */
 /* Logos slider
 =========================== */
+/* Contact list
+=========================== */
 /* People modal
 =========================== */
 /* Breakpoints for include-media plugin
@@ -1326,6 +1328,8 @@ button.swiper-pagination-bullet {
     .t-body--alt {
       font-size: 16px;
       line-height: 24px; } }
+  .t-body--padded {
+    line-height: 28px; }
   .t-body--alt-mobile {
     font-size: 14px;
     line-height: 21px; }
@@ -2105,6 +2109,71 @@ Article header
   .c-contacts__content a {
     font-weight: 400; }
 
+.c-contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.c-contact-list__text {
+  margin-bottom: 0;
+  white-space: nowrap; }
+  @media (min-width: 768px) {
+    .c-contact-list__text {
+      min-width: 230px; } }
+
+.c-contact-list__item {
+  border-bottom: 1px solid #F3F5F9;
+  margin-bottom: 20px;
+  padding: 23.80952px 0; }
+  .c-contact-list__item:first-child {
+    display: none; }
+    @media (min-width: 768px) {
+      .c-contact-list__item:first-child {
+        display: block; } }
+  .c-contact-list__item:last-child {
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .c-contact-list__item {
+      margin-bottom: 0; } }
+
+.c-contact-list__item:hover > .c-contact-list__item-wrapper {
+  background-color: rgba(243, 245, 249, 0.4); }
+
+.c-contact-list__name {
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .c-contact-list__name {
+      margin-left: 80px;
+      margin-bottom: 0; } }
+
+.c-contact-list__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear; }
+  @media (min-width: 768px) {
+    .c-contact-list__item-wrapper {
+      align-items: center;
+      flex-direction: row; } }
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn {
+  transition: all 0.2s linear;
+  padding: 10px 60px 10px 30px; }
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn:hover {
+  background-color: #F3F5F9; }
+
+.c-contact-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+  right: 10px; }
+
+@media (max-width: 767px) {
+  .c-contact-list__item-wrapper .c-btn-wrapper .c-btn {
+    padding: 5px 50px; }
+  .c-contact-list__item-wrapper .c-btn-wrapper .c-btn__icon {
+    left: 0; } }
+
 /* ==========================================================================
    Content dropdown tabs
    ========================================================================== */
@@ -2683,6 +2752,14 @@ Feature panel wrapper
   @media (min-width: 768px) {
     .c-file-list--two-columns .c-file-list__item {
       width: 48%; } }
+
+.c-file-list--two-columns .c-file-list__date {
+  width: 140px;
+  white-space: normal; }
+
+.c-file-list--two-columns .c-file-list__title {
+  width: auto;
+  white-space: nowrap; }
 
 /* ==========================================================================
    Footer

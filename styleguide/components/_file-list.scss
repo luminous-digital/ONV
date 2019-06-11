@@ -235,3 +235,15 @@
         width: 48%;
     }
 }
+
+.c-file-list--two-columns .c-file-list__date {
+    width: offset(main) * 14;
+
+    white-space: normal;
+}
+
+.c-file-list--two-columns .c-file-list__title {
+    width: auto;
+
+    white-space: nowrap;
+}

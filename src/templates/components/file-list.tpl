@@ -1,4 +1,4 @@
-{% macro render(secTitle, twoColumns, listCount, showDownload, showShowMore, showSubtitles) %}
+{% macro render(secTitle, twoColumns, listCount, showDownload, showShowMore, showSubtitles, isDatePadded) %}
 
     <section class="l-section">
         <div class="l-inner">
@@ -12,11 +12,11 @@
                         </h3>
                     {% endif %}
                     <div class="c-list-wrapper__list">
-                        <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns {% endif %}">
+                        <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns{% endif %}">
                             {% for i in range(0, listCount) -%}
                                 <li class="c-file-list__item">
                                     <div class="c-file-list__item-wrapper">
-                                        <p class="c-file-list__date t-body t-body--alt">
+                                        <p class="c-file-list__date t-body t-body--alt{% if isDatePadded %} t-body--padded{% endif %}">
                                             4 June 2018
                                         </p>
                                         <h4 class="c-file-list__title t-h4 t-thin">
