@@ -241,7 +241,11 @@ List wrapper no download
 }
 
 .c-list-wrapper__filters {
-    padding-bottom: offset(main) * 6;
+    padding-bottom: offset(main) * 3;
+}
+
+.c-list-wrapper__active-filters {
+    padding-bottom: offset(main) * 3;
 }
 
 .c-list-wrapper__subtitle {

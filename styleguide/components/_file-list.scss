@@ -77,6 +77,10 @@
     }
 }
 
+.c-file-list__item.is-hidden {
+    display: none;
+}
+
 .c-file-list__item:hover > .c-file-list__item-wrapper {
     background-color: rgba(color(lblue), .4);
 }

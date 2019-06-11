@@ -1,0 +1,56 @@
+/* ==========================================================================
+List active filters
+========================================================================== */
+.c-list-active-filters {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.c-list-active-filters__item {
+    display: flex;
+    align-items: center;
+
+    margin-right: offset(main) * 3;
+
+    .c-label {
+        padding: 0;
+        margin: 0;
+        margin-right: offset(main);
+
+        color: color(main);
+    }
+    .c-close {
+        cursor: pointer;
+
+        .o-svg {
+            width: offset(main) * 2;
+            height: offset(main) * 2;
+            padding: offset(main) * 0.4;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &:not(&--last) {
+        .c-label {
+            &:before {
+                content: '"';
+            }
+            &:after {
+                content: '"';
+            }
+        }
+    }
+    &--last {
+        order: 100;
+        cursor: pointer;
+    }
+    &.is-hidden {
+        display: none;
+    }
+}
