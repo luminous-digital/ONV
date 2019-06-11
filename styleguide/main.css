@@ -2499,6 +2499,13 @@ Article header
   padding: 0 20px;
   background-color: #F3F5F9; }
 
+.c-dropdown--small {
+  width: auto;
+  margin-right: 25px; }
+
+.c-dropdown--small .c-dropdown__title {
+  padding-right: 150px; }
+
 /* ==========================================================================
 Feature panel
 ========================================================================== */
@@ -2599,7 +2606,8 @@ Feature panel wrapper
 .c-file-list__date {
   margin-bottom: 0;
   white-space: nowrap;
-  color: #A2A1A2; }
+  color: #A2A1A2;
+  width: 180px; }
 
 .c-file-list__item {
   border-bottom: 1px solid #F3F5F9;
@@ -2621,7 +2629,7 @@ Feature panel wrapper
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 80px;
+      margin-left: 30px;
       margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {
@@ -3613,6 +3621,18 @@ List block
   padding: 0; }
 
 /* ==========================================================================
+List filters
+========================================================================== */
+.c-list-filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+/* ==========================================================================
 List wrapper
 ========================================================================== */
 /* ==========================================================================
@@ -3628,6 +3648,9 @@ List wrapper no download
   @media (min-width: 768px) {
     .c-list-wrapper__title {
       margin-bottom: 50px; } }
+
+.c-list-wrapper__filters {
+  padding-bottom: 60px; }
 
 .c-list-wrapper__subtitle {
   margin-bottom: 8px; }
@@ -3646,6 +3669,9 @@ List wrapper no download
 
 .c-list-wrapper__link a {
   margin-bottom: 0; }
+
+.c-list-wrapper--offset-top {
+  padding-top: 30px; }
 
 /* ==========================================================================
    Logo

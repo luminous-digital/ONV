@@ -15,7 +15,7 @@ const Header = {
       })
       if (parents) {
         Array.from(parents).forEach(item => {
-          item.addEventListener('touchstart', e => {
+          item.addEventListener('touchend', e => {
             e.preventDefault()
             if (e.target.parentNode.classList.contains('t-menu') || e.target.parentNode.classList.contains('t-menu-sub')) {
               window.location.href = e.target.parentNode.href
