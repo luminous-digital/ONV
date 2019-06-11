@@ -2742,6 +2742,14 @@ Feature panel wrapper
     .c-file-list--two-columns .c-file-list__item {
       width: 48%; } }
 
+.c-file-list--two-columns .c-file-list__date {
+  width: 140px;
+  white-space: normal; }
+
+.c-file-list--two-columns .c-file-list__title {
+  width: auto;
+  white-space: nowrap; }
+
 /* ==========================================================================
    Footer
 ========================================================================== */
