@@ -240,6 +240,10 @@ List wrapper no download
     }
 }
 
+.c-list-wrapper__filters {
+    padding-bottom: offset(main) * 6;
+}
+
 .c-list-wrapper__subtitle {
     margin-bottom: offset(main) * 0.8;
 }
@@ -261,4 +265,8 @@ List wrapper no download
 
 .c-list-wrapper__link a {
     margin-bottom: 0;
+}
+
+.c-list-wrapper--offset-top {
+    padding-top: offset(main) * 3;
 }

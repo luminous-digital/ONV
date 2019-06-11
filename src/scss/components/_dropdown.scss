@@ -129,3 +129,12 @@
 
     background-color: color(lblue);
 }
+
+.c-dropdown--small {
+    width: auto;
+    margin-right: offset(main) * 2.5;
+}
+
+.c-dropdown--small .c-dropdown__title {
+    padding-right: 150px;
+}

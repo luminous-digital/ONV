@@ -1146,7 +1146,11 @@ button.swiper-pagination-bullet {
 =========================== */
 /* Logos slider
 =========================== */
+<<<<<<< HEAD
 /* Contact list
+=======
+/* People modal
+>>>>>>> 1809bcb3cf230ebef2848784b433ae25af32b118
 =========================== */
 /* Breakpoints for include-media plugin
 ========================================================================== */
@@ -1756,6 +1760,10 @@ body.is-header-open {
   @media (min-width: 1440px) {
     body.is-header-open {
       overflow: auto; } }
+
+body.is-modal-open {
+  overflow: hidden;
+  padding-right: 15px; }
 
 /* ==========================================================================
    Objects
@@ -2560,6 +2568,13 @@ Article header
   padding: 0 20px;
   background-color: #F3F5F9; }
 
+.c-dropdown--small {
+  width: auto;
+  margin-right: 25px; }
+
+.c-dropdown--small .c-dropdown__title {
+  padding-right: 150px; }
+
 /* ==========================================================================
 Feature panel
 ========================================================================== */
@@ -2660,7 +2675,8 @@ Feature panel wrapper
 .c-file-list__date {
   margin-bottom: 0;
   white-space: nowrap;
-  color: #A2A1A2; }
+  color: #A2A1A2;
+  width: 180px; }
 
 .c-file-list__item {
   border-bottom: 1px solid #F3F5F9;
@@ -2682,7 +2698,7 @@ Feature panel wrapper
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 80px;
+      margin-left: 30px;
       margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {
@@ -2827,11 +2843,16 @@ Grid block
   width: 100%;
   height: 175px;
   overflow: hidden;
+  position: relative;
   margin: 0; }
 
 .c-grid-block__image img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .c-grid-block__title {
   padding-top: 10px; }
@@ -2844,6 +2865,9 @@ Grid block
 .c-grid-block__desc {
   padding-top: 15px;
   margin-bottom: 0; }
+
+.c-grid-block__hidden-desc {
+  display: none; }
 
 .c-grid-wrapper--by-one .c-grid-block {
   width: 100%; }
@@ -3666,6 +3690,18 @@ List block
   padding: 0; }
 
 /* ==========================================================================
+List filters
+========================================================================== */
+.c-list-filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+/* ==========================================================================
 List wrapper
 ========================================================================== */
 /* ==========================================================================
@@ -3681,6 +3717,9 @@ List wrapper no download
   @media (min-width: 768px) {
     .c-list-wrapper__title {
       margin-bottom: 50px; } }
+
+.c-list-wrapper__filters {
+  padding-bottom: 60px; }
 
 .c-list-wrapper__subtitle {
   margin-bottom: 8px; }
@@ -3699,6 +3738,9 @@ List wrapper no download
 
 .c-list-wrapper__link a {
   margin-bottom: 0; }
+
+.c-list-wrapper--offset-top {
+  padding-top: 30px; }
 
 /* ==========================================================================
    Logo
@@ -4429,6 +4471,132 @@ Our history slider date
 .c-our-history-slider-date.after-after-slide {
   left: auto;
   right: 0; }
+
+/* ==========================================================================
+   People modal
+   ========================================================================== */
+.c-people-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 22px 22px; }
+  @media (min-width: 768px) {
+    .c-people-modal {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 230px 1fr;
+      width: 100%;
+      padding: 22px; } }
+
+.c-people-modal__image {
+  width: 100%;
+  height: 230px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative; }
+  .c-people-modal__image img {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  @media (min-width: 768px) {
+    .c-people-modal__image {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      margin: 0; }
+      .c-people-modal__image img {
+        width: 100%;
+        height: auto; } }
+
+.c-people-modal__img-desc {
+  padding: 0;
+  margin: 0;
+  padding-right: 23px; }
+  @media (min-width: 768px) {
+    .c-people-modal__img-desc {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      padding-top: 17px;
+      height: 100%;
+      display: flex;
+      flex-direction: column; } }
+
+.c-people-modal__desc {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .c-people-modal__desc {
+      padding: 0 80px 30px 23px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3; } }
+
+/* ==========================================================================
+   People modal close
+   ========================================================================== */
+.c-people-modal-close {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer; }
+  .c-people-modal-close .o-svg {
+    width: 100%;
+    height: 100%; }
+
+/* ==========================================================================
+   People modal wrapper
+   ========================================================================== */
+.c-people-modal-wrapper {
+  position: fixed;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(40, 58, 106, 0.9);
+  transition: all 0.2s linear;
+  z-index: 600; }
+  .c-people-modal-wrapper.is-active {
+    height: 100%;
+    top: 0; }
+  @media (min-width: 768px) {
+    .c-people-modal-wrapper {
+      padding: 0;
+      align-items: center; } }
+
+.c-people-modal-wrapper__container {
+  position: relative;
+  height: 100%;
+  overflow: auto; }
+  @media (min-width: 768px) {
+    .c-people-modal-wrapper__container {
+      height: auto;
+      overflow: hidden;
+      width: 880px;
+      max-width: 90%; } }
 
 /* ==========================================================================
    Quick links

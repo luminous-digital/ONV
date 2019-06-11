@@ -13,4 +13,8 @@ body {
             overflow: auto;
         }
     }
+    &.is-modal-open {
+        overflow: hidden;
+        padding-right: 15px;
+    }
 }
