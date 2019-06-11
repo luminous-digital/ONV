@@ -196,6 +196,10 @@
         }
     }
 
+    &--big-lh {
+        line-height: font-size(body-m) * 1.75;
+    }
+
     &--alt-mobile {
         font-size: font-size(small-m);
         line-height: font-size(small-m) * 1.5;

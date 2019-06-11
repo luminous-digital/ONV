@@ -1328,6 +1328,8 @@ button.swiper-pagination-bullet {
     .t-body--alt {
       font-size: 16px;
       line-height: 24px; } }
+  .t-body--big-lh {
+    line-height: 28px; }
   .t-body--alt-mobile {
     font-size: 14px;
     line-height: 21px; }
@@ -2744,10 +2746,12 @@ Feature panel wrapper
 
 .c-file-list--two-columns .c-file-list__date {
   width: 140px;
+  padding-bottom: 4px;
   white-space: normal; }
 
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
+  padding-bottom: 4px;
   white-space: nowrap; }
 
 /* ==========================================================================

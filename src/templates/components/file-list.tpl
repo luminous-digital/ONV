@@ -16,7 +16,7 @@
                             {% for i in range(0, listCount) -%}
                                 <li class="c-file-list__item">
                                     <div class="c-file-list__item-wrapper">
-                                        <p class="c-file-list__date t-body t-body--alt">
+                                        <p class="c-file-list__date t-body t-body--alt t-body--big-lh">
                                             4 June 2018
                                         </p>
                                         <h4 class="c-file-list__title t-h4 t-thin">
