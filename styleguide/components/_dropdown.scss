@@ -138,3 +138,11 @@
 .c-dropdown--small .c-dropdown__title {
     padding-right: 150px;
 }
+
+.c-dropdown--small .c-dropdown__option.is-active .c-label {
+    font-weight: $font-weight-bold;
+}
+
+.c-dropdown--absolute.is-open {
+    max-height: 500px;
+}

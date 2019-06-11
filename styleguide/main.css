@@ -2575,6 +2575,12 @@ Article header
 .c-dropdown--small .c-dropdown__title {
   padding-right: 150px; }
 
+.c-dropdown--small .c-dropdown__option.is-active .c-label {
+  font-weight: 700; }
+
+.c-dropdown--absolute.is-open {
+  max-height: 500px; }
+
 /* ==========================================================================
 Feature panel
 ========================================================================== */
@@ -2687,6 +2693,9 @@ Feature panel wrapper
   @media (min-width: 768px) {
     .c-file-list__item {
       margin-bottom: 0; } }
+
+.c-file-list__item.is-hidden {
+  display: none; }
 
 .c-file-list__item:hover > .c-file-list__item-wrapper {
   background-color: rgba(243, 245, 249, 0.4); }
@@ -3668,6 +3677,44 @@ Lead Teaser
     background-color: rgba(0, 0, 0, 0.25); }
 
 /* ==========================================================================
+List active filters
+========================================================================== */
+.c-list-active-filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; }
+
+.c-list-active-filters__item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; }
+  .c-list-active-filters__item .c-label {
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    color: #283A6A; }
+  .c-list-active-filters__item .c-close {
+    cursor: pointer; }
+    .c-list-active-filters__item .c-close .o-svg {
+      width: 20px;
+      height: 20px;
+      padding: 4px; }
+      .c-list-active-filters__item .c-close .o-svg svg {
+        width: 100%;
+        height: 100%; }
+  .c-list-active-filters__item:not(.c-list-active-filters__item--last) .c-label:before {
+    content: '"'; }
+  .c-list-active-filters__item:not(.c-list-active-filters__item--last) .c-label:after {
+    content: '"'; }
+  .c-list-active-filters__item--last {
+    order: 100;
+    cursor: pointer; }
+  .c-list-active-filters__item.is-hidden {
+    display: none; }
+
+/* ==========================================================================
 List block
 ========================================================================== */
 .c-list-block {
@@ -3705,7 +3752,7 @@ List filters
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap; }
 
@@ -3727,7 +3774,10 @@ List wrapper no download
       margin-bottom: 50px; } }
 
 .c-list-wrapper__filters {
-  padding-bottom: 60px; }
+  padding-bottom: 30px; }
+
+.c-list-wrapper__active-filters {
+  padding-bottom: 30px; }
 
 .c-list-wrapper__subtitle {
   margin-bottom: 8px; }
