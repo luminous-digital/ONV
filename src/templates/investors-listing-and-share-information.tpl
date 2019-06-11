@@ -65,7 +65,7 @@ Listing and share information
         {% block text_component_3 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
-                secTitle='Divided<br>plicy',
+                secTitle='Divided<br>policy',
                 firstParagraph='
                 <p>
                     OCI has a flexible dividend policy designed to balance the availability of funds for dividend distribution with pursuing growth opportunities that generate attractive returns.
