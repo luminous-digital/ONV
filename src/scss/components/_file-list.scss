@@ -222,8 +222,9 @@
 
 .c-file-list--two-columns .c-file-list__date {
     width: offset(main) * 14;
-
     white-space: normal;
+
+    line-height: 1;
 }
 
 .c-file-list--two-columns .c-file-list__title {
@@ -232,7 +233,7 @@
     white-space: nowrap;
 }
 
-// File List two columns
+// File List no breake text
 //
 // markup:
 //<ul class="c-file-list c-file-list--no-breake-text">
