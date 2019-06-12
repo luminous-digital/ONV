@@ -21,6 +21,7 @@ Investors - results and presentations
     {{
         file_list.render(
             secTitle='Upcoming<br>events',
+            showDownload=true,
             listCount='2'
         )
     }}
@@ -32,6 +33,7 @@ Investors - results and presentations
         file_list.render(
             secTitle='Past<br>events',
             listCount='4',
+            showDownload=true,
             showShowMore=true,
             showSubtitles=true
         )
@@ -43,6 +45,7 @@ Investors - results and presentations
     {{
         file_list.render(
             listCount='4',
+            showDownload=true,
             showShowMore=true,
             showSubtitles=true
         )

@@ -5184,6 +5184,14 @@ WYSIWYG
   .c-wysiwyg--nopadding {
     padding-bottom: 0; } }
 
+.c-wysiwyg address {
+  font-style: normal; }
+  .c-wysiwyg address a:not([class]) {
+    font-weight: 400; }
+    .c-wysiwyg address a:not([class]):after {
+      content: '';
+      background-color: transparent; }
+
 /* Utilities - on the end because they have to overwrite other styles
    ========================================================================== */
 /* ==========================================================================

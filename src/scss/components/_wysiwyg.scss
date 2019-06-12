@@ -63,4 +63,18 @@ WYSIWYG
             padding-bottom: 0;
         }
     }
+
+    address {
+        font-style: normal;
+
+        a:not([class]) {
+            font-weight: $font-weight-regular;
+
+            &:after {
+                content: '';
+
+                background-color: transparent;
+            }
+        }
+    }
 }
