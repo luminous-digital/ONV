@@ -2767,10 +2767,13 @@ Feature panel wrapper
       justify-content: space-between; } }
 
 .c-file-list--two-columns .c-file-list__item {
+  display: flex;
+  align-items: center;
   width: 100%; }
   @media (min-width: 768px) {
     .c-file-list--two-columns .c-file-list__item {
-      width: 48%; } }
+      width: 48%;
+      padding: 20px 0; } }
 
 .c-file-list--two-columns .c-file-list__date {
   width: 140px;
@@ -2779,6 +2782,23 @@ Feature panel wrapper
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
   white-space: nowrap; }
+
+.c-file-list--no-breake-text .c-file-list__date {
+  max-width: 90px;
+  width: 100%;
+  white-space: normal; }
+
+.c-file-list--no-breake-text .c-file-list__title {
+  white-space: normal; }
+  @media (min-width: 768px) {
+    .c-file-list--no-breake-text .c-file-list__title {
+      margin-left: 10px; } }
+
+.c-file-list--no-breake-text .c-btn-wrapper {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-file-list--no-breake-text .c-btn-wrapper {
+      width: 70%; } }
 
 /* ==========================================================================
    Footer
@@ -5178,6 +5198,11 @@ Text component
       flex-wrap: nowrap;
       padding-top: 10px; } }
 
+.c-text-component--clear,
+.c-text-component--clear .c-text-component__title {
+  padding-top: 0;
+  padding-bottom: 0; }
+
 .c-text-component__column {
   width: 100%;
   height: auto; }
@@ -5257,6 +5282,14 @@ WYSIWYG
 @media (min-width: 768px) {
   .c-wysiwyg--nopadding {
     padding-bottom: 0; } }
+
+.c-wysiwyg address {
+  font-style: normal; }
+  .c-wysiwyg address a:not([class]) {
+    font-weight: 400; }
+    .c-wysiwyg address a:not([class]):after {
+      content: '';
+      background-color: transparent; }
 
 /* Utilities - on the end because they have to overwrite other styles
    ========================================================================== */

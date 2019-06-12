@@ -192,6 +192,50 @@
 //            </div>
 //        </div>
 //    </li>
+//</ul>
+//
+// Styleguide 15.2
+
+.c-file-list--two-columns {
+    display: flex;
+    flex-direction: column;
+
+    @include media('>=mobile') {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.c-file-list--two-columns .c-file-list__item {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: 48%;
+
+        padding: offset(l) 0;
+    }
+}
+
+.c-file-list--two-columns .c-file-list__date {
+    width: offset(main) * 14;
+
+    white-space: normal;
+}
+
+.c-file-list--two-columns .c-file-list__title {
+    width: auto;
+
+    white-space: nowrap;
+}
+
+// File List two columns
+//
+// markup:
+//<ul class="c-file-list c-file-list--no-breake-text">
 //    <li class="c-file-list__item">
 //        <div class="c-file-list__item-wrapper">
 //            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
@@ -215,35 +259,27 @@
 //    </li>
 //</ul>
 //
-// Styleguide 15.2
+// Styleguide 15.3
 
-.c-file-list--two-columns {
-    display: flex;
-    flex-direction: column;
-
-    @include media('>=mobile') {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
-.c-file-list--two-columns .c-file-list__item {
+.c-file-list--no-breake-text .c-file-list__date {
+    max-width: offset(main) * 9;
     width: 100%;
-
-    @include media('>=mobile') {
-        width: 48%;
-    }
-}
-
-.c-file-list--two-columns .c-file-list__date {
-    width: offset(main) * 14;
 
     white-space: normal;
 }
 
-.c-file-list--two-columns .c-file-list__title {
-    width: auto;
+.c-file-list--no-breake-text .c-file-list__title {
+    white-space: normal;
 
-    white-space: nowrap;
+    @include media('>=mobile') {
+        margin-left: offset(main);
+    }
+}
+
+.c-file-list--no-breake-text .c-btn-wrapper {
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: 70%;
+    }
 }

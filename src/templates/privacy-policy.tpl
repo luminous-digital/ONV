@@ -20,6 +20,7 @@ Privacy policy
         {% block text_component_1 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear=true,
                 firstParagraph='
                     <h3>1. Confidentiality</h3>
                     <p>
@@ -33,6 +34,7 @@ Privacy policy
         {% block text_component_2 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear=true,
                 firstParagraph='
                     <h3>2. Use of Personal Information</h3>
                     <p>
@@ -46,6 +48,7 @@ Privacy policy
         {% block text_component_3 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear=true,
                 firstParagraph='
                     <h3>3. Non-release of information to third parties</h3>
                     <p>
@@ -62,6 +65,7 @@ Privacy policy
         {% block text_component_4 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear=true,
                 firstParagraph='
                     <h3>4. Updating Personal Information</h3>
                     <p>
@@ -76,6 +80,7 @@ Privacy policy
         {% block text_component_5 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear=true,
                 firstParagraph='
                     <h3>5. Non-Warranty</h3>
                     <p>
@@ -92,6 +97,7 @@ Privacy policy
         {% block text_component_6 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear='true',
                 firstParagraph='
                     <h3>6. Assent to Terms of Privacy Policy</h3>
                     <p>
