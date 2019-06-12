@@ -262,12 +262,24 @@
 // Styleguide 15.3
 
 .c-file-list--no-breake-text .c-file-list__date {
-    max-width: offset(main) * 11;
+    max-width: offset(main) * 9;
     width: 100%;
 
     white-space: normal;
 }
 
 .c-file-list--no-breake-text .c-file-list__title {
-    white-space: nowrap;
+    white-space: normal;
+
+    @include media('>=mobile') {
+        margin-left: offset(main);
+    }
+}
+
+.c-file-list--no-breake-text .c-btn-wrapper {
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: 70%;
+    }
 }

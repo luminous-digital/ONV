@@ -20,6 +20,7 @@ Legal policy
         {% block text_component_1 %}
             {% import "components/text-component.tpl" as text_component with context %}
             {{ text_component.render(
+                clear=true,
                 firstParagraph='
                     <h3>OCI N.V. Website Legal Statement</h3>
                     <br>
