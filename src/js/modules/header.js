@@ -69,54 +69,58 @@ const Header = {
       const searchWhenTyping = () => {
         $resultList.html('')
         const query = $searchInput.val().trim()
-        $('.js-search-wrapper').addClass('is-active')
-        $('body').addClass('is-footer-fixed')
-        $('body').addClass('is-search-open')
-        $phraseElem.html(query)
-        $.ajax({
-          method: 'GET',
-          dataType: 'json',
-          url: 'https://jsonplaceholder.typicode.com/posts',
-          data: {
-            query: query
-          }
-        })
-          .done(res => {
-            const $closeSearchBtn = $('.js-close-search')
-            const $loadMoreBtn = $('.js-search-load-more')
-            const $total = $('.js-search-result-total')
-            const $from = $('.js-search-result-from')
-            const $to = $('.js-search-result-to')
-            $total.html(res.length)
-            $loadMoreBtn.show()
-            let currentPage = 0
-            const itemsPerPage = 5
-            const total = res.length
-            let from = 0
-            let to = 5
-            $from.html(1)
-            $to.html(5)
-            this.appendPosts(res.slice(from, to + 1))
-            $loadMoreBtn.on('click', e => {
-              currentPage++
-              from = currentPage * itemsPerPage + 1
-              to = currentPage * itemsPerPage + itemsPerPage
+        if (query.length === 0) {
+          $('.js-search-wrapper').removeClass('is-active')
+        } else {
+          $('.js-search-wrapper').addClass('is-active')
+          $('body').addClass('is-footer-fixed')
+          $('body').addClass('is-search-open')
+          $phraseElem.html(query)
+          $.ajax({
+            method: 'GET',
+            dataType: 'json',
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            data: {
+              query: query
+            }
+          })
+            .done(res => {
+              const $closeSearchBtn = $('.js-close-search')
+              const $loadMoreBtn = $('.js-search-load-more')
+              const $total = $('.js-search-result-total')
+              const $from = $('.js-search-result-from')
+              const $to = $('.js-search-result-to')
+              $total.html(res.length)
+              $loadMoreBtn.show()
+              let currentPage = 0
+              const itemsPerPage = 5
+              const total = res.length
+              let from = 0
+              let to = 5
+              $from.html(1)
+              $to.html(5)
               this.appendPosts(res.slice(from, to + 1))
-              $from.html(from)
-              $to.html(to)
-              if (currentPage * itemsPerPage >= total) {
-                $loadMoreBtn.hide()
-              }
+              $loadMoreBtn.on('click', e => {
+                currentPage++
+                from = currentPage * itemsPerPage + 1
+                to = currentPage * itemsPerPage + itemsPerPage
+                this.appendPosts(res.slice(from, to + 1))
+                $from.html(from)
+                $to.html(to)
+                if (currentPage * itemsPerPage >= total) {
+                  $loadMoreBtn.hide()
+                }
+              })
+              $closeSearchBtn.on('click', e => {
+                currentPage = 0
+                from = 0
+                to = 5
+              })
             })
-            $closeSearchBtn.on('click', e => {
-              currentPage = 0
-              from = 0
-              to = 5
+            .fail(err => {
+              console.log('ajax failed: ', err)
             })
-          })
-          .fail(err => {
-            console.log('ajax failed: ', err)
-          })
+        }
       }
       let timer = 0
       $searchInput.on('keyup', e => {
