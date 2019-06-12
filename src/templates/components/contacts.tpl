@@ -1,6 +1,6 @@
-{% macro render(secTitle, firstTitle, firstContent, secondTitle, secondContent) %}
+{% macro render(secTitle, firstTitle, firstContent, secondTitle, secondContent, isPaddedBottom) %}
 
-<section class="l-section l-section--no-offset l-section--always-centered">
+<section class="l-section l-section--no-offset {% if isPaddedBottom %}l-section--padded-bottom {% endif %}l-section--always-centered">
     <div class="c-section-divider">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">

@@ -38,6 +38,12 @@
             padding-top: offset(main) * 9;
         }
     }
+    &--padded-bottom {
+
+        @include media('>=desktop-small') {
+            padding-bottom: offset(main) * 3;
+        }
+    }
     &--our-story {
         position: relative;
         overflow: hidden;

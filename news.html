@@ -40,14 +40,14 @@ News
                 </div>
                 <div class="c-header-nav">
                     <ul class="c-header-nav-menu">
-                        <li class="c-header-nav-menu__item ">
+                        <li class="c-header-nav-menu__item">
                             <a href="/about.html" class="c-link t-menu">
                                 <span class="c-label">
                                     About
                                 </span>
                             </a>
                         </li>
-                        <li class="c-header-nav-menu__item has-children ">
+                        <li class="c-header-nav-menu__item has-children">
                             <a href="/operations.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Operations
@@ -114,7 +114,7 @@ News
                                 
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item has-children ">
+                        <li class="c-header-nav-menu__item has-children">
                             <a href="/sustainability.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Sustainability
@@ -165,7 +165,7 @@ News
                                 </li>
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item has-children ">
+                        <li class="c-header-nav-menu__item has-children">
                             <a href="/investors.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Investors
@@ -217,7 +217,7 @@ News
                             </a>
                         </li>
                         <li class="c-header-nav-menu__item">
-                            <a href="#" class="c-link t-menu">
+                            <a href="/contact.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Contact
                                 </span>
@@ -328,7 +328,7 @@ News
             </h4>
         </div>
     </div>
-    <div class="c-latest-news-wrapper" style="background-image: url('./static/img/latest-news-bg.jpg');">
+    <div class="c-latest-news-wrapper c-latest-news-wrapper--padded" style="background-image: url('./static/img/latest-news-bg.jpg');">
         <div class="l-inner">
             <div class="swiper-container c-latest-news-wrapper__slider js-slider-latest-news">
                 <ul class="swiper-wrapper c-latest-news">
@@ -383,13 +383,7 @@ News
                 <div class="c-latest-news-wrapper__next js-slider-latest-news-next">
                 </div>
             </div>
-            <div class="c-btn-wrapper">
-                <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                    <span class="c-label">
-                        All news
-                    </span>
-                </a>
-            </div>
+            
         </div>
     </div>
 </section>
@@ -412,11 +406,15 @@ News
                     All news
                 </h4>
             </div>
-            <div class="c-list-wrapper c-list-wrapper--offset-top js-list">
+            <div class="c-list-wrapper c-list-wrapper--offset-top js-list-with-filters"
+                    data-api-url="https://jsonplaceholder.typicode.com/posts"
+                    data-api-per-page="5"
+                    data-api-offset="3"
+                    data-api-post-type="post">
                 <div class="c-list-wrapper__filters">
                     <ul class="c-list-filters">
                         <li class="c-list-filters__item">
-                            <div class="c-dropdown c-dropdown--small js-map-filter" data-filter-type="facility" data-chosen-option="">
+                            <div class="c-dropdown c-dropdown--small c-dropdown--absolute js-list-filter">
                                 <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                     <span class="c-label js-filter-name is-visible">
                                         Category
@@ -425,19 +423,19 @@ News
                                 </button>
                                 <ul class="c-dropdown__options">
                                     
-                                        <li class="c-dropdown__option">
+                                        <li class="c-dropdown__option" data-filter-to-enable="News">
                                             <span class="c-label">
                                                 News
                                             </span>
                                         </li>
                                     
-                                        <li class="c-dropdown__option">
+                                        <li class="c-dropdown__option" data-filter-to-enable="Reports">
                                             <span class="c-label">
                                                 Reports
                                             </span>
                                         </li>
                                     
-                                        <li class="c-dropdown__option">
+                                        <li class="c-dropdown__option" data-filter-to-enable="Stocks">
                                             <span class="c-label">
                                                 Stocks
                                             </span>
@@ -447,7 +445,7 @@ News
                             </div>
                         </li>
                         <li class="c-list-filters__item">
-                            <div class="c-dropdown c-dropdown--small js-map-filter" data-filter-type="facility" data-chosen-option="">
+                            <div class="c-dropdown c-dropdown--small c-dropdown--absolute js-list-filter">
                                 <button class="c-dropdown__title js-dropdown-toggle t-small t-white t-bold">
                                     <span class="c-label js-filter-name is-visible">
                                         Year
@@ -456,19 +454,19 @@ News
                                 </button>
                                 <ul class="c-dropdown__options">
                                     
-                                        <li class="c-dropdown__option">
+                                        <li class="c-dropdown__option" data-filter-to-enable="2019">
                                             <span class="c-label">
                                                 2019
                                             </span>
                                         </li>
                                     
-                                        <li class="c-dropdown__option">
+                                        <li class="c-dropdown__option" data-filter-to-enable="2018">
                                             <span class="c-label">
                                                 2018
                                             </span>
                                         </li>
                                     
-                                        <li class="c-dropdown__option">
+                                        <li class="c-dropdown__option" data-filter-to-enable="2017">
                                             <span class="c-label">
                                                 2017
                                             </span>
@@ -479,10 +477,19 @@ News
                         </li>
                     </ul>
                 </div>
+                <div class="c-list-wrapper__active-filters">
+                    <ul class="c-list-active-filters js-active-filter-list">
+                        <li class="c-list-active-filters__item c-list-active-filters__item--last js-list-filters-clear is-hidden">
+                            <span class="c-label t-small t-link">
+                                Clear all
+                            </span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="c-list-wrapper__list">
                     <ul class="c-file-list js-list-items">
                         
-                            <li class="c-file-list__item" data-cat="Reports">
+                            <li class="c-file-list__item" data-filterby-cat="Reports" data-filterby-year="2019">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt">
                                         12 April 2019
@@ -494,7 +501,7 @@ News
                                     </h4>
                                 </div>
                             </li>
-                            <li class="c-file-list__item" data-cat="Stocks">
+                            <li class="c-file-list__item" data-filterby-cat="Stocks" data-filterby-year="2018">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt">
                                         4 June 2018
@@ -506,7 +513,7 @@ News
                                     </h4>
                                 </div>
                             </li>
-                            <li class="c-file-list__item" data-cat="Stocks">
+                            <li class="c-file-list__item" data-filterby-cat="News" data-filterby-year="2017">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt">
                                         8 June 2017

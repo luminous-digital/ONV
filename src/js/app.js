@@ -7,5 +7,6 @@ import './modules/scroll-to-anchor'
 import './modules/map'
 import './modules/dropdowns'
 import './modules/people-modal'
+import './modules/news'
 
 svg4everybody()
