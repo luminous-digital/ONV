@@ -3456,6 +3456,7 @@ Info panel
       padding-bottom: 85px; } }
 
 .c-info-panel__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3478,7 +3479,9 @@ Info panel
 @media (min-width: 768px) {
   .c-info-panel .c-btn-wrapper {
     position: absolute;
-    bottom: 40px; } }
+    left: 50%;
+    bottom: -45px;
+    transform: translateX(-50%); } }
 
 /* ==========================================================================
 Image content
