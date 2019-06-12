@@ -162,7 +162,7 @@
 .c-data-slider-wrapper__prev {
     transform: rotate(135deg);
 
-    left: offset(main) * 0.5;
+    left: offset(main) * 1.25;
 
     @include media('>=desktop-small') {
         left: offset(main);
@@ -172,7 +172,7 @@
 .c-data-slider-wrapper__next {
     transform: rotate(-45deg);
 
-    right: offset(main) * 0.5;
+    right: offset(main) * 1.25;
 
     @include media('>=desktop-small') {
         right: offset(main);

@@ -2583,14 +2583,14 @@ Article header
 
 .c-data-slider-wrapper__prev {
   transform: rotate(135deg);
-  left: 5px; }
+  left: 12.5px; }
   @media (min-width: 1200px) {
     .c-data-slider-wrapper__prev {
       left: 10px; } }
 
 .c-data-slider-wrapper__next {
   transform: rotate(-45deg);
-  right: 5px; }
+  right: 12.5px; }
   @media (min-width: 1200px) {
     .c-data-slider-wrapper__next {
       right: 10px; } }
@@ -2849,7 +2849,8 @@ Feature panel wrapper
 
 .c-file-list--two-columns .c-file-list__date {
   width: 110px;
-  white-space: normal; }
+  white-space: normal;
+  line-height: 1; }
 
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
