@@ -30,9 +30,9 @@
                                     <p class="c-contact-list__text t-body t-body--alt t-bold t-dgrey">
                                         {{ mapItem.col1 }}
                                     </p>
-                                    <p class="c-contact-list__name t-body t-bold t-blue">
+                                    <a href="mailto:{{ mapItem.email}}" class="c-contact-list__name t-body t-bold t-blue">
                                         {{ mapItem.col2 }}
-                                    </p>
+                                    </a>
                                     <p class="c-contact-list__text t-body t-body--alt t-bold t-dgrey">
                                         {{ mapItem.col3 }}
                                     </p>

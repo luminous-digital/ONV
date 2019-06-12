@@ -35,37 +35,44 @@ Investors - research analysts
                 {
                     col1: 'Berenberg',
                     col2: 'Rikin Patel',
-                    col3: '+44 203 753 30 80'
+                    col3: '+44 203 753 30 80',
+                    email: 'test_1@oci.uk'
                 },
                 {
                     col1: 'Citi',
                     col2: 'Thomas Wrigglesworth',
-                    col3: '+44 207 98642 52'
+                    col3: '+44 207 98642 52',
+                    email: 'test_1@oci.uk'
                 },
                 {
                     col1: 'Degroof Petercam',
                     col2: 'Fark Claasen',
-                    col3: '+31 20 573 54 09'
+                    col3: '+31 20 573 54 09',
+                    email: 'test_3@oci.uk'
                 },
                 {
                     col1: 'Berenberg',
                     col2: 'Rikin Patel',
-                    col3: '+44 203 753 30 80'
+                    col3: '+44 203 753 30 80',
+                    email: 'test_4@oci.uk'
                 },
                 {
                     col1: 'Citi',
                     col2: 'Thomas Wrigglesworth',
-                    col3: '+44 207 98642 52'
+                    col3: '+44 207 98642 52',
+                    email: 'test_5@oci.uk'
                 },
                 {
                     col1: 'Degroof Petercam',
                     col2: 'Fark Claasen',
-                    col3: '+31 20 573 54 09'
+                    col3: '+31 20 573 54 09',
+                    email: 'test_6@oci.uk'
                 },
                 {
                     col1: 'Citi',
                     col2: 'Rikin Patel',
-                    col3: '+44 203 753 30 80'
+                    col3: '+44 203 753 30 80',
+                    email: 'test_7@oci.uk'
                 }
             ]
         )
