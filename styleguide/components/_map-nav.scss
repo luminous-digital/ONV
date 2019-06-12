@@ -27,13 +27,16 @@
 
     margin: 0;
     padding: 0;
-    padding-top: offset(main) * 0.7;
 
     right: 0;
 
     opacity: 0;
 
     transition: $transition-default;
+
+    @include media('>=mobile') {
+        padding-top: offset(main) * 0.7;
+    }
 }
 
 .c-map-nav__clear-all.is-visible {
@@ -84,9 +87,20 @@
 }
 
 .c-map-nav__filter {
+    position: relative;
 
     @include media('>=mobile') {
         width: 32%;
+    }
+
+    &:nth-child(1) {
+        z-index: 9;
+    }
+    &:nth-child(2) {
+        z-index: 8;
+    }
+    &:nth-child(3) {
+        z-index: 7;
     }
 }
 
