@@ -1150,6 +1150,8 @@ button.swiper-pagination-bullet {
 =========================== */
 /* People modal
 =========================== */
+/* Cookie bar
+=========================== */
 /* Breakpoints for include-media plugin
 ========================================================================== */
 /* ==========================================================================
@@ -1934,6 +1936,7 @@ Article header
   width: 100%;
   height: auto;
   cursor: pointer;
+  border: none;
   padding-top: 15px;
   padding-bottom: 15px; }
   .c-btn--medium {
@@ -2056,6 +2059,16 @@ Article header
 .c-btn--padded {
   padding-left: 60px;
   padding-right: 60px; }
+
+.c-btn--orange {
+  background: #F79727;
+  color: #fff;
+  border: 2px solid #F79727; }
+
+.c-btn--transparent {
+  background: transparent;
+  color: #F79727;
+  border: 2px solid #F79727; }
 
 /* ==========================================================================
    Btn wrapper
@@ -2396,6 +2409,65 @@ Article header
     border-color: #F79727 transparent transparent transparent; }
 
 /* ==========================================================================
+   Cookie bar
+   ========================================================================== */
+.c-cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: none;
+  z-index: 400;
+  padding: 10px 0;
+  background-color: #F3F5F9; }
+  @media (min-width: 768px) {
+    .c-cookie-bar {
+      padding: 0;
+      height: 60px; } }
+
+.c-cookie-bar.is-visible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.c-cookie-bar__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .c-cookie-bar__content {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.c-cookie-bar__text {
+  width: 100%;
+  margin: 0; }
+
+.c-cookie-bar__content .c-btn-group {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .c-cookie-bar__content .c-btn-group {
+      margin-top: 0; } }
+  @media (min-width: 1200px) {
+    .c-cookie-bar__content .c-btn-group {
+      justify-content: flex-end; } }
+
+.c-cookie-bar__content .c-btn {
+  width: calc(50% - 12px);
+  padding: 8px 0; }
+  @media (min-width: 1200px) {
+    .c-cookie-bar__content .c-btn {
+      width: 146px;
+      margin-left: 23px; } }
+
+/* ==========================================================================
     Data slider
    ========================================================================== */
 .c-data-slider {
@@ -2726,7 +2798,7 @@ Feature panel wrapper
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 30px;
+      margin-left: 0;
       margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {
@@ -2776,30 +2848,13 @@ Feature panel wrapper
       padding: 20px 0; } }
 
 .c-file-list--two-columns .c-file-list__date {
-  width: 140px;
+  width: 110px;
   white-space: normal;
   line-height: 1; }
 
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
   white-space: nowrap; }
-
-.c-file-list--no-breake-text .c-file-list__date {
-  max-width: 90px;
-  width: 100%;
-  white-space: normal; }
-
-.c-file-list--no-breake-text .c-file-list__title {
-  white-space: normal; }
-  @media (min-width: 768px) {
-    .c-file-list--no-breake-text .c-file-list__title {
-      margin-left: 10px; } }
-
-.c-file-list--no-breake-text .c-btn-wrapper {
-  width: 100%; }
-  @media (min-width: 768px) {
-    .c-file-list--no-breake-text .c-btn-wrapper {
-      width: 70%; } }
 
 /* ==========================================================================
    Footer

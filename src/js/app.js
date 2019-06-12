@@ -8,5 +8,6 @@ import './modules/map'
 import './modules/dropdowns'
 import './modules/people-modal'
 import './modules/news'
+import './modules/cookies'
 
 svg4everybody()
