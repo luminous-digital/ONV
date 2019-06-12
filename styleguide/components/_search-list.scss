@@ -1,0 +1,52 @@
+/* ==========================================================================
+Search list
+========================================================================== */
+.c-search-list {
+    position: fixed;
+    top: $size-header-height-d;
+    left: 0;
+
+    width: 100%;
+    max-height: 0;
+
+    overflow: hidden;
+
+    z-index: 110;
+
+    background-color: color(white);
+}
+
+.c-search-list.is-active {
+    max-height: calc(100% - #{$size-header-height-d} - #{$size-footer-height});
+
+    overflow: auto;
+
+    padding: offset(main) * 2.5;
+
+    @include media('>=mobile') {
+        padding: offset(main) * 7 offset(main) * 7.5;
+    }
+}
+
+.c-search-list__title {
+    padding-bottom: offset(main) * 2;
+}
+
+.c-search-list__desc {
+    margin: 0;
+    padding-bottom: offset(main) * 8;
+}
+
+.c-search-list__cta {
+    width: 100%;
+    height: auto;
+    margin-top: offset(main) * 5;
+
+    display: flex;
+    justify-content: center;
+
+    .t-link {
+        border: none;
+        background: none;
+    }
+}

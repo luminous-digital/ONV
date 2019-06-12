@@ -61,3 +61,13 @@
 
     z-index: $z-index-header - 1;
 }
+
+.is-footer-fixed .l-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    transition: $transition-default;
+
+    z-index: $z-index-header - 1;
+}

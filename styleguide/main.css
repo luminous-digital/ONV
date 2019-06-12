@@ -1410,6 +1410,7 @@ button.swiper-pagination-bullet {
   padding: 0;
   color: #283A6A;
   position: relative;
+  cursor: pointer;
   margin-bottom: 14px; }
   .t-link .c-label {
     font-family: Lato, Arial, sans-serif;
@@ -1762,8 +1763,16 @@ body.is-header-open {
       overflow: auto; } }
 
 body.is-modal-open {
-  overflow: hidden;
-  padding-right: 15px; }
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    body.is-modal-open {
+      padding-right: 15px; } }
+
+body.is-search-open {
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    body.is-search-open {
+      padding-right: 15px; } }
 
 /* ==========================================================================
    Objects
@@ -1785,6 +1794,13 @@ body.is-modal-open {
   height: 100%; }
 
 .is-header-open .l-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s linear;
+  z-index: 99; }
+
+.is-footer-fixed .l-footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -3059,11 +3075,14 @@ Header nav
   border-bottom: 1px solid #fff; }
 
 @media (min-width: 768px) {
-  .is-search-active .c-header-nav__search {
+  .is-search-open .c-header-nav__search {
     bottom: auto;
     top: 0;
     height: 100vh;
     background-color: rgba(40, 58, 106, 0.9); } }
+
+.is-footer-fixed .c-header-nav__search {
+  height: calc(100vh - 60px); }
 
 /* ==========================================================================
 Header nav menu
@@ -4892,10 +4911,10 @@ Search form
   height: 22px;
   fill: currentColor; }
 
-.is-search-active .c-search-form {
-  width: 95%; }
+.is-search-open .c-search-form {
+  width: 87%; }
   @media (min-width: 1200px) {
-    .is-search-active .c-search-form {
+    .is-search-open .c-search-form {
       width: 100%; } }
 
 /* ==========================================================================
@@ -4904,7 +4923,7 @@ Search form close
 .c-search-form-close {
   display: none; }
 
-.is-search-active .c-search-form-close {
+.is-search-open .c-search-form-close {
   display: block;
   cursor: pointer;
   position: absolute;
@@ -4919,6 +4938,44 @@ Search form close
   fill: currentColor;
   width: 100%;
   height: 100%; }
+
+/* ==========================================================================
+Search list
+========================================================================== */
+.c-search-list {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 110;
+  background-color: #fff; }
+
+.c-search-list.is-active {
+  max-height: calc(100% - 80px - 60px);
+  overflow: auto;
+  padding: 25px; }
+  @media (min-width: 768px) {
+    .c-search-list.is-active {
+      padding: 70px 75px; } }
+
+.c-search-list__title {
+  padding-bottom: 20px; }
+
+.c-search-list__desc {
+  margin: 0;
+  padding-bottom: 80px; }
+
+.c-search-list__cta {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+  .c-search-list__cta .t-link {
+    border: none;
+    background: none; }
 
 /* ==========================================================================
 Search toggle
@@ -4953,6 +5010,23 @@ Search toggle
 .c-search-toggle__icon .o-svg {
   width: 21px;
   height: 21px; }
+
+/* ==========================================================================
+Search results
+========================================================================== */
+.c-search-results {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.c-search-results__item {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #A2A1A2; }
+
+@media (min-width: 768px) {
+  .c-search-results__content {
+    max-width: 70%; } }
 
 /* ==========================================================================
 Social icon
