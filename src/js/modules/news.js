@@ -3,6 +3,7 @@ import $ from 'jquery'
 const News = {
   init: function () {
     this.filters()
+    this.loadMoreAjax()
   },
   activeFilters: [],
   filters: function () {
@@ -51,14 +52,18 @@ const News = {
         this.activeFilters.splice(this.activeFilters.indexOf(currentFilter), 1)
       }
       const bindRemoveAllBtn = () => {
-        // TODO nie dziala
         const $removeAllBtn = $('.js-list-filters-clear')
         $removeAllBtn.on('click', e => {
           const filters = this.activeFilters
+          const $listItems = $('.js-list-items').find('li')
           $.each(filters, function () {
             const filter = this
             setTimeout(function () {
               removeFromFilters(filter)
+              $(e.currentTarget).addClass('is-hidden')
+              $listItems.each(function () {
+                $(this).removeClass('is-hidden')
+              })
             }, 300)
           })
         })
@@ -84,6 +89,51 @@ const News = {
           }
         })
       }
+    }
+  },
+  loadMoreAjax: function () {
+    const $container = $('.js-list-with-filters')
+    if ($container.length) {
+      const $loadMoreBtn = $container.find('.js-list-load-more')
+      const $listContainer = $container.find('.js-list-items')
+      const ajaxUrl = $container.attr('data-api-url')
+      const perPage = parseInt($container.attr('data-api-per-page'), 10)
+      const offset = parseInt($container.attr('data-api-offset'), 10)
+      const postType = $container.attr('data-api-post-type')
+      let currentPage = 0
+      $loadMoreBtn.on('click', e => {
+        $.ajax({
+          method: 'GET',
+          dataType: 'json',
+          url: ajaxUrl,
+          data: {
+            postType: postType,
+            postsPerPage: perPage,
+            postsOffset: offset + currentPage * perPage
+          }
+        })
+          .done(res => {
+            const items = res.map(item => {
+              return `<li class="c-file-list__item" data-filterby-cat="${item.category}" data-filterby-year="${item.year}">
+                  <div class="c-file-list__item-wrapper">
+                      <p class="c-file-list__date t-body t-body--alt">
+                        ${item.date}
+                      </p>
+                      <h4 class="c-file-list__title t-h4 t-thin">
+                          <a href="${item.url}">
+                            ${item.title}
+                          </a>
+                      </h4>
+                  </div>
+              </li>`
+            })
+            $listContainer.append(items)
+            currentPage++
+          })
+          .fail(err => {
+            console.log('ajax failed: ', err)
+          })
+      })
     }
   }
 }

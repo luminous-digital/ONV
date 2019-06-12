@@ -18,7 +18,9 @@ News
 
 {% block latest_news %}
     {% import "components/latest-news.tpl" as latest_news with context %}
-    {{ latest_news.render() }}
+    {{ latest_news.render(
+        hideBtn=true
+    ) }}
 {% endblock %}
 
 {% block all_news %}

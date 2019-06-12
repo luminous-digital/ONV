@@ -3585,6 +3585,9 @@ Image group grid
     .c-latest-news-wrapper {
       width: 100%; } }
 
+.c-latest-news-wrapper--padded {
+  padding-bottom: 100px; }
+
 .c-latest-news-wrapper__slider {
   display: flex;
   flex-direction: row;
