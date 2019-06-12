@@ -3788,12 +3788,14 @@ List active filters
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .c-list-active-filters__item {
   display: flex;
   align-items: center;
-  margin-right: 30px; }
+  margin-right: 30px;
+  margin-bottom: 10px; }
   .c-list-active-filters__item .c-label {
     padding: 0;
     margin: 0;
