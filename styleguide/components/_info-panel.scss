@@ -68,6 +68,8 @@ Info panel
 }
 
 .c-info-panel__item {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +100,9 @@ Info panel
 .c-info-panel .c-btn-wrapper {
     @include media('>=mobile') {
         position: absolute;
-        bottom: offset(main) * 4;
+        left: 50%;
+        bottom: -#{offset(s) * 9};
+
+        transform: translateX(-50%);
     }
 }
