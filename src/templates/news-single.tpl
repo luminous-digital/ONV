@@ -8,9 +8,9 @@ News single
     {% import "components/header-panel-short.tpl" as header_panel_short with context %}
     {{
         header_panel_short.render(
-            pageTitle='Research analysts',
-            pageSubtitle='A number of research analysts monitor out company and issue opinions on our corporate performance',
-            bgPhoto='img-header-panel-investors.jpg'
+            pageTitle='News',
+            pageSubtitle='Latest news as well as a full archive of press releases avaible from January 2013',
+            bgPhoto='img-header-panel-6.jpg'
         )
     }}
 {% endblock %}

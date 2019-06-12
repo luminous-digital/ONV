@@ -2751,10 +2751,13 @@ Feature panel wrapper
       justify-content: space-between; } }
 
 .c-file-list--two-columns .c-file-list__item {
+  display: flex;
+  align-items: center;
   width: 100%; }
   @media (min-width: 768px) {
     .c-file-list--two-columns .c-file-list__item {
-      width: 48%; } }
+      width: 48%;
+      padding: 20px 0; } }
 
 .c-file-list--two-columns .c-file-list__date {
   width: 140px;
@@ -2762,6 +2765,14 @@ Feature panel wrapper
 
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
+  white-space: nowrap; }
+
+.c-file-list--no-breake-text .c-file-list__date {
+  max-width: 110px;
+  width: 100%;
+  white-space: normal; }
+
+.c-file-list--no-breake-text .c-file-list__title {
   white-space: nowrap; }
 
 /* ==========================================================================
