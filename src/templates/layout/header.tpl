@@ -27,14 +27,14 @@
                 </div>
                 <div class="c-header-nav">
                     <ul class="c-header-nav-menu">
-                        <li class="c-header-nav-menu__item {% if menu_item == 'about' %}current-menu-item{% endif %}">
+                        <li class="c-header-nav-menu__item{% if menu_item == 'about' %} current-menu-item{% endif %}">
                             <a href="/about.html" class="c-link t-menu">
                                 <span class="c-label">
                                     About
                                 </span>
                             </a>
                         </li>
-                        <li class="c-header-nav-menu__item has-children {% if menu_item == 'operations' %}current-menu-item{% endif %}">
+                        <li class="c-header-nav-menu__item has-children{% if menu_item == 'operations' %} current-menu-item{% endif %}">
                             <a href="/operations.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Operations
@@ -63,7 +63,7 @@
                                 {% endfor %}
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item has-children {% if menu_item == 'sustainability' %}current-menu-item{% endif %}">
+                        <li class="c-header-nav-menu__item has-children{% if menu_item == 'sustainability' %} current-menu-item{% endif %}">
                             <a href="/sustainability.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Sustainability
@@ -114,7 +114,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item has-children {% if menu_item == 'investors' %}current-menu-item{% endif %}">
+                        <li class="c-header-nav-menu__item has-children{% if menu_item == 'investors' %} current-menu-item{% endif %}">
                             <a href="/investors.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Investors
@@ -158,15 +158,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="c-header-nav-menu__item {% if menu_item == 'news' %}current-menu-item{% endif %}">
+                        <li class="c-header-nav-menu__item{% if menu_item == 'news' %} current-menu-item{% endif %}">
                             <a href="/news.html" class="c-link t-menu">
                                 <span class="c-label">
                                     News
                                 </span>
                             </a>
                         </li>
-                        <li class="c-header-nav-menu__item">
-                            <a href="#" class="c-link t-menu">
+                        <li class="c-header-nav-menu__item{% if menu_item == 'contact' %} current-menu-item{% endif %}">
+                            <a href="/contact.html" class="c-link t-menu">
                                 <span class="c-label">
                                     Contact
                                 </span>

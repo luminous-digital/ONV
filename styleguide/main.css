@@ -1868,6 +1868,9 @@ body.is-modal-open {
   @media (min-width: 1200px) {
     .l-section--padded {
       padding-top: 90px; } }
+  @media (min-width: 1200px) {
+    .l-section--padded-bottom {
+      padding-bottom: 30px; } }
   .l-section--our-story {
     position: relative;
     overflow: hidden; }
