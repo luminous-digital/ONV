@@ -74,7 +74,7 @@ Listing and share information
                 </p>
                 <div class="c-list-wrapper js-list">
                     <div class="c-list-wrapper__list">
-                        <ul class="c-file-list c-file-list--no-breake-text js-list-items">
+                        <ul class="c-file-list js-list-items">
                             <li class="c-file-list__item">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt">

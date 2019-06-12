@@ -13,6 +13,10 @@
         {% endblock %}
         {% block content %}
         {% endblock %}
+        {% block cookie_bar %}
+            {% import "components/cookie-bar.tpl" as cookie_bar with context %}
+            {{ cookie_bar.render() }}
+        {% endblock %}
         {% block footer %}
             {% import "layout/footer.tpl" as l_footer with context %}
             {{ l_footer.render() }}
