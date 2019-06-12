@@ -328,7 +328,7 @@ News
             </h4>
         </div>
     </div>
-    <div class="c-latest-news-wrapper" style="background-image: url('./static/img/latest-news-bg.jpg');">
+    <div class="c-latest-news-wrapper c-latest-news-wrapper--padded" style="background-image: url('./static/img/latest-news-bg.jpg');">
         <div class="l-inner">
             <div class="swiper-container c-latest-news-wrapper__slider js-slider-latest-news">
                 <ul class="swiper-wrapper c-latest-news">
@@ -383,13 +383,7 @@ News
                 <div class="c-latest-news-wrapper__next js-slider-latest-news-next">
                 </div>
             </div>
-            <div class="c-btn-wrapper">
-                <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                    <span class="c-label">
-                        All news
-                    </span>
-                </a>
-            </div>
+            
         </div>
     </div>
 </section>
@@ -412,7 +406,11 @@ News
                     All news
                 </h4>
             </div>
-            <div class="c-list-wrapper c-list-wrapper--offset-top js-list-with-filters">
+            <div class="c-list-wrapper c-list-wrapper--offset-top js-list-with-filters"
+                    data-api-url="https://jsonplaceholder.typicode.com/posts"
+                    data-api-per-page="5"
+                    data-api-offset="3"
+                    data-api-post-type="post">
                 <div class="c-list-wrapper__filters">
                     <ul class="c-list-filters">
                         <li class="c-list-filters__item">

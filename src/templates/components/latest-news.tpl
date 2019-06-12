@@ -1,4 +1,4 @@
-{% macro render(sectionTitle) %}
+{% macro render(sectionTitle, hideBtn) %}
 
 <section class="l-section">
     <div class="c-section-divider">
@@ -8,7 +8,7 @@
             </h4>
         </div>
     </div>
-    <div class="c-latest-news-wrapper" style="background-image: url('./static/img/latest-news-bg.jpg');">
+    <div class="c-latest-news-wrapper{% if hideBtn %} c-latest-news-wrapper--padded{% endif %}" style="background-image: url('./static/img/latest-news-bg.jpg');">
         <div class="l-inner">
             <div class="swiper-container c-latest-news-wrapper__slider js-slider-latest-news">
                 <ul class="swiper-wrapper c-latest-news">
@@ -63,13 +63,15 @@
                 <div class="c-latest-news-wrapper__next js-slider-latest-news-next">
                 </div>
             </div>
-            <div class="c-btn-wrapper">
-                <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
-                    <span class="c-label">
-                        All news
-                    </span>
-                </a>
-            </div>
+            {% if not hideBtn %}
+                <div class="c-btn-wrapper">
+                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                        <span class="c-label">
+                            All news
+                        </span>
+                    </a>
+                </div>
+            {% endif %}
         </div>
     </div>
 </section>

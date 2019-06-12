@@ -94,6 +94,10 @@
     }
 }
 
+.c-latest-news-wrapper--padded {
+    padding-bottom: offset(main) * 10;
+}
+
 .c-latest-news-wrapper__slider {
     display: flex;
     flex-direction: row;

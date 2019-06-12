@@ -15,7 +15,11 @@
                     All news
                 </h4>
             </div>
-            <div class="c-list-wrapper c-list-wrapper--offset-top js-list-with-filters">
+            <div class="c-list-wrapper c-list-wrapper--offset-top js-list-with-filters"
+                    data-api-url="https://jsonplaceholder.typicode.com/posts"
+                    data-api-per-page="5"
+                    data-api-offset="3"
+                    data-api-post-type="post">
                 <div class="c-list-wrapper__filters">
                     <ul class="c-list-filters">
                         <li class="c-list-filters__item">
@@ -68,7 +72,7 @@
                     </ul>
                 </div>
                 <div class="c-list-wrapper__list">
-                    <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns {% endif %}">
+                    <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns{% endif %}">
                         {% for item in availableItems %}
                             <li class="c-file-list__item" data-filterby-cat="{{ item.itemCat }}" data-filterby-year="{{ item.itemYear }}">
                                 <div class="c-file-list__item-wrapper">
