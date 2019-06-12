@@ -94,7 +94,7 @@
     margin-bottom: offset(main) * 1.5;
 
     @include media('>=mobile') {
-        margin-left: offset(main) * 3;
+        margin-left: 0;
         margin-bottom: 0;
     }
 }
@@ -221,7 +221,8 @@
 }
 
 .c-file-list--two-columns .c-file-list__date {
-    width: offset(main) * 14;
+    width: offset(main) * 11;
+
     white-space: normal;
 
     line-height: 1;
@@ -231,56 +232,4 @@
     width: auto;
 
     white-space: nowrap;
-}
-
-// File List no breake text
-//
-// markup:
-//<ul class="c-file-list c-file-list--no-breake-text">
-//    <li class="c-file-list__item">
-//        <div class="c-file-list__item-wrapper">
-//            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
-//                4 June 2018
-//            </p>
-//            <h4 class="c-file-list__title t-h4 t-thin">
-//                Tender Offer to Purchase OCIP Common Units
-//            </h4>
-//            <div class="c-btn-wrapper c-btn-wrapper--right">
-//                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
-//                    <span class="c-label t-btn t-blue">Download PDF</span>
-//                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
-//                    <span class="c-btn__icon">
-//                        <svg class="o-svg">
-//                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
-//                        </svg>
-//                    </span>
-//                </a>
-//            </div>
-//        </div>
-//    </li>
-//</ul>
-//
-// Styleguide 15.3
-
-.c-file-list--no-breake-text .c-file-list__date {
-    max-width: offset(main) * 9;
-    width: 100%;
-
-    white-space: normal;
-}
-
-.c-file-list--no-breake-text .c-file-list__title {
-    white-space: normal;
-
-    @include media('>=mobile') {
-        margin-left: offset(main);
-    }
-}
-
-.c-file-list--no-breake-text .c-btn-wrapper {
-    width: 100%;
-
-    @include media('>=mobile') {
-        width: 70%;
-    }
 }

@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Cookie bar
+   ========================================================================== */
+.c-cookie-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: none;
+
+    z-index: $z-index-cookie-bar;
+
+    padding: offset(main) 0;
+
+    background-color: color(lblue);
+
+    @include media('>=mobile') {
+        padding: 0;
+        height: $size-cookie-bar-height;
+    }
+}
+
+.c-cookie-bar.is-visible {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-cookie-bar__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include media('>=mobile') {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.c-cookie-bar__text {
+    width: 100%;
+
+    margin: 0;
+}
+
+.c-cookie-bar__content .c-btn-group {
+    width: 100%;
+
+    margin-top: offset(main);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media('>=mobile') {
+        margin-top: 0;
+    }
+    @include media('>=desktop-small') {
+        justify-content: flex-end;
+    }
+}
+
+.c-cookie-bar__content .c-btn {
+    width: calc(50% - #{offset(main) * 1.2});
+    padding: offset(main) * 0.8 0;
+
+    @include media('>=desktop-small') {
+        width: $size-cookie-bar-btn-width-d;
+        margin-left: offset(main) * 2.3;
+    }
+}
