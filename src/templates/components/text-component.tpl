@@ -1,8 +1,8 @@
-{% macro render(secTitle, firstParagraph, secondParagraph, btnText, btnSubtitle, noPadding) %}
+{% macro render(secTitle, firstParagraph, secondParagraph, btnText, btnSubtitle, noPadding, clear) %}
 
-<div class="c-text-component">
+<div class="c-text-component {% if clear %}c-text-component--clear{% endif %}">
     <div class="c-text-component__column">
-        <h2 class="c-text-component__title t-h2">
+        <h2 class="c-text-component__title t-h2 {% if clear %}c-text-component__title--clear{% endif %}">
             {{ secTitle | safe }}
         </h2>
     </div>
