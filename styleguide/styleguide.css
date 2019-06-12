@@ -4162,10 +4162,12 @@ List wrapper no download
   position: absolute;
   margin: 0;
   padding: 0;
-  padding-top: 7px;
   right: 0;
   opacity: 0;
   transition: all 0.2s linear; }
+  @media (min-width: 768px) {
+    .c-map-nav__clear-all {
+      padding-top: 7px; } }
 
 .c-map-nav__clear-all.is-visible {
   opacity: 1; }
@@ -4202,9 +4204,17 @@ List wrapper no download
     .c-map-nav__filters {
       margin-bottom: 60px; } }
 
-@media (min-width: 768px) {
-  .c-map-nav__filter {
-    width: 32%; } }
+.c-map-nav__filter {
+  position: relative; }
+  @media (min-width: 768px) {
+    .c-map-nav__filter {
+      width: 32%; } }
+  .c-map-nav__filter:nth-child(1) {
+    z-index: 9; }
+  .c-map-nav__filter:nth-child(2) {
+    z-index: 8; }
+  .c-map-nav__filter:nth-child(3) {
+    z-index: 7; }
 
 .js-filter-name,
 .js-chosen-option {
