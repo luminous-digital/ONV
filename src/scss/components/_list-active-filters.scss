@@ -8,6 +8,7 @@ List active filters
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .c-list-active-filters__item {
@@ -15,6 +16,7 @@ List active filters
     align-items: center;
 
     margin-right: offset(main) * 3;
+    margin-bottom: offset(main);
 
     .c-label {
         padding: 0;
