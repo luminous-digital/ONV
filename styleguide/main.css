@@ -2777,7 +2777,8 @@ Feature panel wrapper
 
 .c-file-list--two-columns .c-file-list__date {
   width: 140px;
-  white-space: normal; }
+  white-space: normal;
+  line-height: 1; }
 
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
