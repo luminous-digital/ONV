@@ -1,0 +1,23 @@
+/* ==========================================================================
+Search results
+========================================================================== */
+.c-search-results {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.c-search-results__item {
+    margin-top: offset(main);
+    padding-bottom: offset(main) * 2;
+
+    border-bottom: 1px solid color(lgrey);
+}
+
+.c-search-results__content {
+
+    @include media('>=mobile') {
+        max-width: 70%;
+    }
+}

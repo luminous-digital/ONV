@@ -51,8 +51,8 @@ Search form
     fill: currentColor;
 }
 
-.is-search-active .c-search-form {
-    width: 95%;
+.is-search-open .c-search-form {
+    width: 87%;
 
     @include media('>=desktop-small') {
         width: 100%;

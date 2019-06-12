@@ -15,6 +15,16 @@ body {
     }
     &.is-modal-open {
         overflow: hidden;
-        padding-right: 15px;
+
+        @include media('>=mobile') {
+            padding-right: 15px;
+        }
+    }
+    &.is-search-open {
+        overflow: hidden;
+
+        @include media('>=mobile') {
+            padding-right: 15px;
+        }
     }
 }

@@ -6,7 +6,7 @@ Search form close
     display: none;
 }
 
-.is-search-active .c-search-form-close {
+.is-search-open .c-search-form-close {
     display: block;
 
     cursor: pointer;
