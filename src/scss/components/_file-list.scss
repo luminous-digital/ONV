@@ -233,3 +233,45 @@
 
     white-space: nowrap;
 }
+
+// File List smaller
+//
+// markup:
+//<ul class="c-file-list c-file-list--smaller">
+//    <li class="c-file-list__item">
+//        <div class="c-file-list__item-wrapper">
+//            <p class="c-file-list__date t-body t-body--alt-mobile t-dgrey">
+//                4 June 2018
+//            </p>
+//            <h4 class="c-file-list__title t-h4 t-thin">
+//                Tender Offer to Purchase OCIP Common Units
+//            </h4>
+//            <div class="c-btn-wrapper c-btn-wrapper--right">
+//                <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                    <span class="c-label t-btn t-blue">Download PDF</span>
+//                    <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                    <span class="c-btn__icon">
+//                        <svg class="o-svg">
+//                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                        </svg>
+//                    </span>
+//                </a>
+//            </div>
+//        </div>
+//    </li>
+//</ul>
+//
+// Styleguide 15.3
+
+.c-file-list--smaller .c-file-list__date {
+    white-space: normal;
+
+    width: offset(main) * 12;
+}
+
+.c-file-list--smaller .c-btn-wrapper--right {
+    @include media('>=mobile') {
+        max-width: offset(main) * 20;
+        width: 100%;
+    }
+}

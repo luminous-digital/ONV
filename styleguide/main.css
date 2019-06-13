@@ -2826,7 +2826,7 @@ Feature panel wrapper
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 0;
+      margin-left: 30px;
       margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {
@@ -2883,6 +2883,15 @@ Feature panel wrapper
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
   white-space: nowrap; }
+
+.c-file-list--smaller .c-file-list__date {
+  white-space: normal;
+  width: 120px; }
+
+@media (min-width: 768px) {
+  .c-file-list--smaller .c-btn-wrapper--right {
+    max-width: 200px;
+    width: 100%; } }
 
 /* ==========================================================================
    Footer
