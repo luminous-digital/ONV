@@ -82,6 +82,10 @@ select select.pseudo-class-focus {
   outline: none !important;
 }
 
+.c-cookie-bar__content .c-btn.pseudo-class-hover {
+  animation: jelly 500ms;
+}
+
 .c-file-list__item.pseudo-class-last-child {
   margin-bottom: 0;
 }
