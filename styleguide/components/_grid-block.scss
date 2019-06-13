@@ -74,6 +74,14 @@ Grid block
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: $transition-infinite;
+}
+
+.c-grid-block:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+
+    transition: $transition-infinite;
 }
 
 .c-grid-block__title {
