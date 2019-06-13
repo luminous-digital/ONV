@@ -1152,6 +1152,8 @@ button.swiper-pagination-bullet {
 =========================== */
 /* Cookie bar
 =========================== */
+/* Board graph
+=========================== */
 /* Breakpoints for include-media plugin
 ========================================================================== */
 /* ==========================================================================
@@ -2195,6 +2197,80 @@ Article header
 @media (min-width: 768px) {
   .c-btn-wrapper--three-btns .c-btn {
     width: calc(33% - 12px); } }
+
+/* ==========================================================================
+   Board graph
+   ========================================================================== */
+.c-board-graph {
+  display: flex;
+  flex-direction: column; }
+
+.c-board-graph__row {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .c-board-graph__row {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; } }
+
+.c-board-graph__col {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 1024px) {
+    .c-board-graph__col {
+      width: calc((100% / 3) - ((2 * 23px) / 2)); }
+      .c-board-graph__col--fullwidth {
+        width: 100%; } }
+
+.c-board-graph__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  height: 60px;
+  position: relative;
+  text-align: center; }
+  .c-board-graph__header p {
+    margin: 0;
+    line-height: 1; }
+  .c-board-graph__header--dark {
+    background-color: #283A6A; }
+  .c-board-graph__header--light {
+    background-color: #4A90E2; }
+  .c-board-graph__header--arrow-after:before, .c-board-graph__header--arrow-before:before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-bottom: 2px solid #F79727;
+    border-right: 2px solid #F79727;
+    border-color: #4A90E2;
+    position: absolute;
+    transform: rotate(45deg); }
+  .c-board-graph__header--arrow-after {
+    margin-bottom: 70px; }
+    .c-board-graph__header--arrow-after:before {
+      bottom: -50px; }
+  .c-board-graph__header--arrow-before {
+    margin-top: 70px; }
+    .c-board-graph__header--arrow-before:before {
+      top: -70px; }
+
+.c-board-graph__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px; }
+
+.c-board-graph__list-item {
+  padding-left: 15px;
+  position: relative; }
+  .c-board-graph__list-item:before {
+    content: '>';
+    position: absolute;
+    left: 0; }
 
 /* ==========================================================================
    Contacts
@@ -5073,29 +5149,6 @@ Our history slider date
   font-weight: 400; }
 
 /* ==========================================================================
-   Section divider
-   ========================================================================== */
-.c-section-divider {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-.c-section-divider .l-inner {
-  margin: 0; }
-
-.c-section-divider__title {
-  padding-bottom: 30px; }
-
-.c-section-divider--nopadding .c-section-divider__title {
-  padding-bottom: 0; }
-
-.c-section-divider--padded .c-section-divider__title {
-  padding-bottom: 50px; }
-
-/* ==========================================================================
 Search form
 ========================================================================== */
 .c-search-form {
@@ -5253,6 +5306,35 @@ Search results
 @media (min-width: 768px) {
   .c-search-results__content {
     max-width: 70%; } }
+
+/* ==========================================================================
+   Section title
+   ========================================================================== */
+.c-section-title {
+  margin-bottom: 25px; }
+
+/* ==========================================================================
+   Section divider
+   ========================================================================== */
+.c-section-divider {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.c-section-divider .l-inner {
+  margin: 0; }
+
+.c-section-divider__title {
+  padding-bottom: 30px; }
+
+.c-section-divider--nopadding .c-section-divider__title {
+  padding-bottom: 0; }
+
+.c-section-divider--padded .c-section-divider__title {
+  padding-bottom: 50px; }
 
 /* ==========================================================================
 Social icon

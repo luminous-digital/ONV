@@ -1,4 +1,4 @@
-{% macro render(secTitle, perRow, count, type) %}
+{% macro render(secTitle, compTitle, perRow, count, type) %}
 
 {% if type === 'stories' %}
     {% set cards = [
@@ -167,35 +167,40 @@
                     </div>
                 </div>
             {% endif %}
+            {% if compTitle %}
+                <h2 class="c-section-title t-h2">
+                    {{ compTitle | safe }}
+                </h2>
+            {% endif %}
             <div class="c-grid-wrapper c-grid-wrapper--{{ mod }}">
-                    {% for card in cards %}
-                        {% if loop.index < count + 1 %}
-                            <div
-                                class="c-grid-block{% if loop.index > count - perRow %} c-grid-block--no-offset{% endif %}">
-                                <figure class="c-grid-block__image">
-                                    <img src="{{ card.cardImg }}" alt="Health and Safety">
-                                </figure>
-                                <h5 class="c-grid-block__title t-h5">
-                                    {{ card.cardTitle }}
-                                </h5>
-                                {% if card.cardSubtitle %}
-                                    <p class="c-grid-block__subtitle t-body">
-                                        {{ card.cardSubtitle }}
-                                    </p>
-                                {% endif %}
-                                {% if card.cardDesc %}
-                                    <p class="c-grid-block__hidden-desc">
-                                        {{ card.cardDesc }}
-                                    </p>
-                                {% endif %}
-                                <a class="c-grid-block__link t-link {% if type == 'people' %}js-people-modal-toggle{% endif %}" href="#">
-                                    <span class="c-label">
-                                        Read more
-                                    </span>
-                                </a>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                {% for card in cards %}
+                    {% if loop.index < count + 1 %}
+                        <div
+                            class="c-grid-block{% if loop.index > count - perRow %} c-grid-block--no-offset{% endif %}">
+                            <figure class="c-grid-block__image">
+                                <img src="{{ card.cardImg }}" alt="Health and Safety">
+                            </figure>
+                            <h5 class="c-grid-block__title t-h5">
+                                {{ card.cardTitle }}
+                            </h5>
+                            {% if card.cardSubtitle %}
+                                <p class="c-grid-block__subtitle t-body">
+                                    {{ card.cardSubtitle }}
+                                </p>
+                            {% endif %}
+                            {% if card.cardDesc %}
+                                <p class="c-grid-block__hidden-desc">
+                                    {{ card.cardDesc }}
+                                </p>
+                            {% endif %}
+                            <a class="c-grid-block__link t-link {% if type == 'people' %}js-people-modal-toggle{% endif %}" href="#">
+                                <span class="c-label">
+                                    Read more
+                                </span>
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
