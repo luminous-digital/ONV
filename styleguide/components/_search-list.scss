@@ -3,7 +3,7 @@ Search list
 ========================================================================== */
 .c-search-list {
     position: fixed;
-    top: $size-header-height-d;
+    top: offset(main) * 13;
     left: 0;
 
     width: 100%;
@@ -14,16 +14,21 @@ Search list
     z-index: 110;
 
     background-color: color(white);
+
+    @include media('>=mobile') {
+        top: $size-header-height-d;
+    }
 }
 
 .c-search-list.is-active {
-    max-height: calc(100% - #{$size-header-height-d} - #{$size-footer-height});
+    max-height: calc(100% - #{$size-header-height-d} - #{offset(main) * 13});
 
     overflow: auto;
 
     padding: offset(main) * 2.5;
 
     @include media('>=mobile') {
+        max-height: calc(100% - #{$size-header-height-d} - #{$size-footer-height});
         padding: offset(main) * 7 offset(main) * 7.5;
     }
 }

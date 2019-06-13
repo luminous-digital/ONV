@@ -131,12 +131,20 @@
 }
 
 .c-dropdown--small {
-    width: auto;
-    margin-right: offset(main) * 2.5;
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: auto;
+        margin-right: offset(main) * 2.5;
+    }
 }
 
 .c-dropdown--small .c-dropdown__title {
-    padding-right: 150px;
+    padding-right: 0;
+
+    @include media('>=mobile') {
+        padding-right: 150px;
+    }
 }
 
 .c-dropdown--small .c-dropdown__option.is-active .c-label {

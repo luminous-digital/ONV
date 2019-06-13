@@ -12,3 +12,11 @@ List filters
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
+.c-list-filters__item {
+    width: 100%;
+
+    @include media('>=mobile') {
+        width: auto;
+    }
+}

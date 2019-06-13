@@ -2682,11 +2682,17 @@ Article header
   background-color: #F3F5F9; }
 
 .c-dropdown--small {
-  width: auto;
-  margin-right: 25px; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-dropdown--small {
+      width: auto;
+      margin-right: 25px; } }
 
 .c-dropdown--small .c-dropdown__title {
-  padding-right: 150px; }
+  padding-right: 0; }
+  @media (min-width: 768px) {
+    .c-dropdown--small .c-dropdown__title {
+      padding-right: 150px; } }
 
 .c-dropdown--small .c-dropdown__option.is-active .c-label {
   font-weight: 700; }
@@ -3161,7 +3167,7 @@ Header nav
     background-color: rgba(40, 58, 106, 0.9); } }
 
 .is-footer-fixed .c-header-nav__search {
-  height: calc(100vh - 60px); }
+  height: calc(100vh - 60px - 80px - 50px); }
 
 /* ==========================================================================
 Header nav menu
@@ -3885,6 +3891,12 @@ List filters
   justify-content: flex-start;
   flex-wrap: wrap; }
 
+.c-list-filters__item {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-list-filters__item {
+      width: auto; } }
+
 /* ==========================================================================
 List wrapper
 ========================================================================== */
@@ -4185,10 +4197,12 @@ List wrapper no download
   position: absolute;
   margin: 0;
   padding: 0;
-  padding-top: 7px;
   right: 0;
   opacity: 0;
   transition: all 0.2s linear; }
+  @media (min-width: 768px) {
+    .c-map-nav__clear-all {
+      padding-top: 7px; } }
 
 .c-map-nav__clear-all.is-visible {
   opacity: 1; }
@@ -4225,9 +4239,17 @@ List wrapper no download
     .c-map-nav__filters {
       margin-bottom: 60px; } }
 
-@media (min-width: 768px) {
-  .c-map-nav__filter {
-    width: 32%; } }
+.c-map-nav__filter {
+  position: relative; }
+  @media (min-width: 768px) {
+    .c-map-nav__filter {
+      width: 32%; } }
+  .c-map-nav__filter:nth-child(1) {
+    z-index: 9; }
+  .c-map-nav__filter:nth-child(2) {
+    z-index: 8; }
+  .c-map-nav__filter:nth-child(3) {
+    z-index: 7; }
 
 .js-filter-name,
 .js-chosen-option {
@@ -4302,13 +4324,16 @@ List wrapper no download
 .c-map-pin__modal {
   max-height: 0;
   overflow: hidden;
-  z-index: 2; }
+  z-index: 2;
+  left: -200%;
+  display: none; }
 
-.c-map-pin__modal.is-active {
-  position: fixed;
+.is-modal-active .c-map-pin__modal {
+  position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-20%);
   z-index: 1;
+  display: block;
   background-color: #F3F5F9;
   padding: 30px 15px 20px;
   width: 320px;
@@ -4316,13 +4341,13 @@ List wrapper no download
   max-height: 470px;
   box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5); }
   @media (min-width: 768px) {
-    .c-map-pin__modal.is-active {
+    .is-modal-active .c-map-pin__modal {
       position: absolute;
       left: -160px;
       top: -150px;
       transform: none; } }
 
-.c-map-pin__modal.is-active .c-map-pin__close {
+.is-modal-active .c-map-pin__close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -4330,14 +4355,14 @@ List wrapper no download
   height: 25px;
   padding: 5px; }
 
-.c-map-pin__modal.is-active .c-map-pin__close .o-svg {
+.is-modal-active .c-map-pin__close .o-svg {
   width: 100%;
   height: 100%; }
 
-.c-map-pin__modal.is-active .c-map-pin__desc {
+.is-modal-active .c-map-pin__desc {
   padding-bottom: 35px; }
 
-.c-map-pin__modal.is-active .c-btn-wrapper {
+.is-modal-active .c-btn-wrapper {
   max-width: 230px; }
 
 /* ==========================================================================
@@ -5028,20 +5053,24 @@ Search list
 ========================================================================== */
 .c-search-list {
   position: fixed;
-  top: 80px;
+  top: 130px;
   left: 0;
   width: 100%;
   max-height: 0;
   overflow: hidden;
   z-index: 110;
   background-color: #fff; }
+  @media (min-width: 768px) {
+    .c-search-list {
+      top: 80px; } }
 
 .c-search-list.is-active {
-  max-height: calc(100% - 80px - 60px);
+  max-height: calc(100% - 80px - 130px);
   overflow: auto;
   padding: 25px; }
   @media (min-width: 768px) {
     .c-search-list.is-active {
+      max-height: calc(100% - 80px - 60px);
       padding: 70px 75px; } }
 
 .c-search-list__title {

@@ -73,5 +73,5 @@ Header nav
 }
 
 .is-footer-fixed .c-header-nav__search {
-    height: calc(100vh - #{$size-footer-height});
+    height: calc(100vh - #{$size-footer-height} - #{$size-header-height-d} - 50px);
 }
