@@ -9,17 +9,17 @@ const Map = {
       Array.from(mapWrappers).forEach(mapWrapper => {
         const mapPins = Array.from(mapWrapper.querySelectorAll('.js-map-pin'))
         mapPins.forEach(pin => {
-          const pinModal = pin.querySelector('.js-map-modal')
+          // const pinModal = pin.querySelector('.js-map-modal')
           const modalClose = pin.querySelector('.js-map-modal-close')
           pin.addEventListener('click', e => {
             if (e.target !== e.currentTarget) { return }
             mapPins.forEach(pin => {
-              pin.querySelector('.js-map-modal').classList.remove('is-active')
+              pin.classList.remove('is-modal-active')
             })
-            pinModal.classList.toggle('is-active')
+            pin.classList.toggle('is-modal-active')
           })
           modalClose.addEventListener('click', e => {
-            pinModal.classList.remove('is-active')
+            pin.classList.remove('is-modal-active')
           })
         })
       })
@@ -41,10 +41,10 @@ const Map = {
       }
     })
     Array.from(pins).forEach(pin => {
-      pin.style.opacity = 0
+      pin.style.display = 'none'
     })
     Array.from(filteredPins).forEach(pin => {
-      pin.style.opacity = 1
+      pin.style.display = 'block'
     })
   },
   mapFilters: function () {
