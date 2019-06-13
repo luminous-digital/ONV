@@ -127,6 +127,9 @@ const News = {
                   </div>
               </li>`
             })
+            if (!res || res.length === 0) {
+              $loadMoreBtn.hide()
+            }
             $listContainer.append(items)
             currentPage++
           })

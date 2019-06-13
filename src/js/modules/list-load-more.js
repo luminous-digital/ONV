@@ -10,8 +10,8 @@ const ListLoadMore = {
         const $elemList = $list.find('.js-list-items')
         const apiUrl = $list.attr('data-api-url')
         const perPage = parseInt($list.attr('data-api-per-page'), 10)
-        const offset = parseInt($list.attr('data-api-offset'), 10)
         $loadMoreBtn.on('click', e => {
+          const offset = parseInt($list.attr('data-api-offset'), 10)
           $.ajax({
             method: 'GET',
             dataType: 'json',
@@ -45,6 +45,9 @@ const ListLoadMore = {
                           </div>
                       </li>`
               })
+              if (!res || res.length === 0) {
+                $loadMoreBtn.hide()
+              }
               $elemList.append(items)
               $list.attr('data-api-offset', offset + perPage)
             })
