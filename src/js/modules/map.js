@@ -89,7 +89,7 @@ const Map = {
             window.setTimeout(() => {
               clearAllBtn.classList.remove('is-visible')
               Array.from(pins).forEach(pin => {
-                pin.style.opacity = 1
+                pin.style.display = 'block'
               })
             }, 500)
           })
