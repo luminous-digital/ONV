@@ -86,6 +86,7 @@ $defaults: (
 
 $transition-default: all .2s linear;
 $transition-slow: all .4s linear;
+$transition-infinite: all .4s ease-out;
 
 /* Standalone variables
 ========================================================================== */

@@ -82,6 +82,11 @@ select select.pseudo-class-focus {
   outline: none !important;
 }
 
+.c-feature-panel-decor.pseudo-class-hover img {
+  transform: skew(10deg) scale(1.05);
+  transition: all 0.4s ease-out;
+}
+
 .c-file-list__item.pseudo-class-last-child {
   margin-bottom: 0;
 }
@@ -102,29 +107,16 @@ select select.pseudo-class-focus {
   border-top: 2px solid #F3F5F9;
 }
 
-.c-header-panel-tab.pseudo-class-hover {
-  background-color: #F79727;
-}
-
-.c-header-panel-tab.pseudo-class-hover:before,
-.c-header-panel-tab.pseudo-class-hover:after {
-  background-color: #F79727;
-}
-
-.c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__title {
-  color: #fff;
-}
-
-.c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__subtitle {
-  color: #fff;
-}
-
 .c-header-panel-tab.pseudo-class-hover .c-header-panel-tab__hover {
-  opacity: 1;
+  top: 0;
 }
 
 .c-info-panel__item.pseudo-class-first-child {
   margin-top: 0;
+}
+
+.c-latest-news-card__container.pseudo-class-hover:after {
+  width: 100%;
 }
 
 .c-list-block__item.pseudo-class-first-child {
@@ -140,10 +132,20 @@ select select.pseudo-class-focus {
   margin-bottom: 0;
 }
 
+.c-our-history-slide.pseudo-class-hover .c-our-history-slide__img img {
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: all 0.4s ease-out;
+}
+
 .c-our-history-slide.pseudo-class-first-child .c-our-history-slide__year,
 .c-our-history-slide.pseudo-class-last-child .c-our-history-slide__year {
   width: 100%;
   left: 0;
+}
+
+.c-quick-links-card.pseudo-class-hover .c-quick-links-card__decor img {
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: all 0.4s ease-out;
 }
 
 .c-social-icon.pseudo-class-hover {

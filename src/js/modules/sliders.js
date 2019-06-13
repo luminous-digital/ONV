@@ -214,7 +214,6 @@ const Sliders = {
         autoplay: false,
         speed: 300,
         slidesPerView: 1,
-        autoHeight: true,
         navigation: {
           nextEl: '.js-four-blocks-slider-next',
           prevEl: '.js-four-blocks-slider-prev'

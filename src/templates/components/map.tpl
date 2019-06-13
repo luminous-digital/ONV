@@ -119,7 +119,7 @@
                                     {{ mapPoint.locDesc }}
                                 </p>
                                 <div class="c-btn-wrapper c-btn-wrapper--left">
-                                    <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                                    <a href="{{ mapPoint.locUrl }}" class="c-btn c-btn--primary c-btn--medium t-btn t-white">
                                         <span class="c-label">
                                             Read more
                                         </span>

@@ -11,3 +11,13 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes looped {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(45deg) translateY(10px) translateX(10px);
+  }
+}

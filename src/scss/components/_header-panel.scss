@@ -105,7 +105,7 @@ Header panel full
 
 .c-header-panel__arrow {
     @include arrow;
-    transform: rotate(45deg);
+    @include arrow-wiggle;
 }
 
 /* ==========================================================================

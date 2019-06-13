@@ -32,8 +32,6 @@
     @include media('>=mobile') {
         width: 100%;
         height: 100%;
-
-        // padding: 0 offset(main) * 2;
     }
 }
 
@@ -66,8 +64,16 @@
 
     transform: translate(-50%, -50%);
 
+    transition: $transition-infinite;
+
     width: 100%;
     height: auto;
+}
+
+.c-quick-links-card:hover .c-quick-links-card__decor img {
+    transform: translate(-50%, -50%) scale(1.1);
+
+    transition: $transition-infinite;
 }
 
 .c-quick-links-card__cta {

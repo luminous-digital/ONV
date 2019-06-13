@@ -37,6 +37,8 @@ Feature panel decor
     object-fit: cover;
     object-position: 50% 50%;
 
+    transition: $transition-infinite;
+
     @include media('>=mobile') {
         height: 100%;
         width: auto;
@@ -47,4 +49,10 @@ Feature panel decor
         width: 105%;
         height: auto;
     }
+}
+
+.c-feature-panel-decor:hover img {
+    transform: skew(10deg) scale(1.05);
+
+    transition: $transition-infinite;
 }
