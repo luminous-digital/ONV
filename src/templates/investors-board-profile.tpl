@@ -16,19 +16,18 @@ Investors - board profile
     }}
 {% endblock %}
 
-{# {% block board_structure %}
+{% block board_structure %}
     {% import "components/board-structure.tpl" as board_structure with context %}
     {{
         board_structure.render()
     }}
-{% endblock %} #}
-
-[ board structure ]
+{% endblock %}
 
 {% block card_grid %}
     {% import "components/card-grid.tpl" as card_grid with context %}
     {{
         card_grid.render(
+            compTitle='Board of<br>Directors',
             perRow='3',
             count='9',
             type='people'
