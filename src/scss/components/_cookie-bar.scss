@@ -28,6 +28,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    margin: 0 auto;
 }
 
 .c-cookie-bar__content {
@@ -36,9 +38,17 @@
     align-items: center;
     justify-content: center;
 
+    max-width: size(inner, desktop);
+    width: 100%;
+
     @include media('>=mobile') {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    @include media('<desktop') {
+        padding-right: offset(main) * 2.5;
+        padding-left: offset(main) * 2.5;
     }
 }
 

@@ -50,6 +50,17 @@ select select.pseudo-class-focus {
   margin: auto;
 }
 
+.c-btn--orange.pseudo-class-hover .c-label,
+.c-btn--transparent.pseudo-class-hover .c-label {
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.c-btn--orange.pseudo-class-hover:after,
+.c-btn--transparent.pseudo-class-hover:after {
+  opacity: 1;
+}
+
 .c-btn-wrapper--equal-btns .c-btn.pseudo-class-last-child {
   margin-bottom: 0;
 }
