@@ -1102,6 +1102,20 @@ button.swiper-pagination-bullet {
 /* Base
    ========================================================================== */
 /* ==========================================================================
+   Animation
+   ========================================================================== */
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1); }
+  25% {
+    transform: scale(0.9, 1.1); }
+  50% {
+    transform: scale(1.1, 0.9); }
+  75% {
+    transform: scale(0.95, 1.05); } }
+
+/* ==========================================================================
    Variables
    ========================================================================== */
 /* Maps
@@ -2429,17 +2443,24 @@ Article header
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto; }
 
 .c-cookie-bar__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 1040px;
+  width: 100%; }
   @media (min-width: 768px) {
     .c-cookie-bar__content {
       flex-direction: row;
       justify-content: space-between; } }
+  @media (max-width: 1439px) {
+    .c-cookie-bar__content {
+      padding-right: 25px;
+      padding-left: 25px; } }
 
 .c-cookie-bar__text {
   width: 100%;
@@ -2465,6 +2486,8 @@ Article header
     .c-cookie-bar__content .c-btn {
       width: 146px;
       margin-left: 23px; } }
+  .c-cookie-bar__content .c-btn:hover {
+    animation: jelly 500ms; }
 
 /* ==========================================================================
     Data slider
