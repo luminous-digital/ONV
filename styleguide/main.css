@@ -2659,11 +2659,17 @@ Article header
   background-color: #F3F5F9; }
 
 .c-dropdown--small {
-  width: auto;
-  margin-right: 25px; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-dropdown--small {
+      width: auto;
+      margin-right: 25px; } }
 
 .c-dropdown--small .c-dropdown__title {
-  padding-right: 150px; }
+  padding-right: 0; }
+  @media (min-width: 768px) {
+    .c-dropdown--small .c-dropdown__title {
+      padding-right: 150px; } }
 
 .c-dropdown--small .c-dropdown__option.is-active .c-label {
   font-weight: 700; }
@@ -3861,6 +3867,12 @@ List filters
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap; }
+
+.c-list-filters__item {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .c-list-filters__item {
+      width: auto; } }
 
 /* ==========================================================================
 List wrapper
