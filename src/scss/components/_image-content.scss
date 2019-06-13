@@ -53,6 +53,8 @@ Image content
     width: 100%;
     margin-bottom: offset(main) * 2;
 
+    overflow: hidden;
+
     @include media('>=tablet') {
         width: 50%;
         margin-bottom: 0;
@@ -62,6 +64,14 @@ Image content
 .c-image-content__image img {
     width: 100%;
     display: block;
+
+    transition: $transition-infinite;
+}
+
+.c-image-content__image:hover img {
+    transform: scale(1.05);
+
+    transition: $transition-infinite;
 }
 
 .c-image-content__wrapper {

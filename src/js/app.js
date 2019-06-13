@@ -9,5 +9,6 @@ import './modules/dropdowns'
 import './modules/people-modal'
 import './modules/news'
 import './modules/cookies'
+import './modules/list-load-more'
 
 svg4everybody()

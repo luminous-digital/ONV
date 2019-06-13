@@ -63,21 +63,22 @@
 
             position: absolute;
 
-            transform: rotate(45deg);
+            left: 50%;
+            transform: rotate(45deg) translateX(-50%);
         }
     }
     &--arrow-after {
         margin-bottom: offset(main) * 7;
 
         &:before {
-            bottom: - offset(main) * 5;
+            bottom: - offset(main) * 6;
         }
     }
     &--arrow-before {
         margin-top: offset(main) * 7;
 
         &:before {
-            top: - offset(main) * 7;
+            top: - offset(main) * 6;
         }
     }
 }
