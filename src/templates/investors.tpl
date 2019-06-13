@@ -46,7 +46,7 @@ Investors
                         </svg>
                     </span>
                 </a>
-                <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                <a href="/news.html" class="c-btn c-btn--primary c-btn--medium t-btn t-white">
                     <span class="c-label">
                         Report archive
                     </span>

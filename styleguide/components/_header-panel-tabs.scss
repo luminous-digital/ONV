@@ -56,6 +56,8 @@ Header panel tabs
     position: absolute;
     bottom: - $size-header-panel-tab-height / 2;
 
+    overflow: hidden;
+
     @include media('>=mobile') {
         display: flex;
         flex-direction: row;

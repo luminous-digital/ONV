@@ -27,9 +27,7 @@
     }
     &--medium {
         width: $size-btn-medium-width;
-    }
-    &--center {
-        text-align: center;
+        height: offset(main) * 4.5;
     }
     &--block {
         display: block;
@@ -53,38 +51,60 @@
 .c-btn--primary {
     background-color: color(accent);
 
+    position: relative;
+
     padding: {
         left: offset(main) * 1.5;
         right: offset(main) * 1.5;
     }
 
-    position: relative;
+    .c-label {
+        display: inline-block;
+
+        white-space:nowrap;
+        position: absolute;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        transition: $transition-infinite;
+    }
+    &:after {
+        content: '';
+
+        display: block;
+        width: offset(main) * 2;
+        height: offset(main) * 1.5;
+
+        position: absolute;
+        top: offset(main) * 1.5;
+        right: offset(main) * 1.5;
+
+        opacity: 0;
+
+        background-image: url('./../img/icon-arrow.svg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        transition: $transition-infinite;
+    }
 }
 
 @include media('>=desktop-small') {
 
     .c-btn--primary:hover {
-        text-align: left;
 
         .c-label {
+            left: 20px;
+            transform: none;
 
-            &:after {
-                content: '';
+            transition: $transition-infinite;
+        }
+        &:after {
+            opacity: 1;
 
-                display: block;
-
-                width: offset(main) * 2;
-                height: offset(main) * 1.5;
-
-                position: absolute;
-                top: offset(main) * 1.5;
-                right: offset(main) * 1.5;
-
-                background-image: url('./../img/icon-arrow.svg');
-                background-size: cover;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-            }
+            transition: $transition-infinite;
         }
     }
 }
@@ -109,12 +129,12 @@
 .c-btn--download {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
 
     background-color: color(accent);
 
     position: relative;
+
+    height: offset(main) * 4.5;
 
     padding: {
         top: offset(main);
@@ -122,17 +142,36 @@
     }
 }
 
+.c-btn--download .c-label,
+.c-btn--download .c-sub-label {
+    transition: $transition-infinite;
+}
+
 .c-btn--download .c-label {
     font-weight: $font-weight-bold;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .c-btn--download .c-sub-label {
     font-weight: $font-weight-regular;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6px;
 }
 
 .c-btn--download .c-btn__icon {
     right: offset(main) * 2;
     opacity: 0;
+
+    transition: $transition-infinite;
 }
 
 .c-btn--download .o-svg {
@@ -142,11 +181,11 @@
 @include media('>=desktop-small') {
 
     .c-btn--download:hover {
-        align-items: flex-start;
 
         .c-label,
         .c-sub-label {
-            margin-left: offset(main) * 1.5;
+            left: 10px;
+            transform: translateX(0);
         }
 
         .c-btn__icon {
@@ -272,11 +311,63 @@
     }
 }
 
+// Cookie bar buttons
+
+.c-btn--orange,
+.c-btn--transparent {
+    transition: $transition-infinite;
+
+    height: offset(main) * 3.5;
+
+    position: relative;
+
+    .c-label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: $transition-default;
+    }
+    &:hover {
+
+        .c-label {
+            left: 10px;
+            transform: translate(0, -50%);
+        }
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
 .c-btn--orange {
     background: color(accent);
     color: color(white);
 
     border: 2px solid color(accent);
+
+    &:after {
+        content: '';
+
+        display: block;
+        width: offset(main) * 1.75;
+        height: offset(main) * 1.25;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+
+        opacity: 0;
+
+        background-image: url('./../img/icon-arrow.svg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        transition: $transition-infinite;
+    }
 }
 
 .c-btn--transparent {
@@ -284,5 +375,26 @@
     color: color(accent);
 
     border: 2px solid color(accent);
-}
 
+    &:after {
+        content: '';
+
+        display: block;
+        width: offset(main) * 1.75;
+        height: offset(main) * 1.25;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+
+        opacity: 0;
+
+        background-image: url('./../img/close.svg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        transition: $transition-infinite;
+    }
+}

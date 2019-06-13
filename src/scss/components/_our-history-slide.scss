@@ -57,8 +57,16 @@ Our history slide
 
     transform: translate(-50%, -50%);
 
+    transition: $transition-infinite;
+
     width: 100%;
     height: auto;
+}
+
+.c-our-history-slide:hover .c-our-history-slide__img img {
+    transform: translate(-50%, -50%) scale(1.1);
+
+    transition: $transition-infinite;
 }
 
 .c-our-history-slide__content {

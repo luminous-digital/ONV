@@ -14,7 +14,7 @@
                     {{ compContent | safe }}
                 </p>
                 <div class="c-btn-wrapper c-btn-wrapper--left">
-                    <a href="/our-operations.html" class="c-btn c-btn--medium c-btn--primary c-btn--center t-btn t-white">
+                    <a href="/our-operations.html" class="c-btn c-btn--medium c-btn--primary t-btn t-white">
                         <span class="c-label">
                             {{ compBtnTitle | safe }}
                         </span>

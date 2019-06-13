@@ -14,7 +14,7 @@
                     Annual General Meeting<br>of Shareholders
                 </p>
                 <div class="c-btn-wrapper c-btn-wrapper--small">
-                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                    <a href="/news.html" class="c-btn c-btn--primary c-btn--medium t-btn t-white">
                         <span class="c-label">
                             View full calendar
                         </span>
@@ -32,7 +32,7 @@
                     €25.95
                 </p>
                 <div class="c-btn-wrapper c-btn-wrapper--small">
-                    <a href="/news.html" class="c-btn c-btn--primary c-btn--center t-btn t-white">
+                    <a href="/news.html" class="c-btn c-btn--primary c-btn--medium t-btn t-white">
                         <span class="c-label">
                             View listing information
                         </span>
