@@ -53,7 +53,7 @@ Image content
     width: 100%;
     margin-bottom: offset(main) * 2;
 
-    @include media('>=mobile') {
+    @include media('>=tablet') {
         width: 50%;
         margin-bottom: 0;
     }
@@ -68,7 +68,7 @@ Image content
     width: 100%;
     position: relative;
 
-    @include media('>=mobile') {
+    @include media('>=tablet') {
         width: 50%;
         padding-left: offset(main) * 2.5;
     }
@@ -77,7 +77,7 @@ Image content
 .c-image-content__wrapper .c-btn-wrapper {
     margin-top: offset(main);
 
-    @include media('>=mobile') {
+    @include media('>=tablet') {
         margin-top: 0;
         position: absolute;
         bottom: 0;
@@ -90,7 +90,7 @@ Image content
         bottom: offset(main) * 2;
     }
 
-    @include media('>=mobile') {
+    @include media('>=tablet') {
         max-width: offset(main) * 31.6;
     }
 }
