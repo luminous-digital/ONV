@@ -89,7 +89,7 @@
     <div class="c-map-wrapper">
         <div class="c-map-container" data-simplebar data-simplebar-auto-hide="false">
             <div class="c-map">
-                <figure class="c-map__img">
+                <figure class="c-map__img" style="background-image: url('/static/img/img-map-bg.png');">
                 </figure>
                 <ul class="c-map-pin-list">
                     {% set pinColors = [

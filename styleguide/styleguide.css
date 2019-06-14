@@ -2195,8 +2195,15 @@ Article header
     width: calc(50% - 12px); } }
 
 @media (min-width: 768px) {
+  .c-btn-wrapper--three-btns {
+    justify-content: center; } }
+
+@media (min-width: 768px) {
   .c-btn-wrapper--three-btns .c-btn {
-    width: calc(33% - 12px); } }
+    width: calc((100% - 78px) / 3);
+    margin: 0 12px 24px;
+    margin-bottom: 24px;
+    margin-right: 12px; } }
 
 /* ==========================================================================
    Board graph
@@ -4314,7 +4321,6 @@ List wrapper no download
   padding: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/img-map-bg.png");
   background-position: 0 -41px;
   background-repeat: no-repeat;
   background-size: 955px 521px; }
