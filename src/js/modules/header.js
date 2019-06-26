@@ -31,6 +31,7 @@ const Header = {
     }
   },
   desktopHeader: function () {
+    this.hideOnScroll()
     const header = document.querySelector('.js-header')
     const body = document.querySelector('body')
     const searchToggle = document.querySelector('.js-toggle-search')
@@ -149,6 +150,24 @@ const Header = {
       </li>`
     })
     $listContainer.append(items)
+  },
+  hideOnScroll: function () {
+    const header = $('.js-header')
+    const headerOffset = 80
+    let lastScrollTop = 0
+    $(window).on('scroll', e => {
+      if ($(window).scrollTop() > headerOffset) {
+        header.addClass('is-scrolled')
+        if ($(window).scrollTop() > lastScrollTop) {
+          header.addClass('is-hidden')
+        } else {
+          header.removeClass('is-hidden')
+        }
+        lastScrollTop = $(window).scrollTop()
+      } else {
+        header.removeClass('is-scrolled')
+      }
+    })
   }
 }
 

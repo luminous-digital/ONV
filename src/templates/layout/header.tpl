@@ -4,7 +4,7 @@
     {% else %}
         {% set logo_href='index.html' %}
     {% endif %}
-    <header class="l-header">
+    <header class="l-header js-header">
         <div class="l-inner">
             <div class="c-header js-header">
                 <div class="c-header__logo-wrapper">
