@@ -152,7 +152,7 @@ const Header = {
     $listContainer.append(items)
   },
   hideOnScroll: function () {
-    const header = $('.js-header')
+    const header = $('.js-global-header')
     const headerOffset = 80
     let lastScrollTop = 0
     $(window).on('scroll', e => {
