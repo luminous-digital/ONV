@@ -2,6 +2,12 @@
 Body
 ========================================================================== */
 body {
+    padding-top: $size-header-height-m;
+
+    @include media('>=mobile') {
+        padding-top: $size-header-height-d;
+    }
+
     &.is-header-open {
         overflow: hidden;
         position: fixed;

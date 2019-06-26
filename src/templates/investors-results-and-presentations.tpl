@@ -35,9 +35,10 @@ Investors - results and presentations
         file_list.render(
             secTitle='Report<br>archive',
             showSubtitles=true,
-            listCount='4',
+            listCount='20',
             showDownload=true,
-            showShowMore=true
+            showShowMore=true,
+            initialCount='4'
         )
     }}
 {% endblock %}
@@ -47,9 +48,10 @@ Investors - results and presentations
     {{
         file_list.render(
             showSubtitles=true,
-            listCount='4',
+            listCount='20',
             showDownload=true,
-            showShowMore=true
+            showShowMore=true,
+            initialCount='4'
         )
     }}
 {% endblock %}
@@ -59,9 +61,10 @@ Investors - results and presentations
     {{
         file_list.render(
             showSubtitles=true,
-            listCount='4',
+            listCount='20',
             showDownload=true,
-            showShowMore=true
+            showShowMore=true,
+            initialCount='4'
         )
     }}
 {% endblock %}

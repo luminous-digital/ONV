@@ -1,12 +1,11 @@
-{% macro render(secTitle, twoColumns, listCount, showDownload, showShowMore, showSubtitles, isDatePadded) %}
+{% macro render(secTitle, twoColumns, listCount, showDownload, showShowMore, showSubtitles, isDatePadded, initialCount) %}
 
     <section class="l-section">
         <div class="l-inner">
             <div
                 class="c-list-wrapper js-list"
-                data-api-url="https://jsonplaceholder.typicode.com/posts"
-                data-api-per-page="5"
-                data-api-offset="4"
+                data-initial-count="{{ initialCount }}"
+                data-per-page="4"
                 >
                 <h2 class="c-list-wrapper__title t-h2">
                     {{ secTitle | safe }}
@@ -19,7 +18,7 @@
                 <div class="c-list-wrapper__list">
                     <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns{% endif %}">
                         {% for i in range(0, listCount) -%}
-                            <li class="c-file-list__item">
+                            <li class="c-file-list__item{% if loop.index > initialCount %} is-hidden{% endif %}">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt{% if isDatePadded %} t-body--padded{% endif %}">
                                         4 June 2018

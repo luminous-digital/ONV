@@ -284,6 +284,12 @@
     width: 100%;
     height: $size-header-height-m;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: color(white);
+
     z-index: $z-index-header;
 
     @include media('>=mobile') {

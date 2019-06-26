@@ -96,46 +96,16 @@ const News = {
     if ($container.length) {
       const $loadMoreBtn = $container.find('.js-list-load-more')
       const $listContainer = $container.find('.js-list-items')
-      const ajaxUrl = $container.attr('data-api-url')
-      const perPage = parseInt($container.attr('data-api-per-page'), 10)
-      const offset = parseInt($container.attr('data-api-offset'), 10)
-      const postType = $container.attr('data-api-post-type')
-      let currentPage = 0
+      const perPage = parseInt($container.attr('data-per-page'), 10)
       $loadMoreBtn.on('click', e => {
-        $.ajax({
-          method: 'GET',
-          dataType: 'json',
-          url: ajaxUrl,
-          data: {
-            postType: postType,
-            postsPerPage: perPage,
-            postsOffset: offset + currentPage * perPage
-          }
-        })
-          .done(res => {
-            const items = res.map(item => {
-              return `<li class="c-file-list__item" data-filterby-cat="${item.category}" data-filterby-year="${item.year}">
-                  <div class="c-file-list__item-wrapper">
-                      <p class="c-file-list__date t-body t-body--alt">
-                        ${item.date}
-                      </p>
-                      <h4 class="c-file-list__title t-h4 t-thin">
-                          <a href="${item.url}">
-                            ${item.title}
-                          </a>
-                      </h4>
-                  </div>
-              </li>`
-            })
-            if (!res || res.length === 0) {
-              $loadMoreBtn.hide()
-            }
-            $listContainer.append(items)
-            currentPage++
-          })
-          .fail(err => {
-            console.log('ajax failed: ', err)
-          })
+        const hiddenItems = $listContainer.find('.js-list-item.is-hidden')
+        let i
+        for (i = 0; i < perPage; i++) {
+          $(hiddenItems[i]).removeClass('is-hidden')
+        }
+        if (hiddenItems.length <= perPage) {
+          $loadMoreBtn.hide()
+        }
       })
     }
   }

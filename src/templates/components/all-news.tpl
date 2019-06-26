@@ -5,6 +5,24 @@
 {% set availableItems = [
     { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
     { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
+    { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' },
+    { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
+    { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
+    { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' },
+    { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
+    { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
+    { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' },
+    { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
+    { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
+    { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' },
+    { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
+    { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
+    { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' },
+    { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
+    { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
+    { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' },
+    { itemDate: '12 April 2019', itemYear: '2019', itemTitle: 'Natgasoline LLC Begins', itemCat: 'Reports', itemUrl: '#' },
+    { itemDate: '4 June 2018', itemYear: '2018', itemTitle: 'Natgasoline LLC Stops', itemCat: 'Stocks', itemUrl: '#' },
     { itemDate: '8 June 2017', itemYear: '2017', itemTitle: 'Natgasoline LLC Does something', itemCat: 'News', itemUrl: '#' }
 ] %}
 
@@ -16,10 +34,7 @@
                 </h4>
             </div>
             <div class="c-list-wrapper c-list-wrapper--offset-top js-list-with-filters"
-                    data-api-url="https://jsonplaceholder.typicode.com/posts"
-                    data-api-per-page="5"
-                    data-api-offset="3"
-                    data-api-post-type="post">
+                    data-per-page="5">
                 <div class="c-list-wrapper__filters">
                     <ul class="c-list-filters">
                         <li class="c-list-filters__item">
@@ -74,7 +89,7 @@
                 <div class="c-list-wrapper__list">
                     <ul class="c-file-list js-list-items{% if twoColumns %} c-file-list--two-columns{% endif %}">
                         {% for item in availableItems %}
-                            <li class="c-file-list__item" data-filterby-cat="{{ item.itemCat }}" data-filterby-year="{{ item.itemYear }}">
+                            <li class="c-file-list__item js-list-item{% if (loop.index > 3) %} is-hidden{% endif %}" data-filterby-cat="{{ item.itemCat }}" data-filterby-year="{{ item.itemYear }}">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt">
                                         {{ item.itemDate }}

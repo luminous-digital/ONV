@@ -37,6 +37,8 @@ Search toggle
 .c-search-toggle__icon {
     width: $size-search-width;
     height: $size-search-width;
+
+    fill: color(main);
 }
 
 .c-search-toggle__icon .o-svg {
