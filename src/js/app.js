@@ -10,5 +10,6 @@ import './modules/people-modal'
 import './modules/news'
 import './modules/cookies'
 import './modules/list-load-more'
+import './modules/accordions'
 
 svg4everybody()
