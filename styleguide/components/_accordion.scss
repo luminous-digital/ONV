@@ -1,0 +1,361 @@
+/* ==========================================================================
+Accordion
+========================================================================== */
+// Accordion
+//
+// markup:
+// <section class="l-section">
+//     <div class="l-inner">
+//             <div class="c-accordion js-accordion is-open">
+//                 <div class="c-accordion__header js-accordion-header">
+//                     <h5 class="t-h5 c-accordion__title">
+//                         Accordion title 1
+//                     </h5>
+//                 </div>
+//                 <div class="c-accordion__content js-accordion-content">
+//                     <div class="c-accordion__content-wrap">
+//                         <div class="c-accordion__text c-wysiwyg">
+//                             <p>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                         </p>
+//                         <ul>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                         </ul>
+//                         </div>
+//                         <ul class="c-accordion__list c-file-list">
+//                             <li class="c-file-list__item">
+//                                 <div class="c-file-list__item-wrapper">
+//                                     <p class="c-file-list__date t-body t-body--alt">
+//                                         25 June 2018
+//                                     </p>
+//                                     <h4 class="c-file-list__title t-h4 t-thin">
+//                                         Report
+//                                     </h4>
+//                                     <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                         <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                             <span class="c-label t-btn t-blue">Download PDF</span>
+//                                             <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                             <span class="c-btn__icon">
+//                                                 <svg class="o-svg">
+//                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                 </svg>
+//                                             </span>
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </li>
+//                             <li class="c-file-list__item">
+//                                 <div class="c-file-list__item-wrapper">
+//                                     <p class="c-file-list__date t-body t-body--alt">
+//                                         25 June 2018
+//                                     </p>
+//                                     <h4 class="c-file-list__title t-h4 t-thin">
+//                                         Report
+//                                     </h4>
+//                                     <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                         <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                             <span class="c-label t-btn t-blue">Download PDF</span>
+//                                             <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                             <span class="c-btn__icon">
+//                                                 <svg class="o-svg">
+//                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                 </svg>
+//                                             </span>
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </li>
+//                             <li class="c-file-list__item">
+//                                 <div class="c-file-list__item-wrapper">
+//                                     <p class="c-file-list__date t-body t-body--alt">
+//                                         25 June 2018
+//                                     </p>
+//                                     <h4 class="c-file-list__title t-h4 t-thin">
+//                                         Report
+//                                     </h4>
+//                                     <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                         <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                             <span class="c-label t-btn t-blue">Download PDF</span>
+//                                             <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                             <span class="c-btn__icon">
+//                                                 <svg class="o-svg">
+//                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                 </svg>
+//                                             </span>
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </li>
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div class="c-accordion js-accordion">
+//                 <div class="c-accordion__header js-accordion-header">
+//                     <h5 class="t-h5 c-accordion__title">
+//                         Accordion title 2
+//                     </h5>
+//                 </div>
+//                 <div class="c-accordion__content js-accordion-content">
+//                     <div class="c-accordion__content-wrap">
+//                         <div class="c-accordion__text c-wysiwyg">
+//                             <p>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                         </p>
+//                         <ul>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                         </ul>
+//                         </div>
+//                         <ul class="c-accordion__list c-file-list">
+//                             <li class="c-file-list__item">
+//                                 <div class="c-file-list__item-wrapper">
+//                                     <p class="c-file-list__date t-body t-body--alt">
+//                                         25 June 2018
+//                                     </p>
+//                                     <h4 class="c-file-list__title t-h4 t-thin">
+//                                         Report
+//                                     </h4>
+//                                     <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                         <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                             <span class="c-label t-btn t-blue">Download PDF</span>
+//                                             <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                             <span class="c-btn__icon">
+//                                                 <svg class="o-svg">
+//                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                 </svg>
+//                                             </span>
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </li>
+//                             <li class="c-file-list__item">
+//                                 <div class="c-file-list__item-wrapper">
+//                                     <p class="c-file-list__date t-body t-body--alt">
+//                                         25 June 2018
+//                                     </p>
+//                                     <h4 class="c-file-list__title t-h4 t-thin">
+//                                         Report
+//                                     </h4>
+//                                     <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                         <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                             <span class="c-label t-btn t-blue">Download PDF</span>
+//                                             <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                             <span class="c-btn__icon">
+//                                                 <svg class="o-svg">
+//                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                 </svg>
+//                                             </span>
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </li>
+//                             <li class="c-file-list__item">
+//                                 <div class="c-file-list__item-wrapper">
+//                                     <p class="c-file-list__date t-body t-body--alt">
+//                                         25 June 2018
+//                                     </p>
+//                                     <h4 class="c-file-list__title t-h4 t-thin">
+//                                         Report
+//                                     </h4>
+//                                     <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                         <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                             <span class="c-label t-btn t-blue">Download PDF</span>
+//                                             <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                             <span class="c-btn__icon">
+//                                                 <svg class="o-svg">
+//                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                 </svg>
+//                                             </span>
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </li>
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div class="c-accordion js-accordion">
+//                 <div class="c-accordion__header js-accordion-header">
+//                     <h5 class="t-h5 c-accordion__title">
+//                         Accordion title 3
+//                     </h5>
+//                 </div>
+//                 <div class="c-accordion__content js-accordion-content">
+//                     <div class="c-accordion__content-wrap">
+//                         <div class="c-accordion__text c-wysiwyg">
+//                             <p>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+//                             <br><br>
+//                         </p>
+//                         <ul>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                             <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+//                         </ul>
+//                         </div>
+//                         <ul class="c-accordion__list c-file-list">
+//                             <li class="c-file-list__item">
+//                                     <div class="c-file-list__item-wrapper">
+//                                         <p class="c-file-list__date t-body t-body--alt">
+//                                             25 June 2018
+//                                         </p>
+//                                         <h4 class="c-file-list__title t-h4 t-thin">
+//                                             Report
+//                                         </h4>
+//                                         <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                             <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                                 <span class="c-label t-btn t-blue">Download PDF</span>
+//                                                 <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                                 <span class="c-btn__icon">
+//                                                     <svg class="o-svg">
+//                                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                     </svg>
+//                                                 </span>
+//                                             </a>
+//                                         </div>
+//                                     </div>
+//                                 </li>
+//                             <li class="c-file-list__item">
+//                                     <div class="c-file-list__item-wrapper">
+//                                         <p class="c-file-list__date t-body t-body--alt">
+//                                             25 June 2018
+//                                         </p>
+//                                         <h4 class="c-file-list__title t-h4 t-thin">
+//                                             Report
+//                                         </h4>
+//                                         <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                             <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                                 <span class="c-label t-btn t-blue">Download PDF</span>
+//                                                 <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                                 <span class="c-btn__icon">
+//                                                     <svg class="o-svg">
+//                                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                     </svg>
+//                                                 </span>
+//                                             </a>
+//                                         </div>
+//                                     </div>
+//                                 </li>
+//                             <li class="c-file-list__item">
+//                                     <div class="c-file-list__item-wrapper">
+//                                         <p class="c-file-list__date t-body t-body--alt">
+//                                             25 June 2018
+//                                         </p>
+//                                         <h4 class="c-file-list__title t-h4 t-thin">
+//                                             Report
+//                                         </h4>
+//                                         <div class="c-btn-wrapper c-btn-wrapper--right">
+//                                             <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
+//                                                 <span class="c-label t-btn t-blue">Download PDF</span>
+//                                                 <span class="c-sub-label t-btn t-btn--small t-blue">2.5MB</span>
+//                                                 <span class="c-btn__icon">
+//                                                     <svg class="o-svg">
+//                                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//                                                     </svg>
+//                                                 </span>
+//                                             </a>
+//                                         </div>
+//                                     </div>
+//                                 </li>
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </div>
+//     </div>
+// </section>
+//
+// Styleguide 41
+.c-accordion {
+    border: $size-accordion-line-width solid transparent;
+
+    transition: $transition-default;
+}
+
+.c-accordion.is-open {
+    border: $size-accordion-line-width solid color(accent);
+}
+
+.c-accordion__header {
+    height: $size-accordion-header-height;
+    padding: 0 offset(main) * 2;
+
+    cursor: pointer;
+    background-color: color(lblue);
+
+    position: relative;
+}
+
+.c-accordion.is-open .c-accordion__header {
+    background-color: color(accent);
+}
+
+.c-accordion__header:after {
+    content: '';
+    position: absolute;
+
+    width: $size-accordion-header-arrow-size;
+    height: $size-accordion-header-arrow-size;
+
+    top: calc(50% - #{$size-accordion-header-arrow-size});
+    right: offset(main) * 2;
+
+    border-right: $size-accordion-header-arrow-width solid color(accent);
+    border-bottom: $size-accordion-header-arrow-width solid color(accent);
+
+    transform: rotate(45deg);
+
+    transition: $transition-default;
+}
+
+.c-accordion.is-open .c-accordion__header:after {
+    transform: rotate(225deg);
+    top: calc(50% - #{$size-accordion-header-arrow-size / 2});
+    border-color: color(white);
+}
+
+.c-accordion__title {
+    font-weight: 400;
+    line-height: $size-accordion-header-height;
+}
+
+.c-accordion.is-open .c-accordion__title {
+    color: color(white);
+    font-weight: $font-weight-bold;
+}
+
+.c-accordion__content {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: $transition-max-height;
+}
+
+.c-accordion__content-wrap {
+    padding: offset(main) * 2.5 offset(main) * 2;
+}
+
+.c-accordion.is-open .c-accordion__content {
+    max-height: 3000px;
+
+    @include media('>=mobile') {
+        max-height: 1200px;
+    }
+}
