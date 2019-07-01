@@ -87,6 +87,7 @@ $defaults: (
 $transition-default: all .2s linear;
 $transition-slow: all .4s linear;
 $transition-infinite: all .4s ease-out;
+$transition-max-height: max-height .8s ease-out;
 
 /* Standalone variables
 ========================================================================== */
@@ -236,3 +237,10 @@ $size-cookie-bar-btn-width-d: 146px;
 =========================== */
 $size-board-graph-space-between: 23px;
 $size-board-graph-header-height: 60px;
+
+/* Accordions
+=========================== */
+$size-accordion-header-height: 45px;
+$size-accordion-line-width: 2px;
+$size-accordion-header-arrow-width: 2px;
+$size-accordion-header-arrow-size: 10px;

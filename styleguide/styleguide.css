@@ -1154,6 +1154,8 @@ button.swiper-pagination-bullet {
 =========================== */
 /* Board graph
 =========================== */
+/* Accordions
+=========================== */
 /* Breakpoints for include-media plugin
 ========================================================================== */
 /* ==========================================================================
@@ -1934,6 +1936,65 @@ body {
 ========================================================================== */
 /* Components
    ========================================================================== */
+/* ==========================================================================
+Accordion
+========================================================================== */
+.c-accordion {
+  border: 2px solid transparent;
+  transition: all 0.2s linear; }
+
+.c-accordion.is-open {
+  border: 2px solid #F79727; }
+
+.c-accordion__header {
+  height: 45px;
+  padding: 0 20px;
+  cursor: pointer;
+  background-color: #F3F5F9;
+  position: relative; }
+
+.c-accordion.is-open .c-accordion__header {
+  background-color: #F79727; }
+
+.c-accordion__header:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: calc(50% - 10px);
+  right: 20px;
+  border-right: 2px solid #F79727;
+  border-bottom: 2px solid #F79727;
+  transform: rotate(45deg);
+  transition: all 0.2s linear; }
+
+.c-accordion.is-open .c-accordion__header:after {
+  transform: rotate(225deg);
+  top: calc(50% - 5px);
+  border-color: #fff; }
+
+.c-accordion__title {
+  font-weight: 400;
+  line-height: 45px; }
+
+.c-accordion.is-open .c-accordion__title {
+  color: #fff;
+  font-weight: 700; }
+
+.c-accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out; }
+
+.c-accordion__content-wrap {
+  padding: 25px 20px; }
+
+.c-accordion.is-open .c-accordion__content {
+  max-height: 3000px; }
+  @media (min-width: 768px) {
+    .c-accordion.is-open .c-accordion__content {
+      max-height: 1200px; } }
+
 /* ==========================================================================
 Article header
 ========================================================================== */
@@ -2966,7 +3027,7 @@ Feature panel wrapper
 .c-file-list__date {
   margin-bottom: 0;
   white-space: nowrap;
-  color: #A2A1A2;
+  color: #444444;
   width: 180px; }
 
 .c-file-list__item {
@@ -3016,9 +3077,9 @@ Feature panel wrapper
 
 @media (max-width: 767px) {
   .c-file-list__item-wrapper .c-btn-wrapper .c-btn {
-    padding: 5px 50px; }
+    padding-left: 0; }
   .c-file-list__item-wrapper .c-btn-wrapper .c-btn__icon {
-    left: 0; } }
+    right: 0; } }
 
 .c-file-list--no-mobile-margin .c-file-list__item {
   margin-bottom: 0; }

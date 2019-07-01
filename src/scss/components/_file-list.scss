@@ -58,7 +58,7 @@
     margin-bottom: 0;
     white-space: nowrap;
 
-    color: color(lgrey);
+    color: color(dgrey);
 
     width: offset(main) * 18;
 }
@@ -127,11 +127,11 @@
 
 @include media('<mobile') {
     .c-file-list__item-wrapper .c-btn-wrapper .c-btn {
-        padding: offset(main) / 2 offset(main) * 5;
+        padding-left: 0;
     }
 
     .c-file-list__item-wrapper .c-btn-wrapper .c-btn__icon {
-        left: 0;
+        right: 0;
     }
 }
 
