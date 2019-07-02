@@ -1988,12 +1988,19 @@ Accordion
 
 .c-accordion__content-wrap {
   padding: 25px 20px; }
+  @media (min-width: 768px) {
+    .c-accordion__content-wrap {
+      padding: 30px 40px; } }
 
 .c-accordion.is-open .c-accordion__content {
   max-height: 3000px; }
   @media (min-width: 768px) {
     .c-accordion.is-open .c-accordion__content {
       max-height: 1200px; } }
+
+@media (min-width: 1024px) {
+  .c-accordion__text {
+    max-width: 65%; } }
 
 /* ==========================================================================
 Article header
@@ -3053,7 +3060,7 @@ Feature panel wrapper
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 30px;
+      margin-left: 60px;
       margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {

@@ -350,6 +350,10 @@ Accordion
 
 .c-accordion__content-wrap {
     padding: offset(main) * 2.5 offset(main) * 2;
+
+    @include media('>=mobile') {
+        padding: offset(main) * 3 offset(main) * 4;
+    }
 }
 
 .c-accordion.is-open .c-accordion__content {
@@ -357,5 +361,12 @@ Accordion
 
     @include media('>=mobile') {
         max-height: 1200px;
+    }
+}
+
+.c-accordion__text {
+
+    @include media('>=tablet') {
+        max-width: 65%;
     }
 }
