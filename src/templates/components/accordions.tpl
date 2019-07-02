@@ -3,7 +3,9 @@
 {% set accordions = [
     {
         accordionTitle: 'Accordion title 1',
-        accordionContent: '<p>
+        accordionContent: '
+                        <h3>Bodytext subhead</h3>
+                        <p>
                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
                             <br><br>
                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
@@ -19,7 +21,9 @@
     },
     {
         accordionTitle: 'Accordion title 2',
-        accordionContent: '<p>
+        accordionContent: '
+                        <h3>Bodytext subhead</h3>
+                        <p>
                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
                             <br><br>
                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
@@ -35,7 +39,27 @@
     },
     {
         accordionTitle: 'Accordion title 3',
-        accordionContent: '<p>
+        accordionContent: '
+                        <h3>Bodytext subhead</h3>
+                        <p>
+                            Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+                            <br><br>
+                            Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+                            <br><br>
+                            Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
+                            <br><br>
+                        </p>
+                        <ul>
+                            <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+                            <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+                            <li>Our industrial chemicals, namely methanol, biomethanol, and DEF</li>
+                        </ul>'
+    },
+    {
+        accordionTitle: 'Accordion title 4',
+        accordionContent: '
+                        <h3>Bodytext subhead</h3>
+                        <p>
                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
                             <br><br>
                             Our industrial chemicals, namely methanol, biomethanol, and DEF, are sustainable clean fuel alternatives that can be used to significantly reduce GHG emissions versus conventional fuels.
@@ -73,7 +97,7 @@
                                             25 June 2018
                                         </p>
                                         <h4 class="c-file-list__title t-h4 t-thin">
-                                            Report
+                                            Article Header - example goes in here
                                         </h4>
                                         <div class="c-btn-wrapper c-btn-wrapper--right">
                                             <a href="/news.html" class="c-btn c-btn--download-icon c-btn--block c-btn--padded">
