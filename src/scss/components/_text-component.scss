@@ -41,6 +41,8 @@ Text component
     padding-top: offset(main) * 3.5;
     padding-bottom: offset(main);
 
+    height: 100%;
+
     @include media('>=desktop-small') {
         flex-direction: row;
         justify-content: space-between;

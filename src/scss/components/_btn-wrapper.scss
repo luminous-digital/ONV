@@ -76,9 +76,9 @@
     width: 100%;
     margin-bottom: offset(main);
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+    // &:last-child {
+    //     margin-bottom: 0;
+    // }
 
     @include media('>=mobile') {
         margin-bottom: 0;

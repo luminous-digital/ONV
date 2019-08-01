@@ -9,7 +9,7 @@ Search toggle
 
     cursor: pointer;
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         display: flex;
         align-items: center;
         justify-content: center;

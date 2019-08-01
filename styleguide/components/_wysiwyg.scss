@@ -48,6 +48,8 @@ WYSIWYG
         height: auto;
 
         margin-top: offset(main) * 3;
+
+        border: none;
     }
     a:not([class]) {
         @extend .t-underline;

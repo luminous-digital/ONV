@@ -8,7 +8,7 @@
     justify-content: center;
 
     width: $size-data-slider-card-width;
-    height: $size-data-slider-card-height;
+    height: 100%;
 
     opacity: 0;
     transition: $transition-default;
@@ -51,6 +51,8 @@
 .c-data-slider-card__desc {
     padding: 0;
     margin: 0;
+
+    max-width: 100%;
 }
 
 .c-data-slider-card__title {

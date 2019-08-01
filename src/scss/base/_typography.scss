@@ -451,6 +451,11 @@
 
     font-size: font-size(big);
     line-height: font-size(big);
+
+    &--alt {
+        font-size: font-size(big-alt);
+        line-height: font-size(big);
+    }
 }
 
 .t-big-info {

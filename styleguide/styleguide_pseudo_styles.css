@@ -61,10 +61,6 @@ select select.pseudo-class-focus {
   opacity: 1;
 }
 
-.c-btn-wrapper--equal-btns .c-btn.pseudo-class-last-child {
-  margin-bottom: 0;
-}
-
 .c-contact-list__item.pseudo-class-first-child {
   display: none;
 }

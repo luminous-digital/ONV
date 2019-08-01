@@ -15,7 +15,7 @@ Header nav menu
 
     transition: $transition-default;
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -28,7 +28,7 @@ Header nav menu
     width: 100%;
     height: auto;
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         display: flex;
         flex-direction: row;
         align-items: stretch;
@@ -67,7 +67,7 @@ Header nav menu
     transform: rotate(45deg);
     transition: transform .2s, bottom .2s;
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         display: none;
     }
 }
@@ -94,36 +94,36 @@ Header nav menu
 
     padding: 0 offset(main) * 3;
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         height: auto;
         width: 100%;
         border: none;
 
-        padding: 0 offset(main);
-    }
-    @include media('>=desktop-small') {
+        // padding: 0 offset(main);
         padding: 0 offset(main) * 2.2;
     }
+    // @include media('>=desktop-small') {
+    // }
 }
 
 .c-header-nav-menu__item:first-child > .c-link {
     border-top: $size-mobile-menu-border-width solid color(lblue);
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         border: none;
     }
 }
 
 .c-header-nav-menu__item > .c-link > .c-label {
 
-    @include media('<mobile') {
+    @include media('<desktop-small') {
         width: 85%;
         height: 100%;
 
         display: flex;
         align-items: center;
     }
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         position: relative;
 
         display: block;
@@ -133,7 +133,7 @@ Header nav menu
 
 .c-header-nav-menu__item > .c-link > .c-label:after {
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         content: '';
         display: block;
 
@@ -152,7 +152,7 @@ Header nav menu
 .c-header-nav-menu__item:hover > .c-link > .c-label:after,
 .c-header-nav-menu__item.is-active > .c-link > .c-label:after {
 
-    @include media('>=mobile') {
+    @include media('>=desktop-small') {
         width: 100%;
     }
 }

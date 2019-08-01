@@ -29,7 +29,7 @@ Grid block
     align-items: flex-start;
 
     width: 100%;
-    height: $size-grid-component-card-height;
+    height: 100%;
 
     margin-bottom: offset(main) * 6;
 
@@ -37,6 +37,7 @@ Grid block
 
     @include media('>=mobile') {
         padding: 0;
+        height: $size-grid-component-card-height;
     }
     @include media('>=desktop-small') {
         opacity: 1;

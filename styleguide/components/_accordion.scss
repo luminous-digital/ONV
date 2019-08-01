@@ -294,13 +294,17 @@ Accordion
 }
 
 .c-accordion__header {
-    height: $size-accordion-header-height;
     padding: 0 offset(main) * 2;
+    height: auto;
 
     cursor: pointer;
     background-color: color(lblue);
 
     position: relative;
+
+    @include media('>mobile') {
+        height: $size-accordion-header-height;
+    }
 }
 
 .c-accordion.is-open .c-accordion__header {
