@@ -5099,6 +5099,7 @@ Our history slider date
    ========================================================================== */
 .c-quick-links {
   display: flex;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   position: relative;
@@ -5113,7 +5114,7 @@ Our history slider date
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%; }
+  height: auto; }
   @media (min-width: 768px) {
     .c-quick-links-card {
       padding: 0 14px; } }
@@ -5123,15 +5124,14 @@ Our history slider date
 
 .c-quick-links-card__container {
   width: 230px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start; }
   @media (min-width: 768px) {
     .c-quick-links-card__container {
-      width: 100%;
-      height: 100%; } }
+      width: 100%; } }
 
 .c-quick-links-card__date,
 .c-quick-links-card__excerpt,

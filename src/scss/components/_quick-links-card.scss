@@ -8,7 +8,7 @@
     justify-content: center;
 
     width: 100%;
-    height: 100%;
+    height: auto;
 
     @include media('>=mobile') {
         // height: $size-quick-links-card-height-t;
@@ -22,7 +22,7 @@
 
 .c-quick-links-card__container {
     width: $size-quick-links-card-width;
-    height: 100%;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -31,7 +31,6 @@
 
     @include media('>=mobile') {
         width: 100%;
-        height: 100%;
     }
 }
 
