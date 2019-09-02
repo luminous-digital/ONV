@@ -5155,16 +5155,16 @@ Our history slider date
       height: 230px; } }
 
 .c-quick-links-card__decor img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s ease-out;
   width: 100%;
-  height: auto; }
+  height: 170px;
+  transition: all 0.4s ease-out;
+  object-fit: cover; }
+  @media (min-width: 768px) {
+    .c-quick-links-card__decor img {
+      height: 230px; } }
 
 .c-quick-links-card:hover .c-quick-links-card__decor img {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: scale(1.1);
   transition: all 0.4s ease-out; }
 
 .c-quick-links-card__cta {

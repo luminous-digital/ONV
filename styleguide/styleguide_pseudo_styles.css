@@ -161,7 +161,7 @@ select select.pseudo-class-focus {
 }
 
 .c-quick-links-card.pseudo-class-hover .c-quick-links-card__decor img {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: scale(1.1);
   transition: all 0.4s ease-out;
 }
 
