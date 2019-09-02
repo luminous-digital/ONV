@@ -57,20 +57,20 @@
 }
 
 .c-quick-links-card__decor img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: $size-quick-links-img-height;
 
     transition: $transition-infinite;
 
-    width: 100%;
-    height: auto;
+    object-fit: cover;
+
+    @include media('>=mobile') {
+        height: $size-quick-links-img-height-t;
+    }
 }
 
 .c-quick-links-card:hover .c-quick-links-card__decor img {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1);
 
     transition: $transition-infinite;
 }
