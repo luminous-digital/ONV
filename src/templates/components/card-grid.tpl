@@ -44,7 +44,7 @@
         {
             cardImg: './static/img/people-card-img-01.jpg',
             cardTitle: 'Michael Bennett',
-            cardSubtitle: 'Independent Non-Executive Director and Chairman',
+            cardSubtitle: 'Independent Non-Executive',
             cardDesc:
             'Michael Bennett has 36 years’ experience in the nitrogen industry and is a past Chairman of both The Fertilizer Institute and the Methanol Institute in the United States. He served as the Chief Executive Officer and a Director of Terra Industries Inc., a producer of nitrogen fertilizer products, from 2001 until its acquisition by CF Industries Holdings in April 2010. He also served as Chairman and President for Terra Nitrogen Company, L.P., a publicly listed subsidiary of Terra Industries Inc. Mr. Bennett currently serves as a Director of Alliant Energy Corporation, and SandRidge Energy, as well as the Chairman of the Board at Morningside College in Sioux City, Iowa.
             <br><br>
