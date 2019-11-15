@@ -3219,7 +3219,7 @@ Grid block
   @media (min-width: 768px) {
     .c-grid-block {
       padding: 0;
-      height: 360px; } }
+      height: 380px; } }
   @media (min-width: 1200px) {
     .c-grid-block {
       opacity: 1; } }
