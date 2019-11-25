@@ -3044,7 +3044,7 @@ Feature panel wrapper
   margin-bottom: 0;
   white-space: nowrap;
   color: #444444;
-  width: 180px; }
+  width: 380px; }
 
 .c-file-list__item {
   border-bottom: 1px solid #F3F5F9;
@@ -3069,7 +3069,7 @@ Feature panel wrapper
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 60px;
+      margin-left: 30px;
       margin-bottom: 0; } }
 
 .c-file-list__item-wrapper {
@@ -3219,10 +3219,14 @@ Grid block
   @media (min-width: 768px) {
     .c-grid-block {
       padding: 0;
-      height: 380px; } }
+      height: 380px; }
+      .c-grid-block:not(:nth-child(3n+3)) {
+        margin-right: 20px; } }
   @media (min-width: 1200px) {
     .c-grid-block {
-      opacity: 1; } }
+      opacity: 1; }
+      .c-grid-block:not(:nth-child(3n+3)) {
+        margin-right: 23px; } }
 
 @media (min-width: 768px) {
   .c-grid-block--no-offset {
@@ -3241,15 +3245,8 @@ Grid block
 
 .c-grid-block__image img {
   width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s ease-out; }
-
-.c-grid-block:hover img {
-  transform: translate(-50%, -50%) scale(1.05);
+  height: 230px;
+  object-fit: cover;
   transition: all 0.4s ease-out; }
 
 .c-grid-block__title {
@@ -3318,7 +3315,7 @@ Grid
 .c-grid-wrapper {
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
   height: auto; }

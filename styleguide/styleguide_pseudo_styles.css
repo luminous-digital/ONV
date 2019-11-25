@@ -110,11 +110,6 @@ select select.pseudo-class-focus {
   width: 100%;
 }
 
-.c-grid-block.pseudo-class-hover img {
-  transform: translate(-50%, -50%) scale(1.05);
-  transition: all 0.4s ease-out;
-}
-
 .c-header-nav-menu__item.pseudo-class-first-child > .c-link {
   border-top: 2px solid #F3F5F9;
 }

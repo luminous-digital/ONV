@@ -7,11 +7,11 @@
             cardTitle: 'Supporting local STEM programmes'
         },
         {
-            cardImg: './static/img/key-areas/img-environment.jpg',
+            cardImg: './static/img/latest-news-bg.jpg',
             cardTitle: 'OCI Nitrogen Awarded “Best Training Company 2018”'
         },
         {
-            cardImg: './static/img/key-areas/img-communities.jpg',
+            cardImg: './static/img/people-card-img-01.jpg',
             cardTitle: 'OCI Beaumont is a VPP Star Site'
         },
         {
@@ -174,11 +174,11 @@
             {% endif %}
             <div class="c-grid-wrapper c-grid-wrapper--{{ mod }}">
                 {% for card in cards %}
-                    {% if loop.index < count + 1 %}
+                    {% if loop.index < count %}
                         <div
                             class="c-grid-block{% if loop.index > count - perRow %} c-grid-block--no-offset{% endif %}">
                             <figure class="c-grid-block__image">
-                                <img src="{{ card.cardImg }}" alt="Health and Safety">
+                                <img src="{{ card.cardImg }}" class="js-object-fit" alt="Health and Safety">
                             </figure>
                             <h5 class="c-grid-block__title t-h5">
                                 {{ card.cardTitle }}

@@ -21,7 +21,11 @@
                             <li class="c-file-list__item{% if loop.index > initialCount %} is-hidden{% endif %}">
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt{% if isDatePadded %} t-body--padded{% endif %}">
-                                        4 June 2018
+                                        {% if i % 2 %}
+                                            4 June 2018
+                                        {% else %}
+                                            4 September 2019
+                                        {% endif %}
                                     </p>
                                     <h4 class="c-file-list__title t-h4 t-thin">
                                         Q3 2018 Quarterly Results

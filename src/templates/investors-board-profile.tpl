@@ -29,7 +29,7 @@ Investors - board profile
         card_grid.render(
             compTitle='Board of<br>Directors',
             perRow='3',
-            count='9',
+            count='8',
             type='people'
         )
     }}

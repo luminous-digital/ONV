@@ -38,9 +38,17 @@ Grid block
     @include media('>=mobile') {
         padding: 0;
         height: $size-grid-component-card-height;
+
+        &:not(:nth-child(3n+3)) {
+            margin-right: offset(main) * 2;
+        }
     }
     @include media('>=desktop-small') {
         opacity: 1;
+
+        &:not(:nth-child(3n+3)) {
+            margin-right: offset(main) * 2.3;
+        }
     }
 }
 
@@ -69,21 +77,23 @@ Grid block
 
 .c-grid-block__image img {
     width: 100%;
-    height: auto;
+    height: $size-grid-component-card-img-height-by-3;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 
-    transition: $transition-infinite;
-}
-
-.c-grid-block:hover img {
-    transform: translate(-50%, -50%) scale(1.05);
+    object-fit: cover;
 
     transition: $transition-infinite;
 }
+
+// .c-grid-block:hover img {
+//     // transform: translate(-50%, -50%) scale(1.05);
+
+//     transition: $transition-infinite;
+// }
 
 .c-grid-block__title {
     padding-top: offset(main);
