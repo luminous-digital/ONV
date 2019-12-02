@@ -59,6 +59,10 @@ WYSIWYG
         padding-bottom: offset(main) * 4;
     }
 
+    &--no-offset {
+        padding-bottom: 0;
+    }
+
     &--nopadding {
 
         @include media('>=mobile') {

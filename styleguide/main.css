@@ -5689,6 +5689,9 @@ WYSIWYG
   .c-wysiwyg {
     padding-bottom: 40px; } }
 
+.c-wysiwyg--no-offset {
+  padding-bottom: 0; }
+
 @media (min-width: 768px) {
   .c-wysiwyg--nopadding {
     padding-bottom: 0; } }
