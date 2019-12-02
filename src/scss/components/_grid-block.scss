@@ -37,7 +37,7 @@ Grid block
 
     @include media('>=mobile') {
         padding: 0;
-        height: $size-grid-component-card-height;
+        // height: $size-grid-component-card-height;
 
         &:not(:nth-child(3n+3)) {
             margin-right: offset(main) * 2;
