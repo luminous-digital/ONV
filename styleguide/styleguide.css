@@ -4382,7 +4382,7 @@ List wrapper no download
    Map
    ========================================================================== */
 .c-map {
-  width: 891px;
+  width: 100%;
   height: 490px;
   padding: 0;
   margin: 0;
@@ -4391,7 +4391,6 @@ List wrapper no download
   @media (min-width: 768px) {
     .c-map {
       margin: 0 auto;
-      width: 1000px;
       height: 570px; } }
 
 .c-map__img {
@@ -4418,42 +4417,10 @@ List wrapper no download
   height: auto;
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
-  overflow-y: hidden; }
+  position: relative; }
   @media (min-width: 1200px) {
     .c-map-container {
       overflow: hidden; } }
-
-/* Simplebar styles
---------------------- */
-.c-map-container .simplebar-track:before {
-  content: '';
-  position: absolute;
-  top: 9px;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: #283A6A; }
-
-.c-map-container .simplebar-track.simplebar-horizontal {
-  height: 17px;
-  left: 40px;
-  right: 40px;
-  bottom: 17px; }
-  @media (min-width: 768px) {
-    .c-map-container .simplebar-track.simplebar-horizontal {
-      bottom: 50px; } }
-
-.c-map-container .simplebar-track .simplebar-scrollbar {
-  height: 15px;
-  width: 94px; }
-  .c-map-container .simplebar-track .simplebar-scrollbar:before {
-    width: 94px;
-    background-color: #F79727;
-    opacity: 1; }
-  @media (min-width: 768px) {
-    .c-map-container .simplebar-track .simplebar-scrollbar:before {
-      width: calc(100% - 5px); } }
 
 /* ==========================================================================
    Map nav
@@ -4659,6 +4626,42 @@ List wrapper no download
       top: 21px;
       left: -51px;
       transform: scale(0.9); } }
+
+/* ==========================================================================
+   Map popup
+   ========================================================================== */
+.c-map-popup {
+  display: none; }
+  .c-map-popup.is-opened {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    z-index: 1;
+    display: block;
+    border: none;
+    background-color: #F3F5F9;
+    padding: 30px 15px 20px;
+    width: 320px;
+    height: auto;
+    max-height: 470px;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5); }
+    @media (min-width: 768px) {
+      .c-map-popup.is-opened {
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        transform: none; } }
+  .c-map-popup__close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 5px; }
+    .c-map-popup__close .o-svg {
+      width: 100%;
+      height: 100%; }
 
 /* ==========================================================================
    Map wrapper

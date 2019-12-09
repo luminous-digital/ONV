@@ -1,15 +1,15 @@
-import '@babel/polyfill'
+import 'idempotent-babel-polyfill'
 import svg4everybody from 'svg4everybody'
-import 'simplebar'
+// import 'simplebar'
 import './modules/header'
 import './modules/sliders'
 import './modules/scroll-to-anchor'
-import './modules/map'
 import './modules/dropdowns'
 import './modules/people-modal'
 import './modules/news'
 import './modules/cookies'
 import './modules/list-load-more'
 import './modules/accordions'
+import './modules/map/map'
 
 svg4everybody()
