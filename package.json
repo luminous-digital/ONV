@@ -74,6 +74,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "handlebars-loader": "^1.7.1",
+    "idempotent-babel-polyfill": "^7.4.4",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
     "simplebar": "^4.0.0",
