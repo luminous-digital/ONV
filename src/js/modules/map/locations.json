@@ -1,0 +1,101 @@
+[
+    {
+        "lat": 51.5249535,
+        "lng": -0.0918783,
+        "type": "Nitrogen",
+        "territory": "US",
+        "country": "United States",
+        "locationType": "Steppe",
+        "title": "Title1",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 53.4791846,
+        "lng": -2.2543333,
+        "type": "Methanol",
+        "territory": "US",
+        "country": "United States",
+        "locationType": "Mountains",
+        "title": "Title2",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 37.4912229,
+        "lng": -122.2307945,
+        "type": "Supply chain",
+        "territory": "Africa",
+        "country": "Algeria",
+        "locationType": "Mountains",
+        "title": "Title3",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 40.740917,
+        "lng": -73.9948791,
+        "type": "Methanol",
+        "territory": "Africa",
+        "country": "Algeria",
+        "locationType": "Lowlands",
+        "title": "Title4",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 41.5586582,
+        "lng": -72.9199466,
+        "type": "Nitrogen",
+        "territory": "Africa",
+        "country": "Algeria",
+        "locationType": "Lowlands",
+        "title": "Title5",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 45.5202059,
+        "lng": -122.6798506,
+        "isHeadquarter": false,
+        "type": "Nitrogen",
+        "territory": "Europe",
+        "country": "Netherlands",
+        "locationType": "Lowlands",
+        "title": "Title6",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 37.775591,
+        "lng": -122.4002005,
+        "isHeadquarter": false,
+        "type": "Methanol",
+        "territory": "Europe",
+        "country": "Netherlands",
+        "locationType": "Lowlands",
+        "title": "Title7",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    },
+    {
+        "lat": 47.5202059,
+        "lng": -123.6798506,
+        "isHeadquarter": false,
+        "type": "Supply chain",
+        "territory": "Europe",
+        "country": "Netherlands",
+        "locationType": "Steppe",
+        "title": "Title8",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien diam, placerat id efficitur iaculis, cursus ut sapien. Mauris a tempor ligula. Pellentesque id velit vitae mi volutpat rutrum ut a mi.",
+        "readMoreTitle": "Read more",
+        "readMoreLink": "http://google.com"
+    }
+]

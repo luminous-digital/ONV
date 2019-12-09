@@ -40,6 +40,10 @@ module.exports = env => {
           loader: 'babel-loader',
           exclude: /node_modules/,
           query: readBabelrcUp().then(result => result.babel)
+        },
+        {
+          test: /\.handlebars$/,
+          loader: 'handlebars-loader'
         }
       ]
     }

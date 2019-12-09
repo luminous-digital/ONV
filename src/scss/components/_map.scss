@@ -2,7 +2,7 @@
    Map
    ========================================================================== */
 .c-map {
-    width: $size-map-width;
+    width: 100%;
     height: $size-map-height;
 
     padding: 0;
@@ -15,7 +15,7 @@
     @include media('>=mobile') {
         margin: 0 auto;
 
-        width: $size-map-width-t;
+        // width: $size-map-width-t;
         height: $size-map-height-t;
     }
 }
