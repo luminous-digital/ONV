@@ -1,6 +1,5 @@
 /* globals google */
 import $ from 'jquery'
-// import { isStyleguide } from '../utils'
 import _groupBy from 'lodash/groupBy'
 import _forEach from 'lodash/forEach'
 import _filter from 'lodash/filter'
@@ -34,7 +33,6 @@ const selectors = {
   mapPopupClose: `.${classes.mapPopupClose}`
 }
 
-// const MARKER_ICON_SRC = '/static/img/map-pin-small.png'
 const MARKER_GROUPED_ICON_SRC = '/static/img/map-pin-small'
 const MARKER_COLORS = {
   METHANOL: '/static/img/map-pin-green.png',
@@ -51,9 +49,6 @@ const OfficesMap = {
       OfficesMap.loadGoogleAPIScript()
     ])
 
-    OfficesMap.generateNameDropdown(officesLocations)
-
-    // const facilities = _groupBy(officesLocations, 'title')
     const $mapBox = $mapContainer.find(selectors.map)
     const googleMapObject = OfficesMap.createGoogleMapObject($mapBox)
 
@@ -62,68 +57,13 @@ const OfficesMap = {
       OfficesMap.zoomMapToVisibleMarkers(googleMapObject)
     })
 
-    // const $selectElements = $mapContainer.find(selectors.select)
-    // const $clearFiltersButton = $mapContainer.find(selectors.clearFilters)
     const $locationsContainer = $mapContainer.find(selectors.locationsContainer)
     const $mapPopupClose = $mapContainer.find(selectors.mapPopupClose)
-    // const $countrySelect = $selectElements.filter(selectors.countrySelect)
-
-    const filterButtons = $(selectors.mapFilterButtons)
-    filterButtons.each(function () {
-      const $btn = $(this)
-      $btn.on('click', function (e) {
-        const attr = e.currentTarget.dataset.attr
-        const val = e.currentTarget.dataset.val
-        OfficesMap.filterMarkers(googleMapObject, officesLocations, attr, val)
-      })
-    })
-
-    // _forEach(Object.keys(facilities), country => {
-    //   if (country !== 'null') {
-    //     $countrySelect.append($('<option/>', {
-    //       value: country,
-    //       html: country
-    //     }))
-    //   }
-    // })
-
-    // $selectElements.on(
-    //   'change',
-    //   OfficesMap.onFilterSelectChange(
-    //     $selectElements,
-    //     googleMapObject,
-    //     $locationsContainer,
-    //     countryOptionsMap,
-    //     officesLocations
-    //   )
-    // )
-
-    // $clearFiltersButton.on(
-    //   'click',
-    //   OfficesMap.onClearFiltersClick(
-    //     $selectElements,
-    //     googleMapObject
-    //   )
-    // )
 
     $mapPopupClose.on('click', OfficesMap.onInfoWindowCloseClick)
     OfficesMap.renderLocationsSection($locationsContainer, officesLocations)
 
-    console.log(officesLocations)
-
     return googleMapObject
-  },
-
-  generateNameDropdown (locations) {
-    const $dropdown = $('.js-map-filter-facility')
-    const $options = $dropdown.find('.js-options')
-    locations.forEach(loc => {
-      $options.append(`<li class="c-dropdown__option" data-attr="title" data-val="${loc.title}">
-          <span class="c-label">
-              ${loc.title}
-          </span>
-      </li>`)
-    })
   },
 
   loadGoogleAPIScript () {
@@ -223,45 +163,6 @@ const OfficesMap = {
     )
   },
 
-  createFilteredMarkers (googleMapObject, officesLocations, filterAttr, filterVal) {
-    // googleMapObject.infoWindowObject = new google.maps.InfoWindow({
-    //   pixelOffset: new google.maps.Size(360, 320)
-    // })
-
-    const filteredLocations = officesLocations.filter(location => {
-      console.log(location.filterAttr)
-      if (location.filterAttr === filterVal) {
-        return location
-      }
-    })
-
-    console.log('filteredLocations', filteredLocations)
-
-    for (const markerData of filteredLocations) {
-      const { lat, lng, type } = markerData
-      const pinIcon = MARKER_COLORS[type.replace(' ', '_').toUpperCase()]
-
-      const marker = new google.maps.Marker({
-        position: new google.maps.LatLng(lat, lng),
-        map: googleMapObject,
-        icon: pinIcon
-      })
-
-      marker.markerData = markerData
-      googleMapObject.markers.push(marker)
-
-      google.maps.event.addListener(marker, 'click', OfficesMap.onMarkerClick)
-    }
-
-    googleMapObject.markerClustererObject = new MarkerClusterer(
-      googleMapObject,
-      googleMapObject.markers,
-      {
-        imagePath: MARKER_GROUPED_ICON_SRC
-      }
-    )
-  },
-
   onMarkerClick () {
     const { markerData } = this
 
@@ -277,43 +178,6 @@ const OfficesMap = {
       .find('.c-map__popup__content')
       .html()
   },
-
-  removeAllMarkers (googleMapObject) {
-    console.log('1', googleMapObject.markers)
-    googleMapObject.markers.forEach(marker => {
-      // $(marker).hide()
-    })
-  },
-
-  filterMarkers (googleMapObject, officesLocations, attr, val) {
-    console.log('attr', attr)
-    console.log('val', val)
-    OfficesMap.removeAllMarkers(googleMapObject)
-    OfficesMap.createFilteredMarkers(googleMapObject, officesLocations, attr, val)
-  },
-
-  // onFilterSelectChange: (
-  //   $selectElements,
-  //   googleMapObject,
-  //   $locationsContainer,
-  //   countryOptionsMap,
-  //   officesLocations
-  // ) => function () {
-  //   const $countrySelect = $selectElements.filter(selectors.countrySelect)
-  //   const $clickedFilterSelect = $(this)
-  //   const country = $countrySelect.val()
-
-  //   if (country && $clickedFilterSelect.is($countrySelect)) {
-  //     OfficesMap.filterMarkers(googleMapObject, country)
-  //     OfficesMap.renderLocationsSection($locationsContainer, officesLocations, country)
-  //     OfficesMap.zoomMapToVisibleMarkers(googleMapObject)
-  //   }
-  // },
-
-  // onClearFiltersClick: ($selectElements, googleMapObject) => function () {
-  //   $selectElements.val(null).trigger('change')
-  //   OfficesMap.zoomMapToVisibleAllMarkers(googleMapObject)
-  // },
 
   zoomMapToVisibleAllMarkers (googleMapObject) {
     const bounds = new google.maps.LatLngBounds()
@@ -341,14 +205,9 @@ const OfficesMap = {
     }
   },
 
-  // createFilterDelegate: (country) => country
-  //   ? markerData => (country === 'All') ? true : markerData.country === country
-  //   : () => true,
-
   prepareCountriesTemplateData (region, country, officesLocations) {
     const locations = _filter(
       officesLocations
-      // OfficesMap.createLocationsFilterDelegate(region, country)
     )
     const groupedLocations = _groupBy(
       locations,
