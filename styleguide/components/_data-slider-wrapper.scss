@@ -124,6 +124,8 @@
     width: 100%;
     height: auto;
 
+    padding-bottom: offset(main) * 9;
+
     @include media('>=mobile') {
         padding: {
             left: offset(main) * 10;
@@ -149,7 +151,8 @@
 
     outline: none;
 
-    top: offset(main) * 6;
+    // top: offset(main) * 6;
+    top: calc((100% - 63px) / 2);
 
     @include media('>=mobile') {
         @include arrow;

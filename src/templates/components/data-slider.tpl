@@ -1,6 +1,6 @@
 {% macro render(secTitle) %}
 
-<section class="l-section l-section--bg-alt l-section--inner-spacing">
+<section class="l-section l-section--bg-alt l-section--inner-spacing-top">
     <div class="c-section-divider c-section-divider--padded">
         <div class="l-inner">
             <h4 class="c-section-divider__title t-sec-divider">
