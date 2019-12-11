@@ -5744,6 +5744,7 @@ Text component
     top: 50%;
     left: 0;
     width: 100%;
+    height: auto;
     max-width: 100%;
     transform: translateY(-50%);
     object-fit: initial; }
