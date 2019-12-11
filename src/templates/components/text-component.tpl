@@ -9,6 +9,10 @@
     <div class="c-text-component__column">
         <div class="c-wysiwyg {% if noPadding %}c-wysiwyg--nopadding{% endif %}">
             {{ firstParagraph | safe }}
+            <br>
+            <br>
+            {% import "./video-module.tpl" as c_video %}
+                {{ c_video.render() }}
         </div>
         {% if secondParagraph %}
             <div class="c-wysiwyg u-m-hidden {% if noPadding %}c-wysiwyg--nopadding{% endif %}">

@@ -37,8 +37,7 @@
             "src": "scss",
             "dest": "css",
             "autoprefixer": {
-                "grid": true,
-                "browsers": ["> 0%"]
+                "grid": true
             },
             "sass": {
                 "indentedSyntax": true,

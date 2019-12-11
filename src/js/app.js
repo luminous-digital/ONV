@@ -11,5 +11,6 @@ import './modules/cookies'
 import './modules/list-load-more'
 import './modules/accordions'
 import './modules/map/map'
+import './modules/video-lazy-loading'
 
 svg4everybody()
