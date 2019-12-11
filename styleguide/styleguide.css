@@ -1626,7 +1626,7 @@ User interface
   background-color: #30B6B5; }
 
 .ui-bg--black {
-  background-color: black; }
+  background-color: #000; }
 
 .ui-color--main {
   color: #283A6A; }
@@ -1653,7 +1653,7 @@ User interface
   color: #30B6B5; }
 
 .ui-color--black {
-  color: black; }
+  color: #000; }
 
 .ui-icon {
   display: inline-flex;
@@ -4957,7 +4957,7 @@ Our history slider date
   font-weight: 400;
   font-size: 16px;
   margin-top: -7px;
-  color: black; }
+  color: #000; }
 
 .c-our-history-slider-date.is-active {
   opacity: 1; }
@@ -5660,6 +5660,92 @@ Text component
 @media (min-width: 1200px) {
   .c-text-component__description {
     max-width: 95%; } }
+
+/* ==========================================================================
+   Video
+   ========================================================================== */
+.c-video {
+  position: relative;
+  width: 100%; }
+
+.c-video iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto; }
+
+.c-video__content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 120%;
+  cursor: pointer;
+  background-color: #000; }
+
+.c-video__content img {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+  display: block;
+  opacity: .7; }
+
+.c-video__button {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: #fff;
+  background-color: #F79727; }
+
+.c-video__button .o-svg {
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
+  fill: currentColor; }
+
+.c-video__content img,
+.c-video__button {
+  cursor: pointer; }
+
+.c-video__content img,
+.c-video__content iframe,
+.c-video__button,
+.c-video__button:before {
+  position: absolute; }
+
+.c-video__button,
+.c-video__button:before {
+  bottom: 32px;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); }
+
+.c-video__content iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  .c-video__content {
+    padding-top: 56.25%; }
+  .c-video__content img {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%); }
+  .c-video__button {
+    padding: 16px; }
+  .c-video__button .o-svg {
+    font-size: 32px; } }
 
 /* ==========================================================================
 WYSIWYG
