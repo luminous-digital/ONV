@@ -29,17 +29,17 @@ const VideoLazyLoading = {
         })
       )
 
-      const iframe = $('iframe')[0]
+      // const iframe = $('iframe')[0]
 
-      const requestFullScreen =
-        iframe.requestFullScreen ||
-        iframe.mozRequestFullScreen ||
-        iframe.webkitRequestFullScreen ||
-        iframe.msRequestFullscreen
+      // const requestFullScreen =
+      //   iframe.requestFullScreen ||
+      //   iframe.mozRequestFullScreen ||
+      //   iframe.webkitRequestFullScreen ||
+      //   iframe.msRequestFullscreen
 
-      if (requestFullScreen) {
-        requestFullScreen.bind(iframe)()
-      }
+      // if (requestFullScreen) {
+      //   requestFullScreen.bind(iframe)()
+      // }
     })
   }
 }
