@@ -34,7 +34,8 @@ const VideoLazyLoading = {
       const requestFullScreen =
         iframe.requestFullScreen ||
         iframe.mozRequestFullScreen ||
-        iframe.webkitRequestFullScreen
+        iframe.webkitRequestFullScreen ||
+        iframe.msRequestFullscreen
 
       if (requestFullScreen) {
         requestFullScreen.bind(iframe)()
