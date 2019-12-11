@@ -4643,7 +4643,9 @@ List wrapper no download
   display: none; }
   .c-map-popup.is-opened {
     position: absolute;
-    z-index: 1;
+    top: 40px;
+    left: calc((100% - 320px) / 2);
+    z-index: 999;
     display: block;
     border: none;
     background-color: #F3F5F9;
@@ -4654,7 +4656,8 @@ List wrapper no download
     box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5); }
     @media (min-width: 768px) {
       .c-map-popup.is-opened {
-        transform: none; } }
+        transform: none;
+        position: absolute; } }
   .c-map-popup__close {
     cursor: pointer;
     position: absolute;
