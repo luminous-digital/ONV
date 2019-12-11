@@ -35,22 +35,24 @@
 }
 
 .c-video__content img {
-    // top: 50%;
-    // left: 0;
-
-    // width: 100%;
-
-    // transform: translateY(-50%);
     top: 0;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    object-fit: cover;
-    width: auto;
+
     display: block;
 
+    width: auto;
+    height: 100%;
+
+    transform: translateX(-50%);
+
     opacity: .7;
+
+    object-fit: cover;
+}
+
+.c-wysiwyg .c-video__content img {
+    margin-top: 0;
 }
 
 .c-video__button {
@@ -113,9 +115,11 @@
         left: 0;
 
         width: 100%;
+        max-width: 100%;
 
         transform: translateY(-50%);
 
+        object-fit: initial;
     }
 
     .c-video__button {
