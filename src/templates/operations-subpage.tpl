@@ -6,8 +6,8 @@ Operations subpage
 {% block content %}
 
 {% block header_panel_short %}
-    {% import "components/header-panel-short.tpl" as header_panel_short with context %}
-    {{
+{% import "components/header-panel-short.tpl" as header_panel_short with context %}
+{{
         header_panel_short.render(
             pageTitle='Operations subpage',
             pageSubtitle='Our competitive strengths lie in our high quality production assets, our global low cost advantage, and our strategic locations with access to strong distribution and logistics capabilities',
@@ -17,15 +17,15 @@ Operations subpage
 {% endblock %}
 
 {% block standfirst %}
-    {% import "components/standfirst.tpl" as standfirst with context %}
-    {{ standfirst.render(
+{% import "components/standfirst.tpl" as standfirst with context %}
+{{ standfirst.render(
         paragraph='Capable of producing over 2 million metric tons of sellable fertilizer and chemicals products annually through nine interconnected plants located on a fully integrated production site in Geleen, the Netherlands.'
     ) }}
 {% endblock %}
 
 {% block data_slider %}
-    {% import "components/data-slider.tpl" as data_slider with context %}
-    {{ data_slider.render(
+{% import "components/data-slider.tpl" as data_slider with context %}
+{{ data_slider.render(
         secTitle='Annual production capacity'
     ) }}
 {% endblock %}
@@ -33,8 +33,8 @@ Operations subpage
 <section class="l-section">
     <div class="l-inner">
         {% block text_component %}
-            {% import "components/text-component.tpl" as text_component with context %}
-            {{ text_component.render(
+        {% import "components/text-component.tpl" as text_component with context %}
+        {{ text_component.render(
                 secTitle='World-class production complex',
                 firstParagraph='
                 <p>
@@ -53,8 +53,8 @@ Operations subpage
             ) }}
         {% endblock %}
         {% block text_component_2 %}
-            {% import "components/text-component.tpl" as text_component_2 with context %}
-            {{ text_component_2.render(
+        {% import "components/text-component.tpl" as text_component_2 with context %}
+        {{ text_component_2.render(
                 secTitle='Diversified product portfolio',
                 firstParagraph='
                 <p>
@@ -65,14 +65,14 @@ Operations subpage
             ) }}
         {% endblock %}
         {% block quote %}
-            {% import "components/text-quote.tpl" as quote with context %}
-            {{ quote.render(
+        {% import "components/text-quote.tpl" as quote with context %}
+        {{ quote.render(
                 quote='OCI Nitrogen is a world-class production complex performing at excellent utilization, reliability and efficiency and emissions rates.'
             ) }}
         {% endblock %}
         {% block text_component_3 %}
-            {% import "components/text-component.tpl" as text_component_3 with context %}
-            {{ text_component_3.render(
+        {% import "components/text-component.tpl" as text_component_3 with context %}
+        {{ text_component_3.render(
                 secTitle='Strategic location with strong distribution and logistics',
                 firstParagraph='
                 <p>
@@ -86,17 +86,23 @@ Operations subpage
                     <br><br>
                     <a href="http://www.ocinitrogen.com">www.ocinitrogen.com</a>
                 </p>
-                ',
-                noPadding='true'
-            ) }}
+        ',
+        noPadding='true'
+        ) }}
         {% endblock %}
 
     </div>
 </section>
+<section class="l-section">
+    <div class="l-inner">
+        {% import "components/video-module.tpl" as c_video %}
+        {{ c_video.render() }}
+    </div>
+</section>
 
 {% block feature_panel %}
-    {% import "components/feature-panel.tpl" as feature_panel with context %}
-    {{
+{% import "components/feature-panel.tpl" as feature_panel with context %}
+{{
         feature_panel.render(
             compTitle='Find your future career with OCI Nitrogen',
             compContent='As part of a wider global network our successes are thanks to our clear vision, maintained values, and our people. Our dedicated team of employees are the best in their fields and we aim to give our people the best environments to work in. Discover outstanding job and career opportunities with OCI Nitrogen.',
@@ -107,8 +113,8 @@ Operations subpage
 {% endblock %}
 
 {% block quick_links %}
-    {% import "components/quick-links.tpl" as quick_links with context %}
-    {{
+{% import "components/quick-links.tpl" as quick_links with context %}
+{{
         quick_links.render(
             secTitle='Related links'
         )

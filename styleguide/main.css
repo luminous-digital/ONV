@@ -1626,7 +1626,7 @@ User interface
   background-color: #30B6B5; }
 
 .ui-bg--black {
-  background-color: black; }
+  background-color: #000; }
 
 .ui-color--main {
   color: #283A6A; }
@@ -1653,7 +1653,7 @@ User interface
   color: #30B6B5; }
 
 .ui-color--black {
-  color: black; }
+  color: #000; }
 
 .ui-icon {
   display: inline-flex;
@@ -1901,6 +1901,14 @@ img {
     @media (min-width: 1200px) {
       .l-section--inner-spacing {
         padding: 50px 0 90px; } }
+  .l-section--inner-spacing-top {
+    padding: 30px 0 0; }
+    @media (min-width: 768px) {
+      .l-section--inner-spacing-top {
+        padding: 50px 0 0; } }
+    @media (min-width: 1200px) {
+      .l-section--inner-spacing-top {
+        padding: 50px 0 0; } }
   .l-section--bg-alt {
     background-color: #F3F5F9; }
   .l-section--no-overflow {
@@ -2802,7 +2810,8 @@ Article header
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding-bottom: 90px; }
   @media (min-width: 768px) {
     .c-data-slider-wrapper__slider {
       padding-left: 100px;
@@ -2823,7 +2832,7 @@ Article header
   cursor: pointer;
   z-index: 10;
   outline: none;
-  top: 60px; }
+  top: calc((100% - 63px) / 2); }
   @media (min-width: 768px) {
     .c-data-slider-wrapper__next,
     .c-data-slider-wrapper__prev {
@@ -3237,14 +3246,14 @@ Grid block
 
 .c-grid-block__image {
   width: 100%;
-  height: 175px;
+  height: 220px;
   overflow: hidden;
   position: relative;
   margin: 0; }
 
 .c-grid-block__image img {
   width: 100%;
-  height: 215px;
+  height: 220px;
   object-fit: cover;
   transition: all 0.4s ease-out; }
 
@@ -4634,8 +4643,6 @@ List wrapper no download
   display: none; }
   .c-map-popup.is-opened {
     position: absolute;
-    top: 30%;
-    right: 5%;
     z-index: 1;
     display: block;
     border: none;
@@ -4647,9 +4654,6 @@ List wrapper no download
     box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5); }
     @media (min-width: 768px) {
       .c-map-popup.is-opened {
-        position: absolute;
-        right: 10%;
-        top: 30%;
         transform: none; } }
   .c-map-popup__close {
     cursor: pointer;
@@ -4948,7 +4952,7 @@ Our history slider date
   font-weight: 400;
   font-size: 16px;
   margin-top: -7px;
-  color: black; }
+  color: #000; }
 
 .c-our-history-slider-date.is-active {
   opacity: 1; }
@@ -5651,6 +5655,98 @@ Text component
 @media (min-width: 1200px) {
   .c-text-component__description {
     max-width: 95%; } }
+
+/* ==========================================================================
+   Video
+   ========================================================================== */
+.c-video {
+  position: relative;
+  width: 100%; }
+
+.c-video iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto; }
+
+.c-video__content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 120%;
+  cursor: pointer;
+  background-color: #000; }
+
+.c-video__content img {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: auto;
+  height: 100%;
+  transform: translateX(-50%);
+  opacity: .7;
+  object-fit: cover; }
+
+.c-wysiwyg .c-video__content img {
+  margin-top: 0; }
+
+.c-video__button {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: #fff;
+  background-color: #F79727; }
+
+.c-video__button .o-svg {
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
+  fill: currentColor; }
+
+.c-video__content img,
+.c-video__button {
+  cursor: pointer; }
+
+.c-video__content img,
+.c-video__content iframe,
+.c-video__button,
+.c-video__button:before {
+  position: absolute; }
+
+.c-video__button,
+.c-video__button:before {
+  bottom: 32px;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); }
+
+.c-video__content iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  .c-video__content {
+    padding-top: 56.25%; }
+  .c-video__content img {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transform: translateY(-50%);
+    object-fit: initial; }
+  .c-video__button {
+    padding: 16px; }
+  .c-video__button .o-svg {
+    font-size: 32px; } }
 
 /* ==========================================================================
 WYSIWYG
