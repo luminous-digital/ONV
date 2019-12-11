@@ -161,15 +161,25 @@ const OfficesMap = {
         imagePath: MARKER_GROUPED_ICON_SRC
       }
     )
+
+    OfficesMap.googleMapObject = googleMapObject
   },
 
   onMarkerClick () {
     const { markerData } = this
-
-    $(selectors.mapPopupContainer)
-      .addClass('is-opened')
-      .find('.c-map-popup__content')
-      .html(infowindowTemplate({ ...markerData }))
+    const location = new google.maps.LatLng(markerData.lat, markerData.lng)
+    OfficesMap.googleMapObject.panTo(location)
+    setTimeout(function () {
+      if (markerData.type !== 'Supply chain') {
+        $(selectors.mapPopupContainer)
+          .addClass('is-opened')
+          .find('.c-map-popup__content')
+          .html(infowindowTemplate({ ...markerData }))
+          .parent()
+          .css('top', '20%')
+          .css('left', '55%')
+      }
+    }, 300)
   },
 
   onInfoWindowCloseClick () {

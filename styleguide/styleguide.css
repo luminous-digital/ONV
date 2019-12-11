@@ -4643,8 +4643,6 @@ List wrapper no download
   display: none; }
   .c-map-popup.is-opened {
     position: absolute;
-    top: 30%;
-    right: 5%;
     z-index: 1;
     display: block;
     border: none;
@@ -4656,9 +4654,6 @@ List wrapper no download
     box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5); }
     @media (min-width: 768px) {
       .c-map-popup.is-opened {
-        position: absolute;
-        right: 10%;
-        top: 30%;
         transform: none; } }
   .c-map-popup__close {
     cursor: pointer;
