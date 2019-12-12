@@ -92,7 +92,7 @@
         },
 
         "production" : {
-            "rev": true
+            "rev": false
         },
 
         "critical" : {

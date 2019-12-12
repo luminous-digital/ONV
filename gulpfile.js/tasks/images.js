@@ -13,10 +13,10 @@ const paths = {
 
 const imagesTask = () => gulp
   .src([paths.src, '*!README.md'])
-  .pipe(gulpif(global.production, changed(paths.dest))) // Ignore unchanged files
+  .pipe(gulpif(!global.production, changed(paths.dest))) // Ignore unchanged files
   .pipe(gulpif(global.production, imagemin())) // minify if it's production task
   .pipe(gulp.dest(path.join(global.production ? config.root.dist : '', paths.dest)))
-  .pipe(gulpif(global.production, browserSync.stream()))
+  .pipe(gulpif(!global.production, browserSync.stream()))
 
 gulp.task('images', imagesTask)
 module.exports = imagesTask
