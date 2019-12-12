@@ -94,6 +94,10 @@ select select.pseudo-class-focus {
   transition: all 0.4s ease-out;
 }
 
+.c-file-list__date a.pseudo-class-hover:after {
+  background-color: #283A6A;
+}
+
 .c-file-list__item.pseudo-class-last-child {
   margin-bottom: 0;
 }
