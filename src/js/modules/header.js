@@ -13,6 +13,7 @@ const Header = {
       const parents = header.querySelectorAll('.has-children')
       const body = document.querySelector('body')
       menuToggle.addEventListener('touchstart', e => {
+        e.preventDefault()
         header.classList.toggle('is-active')
         body.classList.toggle('is-header-open')
       })
