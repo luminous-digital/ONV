@@ -1839,7 +1839,7 @@ img {
   top: 0;
   left: 0;
   background-color: #fff;
-  z-index: 100; }
+  z-index: 9999; }
   @media (min-width: 768px) {
     .l-header {
       height: 80px; }
