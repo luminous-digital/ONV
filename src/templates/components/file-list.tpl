@@ -22,7 +22,9 @@
                                 <div class="c-file-list__item-wrapper">
                                     <p class="c-file-list__date t-body t-body--alt{% if isDatePadded %} t-body--padded{% endif %}">
                                         {% if i % 2 %}
-                                            4 June 2018
+                                            <a href="#">
+                                                4 June 2018
+                                            </a>
                                         {% else %}
                                             4 September 2019
                                         {% endif %}

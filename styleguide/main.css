@@ -1839,7 +1839,7 @@ img {
   top: 0;
   left: 0;
   background-color: #fff;
-  z-index: 100; }
+  z-index: 9999; }
   @media (min-width: 768px) {
     .l-header {
       height: 80px; }
@@ -3045,25 +3045,40 @@ Feature panel wrapper
     height: 100%; } }
 
 .c-file-list {
-  list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin: 0; }
+  list-style-type: none; }
 
 .c-file-list__date {
+  width: 380px;
   margin-bottom: 0;
   white-space: nowrap;
-  color: #444444;
-  width: 380px; }
+  color: #444444; }
+
+.c-file-list__date a {
+  position: relative;
+  font-weight: 400; }
+  .c-file-list__date a:after {
+    position: absolute;
+    bottom: -3.33333px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    transition: all 0.2s linear;
+    background-color: #F79727; }
+  .c-file-list__date a:hover:after {
+    background-color: #283A6A; }
 
 .c-file-list__item {
-  border-bottom: 1px solid #F3F5F9;
   margin-bottom: 20px;
-  padding: 12px 0; }
-  .c-file-list__item:last-child {
-    margin-bottom: 0; }
+  padding: 12px 0;
+  border-bottom: 1px solid #F3F5F9; }
   @media (min-width: 768px) {
     .c-file-list__item {
       margin-bottom: 0; } }
+  .c-file-list__item:last-child {
+    margin-bottom: 0; }
 
 .c-file-list__item.is-hidden {
   display: none; }
@@ -3072,14 +3087,14 @@ Feature panel wrapper
   background-color: rgba(243, 245, 249, 0.4); }
 
 .c-file-list__title {
-  text-align: left;
   width: 100%;
+  margin-bottom: 15px;
   font-weight: 700;
-  margin-bottom: 15px; }
+  text-align: left; }
   @media (min-width: 768px) {
     .c-file-list__title {
-      margin-left: 30px;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      margin-left: 30px; } }
 
 .c-file-list__item-wrapper {
   display: flex;
@@ -3087,12 +3102,12 @@ Feature panel wrapper
   transition: all 0.2s linear; }
   @media (min-width: 768px) {
     .c-file-list__item-wrapper {
-      align-items: center;
-      flex-direction: row; } }
+      flex-direction: row;
+      align-items: center; } }
 
 .c-file-list__item-wrapper .c-btn-wrapper .c-btn {
-  transition: all 0.2s linear;
-  padding: 10px 60px 10px 30px; }
+  padding: 10px 60px 10px 30px;
+  transition: all 0.2s linear; }
 
 .c-file-list__item-wrapper .c-btn-wrapper .c-btn:hover {
   background-color: #F3F5F9; }
@@ -3115,8 +3130,8 @@ Feature panel wrapper
   @media (min-width: 768px) {
     .c-file-list--two-columns {
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      flex-wrap: wrap; } }
 
 .c-file-list--two-columns .c-file-list__item {
   display: flex;
@@ -3129,21 +3144,21 @@ Feature panel wrapper
 
 .c-file-list--two-columns .c-file-list__date {
   width: 110px;
-  white-space: normal;
-  line-height: 1; }
+  line-height: 1;
+  white-space: normal; }
 
 .c-file-list--two-columns .c-file-list__title {
   width: auto;
   white-space: nowrap; }
 
 .c-file-list--smaller .c-file-list__date {
-  white-space: normal;
-  width: 120px; }
+  width: 120px;
+  white-space: normal; }
 
 @media (min-width: 768px) {
   .c-file-list--smaller .c-btn-wrapper--right {
-    max-width: 200px;
-    width: 100%; } }
+    width: 100%;
+    max-width: 200px; } }
 
 /* ==========================================================================
    Footer

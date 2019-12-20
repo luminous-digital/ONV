@@ -290,7 +290,7 @@
 
     background-color: color(white);
 
-    z-index: $z-index-header;
+    z-index: 9999;
 
     @include media('>=mobile') {
         height: $size-header-height-d;
