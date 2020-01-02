@@ -47,7 +47,7 @@
                                 0.22
                             </p>
                             <p class="c-data-slider-card__desc t-body t-center">
-                                million tonnes.
+                                Ammonia terminal in Rotterdam
                             </p>
                         </div>
                     </li>

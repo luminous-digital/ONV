@@ -80,12 +80,10 @@ const Sliders = {
         breakpointsInverse: true,
         breakpoints: {
           768: {
-            autoHeight: true,
             slidesPerView: 2,
             spaceBetween: 25
           },
           1200: {
-            autoHeight: true,
             slidesPerView: 3,
             spaceBetween: 25
           }
