@@ -2,13 +2,22 @@ import $ from 'jquery'
 
 const Header = {
   init: function () {
-    this.mobileHeader()
+    const breakpoint = window.matchMedia('(max-width: 1199px)')
+
+    this.checkIfMobile(breakpoint)
+    breakpoint.addListener(this.checkIfMobile)
     this.desktopHeader()
     this.searchForm()
+  },
+  checkIfMobile: function (breakpoint) {
+    if (breakpoint.matches) {
+      Header.mobileHeader()
+    }
   },
   mobileHeader: function () {
     const header = document.querySelector('.js-header')
     const menuToggle = document.querySelector('.js-menu-toggle')
+
     if (header && menuToggle) {
       const parents = header.querySelectorAll('.has-children')
       const body = document.querySelector('body')
@@ -21,7 +30,11 @@ const Header = {
         Array.from(parents).forEach(item => {
           item.addEventListener('click', e => {
             e.preventDefault()
-            if (e.target.parentNode.classList.contains('t-menu') || e.target.parentNode.classList.contains('t-menu-sub')) {
+            e.stopPropagation()
+            if (
+              e.target.parentNode.classList.contains('t-menu') ||
+              e.target.parentNode.classList.contains('t-menu-sub')
+            ) {
               window.location.href = e.target.parentNode.href
             } else {
               item.classList.toggle('is-active')
@@ -136,15 +149,15 @@ const Header = {
   appendPosts: function (posts) {
     const $listContainer = $('.js-search-results')
     const items = posts.map(post => {
-      return `<li class="c-search-results__item">
-          <h3 class="c-search-results__heading t-h3">
+      return `<li class='c-search-results__item'>
+          <h3 class='c-search-results__heading t-h3'>
               ${post.title}
           </h3>
-          <p class="c-search-results__content t-body">
+          <p class='c-search-results__content t-body'>
             ${post.body}
           </p>
-          <a href="${post.url}" class="c-search-results__url t-link">
-              <span class="c-label">
+          <a href='${post.url}' class='c-search-results__url t-link'>
+              <span class='c-label'>
                   View ${post.title}
               </span>
           </a>

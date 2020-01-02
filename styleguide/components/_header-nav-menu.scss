@@ -98,12 +98,8 @@ Header nav menu
         height: auto;
         width: 100%;
         border: none;
-
-        // padding: 0 offset(main);
         padding: 0 offset(main) * 2.2;
     }
-    // @include media('>=desktop-small') {
-    // }
 }
 
 .c-header-nav-menu__item:first-child > .c-link {

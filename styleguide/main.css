@@ -5554,8 +5554,11 @@ Sub nav
     .c-sub-nav__item {
       width: 100%;
       background-color: #fff;
-      padding: 0 35px;
       border-bottom: 0; } }
+
+@media (min-width: 1200px) {
+  .c-sub-nav__item > .c-link {
+    padding: 0 35px; } }
 
 .c-sub-nav__item.current-menu-item > .c-link {
   font-weight: bold; }

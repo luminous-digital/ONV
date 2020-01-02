@@ -51,8 +51,13 @@ Sub nav
     @include media('>=desktop-small') {
         width: 100%;
         background-color: color(white);
-        padding: 0 offset(default);
         border-bottom: 0;
+    }
+}
+
+.c-sub-nav__item > .c-link {
+    @include media('>=desktop-small') {
+        padding: 0 offset(default);
     }
 }
 
