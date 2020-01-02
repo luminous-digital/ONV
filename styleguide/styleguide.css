@@ -5158,6 +5158,9 @@ Our history slider date
     .c-quick-links-card__container {
       width: 100%; } }
 
+.c-quick-links-card__container:hover .t-link .c-label:after {
+  background-color: #283A6A; }
+
 .c-quick-links-card__date,
 .c-quick-links-card__excerpt,
 .c-quick-links-card__decor,

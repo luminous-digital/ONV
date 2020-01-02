@@ -34,6 +34,10 @@
     }
 }
 
+.c-quick-links-card__container:hover .t-link .c-label:after{
+    background-color: color(main);
+}
+
 .c-quick-links-card__date,
 .c-quick-links-card__excerpt,
 .c-quick-links-card__decor,

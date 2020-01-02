@@ -159,6 +159,10 @@ select select.pseudo-class-focus {
   left: 0;
 }
 
+.c-quick-links-card__container.pseudo-class-hover .t-link .c-label:after {
+  background-color: #283A6A;
+}
+
 .c-quick-links-card.pseudo-class-hover .c-quick-links-card__decor img {
   transform: scale(1.1);
   transition: all 0.4s ease-out;
