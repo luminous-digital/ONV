@@ -5557,6 +5557,9 @@ Sub nav
       padding: 0 35px;
       border-bottom: 0; } }
 
+.c-sub-nav__item.current-menu-item > .c-link {
+  font-weight: bold; }
+
 @media (min-width: 1200px) {
   .c-sub-nav__item:first-of-type {
     margin-top: 10px; } }

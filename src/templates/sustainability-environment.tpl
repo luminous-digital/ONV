@@ -4,6 +4,7 @@ Sustainability - environment
 {% endblock %}
 {% set menu_item = 'sustainability' %}
 {% set page_title = 'Environment' %}
+{% set sub_menu_item = 'Environment' %}
 {% block content %}
 
     {% block header_panel_short %}

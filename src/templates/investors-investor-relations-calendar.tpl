@@ -3,6 +3,7 @@
 Investors - investor relations calendar
 {% endblock %}
 {% set menu_item = 'investors' %}
+{% set sub_menu_item = 'Investor relations calendar' %}
 {% block content %}
 
 {% block header_panel_short %}

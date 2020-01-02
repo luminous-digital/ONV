@@ -3,6 +3,7 @@
 Investors - board profile
 {% endblock %}
 {% set menu_item = 'investors' %}
+{% set sub_menu_item = 'Board Profile' %}
 {% block content %}
 
 {% block header_panel_short %}

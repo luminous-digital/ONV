@@ -4,6 +4,7 @@ Sustainability - our employees
 {% endblock %}
 {% set menu_item = 'sustainability' %}
 {% set page_title = 'Our employees' %}
+{% set sub_menu_item = 'Our Employees' %}
 {% block content %}
 
     {% block header_panel_short %}

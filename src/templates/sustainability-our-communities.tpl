@@ -4,6 +4,7 @@ Sustainability - our communities
 {% endblock %}
 {% set menu_item = 'sustainability' %}
 {% set page_title = 'Our communities' %}
+{% set sub_menu_item = 'Our Communities' %}
 {% block content %}
 
     {% block header_panel_short %}

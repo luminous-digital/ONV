@@ -4,6 +4,7 @@ Sustainability - health and safety
 {% endblock %}
 {% set menu_item = 'sustainability' %}
 {% set page_title = 'Health and Safety' %}
+{% set sub_menu_item = 'Health and safety' %}
 {% block content %}
 
     {% block header_panel_short %}

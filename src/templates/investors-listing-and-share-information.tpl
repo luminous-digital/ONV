@@ -3,6 +3,7 @@
 Listing and share information
 {% endblock %}
 {% set menu_item = 'investors' %}
+{% set sub_menu_item = 'Listing and share information' %}
 {% block content %}
 
 {% block header_panel_short %}

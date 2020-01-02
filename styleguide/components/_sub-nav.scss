@@ -56,6 +56,10 @@ Sub nav
     }
 }
 
+.c-sub-nav__item.current-menu-item > .c-link {
+    font-weight: bold;
+}
+
 .c-sub-nav__item:first-of-type {
 
     @include media('>=desktop-small') {
