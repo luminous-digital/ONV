@@ -30,9 +30,6 @@
 }
 
 .c-data-slider-card__container {
-    width: $size-quick-links-card-width;
-    height: $size-quick-links-card-height;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,6 +40,7 @@
 
     @include media('>=mobile') {
         width: $size-data-slider-card-width;
+        height: 205px;
     }
 }
 
