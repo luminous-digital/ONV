@@ -42,10 +42,17 @@
 
 .c-contact-list__text {
     margin-bottom: 0;
-    white-space: nowrap;
+    // white-space: nowrap;
 
     @include media('>=mobile') {
-        min-width: $size-contact-list-text-width;
+
+        &:nth-child(1) {
+            width: 300px;
+            padding-right: offset(main) * 8;
+        }
+        &:nth-child(3) {
+            width: 200px;
+        }
     }
 }
 
@@ -84,8 +91,9 @@
     margin-bottom: offset(main) * 1.5;
 
     @include media('>=mobile') {
-        margin-left: offset(main) * 8;
+        width: calc(100% - 500px);
         margin-bottom: 0;
+        padding-right: offset(main) * 8;
     }
 }
 

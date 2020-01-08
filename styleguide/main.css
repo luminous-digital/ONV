@@ -2408,11 +2408,13 @@ Article header
   margin: 0; }
 
 .c-contact-list__text {
-  margin-bottom: 0;
-  white-space: nowrap; }
+  margin-bottom: 0; }
   @media (min-width: 768px) {
-    .c-contact-list__text {
-      min-width: 230px; } }
+    .c-contact-list__text:nth-child(1) {
+      width: 300px;
+      padding-right: 80px; }
+    .c-contact-list__text:nth-child(3) {
+      width: 200px; } }
 
 .c-contact-list__item {
   border-bottom: 1px solid #F3F5F9;
@@ -2439,8 +2441,9 @@ Article header
   margin-bottom: 15px; }
   @media (min-width: 768px) {
     .c-contact-list__name {
-      margin-left: 80px;
-      margin-bottom: 0; } }
+      width: calc(100% - 500px);
+      margin-bottom: 0;
+      padding-right: 80px; } }
 
 .c-contact-list__item-wrapper {
   display: flex;

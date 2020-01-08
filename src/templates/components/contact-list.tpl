@@ -28,7 +28,7 @@
                             <li class="c-contact-list__item">
                                 <div class="c-contact-list__item-wrapper">
                                     <p class="c-contact-list__text t-body t-body--alt t-bold t-dgrey">
-                                        {{ mapItem.col1 }}
+                                        Annual General Meeting of Shareholders (AGM)
                                     </p>
                                     <a href="mailto:{{ mapItem.email}}" class="c-contact-list__name t-body t-bold t-blue">
                                         {{ mapItem.col2 }}
