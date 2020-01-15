@@ -1,0 +1,44 @@
+/* ==========================================================================
+Table
+========================================================================== */
+.c-table {
+
+    thead {
+        tr {
+            td {
+                @extend .t-h4;
+                text-align: left;
+
+                padding: offset(l) offset(s) * 1.5;
+
+                border-top: none;
+                border-bottom: 1px solid color(lblue);
+
+                min-width: 200px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+
+            td {
+                padding: offset(l) offset(s) * 1.5;
+
+                color: color(dgrey);
+
+                border-top: none;
+                border-bottom: 1px solid color(lblue);
+            }
+        }
+    }
+}
+
+.c-wysiwyg {
+    .c-table {
+        td {
+            border-top: none;
+            line-height: initial;
+        }
+    }
+}
