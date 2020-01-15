@@ -1,0 +1,61 @@
+/* ==========================================================================
+List table
+========================================================================== */
+.c-list-table {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c-list-table__row {
+    display: flex;
+    flex-direction: column;
+
+    padding: offset(l) 0;
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid color(main);
+    }
+
+    @include media('>=mobile') {
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        padding: 0;
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid color(lblue);
+        }
+    }
+}
+
+.c-list-table__row--head {
+    font-weight: bold;
+
+    @include media('<mobile') {
+        display: none;
+    }
+
+    .c-list-table__cell {
+        @extend .t-h4;
+
+        text-align: left;
+
+        padding: offset(l) offset(s) * 1.5;
+    }
+}
+
+.c-list-table__cell {
+    display: block;
+
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    width: 200px;
+
+    padding: offset(s);
+
+    @include media('>=mobile') {
+        padding: offset(l) offset(s) * 1.5;
+    }
+}

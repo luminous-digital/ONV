@@ -1290,7 +1290,7 @@ button.swiper-pagination-bullet {
       font-size: 18px;
       line-height: 34.2px; } }
 
-.t-h4, .c-table thead tr td {
+.t-h4, .c-list-table__row--head .c-list-table__cell, .c-table thead tr td {
   margin: 0;
   padding: 0;
   font-family: Lato, Arial, sans-serif;
@@ -1300,7 +1300,7 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 24px; }
   @media (min-width: 768px) {
-    .t-h4, .c-table thead tr td {
+    .t-h4, .c-list-table__row--head .c-list-table__cell, .c-table thead tr td {
       font-size: 18px;
       line-height: 34.2px; } }
 
@@ -4202,6 +4202,46 @@ List filters
   @media (min-width: 768px) {
     .c-list-filters__item {
       width: auto; } }
+
+/* ==========================================================================
+List table
+========================================================================== */
+.c-list-table {
+  display: flex;
+  flex-direction: column; }
+
+.c-list-table__row {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0; }
+  .c-list-table__row:not(:last-of-type) {
+    border-bottom: 1px solid #283A6A; }
+  @media (min-width: 768px) {
+    .c-list-table__row {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0; }
+      .c-list-table__row:not(:last-of-type) {
+        border-bottom: 1px solid #F3F5F9; } }
+
+.c-list-table__row--head {
+  font-weight: bold; }
+  @media (max-width: 767px) {
+    .c-list-table__row--head {
+      display: none; } }
+  .c-list-table__row--head .c-list-table__cell {
+    text-align: left;
+    padding: 20px 7.5px; }
+
+.c-list-table__cell {
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 1;
+  width: 200px;
+  padding: 5px; }
+  @media (min-width: 768px) {
+    .c-list-table__cell {
+      padding: 20px 7.5px; } }
 
 /* ==========================================================================
 List wrapper
