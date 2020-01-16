@@ -5655,7 +5655,8 @@ Table
   padding: 20px 7.5px;
   border-top: none;
   border-bottom: 1px solid #F3F5F9;
-  min-width: 200px; }
+  min-width: 200px;
+  vertical-align: top; }
 
 .c-table tbody tr td {
   padding: 20px 7.5px;
