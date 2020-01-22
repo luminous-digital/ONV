@@ -7,8 +7,8 @@
   background-color: #283A6A;
 }
 
-.t-body-link.pseudo-class-hover .c-label:after {
-  background-color: #283A6A;
+.t-body-link.pseudo-class-hover .c-label {
+  border-bottom: 1px solid #283A6A;
 }
 
 a.pseudo-class-hover {
@@ -144,6 +144,10 @@ select select.pseudo-class-focus {
   padding-left: 20px;
 }
 
+.c-list-table a.pseudo-class-hover span {
+  border-bottom: 1px solid #000;
+}
+
 .c-list-wrapper.pseudo-class-last-child {
   margin-bottom: 0;
 }
@@ -170,6 +174,10 @@ select select.pseudo-class-focus {
 
 .c-social-icon.pseudo-class-hover {
   color: #F79727;
+}
+
+.c-table a.pseudo-class-hover span {
+  border-bottom: 1px solid #000;
 }
 
 .c-table-list__item.pseudo-class-last-child {

@@ -5,6 +5,26 @@ List table
     display: flex;
     flex-direction: column;
 
+    a {
+        span {
+            border-bottom: 1px solid color(accent);
+            line-height: 1.3rem;
+        }
+
+        &:hover {
+            span {
+                border-bottom: 1px solid color(black);
+            }
+        }
+    }
+    .t-body-link {
+        .c-label {
+            line-height: 1.5rem;
+        }
+    }
+    a:not([class]):after {
+        display: none;
+    }
 }
 
 .c-list-table__row {

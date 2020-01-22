@@ -16,6 +16,12 @@ Test
 
 <div class="c-table-wrapper c-table-wrapper--offset">
     <div class="l-inner">
+        <h2 class="c-table-wrapper__title t-h2">
+            Table title
+        </h2>
+        <h3 class="c-table-wrapper__subtitle t-h3">
+            Table sub title
+        </h3>
         {% block table %}
             {% import "components/table.tpl" as table with context %}
             {{ table.render(
@@ -37,6 +43,12 @@ Test
 
 <div class="c-table-wrapper c-table-wrapper--offset">
     <div class="l-inner">
+        <h2 class="c-table-wrapper__title t-h2">
+            Table title
+        </h2>
+        <h3 class="c-table-wrapper__subtitle t-h3">
+            Table sub title
+        </h3>
         {% block table3 %}
             {% import "components/table.tpl" as table with context %}
             {{ table.render(
@@ -57,6 +69,12 @@ Test
             </div>
             <div class="c-text-component__column">
                 <div class="c-wysiwyg">
+                    <h2>
+                        Table title
+                    </h2>
+                    <h3>
+                        Table sub title
+                    </h3>
                     {% block table2 %}
                         {% import "components/table.tpl" as table with context %}
                         {{ table.render(
@@ -81,6 +99,12 @@ Test
 
 <div class="c-table-wrapper c-table-wrapper--offset">
     <div class="l-inner">
+        <h2 class="c-table-wrapper__title t-h2">
+            Table title
+        </h2>
+        <h3 class="c-table-wrapper__subtitle t-h3">
+            Table sub title
+        </h3>
         {% block list_table %}
             {% import "components/list-table.tpl" as list_table with context %}
             {{ list_table.render(

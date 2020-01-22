@@ -396,20 +396,7 @@
         font-size: font-size(body-m);
         line-height: font-size(body-m) * 1.5;
 
-        &:after {
-            position: absolute;
-            content: '';
-
-            left: 0;
-            bottom: - offset(main) / 3;
-
-            width: 100%;
-            height: 1px;
-
-            background-color: color(accent);
-
-            transition: $transition-default;
-        }
+        border-bottom: 1px solid color(accent);
 
         @include media('>=mobile') {
             font-size: font-size(body);
@@ -419,9 +406,7 @@
 
     &:hover {
         .c-label {
-            &:after {
-                background-color: color(main);
-            }
+            border-bottom: 1px solid color(main);
         }
     }
 }
