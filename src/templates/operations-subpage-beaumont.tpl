@@ -97,7 +97,7 @@ Operations subpage
 <section class="l-section">
     <div class="l-inner">
         {% import "components/video-module.tpl" as c_video %}
-        {{ c_video.render() }}
+        {{ c_video.render(videoUrl='https://www.youtube.com/embed/dQw4w9WgXcQ') }}
     </div>
 </section>
 

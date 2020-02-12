@@ -12,7 +12,7 @@
             <br>
             <br>
             {% import "./video-module.tpl" as c_video %}
-                {{ c_video.render() }}
+                {{ c_video.render(videoUrl='https://www.youtube.com/embed/dQw4w9WgXcQ') }}
         </div>
         {% if secondParagraph %}
             <div class="c-wysiwyg u-m-hidden {% if noPadding %}c-wysiwyg--nopadding{% endif %}">
