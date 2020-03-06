@@ -2091,7 +2091,8 @@ Article header
 
 .c-btn--download .c-label,
 .c-btn--download .c-sub-label {
-  transition: all 0.4s ease-out; }
+  transition: all 0.4s ease-out;
+  transform-origin: center center; }
 
 .c-btn--download .c-label {
   font-weight: 700;
@@ -2109,7 +2110,7 @@ Article header
   bottom: 6px; }
 
 .c-btn--download .c-btn__icon {
-  right: 20px;
+  right: 15px;
   opacity: 0;
   transition: all 0.4s ease-out; }
 
@@ -2119,8 +2120,8 @@ Article header
 @media (min-width: 1200px) {
   .c-btn--download:hover .c-label,
   .c-btn--download:hover .c-sub-label {
-    left: 10px;
-    transform: translateX(0); }
+    transform: translateX(calc(0% + 10px));
+    left: 0; }
   .c-btn--download:hover .c-btn__icon {
     opacity: 1; }
   .c-btn--icon-hidden:hover .c-btn__icon {

@@ -32,20 +32,10 @@ Test 2
                 <a href="/news.html" class="c-btn c-btn--download">
                     <span class="c-label t-btn t-white t-thin">Download latest presentation</span>
                     <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
-                    <span class="c-btn__icon">
-                        <svg class="o-svg">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
-                        </svg>
-                    </span>
                 </a>
                 <a href="/news.html" class="c-btn c-btn--download">
                     <span class="c-label t-btn t-white t-thin">Download latest presentation</span>
                     <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
-                    <span class="c-btn__icon">
-                        <svg class="o-svg">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
-                        </svg>
-                    </span>
                 </a>
                 <a href="/news.html" class="c-btn c-btn--primary c-btn--medium t-btn t-white">
                     <span class="c-label">

@@ -145,6 +145,8 @@
 .c-btn--download .c-label,
 .c-btn--download .c-sub-label {
     transition: $transition-infinite;
+    // transition: transform .5s;
+    transform-origin: center center;
 }
 
 .c-btn--download .c-label {
@@ -164,11 +166,12 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
     bottom: 6px;
 }
 
 .c-btn--download .c-btn__icon {
-    right: offset(main) * 2;
+    right: offset(main) * 1.5;
     opacity: 0;
 
     transition: $transition-infinite;
@@ -184,8 +187,11 @@
 
         .c-label,
         .c-sub-label {
-            left: 10px;
-            transform: translateX(0);
+            // left: 10px;
+            // transform: translateX(0);
+
+            transform: translateX(calc(0% + 10px));
+            left: 0;
         }
 
         .c-btn__icon {
@@ -247,7 +253,7 @@
 //     </a>
 // </div>
 //
-// Styleguide 6.5
+// Styleguide 6.8
 
 .c-btn--download-icon {
     display: flex;
