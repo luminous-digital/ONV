@@ -140,3 +140,68 @@
         margin-right: offset(main) * 1.2;
     }
 }
+
+// Btn wrapper modular
+//
+// markup:
+//<div class="c-btn-wrapper c-btn-wrapper--modular">
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//        <span class="c-label t-btn t-white t-thin">Download AR 2018</span>
+//        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//        <span class="c-btn__icon">
+//            <svg class="o-svg">
+//                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//            </svg>
+//        </span>
+//    </a>
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//        <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
+//        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//        <span class="c-btn__icon">
+//            <svg class="o-svg">
+//                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//            </svg>
+//        </span>
+//    </a>
+//    <a href="/news.html" class="c-btn c-btn--download c-btn--icon-centered c-btn--block">
+//        <span class="c-label t-btn t-white t-thin">Download presentation 2018</span>
+//        <span class="c-sub-label t-btn t-btn--small t-white">PDF 0.5MB</span>
+//        <span class="c-btn__icon">
+//            <svg class="o-svg">
+//                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/symbol/svg/sprite.symbol.svg#icon-download"></use>
+//            </svg>
+//        </span>
+//    </a>
+//</div>
+//
+// Styleguide 6.7
+
+.c-btn-wrapper--modular {
+
+    @include media('<mobile') {
+        flex-direction: column;
+    }
+    @include media('>=mobile') {
+        justify-content: center;
+    }
+}
+
+.c-btn-wrapper--modular .c-btn {
+
+    @include media('<mobile') {
+        width: 100%;
+
+        &:not(:last-of-type) {
+            margin-bottom: offset(main);
+        }
+    }
+    @include media('>=mobile') {
+        width: 100%;
+        max-width: calc(25% - #{offset(main) * 2});
+        flex-shrink: 0;
+
+        &:not(:last-of-type) {
+            margin-right: offset(main) * 2.5;
+        }
+    }
+}

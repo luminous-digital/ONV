@@ -2293,6 +2293,28 @@ Article header
     margin-bottom: 24px;
     margin-right: 12px; } }
 
+@media (max-width: 767px) {
+  .c-btn-wrapper--modular {
+    flex-direction: column; } }
+
+@media (min-width: 768px) {
+  .c-btn-wrapper--modular {
+    justify-content: center; } }
+
+@media (max-width: 767px) {
+  .c-btn-wrapper--modular .c-btn {
+    width: 100%; }
+    .c-btn-wrapper--modular .c-btn:not(:last-of-type) {
+      margin-bottom: 10px; } }
+
+@media (min-width: 768px) {
+  .c-btn-wrapper--modular .c-btn {
+    width: 100%;
+    max-width: calc(25% - 20px);
+    flex-shrink: 0; }
+    .c-btn-wrapper--modular .c-btn:not(:last-of-type) {
+      margin-right: 25px; } }
+
 /* ==========================================================================
    Board graph
    ========================================================================== */
@@ -5559,6 +5581,9 @@ Standfirst wrapper
   @media (min-width: 768px) {
     .c-standfirst-wrapper .c-btn-wrapper {
       margin-top: 30px; } }
+
+.c-standfirst-wrapper .c-btn-wrapper--modular {
+  margin-top: 0; }
 
 /* ==========================================================================
 Sub nav
