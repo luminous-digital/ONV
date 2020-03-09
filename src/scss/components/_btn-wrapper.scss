@@ -183,6 +183,7 @@
     }
     @include media('>=mobile') {
         justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -197,8 +198,18 @@
     }
     @include media('>=mobile') {
         width: 100%;
-        max-width: calc(25% - #{offset(main) * 2});
+        max-width: calc(50% - #{offset(main) * 2.2});
         flex-shrink: 0;
+
+        margin-bottom: offset(main);
+        margin-right: offset(main);
+    }
+    @include media('>=desktop-small') {
+        width: 100%;
+        max-width: calc(25% - #{offset(main) * 2.2});
+        flex-shrink: 0;
+
+        margin-bottom: 0;
 
         &:not(:last-of-type) {
             margin-right: offset(main) * 2.5;

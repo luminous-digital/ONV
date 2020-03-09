@@ -2300,7 +2300,8 @@ Article header
 
 @media (min-width: 768px) {
   .c-btn-wrapper--modular {
-    justify-content: center; } }
+    justify-content: center;
+    flex-wrap: wrap; } }
 
 @media (max-width: 767px) {
   .c-btn-wrapper--modular .c-btn {
@@ -2311,8 +2312,17 @@ Article header
 @media (min-width: 768px) {
   .c-btn-wrapper--modular .c-btn {
     width: 100%;
-    max-width: calc(25% - 20px);
-    flex-shrink: 0; }
+    max-width: calc(50% - 22px);
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    margin-right: 10px; } }
+
+@media (min-width: 1200px) {
+  .c-btn-wrapper--modular .c-btn {
+    width: 100%;
+    max-width: calc(25% - 22px);
+    flex-shrink: 0;
+    margin-bottom: 0; }
     .c-btn-wrapper--modular .c-btn:not(:last-of-type) {
       margin-right: 25px; } }
 
