@@ -2120,7 +2120,7 @@ Article header
 @media (min-width: 1200px) {
   .c-btn--download:hover .c-label,
   .c-btn--download:hover .c-sub-label {
-    transform: translateX(calc(0% + 10px));
+    transform: translateX(10px);
     left: 0; }
   .c-btn--download:hover .c-btn__icon {
     opacity: 1; }
